@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>InfragisticsWPF4.Controls.Editors.XamDateTimeInput.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:Infragistics.Controls.Editors.Resources">
+            <summary>このアセンブリ用の <see cref="T:Infragistics.Shared.ResourceCustomizer" /> インスタンスを公開します。</summary><seealso cref="P:Infragistics.Controls.Editors.Resources.Customizer" /><seealso cref="T:Infragistics.Shared.ResourceCustomizer" /></member>
+        <member name="M:Infragistics.Controls.Editors.Resources.GetString(System.String,System.Object[])">
+            <summary>指定された名前とデフォルト使用言語を使用してリソース文字列を返します。</summary>
+            <param name="name">取得する文字列リソースの名前。</param>
+            <param name="args">文字列を書式設定するとき、string.Format メソッドに提供される引数。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Resources.GetString(System.String)">
+            <summary>指定したリソース名とデフォルト使用言語を使用して リソース文字列を返します。この文字列は指定した引数を使用して書式設定されます。</summary>
+            <param name="name">取得する文字列リソースの名前。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Resources.GetDynamicResourceString(System.String)">
+            <summary>リソースに対するカスタマイズ変更を追跡する DynamicResourceString オブジェクトを返し、リソース値が変更されるとイベントを発生します。</summary>
+            <param name="name">取得する文字列リソースの名前。</param>
+            <returns>リソース カスタマイズで変更を追跡するための <see cref="T:Infragistics.Shared.DynamicResourceString" /> オブジェクト。</returns><seealso cref="T:Infragistics.Shared.ResourceCustomizer" /><seealso cref="M:Infragistics.Shared.ResourceCustomizer.SetCustomizedString(System.String,System.String)" /><seealso cref="M:Infragistics.Shared.ResourceCustomizer.ResetCustomizedString(System.String)" /><seealso cref="M:Infragistics.Shared.ResourceCustomizer.ResetAllCustomizedStrings" /></member>
+        <member name="M:Infragistics.Controls.Editors.Resources.GetDynamicResourceString(System.String,System.Object[])">
+            <summary>リソースに対するカスタマイズ変更を追跡する DynamicResourceString オブジェクトを返し、リソース値が変更されるとイベントを発生します。</summary>
+            <param name="name">取得する文字列リソースの名前。</param>
+            <param name="args">文字列を書式設定するとき、string.Format メソッドに提供される引数。</param>
+            <returns>リソース カスタマイズで変更を追跡するための <see cref="T:Infragistics.Shared.DynamicResourceString" /> オブジェクト。</returns><seealso cref="T:Infragistics.Shared.ResourceCustomizer" /><seealso cref="M:Infragistics.Shared.ResourceCustomizer.SetCustomizedString(System.String,System.String)" /><seealso cref="M:Infragistics.Shared.ResourceCustomizer.ResetCustomizedString(System.String)" /><seealso cref="M:Infragistics.Shared.ResourceCustomizer.ResetAllCustomizedStrings" /></member>
+        <member name="M:Infragistics.Controls.Editors.Resources.GetDynamicResourceString(System.String,System.Object[],System.Globalization.CultureInfo)">
+            <summary>リソースに対するカスタマイズ変更を追跡する DynamicResourceString オブジェクトを返し、リソース値が変更されるとイベントを発生します。</summary>
+            <param name="name">取得する文字列リソースの名前。</param>
+            <param name="args">文字列を書式設定するとき、string.Format メソッドに提供される引数。</param>
+            <param name="culture">リソースが読み込みされるカルチャー。リソースは、フォールバック処理を通じて、適切なリソースを探します。</param>
+            <returns>リソース カスタマイズで変更を追跡するための <see cref="T:Infragistics.Shared.DynamicResourceString" /> オブジェクト。</returns><seealso cref="T:Infragistics.Shared.ResourceCustomizer" /><seealso cref="M:Infragistics.Shared.ResourceCustomizer.SetCustomizedString(System.String,System.String)" /><seealso cref="M:Infragistics.Shared.ResourceCustomizer.ResetCustomizedString(System.String)" /><seealso cref="M:Infragistics.Shared.ResourceCustomizer.ResetAllCustomizedStrings" /></member>
+        <member name="M:Infragistics.Controls.Editors.Resources.GetObject(System.String)">
+            <summary>指定された名前を使用してリソース オブジェクトを返します</summary>
+            <param name="name">リソース項目の名前</param>
+            <returns>指定されたリソースを含むオブジェクト。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Resources.Customizer">
+            <summary>このアセンブリの <see cref="T:Infragistics.Shared.ResourceCustomizer" /> を返します。</summary><seealso cref="T:Infragistics.Shared.ResourceCustomizer" /></member>
+        <member name="T:Infragistics.Controls.Editors.XamDateTimeInput">
+            <summary>マスクに基づく日付および時刻の編集を許可します。</summary>
+            <remarks>
+            <para class="body"><b>XamDateTimeInput</b> は、日付または時刻を編集するために使用できます。<see cref="P:Infragistics.Controls.Editors.XamMaskedInput.Mask" /> プロパティの値に基づき、日付、時刻、または日付と時刻の両方を編集できます。以下のマスクの例です。<br />
+            <ul>
+            <li><b>{date}</b> - システムの <i>short</i> 日付パターン設定に基づく日付マスク。</li>
+            <li><b>{time}</b> - システムの <i>short</i> 時間パターン設定に基づく時間マスク。短い時刻形式には通常、秒部分は含まれません。</li>
+            <li><b>{longtime} - システムの <i>long</i> 時間パターン設定に基づく時間マスク。長い時刻形式には通常、秒部分が含まれます。</b></li>
+            
+            <li><b>{date}</b> - 短い日付パターンに基づきマスクするだけの日付を作成します。</li>
+            <li><b>{time}</b> - 短い時刻パターンに基づきマスクするだけの時刻を作成します。</li>
+            <li><b>{longtime}</b> - 長い時刻パターンに基づく時刻のみのマスクを作成します。これは通常、秒を含みます。</li>
+            <li><b>{date} {time}</b> - 短い日付および時刻パターンに基づきマスクするだけの日付および時刻を作成します。</li>
+            <li><b>mm/dd/yyyy</b> - マスクするだけの日付を作成します。注： このマスクは、日、月、年の正確な順で明示的に指定します。基本のカルチャー設定は、日、月、および年セクションを決定するために使用されません。</li>
+            </ul>
+            <br />日付と時刻に関することも含み、すべてのサポートされるマスクのリストについては、<see cref="P:Infragistics.Controls.Editors.XamMaskedInput.Mask" /> プロパティのヘルプを参照してください。</para>
+            <para class="body">デフォルトでは、現在のカルチャー設定は、日付および時刻のフォーマットを決定するために使用されます。ただし、<see cref="P:Infragistics.Controls.Editors.ValueInput.FormatProvider" /> および <see cref="P:Infragistics.Controls.Editors.ValueInput.Format" /> プロパティを設定することによって、オーバーライドができます。<b>FormatProvider</b> が設定されると、マスクおよびフォーマッティングは、<b>FormatProvider</b> によって提供される設定に基づきます。そうでなければ、フォーマッティングは現在のカルチャーに基づいて設定されます。注： コントロールが編集モードでない場合、<b>Format</b> プロパティは表示される内容をコントロールするだけです。詳細は <see cref="P:Infragistics.Controls.Editors.ValueInput.Format" /> を参照してください。</para><seealso cref="P:Infragistics.Controls.Editors.XamMaskedInput.Mask" /><seealso cref="P:Infragistics.Controls.Editors.ValueInput.Value" /><seealso cref="P:Infragistics.Controls.Editors.ValueInput.ValueType" /><seealso cref="P:Infragistics.Controls.Editors.ValueInput.FormatProvider" /><seealso cref="P:Infragistics.Controls.Editors.ValueInput.Format" /></remarks>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeInput.#ctor">
+            <summary>新しい <see cref="T:Infragistics.Controls.Editors.XamDateTimeInput" /> を初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeInput.InitializeValueProperties">
+            <summary>オーバーライド。値プロパティを初期化します。xaml で値プロパティのいずれかが設定されている場合には、これはすべての値プロパティを同期します。xaml でのその他の設定が同期される方法に影響がある場合初期化が終わるまで同期を遅延するからです。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeInput.OnApplyTemplate">
+            <summary>テンプレートがエディターに適用される時に発生されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeInput.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>コントロールがフォーカスを受け取ったときに呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeInput.OnInitialized(System.EventArgs)">
+            <summary>オーバーライド。<see cref="E:System.Windows.FrameworkElement.Initialized" /> イベントを発生します。このメソッドは、<see cref="P:System.Windows.FrameworkElement.IsInitialized" /> が True に設定されている場合のみ発生されます。</summary>
+            <param name="e">イベント引数。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeInput.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>この要素のビジュアル ツリー内のキーボード フォーカス状態が変化したときに呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeInput.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>キーを押したときに呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeInput.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary>マウスが要素に入ったときに呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeInput.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary>マウスが要素から出て行ったときに呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeInput.OnIsReadOnlyChanged">
+            <summary><see cref="P:Infragistics.Controls.Editors.ValueInput.IsReadOnly" /> プロパティが変更されたときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeInput.SyncValuePropertiesOverride(System.Windows.DependencyProperty,System.Object,System.Exception@)">
+            <summary>オーバーライド。値およびテキスト プロパティを同期化するために呼び出されます。派生されたクラスに固有の値プロパティ (例えば、xamCheckEditor は IsChecked プロパティを持つこと) があれば、このメッソドをオーバーライドできます。Value、Text、および他のエディター固有のプロパティは同期化になる必要があります。デフォルトの実装は Value および Text プロパティを同期化されます。</summary>
+            <param name="prop">変更されたプロパティ。</param>
+            <param name="newValue">プロパティの新しい値。</param>
+            <param name="error">同期化が失敗した場合 (型変換または新しい値の同期化での問題など)、これはエラー メッセージに設定されます。</param>
+            <returns>新しい値が有効であるかどうかを示す値。False が返された場合、IsValueValid プロパティは False に設定されます。</returns>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamDateTimeInput.AllowDropDownProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamDateTimeInput.AllowDropDown" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamDateTimeInput.AllowDropDownResolvedProperty">
+            <summary>読み取り専用 <see cref="P:Infragistics.Controls.Editors.XamDateTimeInput.AllowDropDownResolved" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMaxDateProperty">
+            <summary>読み取り専用 <see cref="P:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMaxDate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMinCalendarModeProperty">
+            <summary>読み取り専用 <see cref="P:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMinCalendarMode" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMinDateProperty">
+            <summary>読み取り専用 <see cref="P:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMinDate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamDateTimeInput.DateValueProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamDateTimeInput.DateValue" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamDateTimeInput.DropDownButtonDisplayModeProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamDateTimeInput.DropDownButtonDisplayMode" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamDateTimeInput.DropDownButtonStyleProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamDateTimeInput.DropDownButtonStyle" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamDateTimeInput.DropDownButtonVisibilityProperty">
+            <summary>読み取り専用 <see cref="F:Infragistics.Controls.Editors.XamDateTimeInput.DropDownButtonVisibilityProperty" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamDateTimeInput.IsDropDownOpenProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamDateTimeInput.IsDropDownOpen" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeInput.OnCoerceIsDropDownOpen(System.Windows.DependencyObject,System.Object)">
+            <summary>IsDroppedDown が設定されると、エディターが編集モードであることを確認する必要があり、そうでない場合には編集モードにしてください。これがこの coerce ハンドラーが実行する作業です。</summary>
+            <param name="dependencyObject"></param>
+            <param name="valueAsObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeInput.UpdateDropDownButtonVisibility">
+            <summary>エディターの現在の状態と DropDownButtonDisplayMode プロパティの設定に従って、DropDownButtonVisibility プロパティを更新します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeInput.OnDropDownOpened(System.EventArgs)">
+            <summary>ドロップダウン リストが開いているとこのメソッドが呼び出されます。<see cref="E:Infragistics.Controls.Editors.XamDateTimeInput.DropDownOpened" /> イベントを発生させます。</summary><seealso cref="E:Infragistics.Controls.Editors.XamDateTimeInput.DropDownOpened" /><seealso cref="E:Infragistics.Controls.Editors.XamDateTimeInput.DropDownClosed" /></member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeInput.OnDropDownClosed(System.EventArgs)">
+            <summary>ドロップダウン リストが閉じているとこのメソッドが呼び出されます。<see cref="E:Infragistics.Controls.Editors.XamDateTimeInput.DropDownClosed" /> イベントを発生させます。</summary><seealso cref="E:Infragistics.Controls.Editors.XamDateTimeInput.DropDownClosed" /><seealso cref="E:Infragistics.Controls.Editors.XamDateTimeInput.DropDownClosed" /></member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeInput.DefaultValueType">
+            <summary>エディターの規定値の型を返します。<see cref="P:Infragistics.Controls.Editors.ValueInput.ValueType" /> プロパティが設定されていない場合、<see cref="P:Infragistics.Controls.Editors.ValueInput.ValueTypeResolved" /> によりこの型が返されます。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeInput.AllowDropDown">
+            <summary>日付を選択するドロップ ダウンを使用するかどうかを示す値を取得または設定します。</summary>
+            <remarks>
+            <p class="body">デフォルトで、XamDateTimeInput は日付マスクを持ち編集モードに入れる限り、ドロップダウンを表示します。つまり、<see cref="P:Infragistics.Controls.Editors.XamMaskedInput.Mask" /> が時間のみの入力マスクに設定された場合は表示されません。AllowDropDown プロパティは、エディターが日付を編集するために使用されるときにドロップダウンを提供しないために使用されます。False に設定するときに、エディターはマウスまたはキーボードを使用するときにドロップダウン カレンダーを表示しません。</p>
+            </remarks><seealso cref="F:Infragistics.Controls.Editors.XamDateTimeInput.AllowDropDownProperty" /></member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeInput.AllowDropDownResolved">
+            <summary>日付を選択するドロップ ダウンを使用するかどうかを示す解決された値を返します (読み取り専用)。</summary>
+            <remarks>
+            <p class="body">デフォルトで、XamDateTimeInput は日付マスクを持ち編集モードに入れる限り、ドロップダウンを表示します。つまり、<see cref="P:Infragistics.Controls.Editors.XamMaskedInput.Mask" /> が時間のみの入力マスクに設定された場合は表示されません。AllowDropDown プロパティは、エディターが日付を編集するために使用されるときにドロップダウンを提供しないために使用されます。False に設定するときに、エディターはマウスまたはキーボードを使用するときにドロップダウン カレンダーを表示しません。</p>
+            </remarks><seealso cref="F:Infragistics.Controls.Editors.XamDateTimeInput.AllowDropDownProperty" /><seealso cref="F:Infragistics.Controls.Editors.XamDateTimeInput.AllowDropDownResolvedProperty" /></member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMaxDate">
+            <summary>コントロールの計算された最大日付値を返します。</summary>
+            <remarks>
+            <p class="body">ComputedMaxDate や <see cref="P:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMinDate" /> は、<see cref="P:Infragistics.Controls.Editors.ValueInput.ValueConstraint" /> の最小および最大プロパティから解決された DateTime 値を公開する読み取り専用プロパティです。エディターのテンプレートから使用されます。デフォルト テンプレートは、その <see cref="P:Infragistics.Controls.Editors.XamCalendar.MinDate" /> および <see cref="P:Infragistics.Controls.Editors.XamCalendar.MaxDate" /> を制御するためにこれらのプロパティを使用する <see cref="T:Infragistics.Controls.Editors.XamCalendar" /> を含みます。</p>
+            </remarks><seealso cref="F:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMaxDateProperty" /><seealso cref="P:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMinDate" /></member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMinCalendarMode">
+            <summary>コントロールのドロップ ダウン内で XamCalendar の優先 MinCalendarMode を返します。</summary>
+            <remarks>
+            <p class="body">ComputedMinCalendarMode は、<see cref="T:System.Windows.Controls.CalendarMode" /> を返す読み取り専用プロパティです。コントロールのドロップダウンで使用される <see cref="T:Infragistics.Controls.Editors.XamCalendar" /> で使用できる最小日付ユニットを識別します。例えば、<see cref="P:Infragistics.Controls.Editors.XamMaskedInput.Mask" /> が日を含むマスクに設定された場合に、このプロパティは <b>Days</b> を返します。ただし、最小日付ユニットが月である場合 (つまり、yyyy/mm)、ドロップダウンは日ではなく月だけをユーザーに表示するために、このプロパティは <b>Months</b> を返します。含まれる <see cref="T:Infragistics.Controls.Editors.XamCalendar" /> の <see cref="P:Infragistics.Controls.Editors.XamCalendar.MinCalendarMode" /> を制御するために、このプロパティはデフォルト テンプレートで使用されます。</p>
+            </remarks><seealso cref="F:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMinCalendarModeProperty" /></member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMinDate">
+            <summary>コントロールの計算された最小日付値を返します。</summary>
+            <p class="body">ComputedMinDate と <see cref="P:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMaxDate" /> は、<see cref="P:Infragistics.Controls.Editors.ValueInput.ValueConstraint" /> の最小および最大プロパティから解決された DateTime 値を公開する読み取り専用プロパティです。エディターのテンプレートから使用されます。デフォルト テンプレートは、その <see cref="P:Infragistics.Controls.Editors.XamCalendar.MinDate" /> および <see cref="P:Infragistics.Controls.Editors.XamCalendar.MaxDate" /> を制御するためにこれらのプロパティを使用する <see cref="T:Infragistics.Controls.Editors.XamCalendar" /> を含みます。</p><seealso cref="F:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMinDateProperty" /><seealso cref="P:Infragistics.Controls.Editors.XamDateTimeInput.ComputedMaxDate" /></member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeInput.DateValue">
+            <summary>エディターの値の日付の部分を取得または設定します。</summary>
+            <remarks>
+            <para class="body"><b>DateValue</b> プロパティはエディターの値の日付の部分を返します。エディターの現在値は null または無効な日付がある場合は、このプロパティは null を返します。</para>
+            <para class="body">このプロパティを設定するによって、エディターの値の日付の部分のみ更新されます。現在の値は null でエディターは編集モードの場合は、エディター コンテンツの日付部分のみ更新され、時刻の部分からです。現在の値は null ではなくて、エディターは編集モードではない場合は、DateValue プロパティを設定することによって、Value プロパティは同じ DateTime インスタンスに設定します。</para>
+            </remarks><seealso cref="P:Infragistics.Controls.Editors.ValueInput.Value" /></member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeInput.DropDownButtonDisplayMode">
+            <summary>ドロップダウン ボタンを表示すべき時期を指定します。デフォルトは <b>MouseOver</b> です。</summary>
+            <remarks>
+            <p class="body"><b>DropDownButtonDisplayMode</b> はドロップダウン ボタンが表示されるかどうかを決定します。</p>
+            <p class="note"><b>注:</b> エディターが編集モードの時にドロップダウン ボタンは常に表示されます。</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeInput.DropDownButtonStyle">
+            <summary>ドロップダウン ボタンのスタイルを設定するために使用されます。デフォルト値は null です。</summary>
+            <remarks>
+            <para class="body">このプロパティのデフォルト値は null です。このプロパティを使用して、エディター内に表示されるドロップダウン ボタンに使用するように Style オブジェクトを指定します。</para>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeInput.DropDownButtonVisibility">
+            <summary>ドロップ ダウン ボタンが表示されるかどうかを示します。</summary>
+            <remarks>
+            <para class="body">このプロパティを使用して、ドロップダウン ボタンが表示か非表示かを知ることできます。</para><seealso cref="P:Infragistics.Controls.Editors.XamDateTimeInput.DropDownButtonDisplayMode" /></remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeInput.IsDropDownOpen">
+            <summary>現在ドロップ ダウンが展開されているかどうかを指定します。</summary>
+            <remarks>
+            <para class="body"><b>IsDropDownOpen</b> はドロップダウンが現在開いているかどうかを示す値を返します。このプロパティはドロップダウンを開くまたは閉じるように設定できます。このプロパティを True に設定してエディターが編集モードではない場合、エディターは編集モードになります。</para>
+            <para class="body">ドロップダウンが開いている時と閉じている時を通知するために <see cref="E:Infragistics.Controls.Editors.XamDateTimeInput.DropDownOpened" /> イベントと <see cref="E:Infragistics.Controls.Editors.XamDateTimeInput.DropDownClosed" /> イベントにフックすることも可能です。</para><seealso cref="E:Infragistics.Controls.Editors.XamDateTimeInput.DropDownOpened" /> <seealso cref="E:Infragistics.Controls.Editors.XamDateTimeInput.DropDownClosed" /></remarks>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamDateTimeInput.DropDownOpened">
+            <summary>ドロップ ダウン カレンダーが開かれる時に発生します。</summary><seealso cref="M:Infragistics.Controls.Editors.XamDateTimeInput.OnDropDownOpened(System.EventArgs)" /><seealso cref="P:Infragistics.Controls.Editors.XamDateTimeInput.IsDropDownOpen" /><seealso cref="E:Infragistics.Controls.Editors.XamDateTimeInput.DropDownClosed" /></member>
+        <member name="E:Infragistics.Controls.Editors.XamDateTimeInput.DropDownClosed">
+            <summary>ドロップ ダウン カレンダーが閉じた時に発生します。</summary><seealso cref="M:Infragistics.Controls.Editors.XamDateTimeInput.OnDropDownClosed(System.EventArgs)" /><seealso cref="P:Infragistics.Controls.Editors.XamDateTimeInput.IsDropDownOpen" /><seealso cref="E:Infragistics.Controls.Editors.XamDateTimeInput.DropDownOpened" /></member>
+        <member name="M:LocalizedCategoryAttribute.GetLocalizedString(System.String)">
+            <summary>ローカライズ済みのカテゴリ名を返します。</summary>
+            <param name="value">取得するカテゴリ名。</param>
+            <returns>ローカライズ済みの文字列値。</returns>
+        </member>
+        <member name="M:InternalDynamicResourceString.#ctor(Infragistics.Shared.ResourceCustomizer,System.Globalization.CultureInfo,System.String,System.Object[])">
+            <summary>このコンストラクターは内部使用のみです。</summary>
+        </member>
+        <member name="M:InternalDynamicResourceString.GetStringFromResource(System.String,System.Globalization.CultureInfo)">
+            <summary>内部使用のみ。</summary>
+        </member>
+    </members>
+</doc>

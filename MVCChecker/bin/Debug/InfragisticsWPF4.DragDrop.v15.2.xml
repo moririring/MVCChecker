@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>InfragisticsWPF4.DragDrop.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:Infragistics.DragDrop.DragDropManager">
+            <summary>ドラッグ ソースおよびドロップ ターゲットとしてマークされた要素間のインタラクションを登録および管理し、ドラッグアンドドロップ操作に関する適切なイベントをユーザーに対して発生させます。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.DragDropManager.DragSourceProperty">
+            <summary><see cref="F:Infragistics.DragDrop.DragDropManager.DragSourceProperty"/> 添付プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.DragDrop.DragDropManager.GetDragSource(System.Windows.DependencyObject)">
+            <summary>指定された <see cref="T:System.Windows.DependencyObject"/> から <see cref="F:Infragistics.DragDrop.DragDropManager.DragSourceProperty"/> 添付プロパティの値を取得します。</summary>
+            <param name="obj">プロパティ値を読み取るオブジェクト。</param>
+            <returns><see cref="F:Infragistics.DragDrop.DragDropManager.DragSourceProperty"/> 添付プロパティの値。</returns>
+        </member>
+        <member name="M:Infragistics.DragDrop.DragDropManager.SetDragSource(System.Windows.DependencyObject,Infragistics.DragDrop.DragSource)">
+            <summary><see cref="F:Infragistics.DragDrop.DragDropManager.DragSourceProperty"/> 添付プロパティの値に、指定された <see cref="T:System.Windows.DependencyObject"/> を設定します。</summary>
+            <param name="obj"><see cref="F:Infragistics.DragDrop.DragDropManager.DragSourceProperty"/> 添付プロパティを設定するオブジェクト。</param>
+            <param name="value">設定するプロパティ値。</param>
+        </member>
+        <member name="F:Infragistics.DragDrop.DragDropManager.DropTargetProperty">
+            <summary><see cref="F:Infragistics.DragDrop.DragDropManager.DropTargetProperty"/> 添付プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.DragDrop.DragDropManager.GetDropTarget(System.Windows.DependencyObject)">
+            <summary>指定された <see cref="T:System.Windows.DependencyObject"/> から <see cref="F:Infragistics.DragDrop.DragDropManager.DropTargetProperty"/> 添付プロパティの値を取得します。</summary>
+            <param name="obj">プロパティ値を読み取るオブジェクト。</param>
+            <returns><see cref="F:Infragistics.DragDrop.DragDropManager.DropTargetProperty"/> 添付プロパティの値。</returns>
+        </member>
+        <member name="M:Infragistics.DragDrop.DragDropManager.SetDropTarget(System.Windows.DependencyObject,Infragistics.DragDrop.DropTarget)">
+            <summary><see cref="F:Infragistics.DragDrop.DragDropManager.DropTargetProperty"/> 添付プロパティの値に、指定された <see cref="T:System.Windows.DependencyObject"/> を設定します。</summary>
+            <param name="obj"><see cref="F:Infragistics.DragDrop.DragDropManager.DropTargetProperty"/> 添付プロパティを設定するオブジェクト。</param>
+            <param name="value">設定するプロパティ値。</param>
+        </member>
+        <member name="M:Infragistics.DragDrop.DragDropManager.EndDrag(System.Boolean)">
+            <summary>ドラッグ操作が進行中の場合はドラッグ操作を終了します。</summary>
+            <param name="dragCancel"> <paramref name="dragCancel"/> が true に設定されている場合、ドラッグはキャンセルされます。false に設定されている場合、ドロップが実行されていると見なされます。</param>
+        </member>
+        <member name="M:Infragistics.DragDrop.DragDropManager.RefreshDragLayout">
+            <summary>ドラッグされた項目をレイアウトの一番上にします。ドラッグを開始した後に作成された他のポップアップがある場合、ユーザーは、このメソッドを使用して、ドラッグされた項目を一番上のポップアップに設定できます。</summary>
+        </member>
+        <member name="M:Infragistics.DragDrop.DragDropManager.GetDropTargets(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>ドロップ ターゲットと一致する指定したチャネルを取得します。</summary>
+            <param name="channels">一致するためのチャネル</param>
+            <returns>少なくともドロップ チャネルの 1 つが、渡されたチャネルの 1 つと一致するドロップ ターゲット。</returns>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropManager.CurrentCopyCursorTemplate">
+            <summary>コピー操作を実行するときにコピー カーソルで使用するデータ テンプレートを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropManager.CurrentCursorTemplate">
+            <summary>現在マウス カーソルとして使用されているデータ テンプレートを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropManager.CurrentDragTemplate">
+            <summary>ドラッグアンドドロップ操作を開始するときにドラッグされる項目に適用される、データ テンプレートを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropManager.CurrentDropNotAllowedCursorTemplate">
+            <summary>ドラッグアンドドロップ操作で適切なドロップ ターゲットが見つからない場合に、ドロップ操作が許可されていないカーソルに対して使用されるデータ テンプレートを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropManager.CurrentMoveCursorTemplate">
+            <summary>ドラッグアンドドロップ操作中に、移動カーソルに対して使用されるデータ テンプレートを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropManager.DragPopup">
+            <summary>ドラッグされた項目を画面上に表示するために使用する UI 要素を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropManager.IsDragging">
+            <summary>ドラッグアンドドロップ操作が現在進行中かどうかを示す値を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropManager.HighlightTargetsOnDragStart">
+            <summary>ドラッグ ソース要素が適切な <see cref="P:Infragistics.DragDrop.DragSource.DragChannels"/> とドラッグされるときにドロップ ターゲット要素が強調表示されるかどうか示す値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropManager.Instance">
+            <summary>DragDropManager クラスの単一のインスタンスを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropManager.CursorPopup">
+            <summary>カーソル データ テンプレートが適用される一番上の UI 要素を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.DragDrop.DragObject">
+            <summary>このクラスは、ドラッグアンドドロップ フレームワークからのみ使用することを意図しています。ユーザーがこのクラスのインスタンスを作成する必要はありません。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragObject.Data">
+            <summary>ドラッグされるデータを表すオブジェクトを取得します。このオブジェクトは、<see cref="P:Infragistics.DragDrop.DragSource.DataObject"/> プロパティまたは <see cref="P:Infragistics.DragDrop.DragDropEventArgs.Data"/> プロパティを設定することによって指定できます。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragObject.DragImage">
+            <summary>ドラッグアンドドロップ操作を開始する UIElement のスナップショットを表す画像を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.DragDrop.DragSource">
+            <summary>このクラスは、ドラッグ ソースとしてマークされた要素が振る舞う方法を管理するために使用します。要素は、<see cref="F:Infragistics.DragDrop.DragDropManager.DragSourceProperty"/> 添付プロパティが <see cref="T:Infragistics.DragDrop.DragSource"/> クラスのインスタンスに設定されると、ドラッグ ソースとしてマークされます。</summary>
+        </member>
+        <member name="M:Infragistics.DragDrop.DragSource.#ctor">
+            <summary><see cref="T:Infragistics.DragDrop.DragSource"/> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.DragSource.CopyCursorTemplateProperty">
+            <summary><see cref="P:Infragistics.DragDrop.DragSource.CopyCursorTemplate"/> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.DragSource.DataObjectProperty">
+            <summary><see cref="P:Infragistics.DragDrop.DragSource.DataObject"/> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.DragSource.DragChannelsProperty">
+            <summary><see cref="P:Infragistics.DragDrop.DragSource.DragChannels"/> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.DragSource.DragTemplateProperty">
+            <summary><see cref="P:Infragistics.DragDrop.DragSource.DragTemplate"/> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.DragSource.DropNotAllowedCursorTemplateProperty">
+            <summary><see cref="P:Infragistics.DragDrop.DragSource.DropNotAllowedCursorTemplate"/> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.DragSource.IsDraggableProperty">
+            <summary><see cref="P:Infragistics.DragDrop.DragSource.IsDraggable"/> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.DragSource.MoveCursorTemplateProperty">
+            <summary><see cref="P:Infragistics.DragDrop.DragSource.MoveCursorTemplate"/> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragSource.AssociatedObject">
+            <summary>この <see cref="T:Infragistics.DragDrop.DragSource"/> オブジェクトに関連付けられた UIElement を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragSource.CopyCursorTemplate">
+            <summary>ドラッグアンドドロップ操作中に、コピー操作の実行中にカーソルとして使用されるデータ テンプレートを取得または設定します。これは依存プロパティです。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragSource.DataObject">
+            <summary>ドラッグアンドドロップ操作データの意味を保持するオブジェクトを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragSource.DragChannels">
+            <summary>オブジェクトをドラッグできるチャネルを取得または設定します。これは依存プロパティです。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragSource.DraggingOffset">
+            <summary>ドラッグを開始するまでのドラッグ マウス オフセットを取得または設定します。デフォルト値と最小値は 2 ピクセルです。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragSource.DragTemplate">
+            <summary>ドラッグアンドドロップ操作の実行中に、ドラッグされた要素によって使用されるデータ テンプレートを取得または設定します。これは依存プロパティです。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragSource.DropNotAllowedCursorTemplate">
+            <summary>ドラッグアンドドロップ操作中に、ドロップ ターゲットが見つからない場合にカーソルとして使用されるデータ テンプレートを取得または設定します。これは依存プロパティです。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragSource.FindDropTargetMode">
+            <summary>検索ドロップ ターゲット モードを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragSource.IsDraggable">
+            <summary>マークされた要素をドラッグできるかどうかを示す値を取得または設定します。これは依存プロパティです。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragSource.MoveCursorTemplate">
+            <summary>通常のドラッグアンドドロップ操作中にカーソルとして使用されるデータ テンプレートを取得または設定します。これは依存プロパティです。</summary>
+        </member>
+        <member name="E:Infragistics.DragDrop.DragSource.DragCancel">
+            <summary><see cref="P:Infragistics.DragDrop.DragDropCancelEventArgs.Cancel"/> が true に設定されている場合に、<see cref="E:Infragistics.DragDrop.DragSource.DragStart"/> イベントまたは <see cref="E:Infragistics.DragDrop.DragSource.DragEnter"/> イベントのイベント ハンドラーの一部で、ドラッグアンドドロップ操作がキャンセルされたときか、dragCancel に true を設定して <see cref="M:Infragistics.DragDrop.DragDropManager.EndDrag(System.Boolean)"/> メソッドが呼び出されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.DragDrop.DragSource.DragEnd">
+            <summary>ドラッグアンドドロップ操作の終了時に発生します。これは、ドラッグアンドドロップの実行時に発生する最後のイベントです。</summary>
+        </member>
+        <member name="E:Infragistics.DragDrop.DragSource.DragEnter">
+            <summary>ドラッグアンドドロップの実行中に、マウス ポインターがターゲットとしてマークされている UIElement に入ったときに発生します。このイベントはキャンセルできます。</summary>
+        </member>
+        <member name="E:Infragistics.DragDrop.DragSource.DragLeave">
+            <summary>ドラッグアンドドロップの実行中に、マウス ポインターがターゲットとしてマークされている UIElement の境界から外に出たときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.DragDrop.DragSource.DragOver">
+            <summary>ドラッグアンドドロップ操作の実行中に、マウス ポインターがターゲットとしてマークされている UIElement の上を通過したときに発生します。このイベントは、<see cref="E:Infragistics.DragDrop.DragSource.DragEnter"/> イベントの後に発生します。</summary>
+        </member>
+        <member name="E:Infragistics.DragDrop.DragSource.DragStart">
+            <summary>ドラッグ可能とマークされた UIElement でドラッグ操作が開始されたときに発生します。このイベントはキャンセルできます。</summary>
+        </member>
+        <member name="E:Infragistics.DragDrop.DragSource.Drop">
+            <summary>ドラッグアンドドロップ操作の実行中にマウスが離され、マウス ポインターがドロップ ターゲットとしてマークされた UIElement 上にあり、ドラッグ ソースのドラッグ チャネルがドロップ ターゲットのドロップ チャネルに一致する場合に発生します。</summary>
+        </member>
+        <member name="T:Infragistics.DragDrop.BindingContext">
+            <summary>このクラスは、考えられる <see cref="P:Infragistics.DragDrop.DragSource.DataObject"/> をバインドするために使用します。</summary>
+        </member>
+        <member name="T:Infragistics.DragDrop.DropTarget">
+            <summary>このクラスは、ドロップ ターゲットとしてマークされた要素が振る舞う方法を管理するために使用します。要素は、<see cref="F:Infragistics.DragDrop.DragDropManager.DropTargetProperty"/> 添付プロパティが <see cref="T:Infragistics.DragDrop.DropTarget"/> クラスのインスタンスに設定されると、ドロップ ターゲットとしてマークされます。</summary>
+        </member>
+        <member name="M:Infragistics.DragDrop.DropTarget.#ctor">
+            <summary><see cref="T:Infragistics.DragDrop.DropTarget"/> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.DropTarget.DropChannelsProperty">
+            <summary><see cref="P:Infragistics.DragDrop.DropTarget.DropChannels"/> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.DropTarget.DropTargetMarkerBrushProperty">
+            <summary><see cref="P:Infragistics.DragDrop.DropTarget.DropTargetMarkerBrush"/> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.DropTarget.DropTargetStyleProperty">
+            <summary><see cref="P:Infragistics.DragDrop.DropTarget.DropTargetStyle"/> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.DropTarget.IsDropTargetProperty">
+            <summary><see cref="P:Infragistics.DragDrop.DropTarget.IsDropTarget"/> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.DragDrop.DropTarget.HighlightDropTarget(System.Boolean)">
+            <summary><see cref="P:Infragistics.DragDrop.DropTarget.DropTargetStyle"/> を <see cref="P:Infragistics.DragDrop.DropTarget.AssociatedObject"/> へ適用するときにドロップ ターゲットを強調表示します。</summary>
+            <param name="highlight">指定したスタイルをドロップ ターゲット要素へ設定する場合 <c>true</c>。そうでない場合、スタイルは元の値に戻されます。</param>
+            <returns>ドロップ ターゲット要素を強調表示する場合 <c>true</c>。</returns>
+        </member>
+        <member name="P:Infragistics.DragDrop.DropTarget.AssociatedObject">
+            <summary>この <see cref="T:Infragistics.DragDrop.DropTarget"/> オブジェクトに関連付けられた UIElement を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DropTarget.DropChannels">
+            <summary>ドロップ ターゲットがリスニングしているチャネルを取得または設定します。これは依存プロパティです。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DropTarget.DropTargetMarkerBrush">
+            <summary>ドロップ ターゲットをマークする形状を塗りつぶすために使用されるブラシを取得または設定します。デフォルトのブラシの色は透過です。このプロパティは、<see cref="P:Infragistics.DragDrop.DropTarget.DropTargetStyle"/> が null の場合にだけ該当します。これは依存プロパティです。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DropTarget.DropTargetStyle">
+            <summary>ドラッグされた項目がドロップ ターゲットの上にある場合に、ドロップ ターゲットによって使用されるスタイルを取得または設定します。これは依存プロパティです。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DropTarget.IsDropTarget">
+            <summary>マークされた要素をドロップ ターゲットにできるかどうかを示す値を取得または設定します。これは依存プロパティです。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DropTarget.HighlightOnDragStart">
+            <summary>ドラッグソース要素と適切な <see cref="P:Infragistics.DragDrop.DragSource.DragChannels"/> がドラッグされるときにドロップ ターゲット要素が強調表示されるかどうかを示す値を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.DragDrop.OperationType">
+            <summary>ドラッグしたオブジェクトに対して実行できる操作を記述します。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.OperationType.DropNotAllowed">
+            <summary>開始されたドロップ操作を完了できません。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.OperationType.Copy">
+            <summary>ドラッグされた要素をコピーできます。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.OperationType.Move">
+            <summary>ドラッグされた要素を移動できます。</summary>
+        </member>
+        <member name="T:Infragistics.DragDrop.FindDropTargetMode">
+            <summary><see cref="T:Infragistics.DragDrop.DragSource"/> インスタンスが適切な <see cref="T:Infragistics.DragDrop.DropTarget"/> インスタンスを検索する方法を説明します。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.FindDropTargetMode.TopMostMatchedChannelTarget">
+            <summary><see cref="T:Infragistics.DragDrop.DropTarget"/> インスタンスを見つけるためには <see cref="T:Infragistics.DragDrop.DragSource"/>インスタンスと同じチャネルを持つ必要があります。</summary>
+        </member>
+        <member name="F:Infragistics.DragDrop.FindDropTargetMode.TopMostTargetOnly">
+            <summary><see cref="T:Infragistics.DragDrop.DropTarget"/> インスタンスを見つけるためには、一番上のターゲット要素にアタッチされる必要があります。一番上のドロップ ターゲットの <see cref="P:Infragistics.DragDrop.DropTarget.DropChannels"/> とドラッグソースの <see cref="P:Infragistics.DragDrop.DragSource.DragChannels"/>  間で一致がない場合、有効なドロップターゲットがないと見なされます。</summary>
+        </member>
+        <member name="T:Infragistics.DragDrop.DragDropEventArgs">
+            <summary>このクラスは、<see cref="P:Infragistics.DragDrop.DragDropEventArgs.DragSource"/> オブジェクトによって発生するイベントのすべてのイベント引数の基本クラスです。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropEventArgs.CopyCursorTemplate">
+            <summary>ドラッグ中にコピー操作を実行するときにカーソルとして使用するデータ テンプレートを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropEventArgs.Data">
+            <summary>ドラッグされるデータを表すオブジェクトのインスタンスを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropEventArgs.DragSource">
+            <summary>ドラッグ操作を開始する UIElement を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropEventArgs.DragTemplate">
+            <summary>ドラッグされる要素の表現に適用されるデータ テンプレートを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropEventArgs.DropNotAllowedCursorTemplate">
+            <summary>ドラッグ操作を実行する際、ドラッグされている項目が適切なターゲット上にない場合に、カーソルとして使用するデータ テンプレートを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropEventArgs.DropTarget">
+            <summary>ドロップ ターゲットとしてマークされているオブジェクトのインスタンスを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropEventArgs.MoveCursorTemplate">
+            <summary>項目が適切なドロップ ターゲット上にある場合に、カーソルとして使用するデータ テンプレートを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropEventArgs.OperationType">
+            <summary>ドラッグアンドドロップ操作中の意図したアクションの種類を取得または設定します。このプロパティを設定すると、関連するカーソルが強制的に適用されます。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropEventArgs.OriginalDragSource">
+            <summary>純粋なヒット テストによって決まる元のレポート ソースを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropEventArgs.CustomMouseHolder">
+            <summary>このイベントのコンシューマーから、ドラッグ アンド ドロップ操作時にマウスをキャプチャーする必要のある要素として提案された <see cref="T:System.Windows.UIElement"/> を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.DragDrop.DragDropMoveEventArgs">
+            <summary><see cref="T:Infragistics.DragDrop.DragSource"/> の <see cref="E:Infragistics.DragDrop.DragSource.DragOver"/> イベントのイベント引数。</summary>
+        </member>
+        <member name="M:Infragistics.DragDrop.DragDropMoveEventArgs.GetPosition(System.Windows.UIElement)">
+            <summary>UIElement から派生する指定されたオブジェクトとの相対的なマウスの位置を返します。</summary>
+            <param name="relativeTo">オブジェクト ツリーに接続された、UIElement から派生する任意のオブジェクト。</param>
+            <returns>指定されたオブジェクトとの相対的なマウス ポインターの位置の x および y 座標。</returns>
+        </member>
+        <member name="T:Infragistics.DragDrop.DragDropCancelEventArgs">
+            <summary><see cref="T:Infragistics.DragDrop.DragSource"/> のキャンセル可能なイベント <see cref="E:Infragistics.DragDrop.DragSource.DragEnter"/> の引数のクラス。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropCancelEventArgs.Cancel">
+            <summary>ドラッグアンドドロップ操作をキャンセルすべきかどうかを示す値を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.DragDrop.DragDropStartEventArgs">
+            <summary><see cref="T:Infragistics.DragDrop.DragSource"/> のキャンセル可能なイベント <see cref="E:Infragistics.DragDrop.DragSource.DragStart"/> の引数のクラス。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DragDropStartEventArgs.DragSnapshotElement">
+            <summary>ドラッグされる UI 要素を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.DragDrop.DropEventArgs">
+            <summary><see cref="E:Infragistics.DragDrop.DragSource.Drop"/> イベントのイベント引数。</summary>
+        </member>
+        <member name="P:Infragistics.DragDrop.DropEventArgs.DropTargetElements">
+            <summary>ドラッグされる項目をドロップするドロップ ターゲットの視覚的な子のコレクションを取得します。</summary>
+        </member>
+        <member name="T:Infragistics.DragDrop.StringToDragDropChannelsCollectionConverter">
+            <summary>このクラスを使用すると、ドラッグ チャネルまたはドロップ チャネルを、カンマ区切りのチャネル名を含む文字列として設定できます。</summary>
+        </member>
+        <member name="M:Infragistics.DragDrop.StringToDragDropChannelsCollectionConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary><paramref name="sourceType"/> のタイプが <see cref="T:System.String"/> の場合は True を返します。</summary>
+            <param name="context">書式コンテキストを提供する <see cref="T:System.ComponentModel.ITypeDescriptorContext"/>。</param>
+            <param name="sourceType">変換前の型を表す <see cref="T:System.Type"/>。</param>
+            <returns>このコンバーターが変換を実行できる場合は <b>true</b>、それ以外の場合は false。</returns>
+        </member>
+        <member name="M:Infragistics.DragDrop.StringToDragDropChannelsCollectionConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>指定したコンテキストとカルチャ情報を使用して、指定したオブジェクトを <see cref="T:System.Collections.ObjectModel.ObservableCollection`1"/> のタイプに変換します。</summary>
+            <param name="context">書式コンテキストを提供する <see cref="T:System.ComponentModel.ITypeDescriptorContext"/>。</param>
+            <param name="culture">現在のカルチャーとして使用する <see cref="T:System.Globalization.CultureInfo"/>。</param>
+            <param name="value">変換するための <see cref="T:System.Object"/>。</param>
+            <returns>変換された値を表す <see cref="T:System.Object"/>。</returns>
+        </member>
+    </members>
+</doc>

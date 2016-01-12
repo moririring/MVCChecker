@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>InfragisticsWPF4.Controls.Charts.XamTreemap.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:Infragistics.Controls.Charts.AutomationPeers.TreemapNodeAutomationPeer">
+            <summary>ツリーマップ ノードのオートメーション ピア。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.AutomationPeers.TreemapNodeAutomationPeer.#ctor(Infragistics.Controls.Charts.TreemapNode)">
+            <summary><see cref="T:Infragistics.Controls.Charts.AutomationPeers.TreemapNodeAutomationPeer" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="node">ノード。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.AutomationPeers.TreemapNodeAutomationPeer.GetChildrenCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連する <see cref="T:System.Windows.UIElement" /> の子要素のコレクションを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" /> によって呼び出されます。</summary>
+            <returns>子 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 要素のリスト。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.AutomationPeers.TreemapNodeAutomationPeer.GetAutomationControlTypeCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられる <see cref="T:System.Windows.UIElement" /> のコントロール タイプを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" /> によって呼び出されます。</summary>
+            <returns>列挙体の値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.AutomationPeers.TreemapNodeAutomationPeer.GetClassNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> の名前を返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" /> によって呼び出されます。</summary>
+            <returns>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられたオーナー型の名前を返します。特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.AutomationPeers.TreemapNodeAutomationPeer.GetNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.FrameworkElement" /> のテキスト ラベルを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" /> によって呼び出されます。</summary>
+            <returns>このオートメーション ピアに関連付けられる要素のテキスト ラベル。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.AutomationPeers.TreemapNodeAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> のコントロール パターンを返します。</summary>
+            <param name="patternInterface">列挙値の １ つです。</param>
+            <returns>特記事項を参照してください。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.AutomationPeers.TreemapNodeAutomationPeer.Node">
+            <summary>ノードを取得または設定します。</summary>
+            <value>ノード。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.AutomationPeers.XamTreemapAutomationPeer">
+            <summary>ツリーマップのオートメーション ピア。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.AutomationPeers.XamTreemapAutomationPeer.#ctor(Infragistics.Controls.Charts.XamTreemap)">
+            <summary><see cref="T:Infragistics.Controls.Charts.AutomationPeers.XamTreemapAutomationPeer" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="treemap">ツリーマップ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.AutomationPeers.XamTreemapAutomationPeer.GetSupportedViews">
+            <summary>コントロール固有の表示識別子のコレクションを取得します。</summary>
+            <returns>UI オートメーション要素で使用できるビューを識別する値のコレクション。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.AutomationPeers.XamTreemapAutomationPeer.GetViewName(System.Int32)">
+            <summary>コントロール固有のビューの名前を取得します。</summary>
+            <param name="viewId">ビュー識別子。</param>
+            <returns>ビューのローカライズされた名。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.AutomationPeers.XamTreemapAutomationPeer.SetCurrentView(System.Int32)">
+            <summary>現在のコントロール固有のビューを設定します。</summary>
+            <param name="viewId">ビュー識別子。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.AutomationPeers.XamTreemapAutomationPeer.GetAutomationControlTypeCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられる <see cref="T:System.Windows.UIElement" /> のコントロール タイプを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" /> によって呼び出されます。</summary>
+            <returns>列挙体の値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.AutomationPeers.XamTreemapAutomationPeer.GetClassNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> の名前を返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" /> によって呼び出されます。</summary>
+            <returns>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられたオーナー型の名前を返します。特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.AutomationPeers.XamTreemapAutomationPeer.GetNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.FrameworkElement" /> のテキスト ラベルを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" /> によって呼び出されます。</summary>
+            <returns>このオートメーション ピアに関連付けられる要素のテキスト ラベル。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.AutomationPeers.XamTreemapAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> のコントロール パターンを返します。</summary>
+            <param name="patternInterface">列挙値の １ つです。</param>
+            <returns>特記事項を参照してください。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.AutomationPeers.XamTreemapAutomationPeer.Treemap">
+            <summary>ツリーマップを取得または設定します。</summary>
+            <value>ツリーマップ。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.AutomationPeers.XamTreemapAutomationPeer.CurrentView">
+            <summary>現在のコントロール固有のビューを設定します。</summary>
+            <value></value>
+            <returns>UI オートメーション要素の現在のビューの値 (<paramref name="viewId" />)。 </returns>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.NodeBinder">
+            <summary>このクラスは、ツリーマップ項目の値、テキスト、および項目ソースを所定のデータにバインドします。データのプロパティ名であるパスを提供する必要があります。データは TargetTypeName タイプである必要があります。NodeStyle がバインドされたノードのスタイルとして適用されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodeBinder.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Charts.NodeBinder" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.NodeBinder.TargetTypeNameProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.NodeBinder.TargetTypeName" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodeBinder.OnTargetTypeNameChanged(System.String,System.String)">
+            <summary>TargetTypeNameProperty のプロパティが変更したハンドラー。</summary>
+            <param name="oldValue">古い値。</param>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.NodeBinder.ValuePathProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.NodeBinder.ValuePath" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodeBinder.OnValuePathChanged(System.String,System.String)">
+            <summary>ValuePathProperty のプロパティが変更したハンドラー。</summary>
+            <param name="oldValue">古い値。</param>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.NodeBinder.TextPathProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.NodeBinder.TextPath" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodeBinder.OnTextPathChanged(System.String,System.String)">
+            <summary>TextPathProperty のプロパティが変更したハンドラー。</summary>
+            <param name="oldValue">古い値。</param>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.NodeBinder.ItemsSourcePathProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.NodeBinder.ItemsSourcePath" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodeBinder.OnItemsSourcePathChanged(System.String,System.String)">
+            <summary>ItemsSourcePathProperty のプロパティが変更したハンドラー。</summary>
+            <param name="oldValue">古い値。</param>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.NodeBinder.ToolTipMemberPathProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Charts.NodeBinder.ToolTipMemberPath"/> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.NodeBinder.ToolTipContentTemplateProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Charts.NodeBinder.ToolTipContentTemplate"/> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.NodeBinder.NodeStyleProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.NodeBinder.NodeStyle" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodeBinder.OnNodeStyleChanged(System.Windows.Style,System.Windows.Style)">
+            <summary>NodeStyleProperty プロパティはハンドラーを変更しました。</summary>
+            <param name="oldValue">古い値。</param>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodeBinder.RetrieveItemsSource(System.Object)">
+            <summary>項目ソースを取得します。</summary>
+            <param name="instance">インスタンス。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodeBinder.RetrieveText(System.Object)">
+            <summary>テキストを取得します。</summary>
+            <param name="instance">インスタンス。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodeBinder.RetrieveValue(System.Object)">
+            <summary>値を取得します。</summary>
+            <param name="instance">インスタンス。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodeBinder.RetrieveToolTip(System.Object)">
+          <summary>
+            ToolTip プロパティを取得します。
+          </summary>
+          <param name="instance">インスタンス。</param>
+          <returns></returns>
+          </member>
+        <member name="M:Infragistics.Controls.Charts.NodeBinder.OnToolTipsPropertyChanged(System.Object,System.Object)">
+          <summary>
+            ToolTipMemberPath | ToolTipContentTemplate プロパティが変更されたときに呼び出されます。
+          </summary>
+          <param name="oldValue">古い値。</param>
+          <param name="newValue">新しい値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodeBinder.RetrieveObject(System.Object,System.String)">
+            <summary>インスタンス オブジェクトの valuePath プロパティの値を取得します。</summary>
+            <param name="instance">インスタンス。</param>
+            <param name="valuePath">値パス。</param>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.NodeBinder.TargetTypeName">
+            <summary>ターゲット タイプの名前を取得または設定します。そのタイプのデータのみが、このバインダーによってバインドされます。</summary>
+            <value>ターゲット タイプの名前。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.NodeBinder.ValuePath">
+            <summary>値パスを取得または設定します。ツリーマップ項目の値にバインドしたプロパティの名前です。</summary>
+            <value>値パス。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.NodeBinder.TextPath">
+            <summary>テキスト パスを取得または設定します。ツリーマップ項目のテキストにバインドしたプロパティの名前です。</summary>
+            <value>テキスト パス。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.NodeBinder.ItemsSourcePath">
+            <summary>項目ソース パスを取得または設定します。ツリーマップ項目の子の項目ソースにバインドしたプロパティの名前です。</summary>
+            <value>項目のソースのパス。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.NodeBinder.ToolTipMemberPath">
+          <summary>
+            ToolTipMemberPath プロパティを取得または設定します。
+          </summary>
+          <value>ToolTipMemberPath。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.NodeBinder.ToolTipContentTemplate">
+          <summary>
+            ToolTipContentTemplate プロパティを取得または設定します。
+          </summary>
+          <value>The ToolTipContentTemplate。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.NodeBinder.NodeStyle">
+            <summary>ノード スタイルを取得または設定します。バインドしたノードに適用したスタイルをオーバーライドします。</summary>
+            <value>ノードのスタイル。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.NodeBinderCollection">
+            <summary>ツリーマップのバインダーを含むコレクションです。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodeBinderCollection.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Charts.NodeBinderCollection" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodeBinderCollection.GetNodeBinder(System.Object)">
+            <summary>すべてのノード バインダーを検索し、項目タイプを一致するノード バインダーを取得します。</summary>
+            <param name="item">項目。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodeBinderCollection.InsertItem(System.Int32,Infragistics.Controls.Charts.NodeBinder)">
+            <summary>項目を挿入し、Treemap を設定します。</summary>
+            <param name="index">インデックス。</param>
+            <param name="item">項目。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.TreemapNodeComparer">
+            <summary>このクラスは、指定した値マッパーに決定される値によって 2 つのノードを比較します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNodeComparer.#ctor(Infragistics.Controls.Charts.ValueMapper)">
+            <summary><see cref="T:Infragistics.Controls.Charts.TreemapNodeComparer" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="valueMapper">値マッパー。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.TreemapNodeDisplayMode">
+            <summary>ノードの表示方法を決定します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.TreemapNodeDisplayMode.UIElement">
+            <summary>ノードに UIElement が作成されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.TreemapNodeDisplayMode.Image">
+            <summary>ノードは UIElement に小さすぎますので、画像が作成されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.TreemapNodeDisplayMode.TooSmall">
+            <summary>ノードが画像に小さすぎるため表示できません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.TreemapNodeDisplayMode.TooDeep">
+            <summary>ノードがデータ階層内の表示の深さを超えています。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.TreemapNodeInfo">
+            <summary>レイアウトに追加する前にデータの項目を表すクラスです。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.TreemapNodeInfo.MinDisplaySize">
+            <summary>要素の描画ができないサイズ。1 ピクセルのフレームがある 1 ピクセルのノードのサイズは 3 ピクセルになります。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNodeInfo.#ctor(Infragistics.Controls.Charts.XamTreemap)">
+            <summary><see cref="T:Infragistics.Controls.Charts.TreemapNodeInfo" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="treemap">ツリーマップ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNodeInfo.BuildNodeTree(System.Collections.IEnumerable)">
+            <summary>ノード ツリーを作成します。幅から作成します。</summary>
+            <param name="itemsSource">項目のソース。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNodeInfo.UpdateBindings(Infragistics.Controls.Charts.NodeBinder)">
+            <summary>変更されるバインダーと一致するノードを検索するバインディングを更新します。</summary>
+            <param name="modifiedBinder">変更されたバインダー。</param>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.TreemapNodeInfo.LastParentNode">
+            <summary>ノードの一番上の親を取得します。</summary>
+            <value>最後の親ノード。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.NodesPanel">
+            <summary>ノードの子ノードを含むパネルで、そのノードのサイズおよび位置をコントロールします。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodesPanel.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Charts.NodesPanel" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodesPanel.MeasureOverride(System.Windows.Size)">
+            <summary>Silverlight レイアウトの「計測」パスの動作を提供します。クラスは、計測パスの動作を定義するためにこのメソッドをオーバーライドできます。</summary>
+            <param name="availableSize">このオブジェクトが子オブジェクトに設定できる利用可能なサイズ。値として Infinity の指定をすることによって、使用可能なコンテンツにサイズを合わせることを示します。</param>
+            <returns>子オブジェクトの割り当てサイズの計算に基づいて、レイアウト時にこのオブジェクトが決定した必要サイズ。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.NodesPanel.ArrangeOverride(System.Windows.Size)">
+            <summary>Silverlight レイアウトの配置パスの動作を提供します。特別な配置パスの動作を定義するために、クラスはこのメソッドをオーバーライドできます。</summary>
+            <param name="finalSize">このオブジェクトがオブジェクト自体とその子を配列するために使用する親の中の最終領域。</param>
+            <returns>要素は外資された後の現在のサイズ。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.TreemapNode">
+            <summary>ツリーマップ ノードはデータ項目の視覚的表現です。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNode.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Charts.TreemapNode" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNode.#cctor">
+          <summary>
+            <see cref="T:Infragistics.Controls.Charts.TreemapNode"/> クラスの静的コンストラクター。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.TreemapNode.ToolTipProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.TreemapNode.ToolTip" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.TreemapNode.TextProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.TreemapNode.Text" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.TreemapNode.FillProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.TreemapNode.Fill" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.TreemapNode.CornerRadiusProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.TreemapNode.CornerRadius" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNode.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseLeftButtonDown" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNode.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseLeftButtonUp" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNode.OnMouseRightButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseRightButtonDown" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.Input.MouseButtonEventArgs" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNode.OnMouseRightButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseRightButtonUp" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.Input.MouseButtonEventArgs" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNode.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary>MouseEnter イベントの処理を提供します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNode.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary>MouseLeave イベントの処理を提供します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNode.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>GotFocus イベントの処理を提供します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNode.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary>LostFocus イベントの処理を提供します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNode.OnApplyTemplate">
+            <summary>派生したクラスでオーバーライドされると、アプリケーション コードまたは内部プロセス（再構築レイアウト パスなど）が <see cref="M:System.Windows.Controls.Control.ApplyTemplate" /> を呼び出す時に常に起動されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNode.OnCreateAutomationPeer">
+            <summary>派生クラス内で実装される場合、Silverlight オートメーション インフラストラクチャーのためのクラス固有の <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 実装を返します。</summary>
+            <returns>返すクラス固有 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> サブクラス。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNode.UpdateVisualState(System.Boolean)">
+            <summary>コントロールの表示状態を更新します。</summary>
+            <param name="useTransitions"> True に設定すると、表示状態を更新するときにトランジションを使用します。False に設定すると、新しい表示状態へすぐに変更します。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNode.Infragistics#IUpdateVisualState#UpdateVisualState(System.Boolean)">
+            <summary>コントロールの表示状態を更新します。</summary>
+            <param name="useTransitions">新しい状態に変更するときに自動的にトランジションを生成するか、新しい状態へすぐに変更するかどうかを示す値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNode.IsTopNode(System.Windows.RoutedEventArgs)">
+            <summary>マウス動作の発生時にマウスの置かれているノードがトップレベルの UI 要素であるかどうかを返します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.Input.MouseEventArgs" /> インスタンス。</param>
+            <returns>そのノードがトップレベルのノードである場合は <c>true</c>。そうでない場合は <c>false</c>。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.TreemapNode.ToolTip">
+          <summary>
+            ToolTip プロパティを取得または設定します。
+          </summary>
+          <value>
+            The ToolTip.
+          </value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.TreemapNode.Text">
+            <summary>特定のツリーマップ ノードで表示されるテキスト。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.TreemapNode.Fill">
+            <summary>塗りつぶしの色は特定のツリーマップ ノードの色です。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.TreemapNode.CornerRadius">
+            <summary>ツリーマップ ノードの境界線の角半径。</summary>
+            <value>角の丸み。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.TreemapNode.Interaction">
+            <summary>規格の操作機能を提供するヘルパーを取得または設定します。サブクラス アクセスのために内部に設定されます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.LayoutOrientationChangedEventArgs">
+            <summary>レイアウトの方向の変更イベントのイベント引数。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.LayoutOrientationChangedEventArgs.#ctor(System.Windows.Controls.Orientation)">
+            <summary><see cref="T:Infragistics.Controls.Charts.LayoutOrientationChangedEventArgs" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="newLayoutOrientation">新しいレイアウト方向。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.LayoutOrientationChangedEventArgs.NewLayoutOrientation">
+            <summary>新しいレイアウトの方向順位を取得または設定します。</summary>
+            <value>新しいレイアウト方向。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.LayoutTypeChangedEventArgs">
+            <summary>レイアウトのタイプの変更イベントのイベント引数。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.LayoutTypeChangedEventArgs.#ctor(Infragistics.Controls.Charts.LayoutType)">
+            <summary><see cref="T:Infragistics.Controls.Charts.LayoutTypeChangedEventArgs" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="newLayoutType">レイアウトの新しいタイプ。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.LayoutTypeChangedEventArgs.NewLayoutType">
+            <summary>レイアウトの新しタイプを取得または設定します。</summary>
+            <value>レイアウトの新しいタイプ。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.TreemapNodeClickEventArgs">
+            <summary>ノードがクリックされたときに発生するイベントのイベント引数。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNodeClickEventArgs.#ctor(Infragistics.Controls.Charts.TreemapNode,System.Windows.Input.MouseButtonEventArgs)">
+            <summary><see cref="T:Infragistics.Controls.Charts.TreemapNodeClickEventArgs" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="node">ノード。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.Input.MouseButtonEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.TreemapNodeClickEventArgs.Node">
+            <summary>クリックしたノードを取得します。</summary>
+            <value>ノード。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.TreemapNodeClickEventArgs.MouseEventArgs">
+            <summary>マウスのイベント引数を取得または設定します。</summary>
+            <value>マウス イベント引数。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.TreemapNodeMouseEventArgs">
+            <summary>ノードのマウス イベントのイベント引数。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNodeMouseEventArgs.#ctor(Infragistics.Controls.Charts.TreemapNode,System.Windows.Input.MouseEventArgs)">
+            <summary><see cref="T:Infragistics.Controls.Charts.TreemapNodeMouseEventArgs" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="node">ノード。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.Input.MouseEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.TreemapNodeMouseEventArgs.Node">
+            <summary>クリックしたノードを取得します。</summary>
+            <value>ノード。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.TreemapNodeMouseEventArgs.MouseEventArgs">
+            <summary>マウスのイベント引数を取得または設定します。</summary>
+            <value>マウス イベント引数。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.TreemapNodeMouseWheelEventArgs">
+            <summary>ノードのマウス ホイール イベントのイベント引数。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.TreemapNodeMouseWheelEventArgs.#ctor(Infragistics.Controls.Charts.TreemapNode,System.Windows.Input.MouseWheelEventArgs)">
+            <summary><see cref="T:Infragistics.Controls.Charts.TreemapNodeMouseWheelEventArgs" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="node">ノード。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.Input.MouseWheelEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.TreemapNodeMouseWheelEventArgs.Node">
+            <summary>クリックしたノードを取得します。</summary>
+            <value>ノード。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.TreemapNodeMouseWheelEventArgs.MouseEventArgs">
+            <summary>マウスのホイール イベント引数を取得または設定します。</summary>
+            <value>マウスのホイール イベント引数。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.LayoutType">
+            <summary>レイアウトのアルゴリズムのタイプ。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.LayoutType.SliceAndDice">
+            <summary>SliceAndDice - このアルゴリズムは、縦横比を代わりに最初の順番を維持するようにします。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.LayoutType.Squarified">
+            <summary>Squarified - このアルゴリズムは、最適な縦横比を描画しますが、オブジェクトがサイズによって並べ替えられます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.LayoutType.Strip">
+            <summary>Strip - このタイルのアルゴリズムでは、SliceAndDice より縦横比がより正確で、Squarified より適切に並べ替えされます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.SliceAndDice">
+            <summary>スライス＆ダイス (ディメンションの切り替え) のレイアウト アルゴリズムを使用して、ツリーマップを配置します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.Squarified">
+            <summary>矩形レイアウト アルゴリズムを使用して、ツリーマップを配置します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.Squarified.WorstRatio(System.Collections.Generic.List{Infragistics.Controls.Charts.TreemapNodeInfo},System.Double,System.Double)">
+            <summary>項目のグループの比率を計算します。</summary>
+            <param name="items">項目。</param>
+            <param name="layoutSize">レイアウトのサイズ。</param>
+            <param name="sizeCoef">サイズの係数。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.Squarified.AddItems(Infragistics.Controls.Charts.XamTreemap,System.Collections.Generic.List{Infragistics.Controls.Charts.TreemapNodeInfo},System.Windows.Rect@,System.Double@)">
+            <summary>ツリーマップに項目を追加します。</summary>
+            <param name="treemap">ツリーマップ。</param>
+            <param name="items">項目。</param>
+            <param name="container">コンテナー。</param>
+            <param name="remainingArea">残りの領域。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.Squarified.AddRow(Infragistics.Controls.Charts.XamTreemap,System.Collections.Generic.List{Infragistics.Controls.Charts.TreemapNodeInfo},System.Double,System.Windows.Rect@,System.Double@)">
+            <summary>行を追加します。</summary>
+            <param name="treemap">ツリーマップ。</param>
+            <param name="row">行。</param>
+            <param name="rowArea">行の領域。</param>
+            <param name="container">コンテナー。</param>
+            <param name="remainingArea">残りの領域。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.Squarified.AddColumn(Infragistics.Controls.Charts.XamTreemap,System.Collections.Generic.List{Infragistics.Controls.Charts.TreemapNodeInfo},System.Double,System.Windows.Rect@,System.Double@)">
+            <summary>列を追加します。</summary>
+            <param name="treemap">ツリーマップ。</param>
+            <param name="column">列。</param>
+            <param name="columnArea">列の領域。</param>
+            <param name="container">コンテナー。</param>
+            <param name="remainingArea">残りの領域。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.Stripped">
+            <summary>ストリップ レイアウト アルゴリズムを使用して、ツリーマップを配置します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.Stripped.AddStrip(Infragistics.Controls.Charts.XamTreemap,System.Collections.Generic.List{Infragistics.Controls.Charts.TreemapNodeInfo},System.Double,System.Windows.Rect@,System.Windows.Controls.Orientation,System.Boolean)">
+            <summary>１ つのストリップを追加します。</summary>
+            <param name="treemap">ツリーマップ。</param>
+            <param name="strip">ストリップ。</param>
+            <param name="sizeCoef">サイズの係数。</param>
+            <param name="container">コンテナー。</param>
+            <param name="direction">方向。</param>
+            <param name="lastStrip"><c>true</c> に設定する場合 [最後のストリップ]。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.Stripped.AddHorizontalStrip(Infragistics.Controls.Charts.XamTreemap,System.Collections.Generic.List{Infragistics.Controls.Charts.TreemapNodeInfo},System.Double,System.Windows.Rect@,System.Boolean)">
+            <summary>水平方向のストリップを追加します。</summary>
+            <param name="treemap">ツリーマップ。</param>
+            <param name="strip">ストリップ。</param>
+            <param name="sizeCoef">サイズの係数。</param>
+            <param name="container">コンテナー。</param>
+            <param name="lastStrip"><c>true</c> に設定する場合 [最後のストリップ]。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.Stripped.AddVerticalStrip(Infragistics.Controls.Charts.XamTreemap,System.Collections.Generic.List{Infragistics.Controls.Charts.TreemapNodeInfo},System.Double,System.Windows.Rect@,System.Boolean)">
+            <summary>垂直方向のストリップを追加します。</summary>
+            <param name="treemap">ツリーマップ。</param>
+            <param name="strip">ストリップ。</param>
+            <param name="sizeCoef">サイズの係数。</param>
+            <param name="container">コンテナー。</param>
+            <param name="lastStrip"><c>true</c> に設定する場合 [最後のストリップ]。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.Stripped.CalculateAverageStripRatio(System.Collections.Generic.List{Infragistics.Controls.Charts.TreemapNodeInfo},System.Double,System.Double)">
+            <summary>平均のストリップ比率を計算します。</summary>
+            <param name="strip">ストリップ。</param>
+            <param name="stripLength">ストリップの長さ。</param>
+            <param name="sizeCoef">サイズの係数。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.Stripped.CalculateStripArea(System.Collections.Generic.List{Infragistics.Controls.Charts.TreemapNodeInfo})">
+            <summary>ストリップの領域を計算します。</summary>
+            <param name="strip">ストリップ。</param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.GroupValueMapper">
+            <summary>GroupValueMapper は、xamTreemap のノードを指定した値によってグループ化します。同様なノードに同じグループ値があります。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.ValueMapper">
+            <summary>ツリーマップの項目ソースのデータから相対のツリーマップ項目のプロパティへのマッピングを提供する基本クラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.ValueMapper.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Charts.ValueMapper" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.ValueMapper.TargetNameProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.ValueMapper.TargetName" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.ValueMapper.OnTargetNameChanged(System.String,System.String)">
+            <summary>TargetNameProperty のプロパティが変更したハンドラー。</summary>
+            <param name="oldValue">古い値。</param>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.ValueMapper.TargetPropertyProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.ValueMapper.TargetProperty" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.ValueMapper.OnTargetPropertyChanged(System.String,System.String)">
+            <summary>TargetPropertyProperty のプロパティが変更したハンドラー。</summary>
+            <param name="oldValue">古い値。</param>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.ValueMapper.ValueTypeNameProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.ValueMapper.ValueTypeName" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.ValueMapper.OnValueTypeNameChanged(System.String,System.String)">
+            <summary>ValueTypeNameProperty プロパティはハンドラーを変更しました。</summary>
+            <param name="oldValue">古い値。</param>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.ValueMapper.ValuePathProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.ValueMapper.ValuePath" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.ValueMapper.MappingModeProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.ValueMapper.MappingMode" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.ValueMapper.OnMappingModeChanged(Infragistics.Controls.Charts.MappingMode,Infragistics.Controls.Charts.MappingMode)">
+            <summary>MappingModeProperty のプロパティが変更したハンドラー。</summary>
+            <param name="oldValue">古い値。</param>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.ValueMapper.MapValue(Infragistics.Controls.Charts.TreemapNode)">
+            <summary>値をマップします。</summary>
+            <param name="node">ノード。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.ValueMapper.ResetValue(Infragistics.Controls.Charts.TreemapNode)">
+            <summary>この関数は特定のノードの値をリセットする必要がある場合に呼び出されます。リセット動作を取得するためにオーバーライドする必要があります。</summary>
+            <param name="node">ノード。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.ValueMapper.TargetName">
+            <summary>xamTreemap コントロールのノードにカスタム テンプレートが定義されていて、名前付きの要素がある場合、この要素を指定するために TargetName を使用できます。</summary>
+            <value>ターゲットの名前。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.ValueMapper.TargetProperty">
+            <summary>値がデータにマップされるツリーマップ項目のプロパティ名。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.ValueMapper.ValueTypeName">
+            <summary>値タイプ名は ValuePath によって指定されるデータを含むフィールドを決定します。</summary>
+            <value>値タイプの名前。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.ValueMapper.ValuePath">
+            <summary>値を決定するデータのプロパティへのパス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.ValueMapper.MappingMode">
+            <summary>リーフのみ、またはすべてのノードをマップするかどうかを決定します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.GroupValueMapper.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Charts.GroupValueMapper" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.GroupValueMapper.GroupValuesProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.GroupValueMapper.GroupValues" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.GroupValueMapper.OnGroupValuesChanged(System.Collections.ObjectModel.ObservableCollection{System.Object},System.Collections.ObjectModel.ObservableCollection{System.Object})">
+            <summary>GroupValuesProperty のプロパティが変更したハンドラー。</summary>
+            <param name="oldValue">古い値。</param>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.GroupValueMapper.OrderProperty">
+            <summary>Order 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.GroupValueMapper.OnOrderChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary><see cref="E:OrderChanged" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.GroupValueMapper.MapValue(Infragistics.Controls.Charts.TreemapNode)">
+            <summary>値をマップします。</summary>
+            <param name="node">ノード。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.GroupValueMapper.ResetValue(Infragistics.Controls.Charts.TreemapNode)">
+            <summary>この関数は特定のノードの値をリセットする必要がある場合に呼び出されます。リセット動作を取得するためにオーバーライドする必要があります。</summary>
+            <param name="node">ノード。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.GroupValueMapper.GroupValues">
+            <summary>グループの値を取得または設定します。GroupValues は同様のオブジェクトが取得する値のコレクションです。</summary>
+            <value>グループの値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.GroupValueMapper.Order">
+            <summary>Ascending の場合、最初のグループ値は最小要素に割り当てられます。Descending の場合、最初のグループ値は最大要素に割り当てられます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.MappingInfo">
+            <summary>マッピングを初期化値にリセットできるのに設定するときに必要な情報を含むクラスです。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.MappingInfo.Mapper">
+            <summary>マッピングが設定されるマッパー。特定なマッパーのマッピングのみをリセットする必要がある場合があります。</summary>
+            <value>マッパー。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.MappingMode">
+            <summary>リーフのみ、またはすべてのノードをマップするかどうかを決定します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.MappingMode.LeafNodesOnly">
+            <summary>リーフ ノードのみマップされます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.MappingMode.AllNodes">
+            <summary>すべてのノードがマップされます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.NodeDistance">
+            <summary>ノードの間隔はその 2 つのノードの差の絶対値です。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.ColorMapper">
+            <summary>ColorMapper は、xamTreemap のノードに指定した値によって色を設定します。データのプロパティをノードのプロパティにマップします。たとえば、塗りつぶし色または前景色。From および To - この 2 つのプロパティは、各ノードの値によって決定される色の範囲を決定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.RangeMapper">
+            <summary>DataMinimum および DataMaximum の間の範囲の値にマップする値マッパー。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.RangeMapper.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Charts.RangeMapper" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.RangeMapper.DataMinimumProperty">
+            <summary>Minimum 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.RangeMapper.OnDataMinimumChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary><see cref="E:DataMinimumChanged" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.RangeMapper.DataMaximumProperty">
+            <summary>Maximun 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.RangeMapper.OnDataMaximumChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary><see cref="E:DataMaximumChanged" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.RangeMapper.GetRelativeValue(System.Double)">
+            <summary>関連する値を取得します。</summary>
+            <param name="value">値。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.RangeMapper.GetRelativeValue(Infragistics.Controls.Charts.TreemapNodeInfo)">
+            <summary>関連する値を取得します。値が DataMinimum および DataMaximum からの距離を決定する 0 ～ 1 の値です。</summary>
+            <param name="node">ツリーマップのノード。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.RangeMapper.UpdateDataRange(System.Double)">
+            <summary>データの範囲を更新します。</summary>
+            <param name="value">値。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.RangeMapper.DataMinimum">
+            <summary>データの最小値を取得または設定します。特定のノードの ValuePath によって指定した値が DataMinimum より小さい場合、マッパーは From プロパティの値を適用します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.RangeMapper.DataMaximum">
+            <summary>データの最大値を取得または設定します。特定のノードの ValuePath によって指定した値が DataMaximum より大きい場合、マッパーは To プロパティの値を適用します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.RangeMapper.ActualDataMinimum">
+            <summary>実際のデータの最小値を取得または設定します。これはすべてのマップした項目の最小値です。</summary>
+            <value>実際のデータの最小値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.RangeMapper.ActualDataMaximum">
+            <summary>実際のデータの最大値を取得または設定します。これはすべてのマップ項目の最大値です。</summary>
+            <value>実際のデータの最大値。</value>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.ColorMapper.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Charts.ColorMapper" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.ColorMapper.FromProperty">
+            <summary>From 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.ColorMapper.OnFromChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary><see cref="E:FromChanged" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.ColorMapper.ToProperty">
+            <summary>To 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.ColorMapper.OnToChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary><see cref="E:ToChanged" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.ColorMapper.MapValue(Infragistics.Controls.Charts.TreemapNode)">
+            <summary>値をマップします。</summary>
+            <param name="node">ノード。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.ColorMapper.ResetValue(Infragistics.Controls.Charts.TreemapNode)">
+            <summary>この関数は特定のノードの値をリセットする必要がある場合に呼び出されます。リセット動作を取得するためにオーバーライドする必要があります。</summary>
+            <param name="node">ノード。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.ColorMapper.From">
+            <summary>これはマッパーのマッピングを開始する最小値です。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.ColorMapper.To">
+            <summary>これはマッパーのマッピングを完了する最大値です。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.DoubleMapper">
+            <summary>DoubleMapper はノードのデータ コンテキストによって xamTreemap のノードのテンプレートに数値を設定します。From および To - この 2 つのプロパティはノードのテンプレートに適用される値の範囲を決定します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.DoubleMapper.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Charts.DoubleMapper" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.DoubleMapper.FromProperty">
+            <summary>From 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.DoubleMapper.OnFromChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary><see cref="E:FromChanged" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.DoubleMapper.ToProperty">
+            <summary>To 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.DoubleMapper.OnToChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary><see cref="E:ToChanged" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.DoubleMapper.MapValue(Infragistics.Controls.Charts.TreemapNode)">
+            <summary>値をマップします。</summary>
+            <param name="node">ノード。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.DoubleMapper.ResetValue(Infragistics.Controls.Charts.TreemapNode)">
+            <summary>この関数は特定のノードの値をリセットする必要がある場合に呼び出されます。リセット動作を取得するためにオーバーライドする必要があります。</summary>
+            <param name="node">ノード。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.DoubleMapper.From">
+            <summary>これはマッパーのマッピングを開始する最小値です。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.DoubleMapper.To">
+            <summary>これはマッパーのマッピングを完了する最大値です。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.RadialColorMapper">
+            <summary>RadialColorMapper は、指定した値によって xamTreemap のノードのラジアル グラデーション ブラシで色を追加します。データのプロパティをノードのプロパティにマップします。たとえば、塗りつぶし色または前景色。From および To - この 2 つのプロパティは、各ノードの値によって決定される色の範囲を決定します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.RadialColorMapper.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Charts.RadialColorMapper" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.RadialColorMapper.FromProperty">
+            <summary>From 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.RadialColorMapper.OnFromChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary><see cref="E:FromChanged" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.RadialColorMapper.ToProperty">
+            <summary>To 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.RadialColorMapper.OnToChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary><see cref="E:ToChanged" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.RadialColorMapper.MapValue(Infragistics.Controls.Charts.TreemapNode)">
+            <summary>値をマップします。</summary>
+            <param name="node">ノード。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.RadialColorMapper.ResetValue(Infragistics.Controls.Charts.TreemapNode)">
+            <summary>この関数は特定のノードの値をリセットする必要がある場合に呼び出されます。リセット動作を取得するためにオーバーライドする必要があります。</summary>
+            <param name="node">ノード。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.RadialColorMapper.From">
+            <summary>これはマッパーのマッピングを開始する最小値です。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.RadialColorMapper.To">
+            <summary>これはマッパーのマッピングを完了する最大値です。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.ValueMapperCollection">
+            <summary>ツリーマップに使用されるすべての値マッパーのコレクション。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.ValueMapperCollection.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Charts.ValueMapperCollection" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.ValueMapperCollection.InsertItem(System.Int32,Infragistics.Controls.Charts.ValueMapper)">
+            <summary>項目を挿入し、Treemap を設定します。</summary>
+            <param name="index">インデックス。</param>
+            <param name="item">項目。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.Properties.Resources">
+            <summary>ローカライズされた文字列の検索など、厳密に型指定されたリソース クラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.Properties.Resources.ResourceManager">
+            <summary>このクラスによって使用されるキャッシュされた ResourceManager インスタンスを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.Properties.Resources.Culture">
+            <summary>この厳密に型指定されたリソース クラスを使用してすべてのリソースの検索の現在のスレッドの CurrentUICulture プロパティをオーバーライドします。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.strings.Strings">
+            <summary>ローカライズされた文字列の検索など、厳密に型指定されたリソース クラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.strings.Strings.ResourceManager">
+            <summary>このクラスによって使用されるキャッシュされた ResourceManager インスタンスを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.strings.Strings.Culture">
+            <summary>この厳密に型指定されたリソース クラスを使用してすべてのリソースの検索の現在のスレッドの CurrentUICulture プロパティをオーバーライドします。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.strings.Strings.NonIEnumerableValue">
+            <summary>Looks up a localized string similar to &quot;{1}.{0}&quot; property does not represent an IEnumerable value..</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.strings.Strings.NonNumericValue">
+            <summary>Looks up a localized string similar to &quot;{1}.{0}&quot; property does not represent an IEnumerable value..</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.strings.Strings.NoValidNodes">
+            <summary>Looks up a localized string similar to There are not any valid treemap nodes.項目ソースおよびデータ バインダーを確認してください。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.strings.Strings.PropertyDoesNotExist">
+            <summary>Looks up a localized string similar to &quot;{1}.{0}&quot; property does not exist..</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Charts.XamTreemap">
+            <summary>Treemap コントロール。Treemap は階層データをネストされるノードのセットとして表示します。ツリーの各ブランチにツリーマップ ノードを割り当てし、そのノードにサブブランチを表す小さいノードでタイルします。各ノードの矩形の領域のサイズはデータを指定した要素に相対します。データの別の要素を表すためにノードに色を設定することがあります。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Charts.XamTreemap" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.#cctor">
+          <summary>
+            <see cref="T:Infragistics.Controls.Charts.XamTreemap"/> クラスの静的コンストラクター。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.XamTreemap.NodeBindersProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.XamTreemap.NodeBinders" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.OnNodeBindersChanged(Infragistics.Controls.Charts.NodeBinderCollection,Infragistics.Controls.Charts.NodeBinderCollection)">
+            <summary>NodeBindersProperty のプロパティが変更したハンドラー。</summary>
+            <param name="oldValue">古い値。</param>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.XamTreemap.ValueMappersProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.XamTreemap.ValueMappers" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.OnValueMappersChanged(Infragistics.Controls.Charts.ValueMapperCollection,Infragistics.Controls.Charts.ValueMapperCollection)">
+            <summary>ValueMappersProperty のプロパティが変更したハンドラー。</summary>
+            <param name="oldValue">古い値。</param>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.XamTreemap.LayoutTypeProperty">
+            <summary><see cref="T:System.Type" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.XamTreemap.LayoutOrientationProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.XamTreemap.LayoutOrientation" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.XamTreemap.ShowingDepthProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.XamTreemap.ShowingDepth" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.XamTreemap.ItemMinSizeProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.XamTreemap.ItemMinSize" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.XamTreemap.ItemsSourceProperty">
+            <summary><see cref="P:Infragistics.Controls.Charts.XamTreemap.ItemsSource" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.XamTreemap.ItemsSourceRootProperty">
+            <summary>ItemSourceRoot 依存プロパティを識別します</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.OnItemsSourceRootChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary><see cref="E:ItemsSourceRootChanged" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Charts.XamTreemap.ToolTipStyleProperty">
+          <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Charts.XamTreemap.ToolTipStyle"/> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.OnToolTipStyleChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+          <summary>
+            ToolTipStyle プロパティが変更されたときに呼び出されます。
+          </summary>
+          <param name="d">依存オブジェクト。</param>
+          <param name="e">
+            イベントのデータを含む <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/> インスタンス。
+          </param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.OnToolTipStyleChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+          <summary>
+            <see cref="!:ToolTipStyleChanged"/> イベントを発生します。
+          </summary>
+          <param name="e">
+            イベントのデータを含む <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/> インスタンス。
+          </param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.OnNodeMouseLeftButtonDown(Infragistics.Controls.Charts.TreemapNodeClickEventArgs)">
+            <summary><see cref="E:NodeMouseLeftButtonDown" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:Infragistics.Controls.Charts.TreemapNodeClickEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.OnNodeMouseLeftButtonUp(Infragistics.Controls.Charts.TreemapNodeClickEventArgs)">
+            <summary><see cref="E:NodeMouseLeftButtonUp" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:Infragistics.Controls.Charts.TreemapNodeClickEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.OnNodeMouseRightButtonDown(Infragistics.Controls.Charts.TreemapNodeClickEventArgs)">
+            <summary><see cref="E:NodeMouseRightButtonDown" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:Infragistics.Controls.Charts.TreemapNodeClickEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.RaiseNodeMouseRightButtonUp(Infragistics.Controls.Charts.TreemapNodeClickEventArgs)">
+            <summary>ノードのマウス右ボタン アップを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:Infragistics.Controls.Charts.TreemapNodeClickEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.OnNodeMouseRightButtonUp(Infragistics.Controls.Charts.TreemapNodeClickEventArgs)">
+            <summary><see cref="E:NodeMouseRightButtonUp" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:Infragistics.Controls.Charts.TreemapNodeClickEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.OnNodeMouseMove(Infragistics.Controls.Charts.TreemapNodeMouseEventArgs)">
+            <summary><see cref="E:NodeMouseMove" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:Infragistics.Controls.Charts.LayoutOrientationChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.OnLayoutTypeChanged(Infragistics.Controls.Charts.LayoutTypeChangedEventArgs)">
+            <summary><see cref="E:LayoutTypeChanged" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:Infragistics.Controls.Charts.LayoutTypeChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.OnLayoutOrientationChanged(Infragistics.Controls.Charts.LayoutOrientationChangedEventArgs)">
+            <summary><see cref="E:LayoutOrientationChanged" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:Infragistics.Controls.Charts.LayoutOrientationChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.RaiseErrorMessageDisplaying(Infragistics.ErrorMessageDisplayingEventArgs)">
+            <summary>エラー メッセージを表示します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:Infragistics.ErrorMessageDisplayingEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.OnErrorMessageDisplaying(Infragistics.ErrorMessageDisplayingEventArgs)">
+            <summary><see cref="E:ErrorMessageDisplaying" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:Infragistics.ErrorMessageDisplayingEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.OnApplyTemplate">
+            <summary>派生したクラスでオーバーライドされると、アプリケーション コードまたは内部プロセス（再構築レイアウト パスなど）が <see cref="M:System.Windows.Controls.Control.ApplyTemplate" /> を呼び出す時に常に起動されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.MeasureOverride(System.Windows.Size)">
+            <summary>デフォルト高さと幅を提供するためにオーバーライドされるメソッドです。</summary>
+            <param name="availableSize">このオブジェクトが子オブジェクトに設定できる利用可能なサイズ。値として Infinity の指定をすることによって、使用可能なコンテンツにサイズを合わせることを示します。</param>
+            <returns>子オブジェクトの割り当てサイズの計算に基づいて、レイアウト時にこのオブジェクトが決定した必要サイズ。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.OnCreateAutomationPeer">
+            <summary>派生クラス内で実装される場合、Silverlight オートメーション インフラストラクチャーのためのクラス固有の <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 実装を返します。</summary>
+            <returns>返すクラス固有 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> サブクラス。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.IsInDesignMode">
+            <summary>(Blend または Visual Studio で実行するときに) コントロールがデザイン モードであるかどうかを返します。</summary>
+            <returns>デザイン モードである場合は True です。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.RegisterResources(System.String,System.Reflection.Assembly)">
+            <summary>コントロールがリソースをプルする追加の Resx を追加します。</summary>
+            <param name="name">使用されるリソースを含む組み込み resx ファイルの名前。</param>
+            <param name="assembly">resx ファイルが埋め込まれるアセンブリ。</param>
+            <remarks>ファイルの拡張子を含まないでください。ただし、アセンブリのデフォルト名前空間でプレフィックスしてください。</remarks>
+        </member>
+        <member name="M:Infragistics.Controls.Charts.XamTreemap.UnregisterResources(System.String)">
+            <summary>以前登録した resx ファイルを削除します。</summary>
+            <param name="name">登録に使用された埋め込み resx ファイルの名前。</param>
+            <remarks>注：これは、すでにビューに存在し、文字列を表示しているコントロールには影響ありません。作成された新規コントロールにのみ影響を与えます。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.XamTreemap.NodeBinders">
+            <summary>ノードのバインダーを取得または設定します。これはツリーマップが使用するすべてのバインダーのコレクションです。</summary>
+            <value>ノードのバインダー。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.XamTreemap.ValueMappers">
+            <summary>値マッパーを取得または設定します。これはツリーマップが使用するすべてのマッパーのコレクションです。</summary>
+            <value>値のマッパー。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.XamTreemap.LayoutType">
+            <summary>レイアウトのタイプを取得または設定します。ツリーマップのレイアウト アルゴリズムを決定します。</summary>
+            <value>レイアウトのタイプ。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.XamTreemap.LayoutOrientation">
+            <summary>レイアウトの方向を取得または設定します。</summary>
+            <value>レイアウトの方向。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.XamTreemap.ShowingDepth">
+            <summary>表示するレベルの一番下の深さです。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.XamTreemap.ItemMinSize">
+            <summary>項目の最小値のサイズを取得または設定します。ItemMinSize プロパティは、ノードのサイズの最小値を設定します。ノードの幅または高さが ItemMinSize より小さい場合は、ノードが書き込み可能なビットマップ画像として描画されます。</summary>
+            <value>項目の最小値のサイズ。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.XamTreemap.ItemsSource">
+            <summary>項目ソースを取得または設定します。ツリーマップの階層データを表す列挙子です。</summary>
+            <value>項目のソース。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.XamTreemap.ItemsSourceRoot">
+            <summary>これはツリーマップのルートとして使用される項目ソースのサブ項目です。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.XamTreemap.DefaultStyle">
+            <summary>プロパティの説明。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.XamTreemap.ActualShowingDepth">
+            <summary>実際に表示する深さを取得または設定します。実際に表示している深さ。xamTreemap コントロールの ActualShowingDepth プロパティは表示されている階層レベルの最大値を指定します。カスタム ShowingDepth が設定される場合、この値は ShowingDepth 以下の値に設定されます。階層が 2 つのレベルのデータ ソースに設定されていて、ShowingDepth プロパティを 5 に設定した場合、ActualShowingDepth プロパティは 2 になります。</summary>
+            <value>実際に表示されている深さ。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.XamTreemap.ToolTipStyle">
+          <summary>
+            XamTreemap の ToolTipStyle プロパティを取得または設定します。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Charts.XamTreemap.CustomValueMappers">
+            <summary>すべてのカスタム マッパーを含みます。マッパー コンテナーをクリアするときにそれらがない場合は、マッピングをクリアできません。</summary>
+            <value>カスタム値のマッパー。</value>
+        </member>
+        <member name="E:Infragistics.Controls.Charts.XamTreemap.NodeMouseLeftButtonDown">
+            <summary>マウスの左ボタンがノード上に押されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Charts.XamTreemap.NodeMouseLeftButtonUp">
+            <summary>マウスの右ボタンがノード上から離されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Charts.XamTreemap.NodeMouseRightButtonDown">
+            <summary>マウスの右ボタンがノード上に押されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Charts.XamTreemap.NodeMouseRightButtonUp">
+            <summary>マウスの右ボタンがノード上から離されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Charts.XamTreemap.NodeMouseMove">
+            <summary>マウスがノードの上を移動しているときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Charts.XamTreemap.NodeMouseWheel">
+            <summary>マウス ホイールがノードの上を移動しているときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Charts.XamTreemap.NodeMouseDoubleClick">
+            <summary>ノードをマウスでダブルクリックすると発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Charts.XamTreemap.LayoutTypeChanged">
+            <summary>レイアウト タイプが変更されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Charts.XamTreemap.LayoutOrientationChanged">
+            <summary>レイアウトの方向が変更されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Charts.XamTreemap.ErrorMessageDisplaying">
+            <summary>エラー メッセージが表示されているときに発生します。</summary>
+        </member>
+    </members>
+</doc>

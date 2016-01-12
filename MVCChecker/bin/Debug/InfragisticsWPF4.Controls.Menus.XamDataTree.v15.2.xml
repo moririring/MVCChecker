@@ -1,0 +1,2392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>InfragisticsWPF4.Controls.Menus.XamDataTree.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:Infragistics.Controls.Menus.Primitives.ActiveNodeIndicator">
+            <summary>アクティブなオブジェクトのスタイリングを可能にするオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.ActiveNodeIndicator.#cctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.Primitives.ActiveNodeIndicator" /> クラスの静的コンストラクター。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.ActiveNodeIndicator.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.Primitives.ActiveNodeIndicator" /> クラスの新しいインスタンスを初期化します。</summary>        
+        </member>
+        <member name="T:Infragistics.AutomationPeers.XamDataTreeAutomationPeer">
+          <summary>
+            <see cref="T:Infragistics.Controls.Menus.XamDataTree"/> のタイプを UI オートメーションに公開します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.#ctor(Infragistics.Controls.Menus.XamDataTree)">
+          <summary>
+            <see cref="T:Infragistics.AutomationPeers.XamDataTreeAutomationPeer"/> クラスの新しいインスタンスを初期化します。
+          </summary>
+          <param name="owner">オーナー。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.GetAutomationControlTypeCore">
+          <summary>
+            この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられる <see cref="T:System.Windows.UIElement" /> のコントロール タイプを返します。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" /> が呼び出します。
+          </summary>
+          <returns>
+            列挙体の値。
+          </returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.IsContentElementCore">
+          <summary>
+            この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連する要素がユーザーに表示されるデータを含むかどうかを示す値を返します。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsContentElement" /> が呼び出します。
+          </summary>
+          <returns>
+            要素にユーザーが読めるデータを含む場合は true。そうでない場合は false。
+          </returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.IsControlElementCore">
+          <summary>
+            この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連するオブジェクトがエンド ユーザーによってインタラクティブとして理解されるかどうかを示す値を返します。GUI でコントロールの論理的な構造に関連するオブジェクトのオプションがあります。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsControlElement" /> が呼び出します。
+          </summary>
+          <returns>
+            オブジェクトがインタラクティブであれば True、そうでない場合は False。
+          </returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.GetChildrenCore">
+          <summary>
+            この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連する <see cref="T:System.Windows.UIElement" /> の子要素のコレクションを返します。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" /> が呼び出します。
+          </summary>
+          <returns>
+            子 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 要素のリスト。
+          </returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.GetClassNameCore">
+          <summary>
+            この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> の名前を返します。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" /> が呼び出します。
+          </summary>
+          <returns>
+            この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられたオーナー型の名前を返します。「継承クラスの注意」を参照してください。
+          </returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.GetNameCore">
+          <summary>
+            この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer"/> に関連付けられた <see cref="T:System.Windows.FrameworkElement"/> のテキスト ラベルを返します。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName"/> が呼び出します。
+          </summary>
+          <returns>
+            このオートメーション ピアに関連付けられる要素のテキスト ラベル。
+          </returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+          <summary>
+            この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer"/> に関連付けられた <see cref="T:System.Windows.UIElement"/> のコントロール パターンを返します。
+          </summary>
+          <param name="patternInterface">列挙値の １ つです。</param>
+          <returns>注釈を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.Scroll(System.Windows.Automation.ScrollAmount,System.Windows.Automation.ScrollAmount)">
+          <summary>
+            コンテンツ領域の表示領域を水平および垂直へスクロールします。
+          </summary>
+          <param name="horizontalAmount">
+            このコントロール固有の水平増分。コントロールがこの方向にスクロールできない場合、<see cref="F:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll"/> を渡します。
+          </param>
+          <param name="verticalAmount">
+            このコントロール固有の垂直増分。コントロールがこの方向にスクロールできない場合、<see cref="F:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll"/> を渡します。
+          </param>
+          <exception cref="T:System.Windows.Automation.ElementNotEnabledException"></exception>
+          <exception cref="T:System.InvalidOperationException">XamGrid がスクロール可能ではないため、スクロールできません。</exception>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.SetScrollPercent(System.Double,System.Double)">
+          <summary>
+            コントロール内のコンテンツ領域の割合としての水平および垂直スクロール位置を設定します。
+          </summary>
+          <param name="horizontalPercent">
+            コンテンツ領域の完全の範囲のパーセントとしての水平位置。コントロールがこの方向にスクロールできない場合、<see cref="F:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll"/> を渡します。
+          </param>
+          <param name="verticalPercent">
+            コンテンツ領域のすべての範囲の割合としての垂直位置。コントロールがこの方向にスクロールできない場合、<see cref="F:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll"/> を渡します。
+          </param>
+          <exception cref="T:System.InvalidOperationException">GridViewScrollViewer がスクロール可能ではないため、スクロールできません。</exception>
+          <exception cref="T:System.ArgumentOutOfRangeException">horizontalPercent: 水平方向パーセンテージは 0.0 と 100.0 の間である必要があります。</exception>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.GetSelection">
+          <summary>
+            選択済みの各子要素の UI オートメーション プロバイダーを取得します。
+          </summary>
+          <returns>
+            UI オートメーション プロバイダーのコレクション。
+          </returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.HorizontalScrollPercent">
+          <summary>
+            現在の水平スクロール位置を取得します。
+          </summary>
+          <returns>コントロール内のコンテンツ領域の割合としての水平スクロール位置。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.VerticalScrollPercent">
+          <summary>
+            現在の垂直スクロール位置を取得します。
+          </summary>
+          <returns>コントロール内のコンテンツ領域の割合としての垂直スクロール位置。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.HorizontalViewSize">
+          <summary>
+            現在の水平ビュー サイズを取得します。
+          </summary>
+          <returns>コントロール内のコンテンツ領域の割合として表示可能な領域の水平サイズ。 </returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.VerticalViewSize">
+          <summary>
+            垂直ビュー サイズを取得します。
+          </summary>
+          <returns>コントロール内のコンテンツ領域の割合としての表示可能な領域の垂直サイズ。 </returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.HorizontallyScrollable">
+          <summary>
+            コントロールを水平にスクロールできるかどうかを示す値を取得します。
+          </summary>
+          <returns>コントロールを水平にスクロールできる場合は、true。そうでない場合は False。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.VerticallyScrollable">
+          <summary>
+            コントロールを垂直にスクロールできるかどうかを示す値を取得します。
+          </summary>
+          <returns>コントロールを垂直にスクロールできる場合は、true。そうでない場合は False。 </returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.CanSelectMultiple">
+          <summary>
+            UI オートメーション プロバイダーによって 2 つ以上の子要素を同時に選択できるかどうかを指定する値を取得します。
+          </summary>
+          <returns>複数選択が許可される場合は、true。そうでない場合は False。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamDataTreeAutomationPeer.IsSelectionRequired">
+          <summary>
+            UI オートメーション プロバイダーによって少なくとも 1 つの子要素を選択する必要があるかどうかを指定する値を取得します。
+          </summary>
+          <returns>選択が必要な場合は、true。そうでない場合は、false。</returns>
+        </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.GetAcceleratorKeyCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> のアクセラレータ キーを返します。
+        </summary>
+        <returns>アクセラレータ キー</returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.GetAccessKeyCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> のアクセス キーを返します。
+        </summary>
+        <returns>アクセス キー</returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.GetAutomationIdCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> のオートメーション識別子を返します。
+        </summary>
+        <returns>UI オートメーション識別子</returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.GetBoundingRectangleCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連付けられたオブジェクトに対応する <see cref="!:UIElement"/> の境界矩形を表す <see cref="!:Rect"/> を返します。
+        </summary>
+        <returns>境界矩形</returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.GetChildrenCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトの子要素のコレクションを返します
+        </summary>
+        <returns>子要素のコレクション。</returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.GetClickablePointCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> のクリック可能な領域を表す <see cref="!:Point"/> を返します。
+        </summary>
+        <returns>要素のクリック可能な領域を表すポイント</returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.GetHelpTextCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> の機能を説明する文字列を返します。
+        </summary>
+        <returns>ヘルプ テキスト</returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.GetItemStatusCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> の親ステータスを示す文字列を返します。
+        </summary>
+        <returns>ステータス</returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.GetItemTypeCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> の項目のタイプを含む人間が認識できる文字列を返します。
+        </summary>
+        <returns>項目タイプ</returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.GetLabeledByCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> を対象とする Label の <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> を返します。
+        </summary>
+        <returns>
+          この要素を対象とする Label の <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/>。
+        </returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.GetNameCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> のテキスト ラベルを返します。
+        </summary>
+        <returns>テキスト ラベル</returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.GetOrientationCore">
+        <summary>
+          <see cref="!:UIElement"/> がレイアウトされる方向を示す値を返します。
+        </summary>
+        <returns>
+          <see cref="!:UIElement"/> の方向、または方向が指定されていない場合は <b>AutomationOrientation.None</b>
+        </returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> に対して指定された <see cref="T:System.Windows.Automation.Peers.PatternInterface"/> に関連するコントロールのパターンを返します。
+        </summary>
+        <param name="patternInterface">要求されるパターン</param>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.HasKeyboardFocusCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> が現在キーボード入力フォーカスを持つかどうかを示す値を返します。
+        </summary>
+        <returns>
+          <see cref="!:UIElement"/> がキーボード入力フォーカスを持つ場合は <b>True</b>、そうでなければ <b>False</b> を返します。
+        </returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.IsContentElementCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> がユーザーに示すデータを含むかどうかを示す値を返します。
+        </summary>
+        <returns>
+          <see cref="!:UIElement"/> がコンテンツ 要素である場合は <b>True</b>、そうでなければ <b>False</b>。
+        </returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.IsControlElementCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連付けられたオブジェクトに対応する <see cref="!:UIElement"/> がエンド ユーザーによってインタラクティブとして理解されるかどうかを示す値を返します。
+        </summary>
+        <returns>
+          <see cref="!:UIElement"/> がコントロールである場合は <b>True</b>、そうでなければ <b>false</b> になります。
+        </returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.IsEnabledCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連付けられたオブジェクトに対応する <see cref="!:UIElement"/> がイベントを送受信できるかどうかを示す値を返します。
+        </summary>
+        <returns>
+          <see cref="!:UIElement"/> がイベントを送受信できる場合は <b>True</b>、そうでない場合は <b>false</b> を返します。
+        </returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.IsKeyboardFocusableCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> がキーボード フォーカスを受け入れることができるかどうかを示す値を返します。
+        </summary>
+        <returns>
+          要素がキーボード フォーカスを受け入れることができる場合は <b>True</b>、そうでなければ <b>False</b> を返します。
+        </returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.IsOffscreenCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> が画面の外であるかどうかを示す値を返します。
+        </summary>
+        <returns>
+          要素が画面の外である場合は <b>True</b>、そうでなければ <b>False</b>。
+        </returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.IsPasswordCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> が保護されたコンテンツを含むかどうかを示す値を返します。
+        </summary>
+        <returns>
+          要素が保護されたコンテンツを含む場合は <b>True</b>、そうでなければ <b>False</b>。
+        </returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.IsRequiredForFormCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> がフォームで完成する必要があるかどうかを示す値を返します。
+        </summary>
+        <returns>
+          要素が完成する必要がある場合は <b>True</b>、そうでなければ <b>False</b>。
+        </returns>
+      </member>
+      <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeAutomationPeer.SetFocusCore">
+        <summary>
+          この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連するオブジェクトに対応する <see cref="!:UIElement"/> にキーボード入力フォーカスを設定します。
+        </summary>
+      </member>
+        <member name="T:Infragistics.AutomationPeers.XamDataTreeNodeControlAutomationPeer">
+          <summary>
+            <see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl"/> のタイプを UI オートメーションに公開します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeControlAutomationPeer.#ctor(Infragistics.Controls.Menus.XamDataTreeNodeControl)">
+          <summary>
+            <see cref="T:Infragistics.AutomationPeers.XamDataTreeNodeControlAutomationPeer"/> クラスの新しいインスタンスを初期化します。
+          </summary>
+          <param name="owner">オーナー。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeControlAutomationPeer.GetClassNameCore">
+          <summary>
+            この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer"/> に関連付けられた <see cref="T:System.Windows.UIElement"/> の名前を返します。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName"/> が呼び出します。
+          </summary>
+          <returns>
+            この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer"/> に関連付けられたオーナー型の名前を返します。注釈を参照してください。
+          </returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeControlAutomationPeer.GetNameCore">
+          <summary>
+            この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer"/> に関連付けられた <see cref="T:System.Windows.FrameworkElement"/> のテキスト ラベルを返します。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName"/> が呼び出します。
+          </summary>
+          <returns>
+            このオートメーション ピアに関連付けられる要素のテキスト ラベル。
+          </returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeControlAutomationPeer.GetAutomationControlTypeCore">
+          <summary>
+            この <see cref="T:System.Windows.Automation.Peers.AutomationPeer"/> に関連付けられる <see cref="T:System.Windows.UIElement"/> のコントロール タイプを取得します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeControlAutomationPeer.GetLabeledByCore">
+          <summary>
+            この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連する <see cref="T:System.Windows.FrameworkElement" /> を対象とする <see cref="T:System.Windows.UIElement" /> の <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> を返します。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLabeledBy" /> が呼び出します。
+          </summary>
+          <returns>
+            <see cref="T:System.Windows.UIElement" /> によって対象される要素の <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />。
+          </returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeControlAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+          <summary>
+            この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> のサポートされるパターンに基づいて要求されたパターンをサポートするオブジェクトを返します。
+          </summary>
+          <param name="patternInterface">列挙値の １ つです。.</param>
+          <returns>
+            注釈を参照してください。
+          </returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeControlAutomationPeer.IsOffscreenCore">
+          <summary>
+            この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連する <see cref="T:System.Windows.UIElement" /> が画面に表示されていないかどうかを示す値を返します。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> が呼び出します。
+          </summary>
+          <returns>
+            要素が画面の外である場合は True、そうでない場合は False を返します。
+          </returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeControlAutomationPeer.Expand">
+          <summary>
+            コントロールの子であるノード、コントロールまたはコンテンツを表示します。
+          </summary>
+          <exception cref="T:System.Windows.Automation.ElementNotEnabledException"></exception>
+          <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamDataTreeNodeControlAutomationPeer.Collapse">
+          <summary>
+            コントロールの子孫であるすべてのノード、コントロールまたはコンテンツを非表示にします。
+          </summary>
+          <exception cref="T:System.Windows.Automation.ElementNotEnabledException"></exception>
+          <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamDataTreeNodeControlAutomationPeer.ExpandCollapseState">
+          <summary>
+            コントロールの状態 (展開または縮小) を取得します。
+          </summary>
+          <returns>コントロールの状態 (展開または縮小) 。</returns>
+        </member>      
+        <member name="T:Infragistics.Controls.Menus.TreeInvokeAction">
+            <summary>異なる操作の列挙体。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeInvokeAction.Keyboard">
+            <summary>キーボードから操作が発生されました。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeInvokeAction.MouseMove">
+            <summary>マウスの移動によって操作が発生されました。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeInvokeAction.Click">
+            <summary>マウスダウンまたは Space キー が押されて操作が発生しました。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeInvokeAction.Code">
+            <summary>API から操作が発生されました。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.TreeSelectionType">
+            <summary>実行される選択タイプを説明します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeSelectionType.None">
+            <summary>選択は無効になる必要があります。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeSelectionType.Single">
+            <summary>選択できるのは常に 1 つの項目だけです。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeSelectionType.Multiple">
+            <summary>複数の項目を選択するには、CTRL および SHIFT キーを使用します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.TreeDragSelectType">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> で発生するドラッグ選択のタイプを説明します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeDragSelectType.None">
+            <summary>DragSelect 操作は発生しません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeDragSelectType.Node">
+            <summary>ドラッグ操作を選択すると、ノードが選択されます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.TreeCheckBoxMode">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> で CheckBox を使用する方法を指定します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeCheckBoxMode.Manual">
+            <summary>各 <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の CheckBox は <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> の他の XamTreeItem と関係ありません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeCheckBoxMode.Auto">
+            <summary>このモードですべてのリーフ <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> は 2 つの状態のチェックボックスです。他の <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> は tristate です。項目のチェック状態は、その子を同じ状態にして、その親に通知します。親のすべての子は同じ状態である場合、親は同じ状態になります。そうでない場合、親は 3 つ目の状態になります。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.TreeMouseEditingAction">
+            <summary>マウスを使用して <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を編集モードに切り替える操作のタイプを説明します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeMouseEditingAction.SingleClick">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> をクリックすると編集モードに入ります。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeMouseEditingAction.DoubleClick">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> をダブルクリックすると編集モードに入ります。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeMouseEditingAction.None">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が編集モードに入るマウス操作はありません。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.NodeLineTemination">
+            <summary>どのノード コネクタ型がリーフ ノードにアタッチされて表示されるかを記述する列挙体。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLineTemination.None">
+            <summary>ターミネータは表示されないはずです。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLineTemination.TShape">
+            <summary>ノードを前のノードおよび次のノードにアタッチするコネクタが表示されるはずです。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLineTemination.LShape">
+            <summary>ノードを前のノードにアタッチするコネクタが表示されるはずです。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.TreeDropDestination">
+            <summary>オブジェクトがドロップ ターゲットのドロップ リレーションであることを説明する列挙体。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeDropDestination.DropBefore">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> は移動先オブジェクトの前にドロップされます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeDropDestination.DropAfter">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> は移動先オブジェクトの後にドロップされます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeDropDestination.DropOnto">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> は移動先オブジェクトにドロップされます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.NodeLayoutEventArgs">
+            <summary>イベントで変更された <see cref="P:Infragistics.Controls.Menus.NodeLayoutEventArgs.NodeLayout" /> をリストするクラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayoutEventArgs.NodeLayout">
+            <summary>変更された <see cref="P:Infragistics.Controls.Menus.NodeLayoutEventArgs.NodeLayout" />。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.NodeEventArgs">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> 入力を持つイベントの EventArgs をリストするクラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeEventArgs.Node">
+            <summary>変更された <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" />。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.InitializeNodeEventArgs">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.InitializeNode" /> イベントの必要な情報を含むクラス。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.CancellableNodeExpansionChangedEventArgs">
+            <summary>ノードを展開するイベントが必要とする情報を含むクラス。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.CancellableNodeEventArgs">
+            <summary>開発者によりキャンセルできるイベントに基づいて <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が必要とする情報を含むクラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.CancellableNodeEventArgs.Node">
+            <summary>変更された <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" />。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.NodeExpansionChangedEventArgs">
+            <summary>ノード展開後のイベントが必要とする情報を含むクラス。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.NodeLayoutAssignedEventArgs">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeLayoutAssigned" /> イベントが必要とする情報を含むクラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayoutAssignedEventArgs.NodeLayout">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> に割り当てられた <see cref="P:Infragistics.Controls.Menus.NodeLayoutAssignedEventArgs.NodeLayout" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayoutAssignedEventArgs.Level">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が表示される <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> の深さを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayoutAssignedEventArgs.Key">
+            <summary>適用される <see cref="P:Infragistics.Controls.Menus.NodeLayoutAssignedEventArgs.NodeLayout" /> の <see cref="P:Infragistics.Controls.Menus.NodeLayoutBase.Key" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayoutAssignedEventArgs.DataType">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> がバインドされる <see cref="T:System.Type" /> を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.ActiveNodeChangedEventArgs">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.ActiveNodeChanged" /> イベントが必要とする情報を含むクラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.ActiveNodeChangedEventArgs.OriginalActiveTreeNode">
+            <summary>もともとアクティブだった <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.ActiveNodeChangedEventArgs.NewActiveTreeNode">
+            <summary>現在アクティブな <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.ActiveNodeChangedEventArgs.Cancel">
+            <summary>このプロパティはこのイベントで使用されません。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.BeginEditingNodeEventArgs">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> が <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の編集を開始するのに必要とする情報を含むクラス。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.TreeEditingNodeEventArgs">
+            <summary>情報を編集イベントに提供します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingNodeEventArgs.Editor">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> で表示されているエディターを取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.TreeExitEditingEventArgs">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が編集モードを終了するときに、必要な情報を提供します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeExitEditingEventArgs.NewValue">
+            <summary>エディターに入力された新しい値を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeExitEditingEventArgs.EditingCanceled">
+            <summary>編集がユーザーによりキャンセルされたかどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeExitEditingEventArgs.Editor">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> で表示されているエディターを取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.NodeValidationErrorEventArgs">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が編集モードを終了するとき検証エラーが発生した場合に情報を提供します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeValidationErrorEventArgs.ValidationErrorEventArgs">
+            <summary>実際の <see cref="P:Infragistics.Controls.Menus.NodeValidationErrorEventArgs.ValidationErrorEventArgs" />。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeValidationErrorEventArgs.Handled">
+            <summary>イベントが処理されるかどうかを取得または設定します。True の場合、<see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> は検証を成功として処理します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.TreeDataObjectCreationEventArgs">
+            <summary>新しいオブジェクトを作成する必要があるときに必要な情報をリストするクラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeDataObjectCreationEventArgs.NewObject">
+            <summary>新たに作成されるオブジェクトとして使用される、<see cref="P:Infragistics.Controls.Menus.TreeDataObjectCreationEventArgs.ObjectType" /> のオブジェクトを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeDataObjectCreationEventArgs.ObjectType">
+            <summary>DataManager で作成する必要があるオブジェクトの <see cref="T:System.Type" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeDataObjectCreationEventArgs.ParentNode">
+            <summary>このオブジェクトの親である <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> オブジェクトを取得します。</summary>		
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeDataObjectCreationEventArgs.CollectionType">
+            <summary>基本コレクションで含む <see cref="T:System.Type" /> を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.NodeSelectionEventArgs">
+            <summary>選択されたノードが変更されるときに必要な情報をリストするクラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeSelectionEventArgs.OriginalSelectedNodes">
+            <summary>以前選択されたノードの <see cref="T:Infragistics.Controls.Menus.SelectedNodesCollection" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeSelectionEventArgs.CurrentSelectedNodes">
+            <summary>選択されているノードの <see cref="T:Infragistics.Controls.Menus.SelectedNodesCollection" /> を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.TreeDropEventArgs">
+            <summary><see cref="E:Infragistics.DragDrop.DragSource.Drop" /> イベントのイベント引数。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeDropEventArgs.DragDropEventArgs">
+            <summary>このイベントに生成された <see cref="T:Infragistics.DragDrop.DragDropEventArgs" /> オブジェクトを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeDropEventArgs.DropDestination">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> がドロップ ターゲットに対してドロップ ターゲットのときにドロップがどこで認識されるかを決定する <see cref="T:Infragistics.Controls.Menus.TreeDropDestination" /> 値を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.CancellableNodeDeletionEventArgs">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> でノードを削除する EventArgs をリストするクラス。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.NodeDeletedEventArgs">
+            <summary>ノードを削除した後に EventArgs をリストするクラス。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.ActiveNodeChangingEventArgs">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.ActiveNodeChanging" /> イベントが必要とする情報を含むクラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.ActiveNodeChangingEventArgs.OriginalActiveTreeNode">
+            <summary>もともとアクティブだった <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.ActiveNodeChangingEventArgs.NewActiveTreeNode">
+            <summary>現在アクティブな <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.GlobalNodeLayoutCollection">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodeLayout" /> オブジェクトのコレクション。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.GlobalNodeLayoutCollection.#ctor(Infragistics.Controls.Menus.XamDataTree)">
+            <summary><see cref="T:Infragistics.Controls.Menus.GlobalNodeLayoutCollection" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.GlobalNodeLayoutCollection.FromType(System.Type)">
+            <summary>指定された Type を持つ <see cref="T:Infragistics.Controls.Menus.GlobalNodeLayoutCollection" /> を <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> で検索します。また、指定したタイプを表す最初の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> を返します。</summary>
+            <returns>指定された Type を持つ <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> オブジェクトがない場合は Null です。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.GlobalNodeLayoutCollection.FromKey(System.String)">
+            <summary>指定された Key を持つ <see cref="T:Infragistics.Controls.Menus.GlobalNodeLayoutCollection" /> を <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> で検索します。このキーを持つ最初の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> を返します。</summary>
+            <returns>指定された Key を持つ <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> オブジェクトがない場合は Null です。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.GlobalNodeLayoutCollection.AddItemLocally(Infragistics.Controls.Menus.NodeLayout)">
+            <summary>項目を Collection にサイレントで追加して、<see cref="P:Infragistics.Controls.Menus.NodeLayout.IsDefinedGlobally" /> プロパティを False に設定します。</summary>
+            <param propertyName="item"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.GlobalNodeLayoutCollection.GetLookupKeys">
+            <summary>コレクション内の各オブジェクトを持つキーのリストを取得します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.GlobalNodeLayoutCollection.CanRehydrate(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>キーで検索して、すべてのキーがコレクション内にあり、またオブジェクトと同じ量であることを決定します。そうでない場合、False を返します。Control Persistence Framework は、すでにコレクションにあるオブジェクトは再利用しません。</summary>
+            <param name="lookupKeys"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.GlobalNodeLayoutCollection.OnItemAdded(System.Int32,Infragistics.Controls.Menus.NodeLayout)">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodeLayout" /> を指定されたインデックスに追加するときに発生します。</summary>
+            <param propertyName="index"></param>
+            <param propertyName="item"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.GlobalNodeLayoutCollection.AddItemSilently(System.Int32,Infragistics.Controls.Menus.NodeLayout)">
+            <summary>イベントをトリガーせずに指定されたインデックスで項目を追加します。</summary>
+            <param name="index"></param>
+            <param name="item"></param>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.GlobalNodeLayoutCollection.Item(System.String)">
+            <summary>指定されたキーを持つ <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> のコレクションを確認します。コレクションの NodeLayout がそのキーを持たない場合、null を返します。</summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.IntermediateNodesManager">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> によりヘッダー ノードを表すノードの <see cref="T:Infragistics.Controls.Menus.NodesManager" /> として使用されるクラス。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.NodesManager">
+            <summary>あるレベルですべての <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を制御するオブジェクトを表します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.#ctor(System.Int32,Infragistics.Controls.Menus.NodeLayout,Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodesManager" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param propertyName="level"><see cref="T:Infragistics.Controls.Menus.NodesManager" /> があるレベル。</param>
+            <param propertyName="nodeLayout"><see cref="P:Infragistics.Controls.Menus.NodesManager.NodeLayout" /> に対応する <see cref="T:Infragistics.Controls.Menus.NodesManager" /> オブジェクトへの参照。</param>
+            <param propertyName="parentLayoutNode"><see cref="T:Infragistics.Controls.Menus.NodesManager" /> の所有ノード。 </param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.InvalidateNodes">
+            <summary>ノードおよび子ノードをクリアして、ツリーを再描画します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.ClearCacheInformation">
+            <summary>この<see cref="T:Infragistics.Controls.Menus.NodesManager" /> のキャッシュされたノード コレクションをクリアします。</summary>
+            <remarks><see cref="T:Infragistics.Controls.Menus.NodesManager" /> は、ノード情報を保持し、ノードの生成元のデータとノードをリンクします。この情報は、基になるオブジェクトが削除されても保持されるため、同じオブジェクトがコレクションに現れた場合もノードを基に戻すことができます。この関係を完全にリセットする場合は、このメソッドを呼び出すことができます。ただし、すべての関係が削除されます。</remarks>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.ClearCacheInformation(System.Object)">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.NodesManager" /> のキャッシュされたノード コレクションをクリアします。</summary>
+            <remarks><see cref="T:Infragistics.Controls.Menus.NodesManager" /> は、ノード情報を保持し、ノードの生成元のデータとノードをリンクします。この情報は、基になるオブジェクトが削除されても保持されるため、同じオブジェクトがコレクションに現れた場合もノードを基に戻すことができます。このメソッドは、<see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> と関連付けられた dataObject を渡すことによって、保持された情報を削除するために使用されます。</remarks>
+            <param name="dataObject"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.GetDataItem(System.Int32)">
+            <summary>指定されたインデックスの <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を返します。</summary>
+            <param propertyName="index">取得するノードのインデックス。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.OnItemsSourceChanged">
+            <summary>基になる ItemsSource プロパティが変更するときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.EnsureDataManager">
+            <summary>このメソッドは、指定されたレベルでの DataManagerBase の作成を確認します。作成されていない場合、そのレベルで作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.OnNodeLayoutAssigned(Infragistics.Controls.Menus.NodeLayout)">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.NodesManager" /> に割り当てられた NodeLayout を変更するときに呼び出されます。</summary>
+            <param propertyName="layout"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.OnNodeLayoutPropertyChanged(Infragistics.Controls.Menus.NodeLayout,System.String)">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.NodesManager" /> を表す NodeLayout のプロパティを変更するときに発生します。</summary>
+            <param propertyName="layout"></param>
+            <param propertyName="propertyName"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.OnChildNodeLayoutRemoved(Infragistics.Controls.Menus.NodeLayout)">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodesManager.NodeLayout" /> が、所有 NodeLayout の Columns コレクションから削除されるときに発生します。</summary>
+            <param propertyName="layout">削除される <see cref="P:Infragistics.Controls.Menus.NodesManager.NodeLayout" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.OnChildNodeLayoutAdded(Infragistics.Controls.Menus.NodeLayout)">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodesManager.NodeLayout" /> が、所有 NodeLayout の Columns コレクションに追加されるときに発生します。</summary>
+            <param propertyName="layout">追加されている <see cref="P:Infragistics.Controls.Menus.NodesManager.NodeLayout" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.OnChildNodeLayoutVisibilityChanged(Infragistics.Controls.Menus.NodeLayout)">
+            <summary>所有 NodeLayout の子 <see cref="P:Infragistics.Controls.Menus.NodesManager.NodeLayout" /> の表示設定を変更するときに発生します。</summary>
+            <param propertyName="layout">その Visibility を変更する <see cref="P:Infragistics.Controls.Menus.NodesManager.NodeLayout" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.UnregisterNodesManager(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>NodesManager が必要なくなった場合、このメソッドを呼び出して、フックアップされているすべてのイベントを切り離す必要があります。メモリー リークはないように。</summary>
+            <param name="removeNodeLayout">NodeLayout を完全に削除するか、またはイベントのみを削除するかどうか。</param>
+            <param name="clearChildNodesManager">各ノードで ChildNodesManager を破棄するかどうか。</param>
+            <param name="clearSelection">選択された項目を選択解除する必要があるかどうか</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.RegisterChildNodesManager(Infragistics.Controls.Menus.NodesManager)">
+            <summary>ノードのレンダリングで認識されるように、表示可能な子のマネージャーとして指定された <see cref="T:Infragistics.Controls.Menus.NodesManager" /> を追加します。</summary>
+            <param propertyName="manager"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.UnregisterChildNodesManager(Infragistics.Controls.Menus.NodesManager)">
+            <summary>ノードのレンダリングで認識されないように、表示可能な子のマネージャーとして指定された <see cref="T:Infragistics.Controls.Menus.NodesManager" /> を削除します。</summary>
+            <param propertyName="manager"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.UnregisterAllChildNodesManager">
+            <summary>ノードのレンダリングで認識されないように、すべての表示可能な子のマネージャーを削除します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.ResolveNodeForIndex(System.Int32)">
+            <summary>指定されたインデックスの <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を返します。</summary>
+            <param propertyName="index">取得するノードのインデックス。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.ResolveIndexForNode(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary>指定されたノードのインデックスを返します。</summary>
+            <param propertyName="node">インデックスを返すノードです。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.InvalidateData">
+            <summary>無効にするすべてのデータ操作を起動します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.InitializeData">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodesManager" /> の提供されたデータを参照して、AutoGenerateNodeLayouts が True の場合、<see cref="P:Infragistics.Controls.Menus.NodesManager.NodeLayout" /> オブジェクトを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.CreateItem(System.Object,Infragistics.DataManagerBase)">
+            <summary>新しいノード オブジェクトを作成します。</summary>
+            <param propertyName="data"></param>
+            <param propertyName="dataManager"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.CreateItem">
+            <summary>新しいノード オブジェクトを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.CreateItem(System.Object)">
+            <summary>新しいノード オブジェクトを作成します。</summary>
+            <param propertyName="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.AddItem(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary>コレクションにノードを追加します。</summary>
+            <param propertyName="addedObject"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.InsertItem(System.Int32,Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary>指定したインデックスでノードを挿入します。</summary>
+            <param propertyName="index"></param>
+            <param propertyName="insertedObject"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.RemoveItem(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary>基本 ItemSource からノードを削除します。</summary>
+            <param propertyName="removedObject"></param>
+            <returns>ノードが削除される場合は True。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.RemoveItem(Infragistics.Controls.Menus.XamDataTreeNode,Infragistics.DataManagerBase)">
+            <summary>基本 ItemSource からノードを削除します。</summary>
+            <param name="removedObject">削除するノード</param>
+            <param name="manager">削除を実行する Manager。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.RemoveRange(System.Collections.Generic.IList{Infragistics.Controls.Menus.XamDataTreeNode})">
+            <summary>指定されたノードをコレクションから削除します。</summary>
+            <param propertyName="itemsToRemove"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.OnRegisteredAsVisibleChildManager">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodesManager" /> が表示されるときに発生し、その親ノードが展開されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.EnsureExpandedChildNodesAreRegistered">
+            <summary>コレクションのすべてのノードを処理し、展開されたらその子ノード マネージャーを登録します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.SuppressVisibleChildManagersSorting(System.Boolean)">
+          <summary>
+            _visibleChildManagers の並べ替えの抑制を有効または無効にします。抑制が無効の場合、visibleChildManagers コレクションが並べ替えられます。
+          </summary>
+          <param name="doSuppress">抑制を有効または無効にするかどうかを示すブール値。</param>
+          <returns>抑制が変更する前にアクティブであったかどうかを返します。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodesManager.CompareTo(Infragistics.Controls.Menus.NodesManager)">
+            <summary>2 つの <see cref="T:Infragistics.Controls.Menus.NodesManager" /> オブジェクトをそのインデックスに基づいて比較します。</summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodesManager.Nodes">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodesManager" /> に属する子ノードのコレクションを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodesManager.ItemsSource">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodesManager" /> のデータ ソースを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodesManager.ParentNode">
+            <summary>この <see cref="P:Infragistics.Controls.Menus.NodesManager.ParentNode" /> を所有する <see cref="T:Infragistics.Controls.Menus.NodesManager" />。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodesManager.NodeLayout">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodesManager.NodeLayout" /> に関連付けられた <see cref="T:Infragistics.Controls.Menus.NodesManager" /> オブジェクトを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodesManager.Level">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodesManager" /> の階層レベルを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodesManager.DataManager">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodesManager" /> の <see cref="T:Infragistics.DataManagerBase" /> への参照を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodesManager.VisibleChildManagers">
+            <summary>現在表示可能な子 <see cref="T:Infragistics.Controls.Menus.NodesManager" /> オブジェクトのリストを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodesManager.DataCount">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodesManager" /> である <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の数を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodesManager.FullNodeCount">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodesManager" /> に対して表示できるノードの合計数を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodesManager.CachedNodes">
+            <summary>キャッシュされたノードの辞書を取得します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.IntermediateNodesManager.#ctor(System.Int32,Infragistics.Controls.Menus.NodeLayout,Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary><see cref="T:Infragistics.Controls.Menus.IntermediateNodesManager" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.IntermediateNodesManager.GetDataItem(System.Int32)">
+            <summary>指定されたインデックスの <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を返します。</summary>
+            <param propertyName="index">取得するノードのインデックス。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.IntermediateNodesManager.EnsureDataManager">
+            <summary>このメソッドは、指定されたレベルでの DataManagerBase の作成を確認します。作成されていない場合、そのレベルで作成します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.IntermediateNodesManager.DataCount">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodesManager" /> である <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の数を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.IntermediateNodesManager.DataManager">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodesManager" /> の <see cref="T:Infragistics.DataManagerBase" /> への参照を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.NodeLayout">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> のグループの動作方法を指定するクラス。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.NodeLayoutBase">
+            <summary>すべてのツリー型コントロールの共通するプロパティをカプセル化するクラス。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayoutBase.KeyProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayoutBase.Key" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodeLayoutBase.OnKeyChanged">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayoutBase.Key" /> プロパティが変更されるときに呼び出されるメソッド。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayoutBase.Key">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.NodeLayoutBase" /> を識別するために使用できる固有の文字列を取得または設定します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.ROOT_LAYOUT_KEY">
+            <summary>ルート レベルで <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> のキーに適用される文字列。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodeLayout.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodeLayout" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodeLayout.#ctor(Infragistics.Controls.Menus.XamDataTree)">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodeLayout" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param propertyName="grid">この <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> を所有する <see cref="T:Infragistics.Controls.Menus.NodeLayout" />。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.TargetTypeNameProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.TargetTypeName" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.VisibilityProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.Visibility" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodeLayout.OnVisibilityChanged">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の Visibility が変更されたときに発生します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.DisplayMemberPathProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.DisplayMemberPath" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.CheckBoxMemberPathProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.CheckBoxMemberPath" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.IsEnabledMemberPathProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.IsEnabledMemberPath" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.IsExpandedMemberPathProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.IsExpandedMemberPath" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.IsSelectedMemberPathProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Menus.NodeLayout.IsSelectedMemberPath"/> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodeLayout.OnIsSelectedMemberPathChanged(System.String,System.String)">
+          <summary>IsSelectedMemberPathProperty プロパティ変更ハンドラー。</summary>
+          <param name="oldValue">古い値。</param>
+          <param name="newValue">新しい値。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.IndentationProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.Indentation" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.ItemTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.ItemTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.HeaderTextProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.HeaderText" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.HeaderTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.HeaderTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.EditorTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.EditorTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.IsDraggableProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.IsDraggable" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.IsDropTargetProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.IsDropTarget" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.NodeStyleProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.NodeStyle" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.ExpandedIconTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.ExpandedIconTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.NodeLayout.CollapsedIconTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayout.CollapsedIconTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodeLayout.OnKeyChanged">
+            <summary><see cref="P:Infragistics.Controls.Menus.NodeLayoutBase.Key" /> プロパティが変更されるときに呼び出されるメソッド。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodeLayout.UnSubscribeForNotifications(Infragistics.Controls.Menus.NodesManager)">
+          <summary>特定の NodeLayout イベントの通知を受けないために提供された NodesManager のサブスクリプションを解除します。</summary>
+          <param name="nodesManager">通知の受け取りを停止する NodesManager。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodeLayout.SubscribeForNotifications(Infragistics.Controls.Menus.NodesManager)">
+          <summary>特定の NodeLayout イベントの通知を受けるために提供された NodesManager をサブスクライブします。</summary>
+          <param name="nodesManager">通知を受ける NodesManager。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.Tree">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> を所有する <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.TargetTypeName">
+            <summary>この <see cref="P:System.Type.FullName" /> オブジェクトが表す System.Type.Name または <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> を取得または設定します。</summary>
+            <remarks><see cref="T:Infragistics.Controls.Menus.NodeLayout" /> が <see cref="P:Infragistics.Controls.Menus.XamDataTree.GlobalNodeLayouts" /> で定義される場合のみこのプロパティが使用されます。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.Visibility">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の表示を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.DisplayMemberPath">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> のテキストを生成するために <see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.Data" /> オブジェクトのプロパティへのパスを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.DisplayMemberPathResolved">
+            <summary>特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="P:Infragistics.Controls.Menus.NodeLayout.DisplayMemberPath" /> プロパティを解決します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.CheckBoxMemberPath">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の <see cref="T:System.Windows.Controls.CheckBox" /> を生成するために <see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.Data" /> オブジェクトのプロパティへのパスを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.CheckBoxMemberPathResolved">
+            <summary>特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="P:Infragistics.Controls.Menus.NodeLayout.CheckBoxMemberPath" /> プロパティを解決します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.IsEnabledMemberPath">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の <see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.IsEnabled" /> を生成するために <see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.Data" /> オブジェクトのプロパティへのパスを取得または設定します。</summary><seealso cref="F:Infragistics.Controls.Menus.NodeLayout.IsEnabledMemberPathProperty" /></member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.IsEnabledMemberPathResolved">
+            <summary>特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="P:Infragistics.Controls.Menus.NodeLayout.IsEnabledMemberPath" /> プロパティを解決します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.IsExpandedMemberPath">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の <see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.IsExpanded" /> を生成するために <see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.Data" /> オブジェクトのプロパティへのパスを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.IsExpandedMemberPathResolved">
+            <summary>特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="P:Infragistics.Controls.Menus.NodeLayout.IsExpandedMemberPath" /> プロパティを解決します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.IsSelectedMemberPath">
+          <summary>
+            <see cref="T:Infragistics.Controls.Menus.XamDataTree"/> の <see cref="P:Infragistics.Controls.Menus.XamDataTree.SelectedDataItems"/> を生成するために <see cref="P:Infragistics.Controls.Menus.XamDataTree.ItemsSource"/> オブジェクトのプロパティへのパスを取得または設定します。ノードが選択されているかどうかを確認するために使用される値のデータ項目の両側にはブール値のプロパティ パス名を使用する必要があることにご注意ください。
+          </summary>
+          <value>
+            IsSelected メンバー パス。
+          </value>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.NodeLayouts">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のルート レベルに対してのみ使用する <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> オブジェクトのコレクションを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.Indentation">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> がそれぞれその親からどの程度インデントされているかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.IndentationResolved">
+            <summary>特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="P:Infragistics.Controls.Menus.NodeLayout.Indentation" /> プロパティを解決します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.ItemTemplate">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> 内のこの特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> のすべての <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の VisualTree を作成するために使用する <see cref="T:System.Windows.DataTemplate" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.ItemTemplateResolved">
+            <summary>この特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> のすべての <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の VisualTree を作成するために使用する実際の <see cref="T:System.Windows.DataTemplate" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.HeaderText">
+            <summary>ヘッダー ノードとして動作する <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> オブジェクトに表示されるテキストを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.HeaderTemplate">
+            <summary>ヘッダー ノードに表示される <see cref="T:System.Windows.DataTemplate" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.HeaderContentResolved">
+            <summary>特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="P:Infragistics.Controls.Menus.NodeLayout.HeaderTemplate" /> プロパティを解決します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.EditorTemplate">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> オブジェクトが編集モードを開始するときに表示される <see cref="T:System.Windows.DataTemplate" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.EditingSettings">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> で編集するためのすべてのプロパティをコントロールする <see cref="T:Infragistics.Controls.Menus.TreeEditingSettingsOverride" /> オブジェクトへの参照を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.CheckBoxSettings">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="T:System.Windows.Controls.CheckBox" /> のすべてのプロパティをコントロールする <see cref="T:Infragistics.Controls.Menus.CheckBoxSettingsOverride" /> オブジェクトへの参照を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.IsDraggable">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodeLayout" /> に関連付けられた <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> オブジェクトがドラッグ可能かどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.IsDraggableResolved">
+            <summary>特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="P:Infragistics.Controls.Menus.NodeLayout.IsDraggable" /> プロパティを解決します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.IsDropTarget">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> オブジェクトがこの <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> にドロップできるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.IsDropTargetResolved">
+            <summary>特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="P:Infragistics.Controls.Menus.NodeLayout.IsDropTarget" /> プロパティを解決します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.NodeStyleResolved">
+            <summary>特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="P:Infragistics.Controls.Menus.NodeLayout.NodeStyle" /> プロパティを解決します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.NodeStyle">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> に関連付けられた <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> オブジェクトに割り当てられている <see cref="T:System.Windows.Style" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.ExpandedIconTemplate">
+            <summary>現在展開されているノードに表示される <see cref="T:System.Windows.DataTemplate" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.ExpandedIconTemplateResolved">
+            <summary>子があり、展開されている場合に、この <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> に使用する <see cref="T:System.Windows.DataTemplate" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.CollapsedIconTemplate">
+            <summary>現在縮小されているノードに表示される <see cref="T:System.Windows.DataTemplate" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayout.CollapsedIconTemplateResolved">
+            <summary>子があり、縮小されている場合に、この <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> に使用する <see cref="T:System.Windows.DataTemplate" /> を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.NodeLayoutCollection">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodeLayout" />オブジェクトの変更可能コレクションを表します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.NodeLayoutCollection.AddItemSilently(System.Int32,Infragistics.Controls.Menus.NodeLayout)">
+            <summary>イベントをトリガーせずに指定されたインデックスで項目を追加します。</summary>
+            <param name="index"></param>
+            <param name="item"></param>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.NodeLayoutCollection.Item(System.String)">
+            <summary>指定されたキーを持つ <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> を取得します。</summary>
+            <param propertyName="key"></param>
+            <returns>指定されたキーを持つ NodeLayout。複数の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> が同じキーを持つ場合、最初の NodeLayout が返されます。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.Primitives.NodeLineControl">
+            <summary>ノード線を <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> で表示するコントロールです。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodeLineControl.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.Primitives.NodeLineControl" /> クラスの新しいインスタンスを初期化します。</summary>        
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodeLineControl.#cctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.Primitives.NodeLineControl" /> クラスの静的コンストラクター。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.Primitives.NodeLineControl.NodeProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.Primitives.NodeLineControl.Node" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.Primitives.NodeLineControl.VerticalLineProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.Primitives.NodeLineControl.VerticalLine" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.Primitives.NodeLineControl.HorizontalLineProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.Primitives.NodeLineControl.HorizontalLine" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodeLineControl.OnApplyTemplate">
+            <summary>新しいテンプレートが適用されたときに <see cref="T:Infragistics.Controls.Menus.Primitives.NodeLineControl" /> のビジュアル ツリーを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodeLineControl.MeasureOverride(System.Windows.Size)">
+             <summary>Silverlight レイアウトの「計測」パスの動作を提供します。クラスは、計測パスの動作を定義するためにこのメソッドをオーバーライドできます。</summary>
+            <param name="availableSize">このオブジェクトが子オブジェクトに設定できる利用可能なサイズ。値として Infinity（System.Double.PositiveInfinity）の指定をすることによって、使用可能なコンテンツにサイズを合わせることを示します。</param>
+             <returns>子オブジェクトの割り当てサイズ (または、固定コンテナーのサイズなどの他の項目) の計算に基づいて、レイアウト時にこのオブジェクトが決定した必要サイズ。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodeLineControl.BuildNodeIndicators">
+            <summary>兄弟ノードを接続するために使用するノード線を作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodeLineControl.OnPropertyChanged(System.String)">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> オブジェクトで変更されるときに発生されます。</summary>
+            <param propertyName="propertyName">変更されたプロパティの propertyName。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.NodeLineControl.Node">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.Primitives.NodeLineControl" /> と関連付けられている <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.NodeLineControl.VerticalLine">
+            <summary>兄弟 <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の間の接続を表示するために使用する <see cref="T:System.Windows.DataTemplate" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.NodeLineControl.HorizontalLine">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> とその水平線の間の接続を表示するために使用する <see cref="T:System.Windows.DataTemplate" /> を取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.Primitives.NodeLineControl.PropertyChanged">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> で変更されるときに発生します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.Primitives.NodeLinePanel">
+            <summary>ノード線を <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> で表示するために使用する <see cref="T:System.Windows.Controls.Panel" />。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.Primitives.NodeLinePanel.NodeProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.Primitives.NodeLinePanel.Node" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodeLinePanel.ArrangeOverride(System.Windows.Size)">
+            <summary>Vertical <see cref="T:System.Windows.Controls.StackPanel" /> のように表示可能な各ノードを互いの上に配置します。</summary>
+            <param propertyName="finalSize">このオブジェクトがオブジェクト自体とその子を配列するために使用する親の中の最終領域。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodeLinePanel.MeasureOverride(System.Windows.Size)">
+            <summary>ノード線がどのように合わさるかを決定します。</summary>
+            <param propertyName="availableSize">        
+            </param>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.NodeLinePanel.Node">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.Primitives.NodeLineControl" /> と関連付けられている <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.Primitives.NodeLineTerminator">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を <see cref="T:Infragistics.Controls.Menus.Primitives.NodeLineControl" /> に接続して線を表示し、ノード線を表示するコントロールです。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodeLineTerminator.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.Primitives.NodeLineTerminator" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodeLineTerminator.#cctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.Primitives.NodeLineTerminator" /> クラスの静的コンストラクター。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.Primitives.NodeLineTerminator.NodeProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.Primitives.NodeLineTerminator.Node" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.Primitives.NodeLineTerminator.NodeLineEndProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.Primitives.NodeLineTerminator.NodeLineEnd" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodeLineTerminator.EnsureState">
+            <summary><see cref="T:Infragistics.Controls.Menus.Primitives.NodeLineTerminator" /> が適切な状態であることを確認します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.NodeLineTerminator.Node">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.Primitives.NodeLineTerminator" /> と関連付けられている <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.NodeLineTerminator.NodeLineEnd">
+            <summary>どの状態を表示するか決定する <see cref="T:Infragistics.Controls.Menus.NodeLineTemination" /> 値を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.Primitives.NodesPanel">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> オブジェクトをツリー レイアウトで配列するクラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodesPanel.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.Primitives.NodesPanel" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodesPanel.ResetNodes">
+            <summary>VisualTree からすべてのノードを解放します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodesPanel.ResetNodes(System.Boolean)">
+            <summary>VisualTree からすべてのノードを解放します。</summary>
+            <param name="releaseAll">RecyclingManager で NodesPanel を解放する必要がある場合、True。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodesPanel.ResetCachedScrollInfo(System.Boolean)">
+            <summary>スクロール時にスクロールバーが他の位置へジャンプするのを止めるには、キャッシュされた情報をリセットします。リセットの理由は新しいノードの追加、ノードの削除、または子ノードの展開/縮小です。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodesPanel.RenderNode(Infragistics.Controls.Menus.XamDataTreeNode,System.Double)">
+            <summary>ノードのコントロールを作成して、パネルの子として追加します。</summary>
+            <param propertyName="node">現在 View にあるノード。 </param>
+            <param propertyName="availableWidth">ノードで使用可能な幅。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodesPanel.UpdateScrollInfo(System.Int32,System.Double)">
+            <summary><see cref="T:Infragistics.Controls.Menus.Primitives.NodesPanel" /> の ScollInfo を更新します。水平/垂直スクロールバーの表示状態、またはそのビューポートのサイズなど。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodesPanel.ArrangeNode(Infragistics.Controls.Menus.XamDataTreeNode,System.Double,System.Double,System.Double,System.Double)">
+            <summary>指定されたノードで Arrange を呼び出します。</summary>
+            <param propertyName="node">配置する必要があるノード。</param>
+            <param propertyName="left">ノードが配置される左値。</param>
+            <param propertyName="top">ノードが配置される上値。</param>
+            <param propertyName="width">ノードの幅。</param>
+            <param propertyName="height">ノードの高さ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodesPanel.MeasureOverride(System.Windows.Size)">
+            <summary>指定された使用可能なサイズやスクロール情報に適合するノードの数を決定します。</summary>
+            <param name="availableSize">このオブジェクトが子オブジェクトに設定できる利用可能なサイズ。すべてのノードを表示することを示す値として、Infinity を指定できます。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodesPanel.ArrangeOverride(System.Windows.Size)">
+            <summary>Vertical <see cref="T:System.Windows.Controls.StackPanel" /> のように表示可能な各ノードを互いの上に配置します。</summary>
+            <param propertyName="finalSize">このオブジェクトがオブジェクト自体とその子を配列するために使用する親の中の最終領域。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.Primitives.NodesPanel.OnChildDesiredSizeChanged(System.Windows.UIElement)">
+            <summary>子要素がサイズ変更された時にレイアウト動作をサポートします。</summary>
+            <param name="child">サイズ変更される子要素。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.NodesPanel.Tree">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> が適用する <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.NodesPanel.VisibleNodes">
+            <summary>Viewport で現在表示されているノードを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Primitives.NodesPanel.ScrollInfo">
+            <summary><see cref="T:Infragistics.Controls.Menus.Primitives.NodesPanel" /> に対応する ScrollInfo オブジェクトへの参照。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.SettingsBase">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のすべての Settings オブジェクトのベース オブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.SettingsBase.OnTreeSet">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> プロパティが変更される時に呼び出されるメソッド。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.SettingsBase.Tree">
+            <summary><see cref="T:Infragistics.Controls.Menus.SettingsBase" /> オブジェクトを所有する <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.SettingsBaseOverride">
+            <summary><see cref="P:Infragistics.Controls.Menus.SettingsBaseOverride.NodeLayout" /> の Settings オブジェクトのベース オブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.SettingsBaseOverride.InvalidateResolvedProperties(System.String)">
+            <summary>上位からの変更がバインドで正しく反映できるよう、解決されたプロパティの OnPropertyChanged を発生させるよう設計されたメソッド。</summary>
+            <param name="propertyName"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.SettingsBaseOverride.InvalidateResolvedProperties">
+            <summary>上位からの変更がバインドで正しく反映できるよう、解決されたプロパティの OnPropertyChanged を発生させるよう設計されたメソッド。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.SettingsBaseOverride.NodeLayout">
+            <summary><see cref="T:Infragistics.Controls.Menus.SettingsBaseOverride" /> オブジェクトを所有する <see cref="P:Infragistics.Controls.Menus.SettingsBaseOverride.NodeLayout" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.SettingsBaseOverride.SettingsObject">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.SettingsBase" /> と同じような <see cref="T:Infragistics.Controls.Menus.SettingsBaseOverride" /> を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.CheckBoxSettings">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のすべての <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> に適用される CheckBox 設定を定義するクラス。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.CheckBoxSettings.CheckBoxStyleProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.CheckBoxSettings.CheckBoxStyle" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.CheckBoxSettings.CheckBoxVisibilityProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.CheckBoxSettings.CheckBoxVisibility" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.CheckBoxSettings.IsCheckBoxThreeStateProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.CheckBoxSettings.IsCheckBoxThreeState" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.CheckBoxSettings.CheckBoxModeProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.CheckBoxSettings.CheckBoxMode" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.CheckBoxSettings.CheckBoxStyle">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> で使用できる <see cref="T:System.Windows.Controls.CheckBox" /> コントロールに適用される <see cref="T:System.Windows.Style" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.CheckBoxSettings.CheckBoxVisibility">
+            <summary><see cref="T:System.Windows.Controls.CheckBox" /> が <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> オブジェクトで使用できるようになるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.CheckBoxSettings.IsCheckBoxThreeState">
+            <summary><see cref="P:Infragistics.Controls.Menus.CheckBoxSettings.CheckBoxMode" /> が <see cref="F:Infragistics.Controls.Menus.TreeCheckBoxMode.Manual" /> に設定されている場合、<see cref="T:System.Windows.Controls.CheckBox" /> コントロールで 3 つの状態をクリックできるかどうかを取得または設定します。<see cref="F:Infragistics.Controls.Menus.TreeCheckBoxMode.Auto" /> に設定されている場合、このプロパティの効果はありません。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.CheckBoxSettings.CheckBoxMode">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> のコントロールをチェックしているときに親および子の <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> オブジェクトの <see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.IsChecked" /> プロパティに発生する内容を管理する <see cref="T:Infragistics.Controls.Menus.TreeCheckBoxMode" /> を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.CheckBoxSettingsOverride">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> の １ つの <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> に適用される CheckBox 設定を定義するクラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.CheckBoxSettingsOverride.InvalidateResolvedProperties">
+            <summary>上位からの変更がバインドで正しく反映できるよう、解決されたプロパティの OnPropertyChanged を発生させるよう設計されたメソッド。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.CheckBoxSettingsOverride.CheckBoxVisibilityProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.CheckBoxSettingsOverride.CheckBoxVisibility" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.CheckBoxSettingsOverride.CheckBoxStyleProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.CheckBoxSettingsOverride.CheckBoxStyle" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.CheckBoxSettingsOverride.SettingsObject">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.SettingsBase" /> と同じような <see cref="T:Infragistics.Controls.Menus.SettingsBaseOverride" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.CheckBoxSettingsOverride.CheckBoxVisibility">
+            <summary><see cref="T:System.Windows.Controls.CheckBox" /> が <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> オブジェクトで使用できるようになるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.CheckBoxSettingsOverride.CheckBoxVisibilityResolved">
+            <summary>特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="P:Infragistics.Controls.Menus.CheckBoxSettingsOverride.CheckBoxVisibility" /> プロパティを解決します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.CheckBoxSettingsOverride.CheckBoxStyle">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodeLayout" /> で使用できる <see cref="T:System.Windows.Controls.CheckBox" /> コントロールに適用される <see cref="T:System.Windows.Style" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.CheckBoxSettingsOverride.CheckBoxStyleResolved">
+            <summary>特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="P:Infragistics.Controls.Menus.CheckBoxSettingsOverride.CheckBoxStyle" /> プロパティを解決します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.CheckBoxSettingsOverride.CheckBoxModeResolved">
+            <summary>特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="P:Infragistics.Controls.Menus.CheckBoxSettings.CheckBoxMode" /> プロパティを解決します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.CheckBoxSettingsOverride.IsCheckBoxThreeStateResolved">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の <see cref="T:System.Windows.Controls.CheckBox" /> が 3 つの状態に設定されているかどうかを取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.TreeEditingSettings">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のすべての <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> に適用される編集設定を定義するクラス。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeEditingSettings.AllowEditingProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.TreeEditingSettings.AllowEditing" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeEditingSettings.IsF2EditingEnabledProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.TreeEditingSettings.IsF2EditingEnabled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeEditingSettings.IsEnterKeyEditingEnabledProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.TreeEditingSettings.IsEnterKeyEditingEnabled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeEditingSettings.IsMouseActionEditingEnabledProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.TreeEditingSettings.IsMouseActionEditingEnabled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeEditingSettings.IsOnNodeActiveEditingEnabledProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.TreeEditingSettings.IsOnNodeActiveEditingEnabled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeEditingSettings.AllowDeletionProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.TreeEditingSettings.AllowDeletion" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettings.AllowEditing">
+            <summary>Editing が有効であるかどうかを取得または設定します。有効である場合、<see cref="T:Infragistics.Controls.Menus.NodeLayout" /> のすべての <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> オブジェクトのために設定するモードも取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettings.IsF2EditingEnabled">
+            <summary>F2 キーを押すと ActiveCell が編集モードに入るかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettings.IsEnterKeyEditingEnabled">
+            <summary>Enter キーを押すと ActiveCell が編集モードに入るかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettings.IsMouseActionEditingEnabled">
+            <summary><see cref="T:Infragistics.Controls.Menus.TreeMouseEditingAction" /> を編集モードに切り替える <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettings.IsOnNodeActiveEditingEnabled">
+            <summary>アクティブになるときに <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が編集モードに入るかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettings.AllowDeletion">
+            <summary>ユーザーが <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のすべての <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> で Delete キーを使用してノードを削除できるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.TreeEditingSettingsOverride">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> の １ つの <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> に適用される編集設定を定義するクラス。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeEditingSettingsOverride.AllowEditingProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.AllowEditing" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsF2EditingEnabledProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsF2EditingEnabled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsEnterKeyEditingEnabledProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsEnterKeyEditingEnabled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsMouseActionEditingEnabledProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsMouseActionEditingEnabled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsOnNodeActiveEditingEnabledProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsOnNodeActiveEditingEnabled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeEditingSettingsOverride.AllowDeletionProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.AllowDeletion" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.SettingsObject">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.SettingsBase" /> と同じような <see cref="T:Infragistics.Controls.Menus.SettingsBaseOverride" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.AllowEditing">
+            <summary>Editing が有効であるかどうかを取得または設定します。有効である場合、特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> に設定するモードも取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.AllowEditingResolved">
+            <summary>特定の <see cref="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.AllowEditing" /> の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> プロパティを決定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsF2EditingEnabled">
+            <summary>[F2] キーを押すと特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> で ActiveCell を編集モードに入るかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsF2EditingEnabledResolved">
+            <summary>特定の <see cref="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsF2EditingEnabled" /> の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> プロパティを決定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsEnterKeyEditingEnabled">
+            <summary>[Enter] キーを押すと特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> で ActiveCell を編集モードに入るかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsEnterKeyEditingEnabledResolved">
+            <summary>特定の <see cref="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsEnterKeyEditingEnabled" /> の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> プロパティを決定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsMouseActionEditingEnabled">
+            <summary>特定の <see cref="T:Infragistics.Controls.Menus.TreeMouseEditingAction" /> で <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を編集モードに入ることを起こる <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsMouseActionEditingEnabledResolved">
+            <summary>特定の <see cref="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsMouseActionEditingEnabled" /> の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> プロパティを決定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsOnNodeActiveEditingEnabled">
+            <summary>指定された <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> でアクティブになるときに <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> を編集モードに入るかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsOnNodeActiveEditingEnabledResolved">
+            <summary>特定の <see cref="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.IsOnNodeActiveEditingEnabled" /> の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> プロパティを決定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.AllowDeletion">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のこの <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> でレコードを削除できるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.AllowDeletionResolved">
+            <summary>特定の <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> の <see cref="P:Infragistics.Controls.Menus.TreeEditingSettingsOverride.AllowDeletion" /> プロパティを解決します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.TreeSelectionSettings">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のすべての <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> に適用される Selection 設定を定義するクラス。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.TreeSelectionSettings.NodeSelectionProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.TreeSelectionSettings.NodeSelection" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.TreeSelectionSettings.Dispose(System.Boolean)">
+            <summary><see cref="T:Infragistics.Controls.Menus.TreeSelectionSettings" /> によって使用されるアンマネージ リソースを解放し、マネージ リソースをオプションで解放します。</summary>
+            <param propertyName="disposing">マネージ リソースとアンマネージ リソースを両方とも解放する場合は true、アンマネージ リソースのみを解放する場合は false。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.TreeSelectionSettings.Dispose">
+            <summary><see cref="T:Infragistics.Controls.Menus.TreeSelectionSettings" /> に使用されたマネージ リソースとアンマネージ リソースを解放します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeSelectionSettings.NodeSelection">
+            <summary>すべての <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> に適用される <see cref="T:Infragistics.Controls.Menus.TreeSelectionType" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.TreeSelectionSettings.SelectedNodes">
+            <summary>現在選択されている <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> オブジェクトのコレクションです。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.Properties.Resources">
+            <summary>ローカライズされた文字列の検索など、厳密に型指定されたリソース クラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Properties.Resources.ResourceManager">
+            <summary>このクラスによって使用されるキャッシュされた ResourceManager インスタンスを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.Properties.Resources.Culture">
+            <summary>この厳密に型指定されたリソース クラスを使用してすべてのリソースの検索の現在のスレッドの CurrentUICulture プロパティをオーバーライドします。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.SelectedCollectionBase`1">
+            <summary>選択可能な項目のコレクション。</summary>
+            <typeparam propertyName="T"><see cref="T:Infragistics.ISelectableObject" /> タイプのオブジェクト。</typeparam>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.SelectedCollectionBase`1.AddRange(Infragistics.Controls.Menus.SelectedCollectionBase{`0})">
+            <summary>指定された項目のコレクションをこのコレクションに追加します。</summary>
+            <param propertyName="items"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.SelectedCollectionBase`1.SelectItem(`0,System.Boolean)">
+            <summary>指定された項目を選択します。</summary>
+            <param propertyName="item">選択されている項目。</param>
+            <param propertyName="shiftKey">[Shift] キーが押されているかどうか。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.SelectedCollectionBase`1.OnSelectionChanged(Infragistics.Controls.Menus.SelectedCollectionBase{`0},Infragistics.Controls.Menus.SelectedCollectionBase{`0})">
+            <summary>Selection コレクションが変更されたときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.SelectedCollectionBase`1.CreateNewInstance">
+            <summary>このコレクションの新しいインスタンスを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.SelectedCollectionBase`1.AddItem(System.Int32,`0)">
+            <summary>指定したインデックスに項目を追加します。</summary>
+            <param propertyName="index"></param>
+            <param propertyName="item"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.SelectedCollectionBase`1.InsertItem(System.Int32,`0)">
+            <summary>指定したインデックスに項目を追加します。</summary>
+            <param propertyName="index"></param>
+            <param propertyName="item"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.SelectedCollectionBase`1.RemoveItem(System.Int32)">
+            <summary>指定したインデックスにある項目を削除します。</summary>
+            <param propertyName="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.SelectedCollectionBase`1.ReplaceItem(System.Int32,`0)">
+            <summary>指定されたインデックスにある項目を指定された項目と置換します。</summary>
+            <param propertyName="index"></param>
+            <param propertyName="newItem"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.SelectedCollectionBase`1.ResetItems">
+            <summary>このコレクションからすべての項目を削除します</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.SelectedCollectionBase`1.Tree">
+            <summary>このコレクションが属する <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> への参照を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.SelectedCollectionBase`1.ShiftSelectedItems">
+            <summary>[Shift] キーが押されたときに選択された項目のコレクションを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.SelectedCollectionBase`1.PivotItem">
+            <summary>[Shift] キーが押された時に最初の選択された項目を取得します。</summary>
+            <remarks> この情報は、選択された範囲を変更するために必要です。</remarks>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.SelectedNodesCollection">
+            <summary>選択された変更可能な <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> オブジェクトのコレクションを表します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.SelectedNodesCollection.CreateNewInstance">
+            <summary>このコレクションの新しいインスタンスを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.SelectedNodesCollection.OnSelectionChanged(Infragistics.Controls.Menus.SelectedCollectionBase{Infragistics.Controls.Menus.XamDataTreeNode},Infragistics.Controls.Menus.SelectedCollectionBase{Infragistics.Controls.Menus.XamDataTreeNode})">
+            <summary>Selection コレクションが変更されたときに呼び出されます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.strings">
+            <summary>ローカライズされた文字列の検索など、厳密に型指定されたリソース クラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.strings.ResourceManager">
+            <summary>このクラスによって使用されるキャッシュされた ResourceManager インスタンスを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.strings.Culture">
+            <summary>この厳密に型指定されたリソース クラスを使用してすべてのリソースの検索の現在のスレッドの CurrentUICulture プロパティをオーバーライドします。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.strings.DataTypeMismatchExceptionVerbose">
+            <summary>「The data object passed to the CreateItem method was not of the same data type as the underlying list」と同様のローカライズされた文字列を検索します。入力されたオブジェクト型は {0} でしたが、基本コレクションは {1} になる予定です。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.strings.DuplicateKeyException">
+            <summary>「A NodeLayout with this key is already in this collection..」と同様のローカライズされた文字列を検索します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.strings.InvalidMember">
+          <summary>
+            「The provided MemberPath, {0}, doesn&apos;t exist on the underlying object {1}.」と同様のローカライズされた文字列を検索します。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.strings.LayoutCannotBeMappedToProperty">
+            <summary>「A NodeLayout could not be found for the given property..」と同様のローカライズされた文字列を検索します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.strings.LayoutNotGloballyDefined">
+            <summary>「The NodeLayout found is not defined for global usage or has an empty TargetTypeName..」と同様のローカライズされた文字列を検索します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.strings.LE_NodeLayout_InsertItem">
+            <summary>「The inserted item&apos;s NodeLayout does not match the with the NodeLayout of this NodesManager..」と同様のローカライズされた文字列を検索します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.strings.NullDataException">
+            <summary>「The data object passed to the CreateItem method was null and cannot be used..」と同様のローカライズされた文字列を検索します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.strings.NullKeyException">
+            <summary>「The NodeLayout must have a unique Key defined..」と同様のローカライズされた文字列を検索します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.XamDataTree">
+            <summary>データバウンド ツリー コントロール。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.#cctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> クラスの静的コンストラクター。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnApplyTemplate">
+            <summary>新しいテンプレートが適用されたときに <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のビジュアル ツリーを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseEnter" /> イベントを発生する前に呼び出します。</summary>
+            <param propertyName="e">イベントについてのデータ</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseLeave" /> イベントを発生する前に呼び出します。</summary>
+            <param propertyName="e">イベントについてのデータ</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> に MouseWheel が発生されたときに呼び出されます。</summary>
+            <param propertyName="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)">
+            <summary>LostMouseCapture イベントを発生する前に呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnMouseMove(System.Windows.Input.MouseEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseMove" /> イベントを発生する前に呼び出します。</summary>
+            <param propertyName="e">イベントについてのデータ</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.GotFocus" /> イベントを発生する前に呼び出します。</summary>
+            <param propertyName="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>System.Windows.UIElement.MouseLeftButtonDown イベントが発生する前に呼び出されます。</summary>
+            <param name="e">イベントについてのデータ。 </param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnCreateAutomationPeer">
+          <summary>
+            クラス固有の <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 実装を返します。
+          </summary>
+          <returns>
+            型固有の <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 実装を取得または設定します。
+          </returns>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.ItemsSourceProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.ItemsSource" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.MaxDepthProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.MaxDepth" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.DisplayMemberPathProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.DisplayMemberPath" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.CheckBoxMemberPathProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.CheckBoxMemberPath" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.IsEnabledMemberPathProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.IsEnabledMemberPath" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.IsExpandedMemberPathProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.IsExpandedMemberPath" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.IndentationProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.Indentation" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.ItemTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.ItemTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.ShowActiveNodeIndicatorProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.ShowActiveNodeIndicator" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.ActiveNodeIndicatorStyleProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.ActiveNodeIndicatorStyle" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.NodeStyleProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.NodeStyle" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.IsDraggableProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.IsDraggable" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.IsDropTargetProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.IsDropTarget" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.NodeLineVisibilityProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.NodeLineVisibility" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.ExpandedIconTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.ExpandedIconTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.CollapsedIconTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.CollapsedIconTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.EnsureNodeExpansionProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.EnsureNodeExpansion" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.AllowDragDropCopyProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.AllowDragDropCopy" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.IsTouchSupportEnabledProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.IsTouchSupportEnabled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.DefaultEditorStyleProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Menus.XamDataTree.DefaultEditorStyle" /> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.SelectedDataItemsProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Menus.XamDataTree.SelectedDataItems" /> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnSelectedDataItemsChanged(System.Object[],System.Object[])">
+          <summary>SelectedDataItemsProperty プロパティ変更ハンドラー。</summary>
+          <param name="oldValue">古い値。</param>
+          <param name="newValue">新しい値。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTree.IsSelectedMemberPathProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Menus.XamDataTree.IsSelectedMemberPath"/> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnIsSelectedMemberPathChanged(System.String,System.String)">
+          <summary>IsSelectedMemberPathProperty プロパティ変更ハンドラー。</summary>
+          <param name="oldValue">古い値。</param>
+          <param name="newValue">新しい値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.InvalidateScrollPanel(System.Boolean)">
+          <summary>
+            <see cref="T:Infragistics.Controls.Menus.Primitives.NodesPanel" /> のコンテンツを無効にします。
+          </summary>
+          <param propertyName="reset">内部のスクロール情報を無効にする場合は True です。 リセットの理由は新しいノードの追加、ノードの削除、または子ノードの展開/縮小です。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.EnterEditMode(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> を編集モードにするメソッド。</summary>
+            <param name="node"></param>        
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.ExitEditMode(System.Boolean)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> の編集を終了するメソッド。</summary>
+            <param name="cancel">編集をキャンセルする必要がある場合は True.</param>
+            <returns><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeExitingEditMode" /> イベントをキャンセルして編集モードの終了を中止する場合は false です。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.InvalidateScrollPanel(System.Boolean,System.Boolean)">
+            <summary><see cref="T:Infragistics.Controls.Menus.Primitives.NodesPanel" /> のコンテンツを無効にします。</summary>
+            <param propertyName="reset">内部のスクロール情報を無効にする場合は True です。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.InvalidateScrollPanel(System.Boolean,System.Boolean,System.Boolean)">
+            <summary><see cref="T:Infragistics.Controls.Menus.Primitives.NodesPanel" /> のコンテンツを無効にします。</summary>
+            <param name="reset">内部のスクロール情報を無効にする場合は True です。</param>
+            <param name="resetScrollPosition">グリッドの水平位置および垂直位置が 0 に設定される場合は、True です。</param>
+            <param name="resetVisibleNodes">表示ノードをリセットする場合 True。</param>        
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.ResetPanelNodes">
+            <summary>完全に再読み込みするために、すべてのノードをリサイクルすることをパネルに通知します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.ResetPanelNodes(System.Boolean)">
+            <summary>完全に再読み込みするために、すべてのノードをリサイクルすることをパネルに通知します。</summary>
+            <param name="releaseNodesPanels">RecyclingManager で NodesPanel を解放する必要がある場合、True。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.SetActiveNode(Infragistics.Controls.Menus.XamDataTreeNode,Infragistics.Controls.Menus.TreeInvokeAction)">
+            <summary>現在 <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> でアクティブな <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を変更するメソッド。</summary>
+            <param name="node"></param>
+            <param name="action"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.SetActiveNode(Infragistics.Controls.Menus.XamDataTreeNode,Infragistics.Controls.Menus.TreeInvokeAction,System.Boolean)">
+            <summary>現在 <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> でアクティブな <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を変更するメソッド。</summary>
+            <param name="node"></param>
+            <param name="action"></param>
+            <param name="scrollToView"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.SetActiveNodeInternal(Infragistics.Controls.Menus.XamDataTreeNode,Infragistics.Controls.Menus.TreeInvokeAction,System.Boolean)">
+          <summary>
+            <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> の現在アクティブな <see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" /> を設定します。
+          </summary>
+          <param name="node">ノード。</param>
+          <param name="action">アクティブ化を実行したアクション。</param>
+          <param name="scrollToView">
+            <c>true</c> に設定されると、ノード コントロールがビューにスクロールされます。
+          </param>
+          <returns>
+            アクティブなノードが変更された場合 <c>true</c>。それ以外の場合 <c>false</c>。
+          </returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.EnterEditModeInternal(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> を編集モードにするメソッド。</summary>
+            <param name="node"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.ExitEditModeInternal(System.Boolean)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> の編集モードを中止するメソッド。</summary>
+            <param name="cancel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.UnselectNode(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を選択解除する内部メソッド。</summary>
+            <param name="xamDataTreeNode"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.SelectNode(Infragistics.Controls.Menus.XamDataTreeNode,Infragistics.Controls.Menus.TreeInvokeAction)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を選択する内部メソッド。</summary>
+            <param name="action"></param>
+            <param name="node"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.ScrollNodeIntoView(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode"></see> を表示領域にスクロールします。</summary>
+            <param name="node">表示されるノード。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.GetNodesFromItems(System.Object[],System.Boolean)">
+          <summary>
+            ItemsSource の指定した項目に関連付けられている <b>XamDataTreeNodes</b> を取得します。
+          </summary>
+          <param name="items">基本項目ソースからのオブジェクトの配列。</param>
+          <param name="recursive">True の場合、すべての子孫ノードで一致があるかを検索します。</param>
+          <returns>
+            見つかったデータ項目の関連 <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode"/> の配列。
+          </returns>
+          <remarks>データのサイズおよび構造によってこの操作が高くなる可能性があるため、ロジックは最初にルート レベルのすべての XamDataTreeNodes を検索します。すべての一致が検索されていない場合、すべての子孫ノードを検索します。</remarks>
+          <seealso cref="P:Infragistics.Controls.Menus.XamDataTree.NodesManager"/>
+          <seealso cref="T:Infragistics.Controls.Menus.XamDataTreeNode"/>
+          <seealso cref="P:Infragistics.Controls.Menus.XamDataTreeNode.Data"/>
+          <seealso cref="P:Infragistics.Controls.Menus.XamDataTree.ItemsSource"/>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.RegisterResources(System.String,System.Reflection.Assembly)">
+            <summary>コントロールがリソースをプルする追加の Resx を追加します。</summary>
+            <param name="name">使用されるリソースを含む組み込み resx ファイルの名前。</param>
+            <param name="assembly">resx ファイルが埋め込まれるアセンブリ。</param>
+            <remarks>ファイルの拡張子を含まないでください。ただし、アセンブリのデフォルト名前空間でプレフィックスしてください。</remarks>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.UnregisterResources(System.String)">
+            <summary>以前登録した resx ファイルを削除します。</summary>
+            <param name="name">登録に使用された埋め込み resx ファイルの名前。</param>
+            <remarks>注：これは、すでにビューに存在し、文字列を表示しているコントロールには影響ありません。作成された新規コントロールにのみ影響を与えます。</remarks>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnInitializeNode(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary>ノードが作成されるときに発生します。</summary>
+            <param propertyName="node">作成されたノード。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnNodeExpansionChanging(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeExpansionChanging" /> イベントを発生します。</summary>
+            <param propertyName="node">展開/縮小されている <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnNodeExpansionChanged(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeExpansionChanged" /> イベントを発生します。</summary>
+            <param propertyName="node">展開/縮小された <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnNodeCheckChanged(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeCheckedChanged" /> イベントを発生します。</summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnNodeLayoutAssigned(Infragistics.Controls.Menus.NodeLayoutAssignedEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeLayoutAssigned" /> イベントを発生します。</summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnActiveNodeChanged(Infragistics.Controls.Menus.ActiveNodeChangedEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.ActiveNodeChanged" /> イベントを発生します。</summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnActiveNodeChanging(Infragistics.Controls.Menus.ActiveNodeChangingEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.ActiveNodeChanging" /> イベントを発生します。</summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnNodeEnteringEditMode(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeEnteringEditMode" /> イベントを発生します。</summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnNodeEnteredEditMode(Infragistics.Controls.Menus.XamDataTreeNode,System.Windows.FrameworkElement)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeEnteredEditMode" /> イベントを発生します。</summary>
+            <param name="node"></param>
+            <param name="editor"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnNodeExitEditingMode(Infragistics.Controls.Menus.TreeExitEditingEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeExitingEditMode" /> イベントを発生します。</summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnNodeEditingValidationFailed(Infragistics.Controls.Menus.XamDataTreeNode,System.Windows.Controls.ValidationErrorEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeEditingValidationFailed" /> イベントを発生します。</summary>
+            <param name="node"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnExitedEditMode(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeExitedEditMode" /> イベントを発生します。</summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnNodeDraggingStart(Infragistics.DragDrop.DragDropStartEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeDraggingStart" /> イベントを発生します。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnNodeDragCancel(Infragistics.DragDrop.DragDropEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeDragCancel" /> イベントを発生します。</summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnNodeDragEnd(Infragistics.DragDrop.DragDropEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeDragEnd" /> イベントを発生します。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnNodeDragDrop(Infragistics.Controls.Menus.TreeDropEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeDragDrop" /> イベントを発生します。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnDataObjectRequested(Infragistics.HandleableObjectGenerationEventArgs,Infragistics.Controls.Menus.NodeLayout,Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary>DataObjectRequested イベントを発生させます。</summary>
+            <param name="args"></param>
+            <param name="nodeLayout"></param>
+            <param name="parentNode"></param>        
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnNodeDeleting(Infragistics.Controls.Menus.CancellableNodeDeletionEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeDeleting" /> イベントを発生します。</summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnNodeDeleted(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary><see cref="E:Infragistics.Controls.Menus.XamDataTree.NodeDeleting" /> イベントを発生します。</summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTree.OnPropertyChanged(System.String)">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> オブジェクトで変更されるときに発生されます。</summary>
+            <param propertyName="propertyName">変更されたプロパティの propertyName。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.ItemsSource">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> の <see cref="T:System.Collections.IEnumerable" /> を取得または設定します。</summary>
+            <remarks>このプロパティは、XamDataTree が読み込まれるまで実行されません。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.MaxDepth">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> の階層の最大の深さを取得または設定します。このプロパティは、データ ソースが無限再帰として提供された場合に便利です。</summary>
+            <remarks>このプロパティは、基本的にゼロから始まり、ルート レベルでは MaxDepth が 0 と見なされます。このプロパティを 1 に設定した場合、ルート レベルの他に 1 レベルだけあることを意味します。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.GlobalNodeLayouts">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のすべてのレベルで使用する <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> オブジェクトのコレクションを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.NodeLayouts">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のルート レベルに対してのみ使用する <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> オブジェクトのコレクションを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.DisplayMemberPath">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> のテキストを生成するために <see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.Data" /> オブジェクトのプロパティへのパスを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.CheckBoxMemberPath">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の <see cref="T:System.Windows.Controls.CheckBox" /> を生成するために <see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.Data" /> オブジェクトのプロパティへのパスを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.IsEnabledMemberPath">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の <see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.IsEnabled" /> を生成するために <see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.Data" /> オブジェクトのプロパティへのパスを取得または設定します。</summary><seealso cref="F:Infragistics.Controls.Menus.XamDataTree.IsEnabledMemberPathProperty" /></member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.IsExpandedMemberPath">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の <see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.IsExpanded" /> を生成するために <see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.Data" /> オブジェクトのプロパティへのパスを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.Nodes">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のルート レベルにあるノードを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.Indentation">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> がそれぞれその親からどの程度インデントされているかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.ItemTemplate">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> 内のすべての <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> のすべての <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の VisualTree を作成するために使用する <see cref="T:System.Windows.DataTemplate" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.ActiveNode">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> によりアクティブと認識されている <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を取得または設定します。このノードはキーボード入力に応答します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.ActiveDataItem">
+          <summary>
+            アクティブ ノードのデータ項目を取得または設定します。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.CurrentEditNode">
+            <summary>現在編集モードにある <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.ShowActiveNodeIndicator">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> が現在アクティブな <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の周囲にインジケーターを表示するかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.SelectionSettings">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のすべての <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> で選択するためのすべてのプロパティを制御する <see cref="T:Infragistics.Controls.Menus.TreeSelectionSettings" /> オブジェクトへの参照を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.ActiveNodeIndicatorStyle">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.ActiveNode" /> で表示可能になる <see cref="T:Infragistics.Controls.Menus.Primitives.ActiveNodeIndicator" /> に適用される <see cref="T:System.Windows.Style" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.NodeStyle">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のすべての <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> に適用される <see cref="T:System.Windows.Style" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.EditingSettings">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のすべての <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> で編集するためのすべてのプロパティを制御する <see cref="T:Infragistics.Controls.Menus.TreeEditingSettings" /> オブジェクトへの参照を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.CheckBoxSettings">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodeLayout" /> のすべての <see cref="T:System.Windows.Controls.CheckBox" /> のすべてのプロパティを制御する <see cref="P:Infragistics.Controls.Menus.XamDataTree.CheckBoxSettings" /> オブジェクトへの参照を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.IsDraggable">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> がドラッグ アンド ドロップ操作に参加できるかどうかを取得または設定します。このプロパティは <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> によりドラッグ操作がそこから開始できるかどうか制御します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.IsDropTarget">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> がドラッグ アンド ドロップ操作に参加できるかどうかを取得または設定します。このプロパティは <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> によりドラッグ操作がそこで終了できるかどうか制御します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.NodeLineVisibility">
+            <summary>NodeLines が <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> で表示可能かどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.ExpandedIconTemplate">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のすべての <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> で現在展開されているノードに表示される <see cref="T:System.Windows.DataTemplate" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.CollapsedIconTemplate">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のすべての <see cref="T:Infragistics.Controls.Menus.NodeLayout" /> で現在縮小されているノードに表示される <see cref="T:System.Windows.DataTemplate" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.EnsureNodeExpansion">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> がツリーのすべてのノードを処理し、それにしたがって子ノードを登録するかどうかを取得または設定します。</summary>
+            <remarks>このフラグは、Xaml で使用するよう設計されています。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.AllowDragDropCopy">
+            <summary>Ctrl キーを押したままにしたときに、ドラッグ操作を、移動操作ではなくコピーとして指定するかどうかを取得または設定します。</summary>
+            <remarks>これは、ドラッグ アンド ドロップするときにコントロールが表示する視覚的な合図のみを制御します。True で Ctrl キーが押されている場合、キューはコピー操作用になり、デベロッパーはコピー操作を実装する必要があります。False の場合、Ctrl キーを押したままにすると、コピー操作ではなく移動操作が指定されます。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.IsTouchSupportEnabled">
+            <summary>タッチ サポートがこのコントロールで有効かどうかを返すか、設定します。</summary><seealso cref="F:Infragistics.Controls.Menus.XamDataTree.IsTouchSupportEnabledProperty" /></member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.DefaultEditorStyle">
+          <summary>
+            <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> のデフォルトのエディター スタイルを取得または設定します。デフォルトの XamDataTreeNode エディターは TextBox です。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.SelectedDataItems">
+          <summary>ノード コレクションと関連するデータ項目の配列を取得または設定します。</summary>
+          <value>
+            選択したデータ項目のコレクション。
+          </value>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.IsSelectedMemberPath">
+          <summary>
+            <see cref="T:Infragistics.Controls.Menus.XamDataTree"/> の <see cref="P:Infragistics.Controls.Menus.XamDataTree.SelectedDataItems"/> を生成するために <see cref="P:Infragistics.Controls.Menus.XamDataTree.ItemsSource"/> オブジェクトのプロパティへのパスを取得または設定します。値は、項目が選択されたかチェックされたかどうかを決定するために使用される各データ項目のブール値プロパティ パス名であることに注意してください。
+          </summary>
+          <value>
+            IsSelected メンバー パス。
+          </value>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.VerticalScrollBar">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> にアタッチされる垂直スクロールバーへの参照を取得します。垂直スクロールバーが指定されていない場合、このプロパティは null を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.HorizontalScrollBar">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> にアタッチされる水平スクロールバーへの参照を取得します。水平スクロールバーが指定されていない場合、このプロパティは null を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.NodesManager">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> で使用される NodesManager への参照を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.Panel">
+            <summary>ノードを含む視覚的なコンテナー。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.IsNodeDragging">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が現在 <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> でドラッグされているかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.NodeLayoutAddedToGlobalNodeLayoutCollectionCount">
+            <summary>定義済みの NodeLayout が GlobalLayout コレクションに追加される回数を記録します。このように、定義済みの GlobalNodeLayout があるか、それともすべてがツリーの NodeLayout コレクションで定義されたかを確認します。</summary>
+            <value>
+            GlobalNodeLayout コレクションに追加された NodeLayouts の数。
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTree.CurrentDraggingNode">
+            <summary>現在ドラッグされている <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.InitializeNode">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が作成されるときに、このイベントを発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.NodeExpansionChanging">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を展開/縮小するときに、このイベントが発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.NodeExpansionChanged">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が展開/縮小されるときに、このイベントが発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.NodeCheckedChanged">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> がチェックされるときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.NodeLayoutAssigned">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodeLayout" /> が <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> に割り当てられるときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.ActiveNodeChanged">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.ActiveNode" /> が変更されるときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.ActiveNodeChanging">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTree.ActiveNode" /> が変更されるときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.NodeEnteringEditMode">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が編集モードになるときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.NodeEnteredEditMode">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が編集モードのときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.NodeExitingEditMode">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が編集モードを終了するときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.NodeEditingValidationFailed">
+            <summary>このイベントは、<see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の編集中に検証が失敗したときに発生されます。</summary>
+            <remarks><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> が編集モードを終了している場合、<see cref="T:Infragistics.Controls.Menus.XamDataTree" /> は BindingValidationError にアタッチし、発生したエラーはこのイベントを通して転送されます。しかし、セカンダリ エラーが <see cref="!:INotifyDataErrorInfo" /> インターフェイスを通してデータ オブジェクトで発生した場合、このイベントは発生しません。</remarks>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.NodeExitedEditMode">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が編集モードを終了した後に発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.NodeDraggingStart">
+            <summary>ドラッグ アンド ドロップ操作が <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> で開始するときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.NodeDragCancel">
+            <summary>ドラッグ アンド ドロップ操作が キャンセルにより終了するときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.NodeDragEnd">
+            <summary>ドラッグ アンド ドロップ操作が <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> で終了するときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.NodeDragDrop">
+            <summary>ドラッグ アンド ドロップ操作がドロップ操作で終了するときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.SelectedNodesCollectionChanged">
+            <summary>SelectedNodes コレクションが変更されると発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.DataObjectRequested">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> が新しいデータオブジェクトを要求するときに発生されるイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.NodeDeleting">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が削除されているときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.NodeDeleted">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が削除されているときに発生するイベント。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTree.PropertyChanged">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Menus.XamDataTree" /> で変更されるときに発生します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.XamDataTreeNode">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> の 1 つのデータ オブジェクトを表すオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.#ctor(System.Int32,Infragistics.Controls.Menus.NodesManager,System.Object,System.Boolean,Infragistics.Controls.Menus.NodeLayout)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.OnElementAttached(Infragistics.Controls.Menus.XamDataTreeNodeControl)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" /> が <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> にアタッチされるときに呼び出されます。</summary>
+            <param propertyName="element"><see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.OnElementReleasing(Infragistics.Controls.Menus.XamDataTreeNodeControl)">
+            <summary>オブジェクトから <see cref="T:System.Windows.FrameworkElement" /> が解放されたときに呼び出されます。</summary>
+            <param name="element"></param>
+            <returns>要素を解放しない必要がある場合は、False。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.OnElementReleased(Infragistics.Controls.Menus.XamDataTreeNodeControl)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" /> が <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> から削除するときに呼び出されます。</summary>
+            <param propertyName="element"><see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.CreateInstanceOfRecyclingElement">
+            <summary>XamDataTreeNode の新しいインスタンスを作成します。注: このメソッドは RecyclingManager でのみ呼び出されます。</summary>
+            <returns>新しい <see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" />。</returns>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTreeNode.IsExpandedProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.IsExpanded" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTreeNode.IsCheckedProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.IsChecked" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTreeNode.ExpandedIconTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.ExpandedIconTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTreeNode.CollapsedIconTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.CollapsedIconTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTreeNode.IsEnabledProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.IsEnabled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.EnsureCurrentState">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が適切な状態であることを確認します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.OnNodeClick">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> をクリックすると呼び出されるメソッド。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.OnNodeDoubleClick">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> をダブルクリックすると呼び出されるメソッド。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.OnNodeMouseDown(System.Windows.Input.MouseEventArgs)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> がマウス ダウンを受信すると呼び出されるメソッド。</summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.HandleKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が現在アクティブな状態でキー操作をすると呼び出されるメソッド。</summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.SetSelected(System.Boolean)">
+            <summary>項目の選択状態を設定します。</summary>
+            <param propertyName="isSelected"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.OnNodeDragging(Infragistics.Controls.Menus.TreeDragSelectType)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> をドラッグしているときに呼び出されるメソッド。</summary>
+            <param name="dragSelectType"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.OnNodeMouseMove(System.Windows.Input.MouseEventArgs)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が <see cref="E:System.Windows.UIElement.MouseMove" /> に応答しているときに呼び出されるメソッド。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.ApplyStyle">
+            <summary>どのスタイルを <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> に適用するか評価するメソッド。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.EnterEditMode(System.Boolean)">
+            <summary>指定された <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を編集モードにします。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.ResolveEditor(Infragistics.Controls.Menus.XamDataTreeNode,System.Action{System.Object},System.Object,System.Double,System.Double,System.Windows.Data.Binding)">
+            <summary>セルは編集モードだときに、<see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> に表示されるエディター コントロールを設定します。</summary>
+            <param propertyName="cell">編集モードにする <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" />。</param>
+            <param propertyName="valueChangedFunction">エディターの値が変更されたときに通知するために呼び出される関数。</param>
+            <param propertyName="editorValue">エディターに入力する必要がある値。</param>
+            <param propertyName="availableWidth">水平の利用可能のスペースの量。</param>
+            <param propertyName="availableHeight">垂直の利用可能のスペースの量。</param>
+            <param propertyName="editorBinding">エディターを設定するのに使用できる <see cref="T:System.Windows.Data.Binding" /> を提供します。</param>
+            <returns></returns>	
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.ResolveEditorControl(Infragistics.Controls.Menus.XamDataTreeNode,System.Object,System.Double,System.Double,System.Windows.Data.Binding)">
+            <summary>セルは編集モードだときに、<see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> に表示されるエディター コントロールを設定します。</summary>
+            <param propertyName="cell">編集モードにする <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" />。</param>
+            <param propertyName="editorValue">エディターに入力する必要がある値。</param>
+            <param propertyName="availableWidth">水平の利用可能のスペースの量。</param>
+            <param propertyName="availableHeight">垂直の利用可能のスペースの量。</param>
+            <param propertyName="editorBinding">エディターを設定するのに使用できる <see cref="T:System.Windows.Data.Binding" /> を提供します。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.NotifyEditorValueChanged(System.Object)">
+            <summary>エディターの値が変更されたときに、所有するセルに通知するために使用されます。</summary>
+            <param propertyName="value"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.ResolveEditorBinding">
+            <summary>エディターに適用できる <see cref="T:System.Windows.Data.Binding" /> を作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.ResolveValueFromEditor">
+            <summary>セルの基本のデータを更新するのに、エディター コントロールの値を解決します。</summary>
+            <param propertyName="cell">エディターを表示する <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" />。</param>
+            <returns>セルに表示される値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.ExitEditMode(System.Object,System.Boolean)">
+            <summary>指定した <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の編集モードを終了します。</summary>
+            <param propertyName="newValue"><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> に入力する値。</param>
+            <param propertyName="editingCanceled">編集モードを終了するかどうか (キャンセルされたため)。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.CreateNodeValueBinding">
+            <summary>更新するために CellValueObject が使用するバインディングを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.RaiseIsActiveChanged">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.IsActive" /> プロパティが変更されようとしていることを通知します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.SelectNodeHelper(Infragistics.Controls.Menus.XamDataTree,Infragistics.Controls.Menus.XamDataTreeNode)">
+          <summary>以前に選択されるノードをクリアし、指定したノードを選択し、適切な引数と SelectedNodesCollectionChanged イベントを発生します。</summary>
+          <param name="tree">XamDataTree</param>
+          <param name="node">選択される XamDataTreeNode。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.ValidateChildNodesCheckState">
+          <summary>
+            子ノードのチェック状態を検証します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNode.ValidateParentCheckedState">
+          <summary>
+            親ノードのチェック状態を検証します。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.RecyclingIdentifier">
+            <summary><see cref="P:Infragistics.ISupportRecycling.RecyclingElementType" /> が指定されていない場合、このプロパティはリサイクル可能な要素を識別する方法を提供します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.IsExpanded">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が展開または縮小されるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.Data">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> と関連付けられた基本データを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.Index">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の currentIndex インデックスを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.Manager">
+            <summary>この特定のノードを所有する <see cref="T:Infragistics.Controls.Menus.NodesManager" />。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.Control">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" /> に添付される <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を取得します。</summary>
+            <remarks><see cref="T:Infragistics.Controls.Menus.Primitives.NodesPanel" /> のビューポートにある場合にのみ、Control はノードと関連付けられます。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.IsMouseOver">
+            <summary>マウスは現在 <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の上にあるかどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.NodeLayout">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.NodeLayout" /> に関連付けられた <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.HasChildren">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> に子があるかどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.Nodes">
+            <summary>現在の <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の子ノードを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.IsHeader">
+            <summary>特定の <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が実際のデータ ノードまたは IEnumerable のプロパティを表すノードかどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.IsChecked">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> がチェックされているかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.IsSelected">
+            <summary>項目が現在選択されているかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.Style">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> に適用する必要がある <see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.Style" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.IsActive">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が現在 <see cref="P:Infragistics.Controls.Menus.XamDataTree.ActiveNode" /> かどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.IsEditing">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が現在編集モードかどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.IsDraggable">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> をその現在位置からドラッグできるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.IsDropTarget">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> がノードのドロップ ターゲットとして動作できるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.IsDraggableResolved">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.NodeLayout" /> レベルからアカウント値を取得した後、<see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> がドラッグできるかどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.IsDropTargetResolved">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.NodeLayout" /> レベルからアカウント値を取得した後、<see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> がドロップ ターゲットかどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.ExpandedIconTemplate">
+            <summary>このノードで表示される展開された <see cref="T:System.Windows.DataTemplate" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.CollapsedIconTemplate">
+            <summary>このノードで表示される縮小された <see cref="T:System.Windows.DataTemplate" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.ExpandedIconTemplateResolved">
+            <summary>このノードで表示される展開された <see cref="T:System.Windows.DataTemplate" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.CollapsedIconTemplateResolved">
+            <summary>このノードで表示される縮小された <see cref="T:System.Windows.DataTemplate" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.IsEnabled">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" /> を有効にするかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.ItemsSource">
+            <summary>ノードを所有する子のデータを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.ChildNodesManager">
+            <summary><see cref="T:Infragistics.Controls.Menus.NodesManager" /> を所有する <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.Value">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の値を取得します。値は、<see cref="P:Infragistics.Controls.Menus.NodeLayout.DisplayMemberPathResolved" /> で定義されたデータ オブジェクトのフィールドの値として定義されます。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.ResolveStyle">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> に適用する必要がある <see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.Style" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNode.IsDataBound">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> がデータソースで生成されたか、手動で入力されたかどうかを取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.XamDataTreeNode.NodeValueObject">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> の値を保存するために使用するクラス。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTreeNode.NodeValueObject.ValueProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTreeNode.NodeValueObject.Value" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.XamDataTreeNodeControl">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> オブジェクトのビジュアル表現としての役割を果たすオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.#cctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.Primitives.NodeLineTerminator" /> クラスの静的コンストラクター。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Menus.XamDataTreeNodeControl.CheckBoxStyleProperty">
+            <summary><see cref="P:Infragistics.Controls.Menus.XamDataTreeNodeControl.CheckBoxStyle" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.OnAttached(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が <see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" /> にアタッチされるときに呼び出されます。</summary>
+            <param propertyName="cell"><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> にアタッチされている <see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.OnReleased(Infragistics.Controls.Menus.XamDataTreeNode)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が <see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" /> を離すときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.AttachContent">
+            <summary>コンテンツが Control にアタッチされるときに発生します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.ReleaseContent">
+            <summary>コンテンツがコントロールから解放される前に発生します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.AddEditorToControl">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" /> がその内部コントロール構造を変更して編集できるようにする場合に呼び出されるメソッド。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.ResolveDisplayElement">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" /> がその内部コントロール構造を変更してデータ表示する場合に呼び出されるメソッド。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.ResolveEditorNodeValue(System.Object)">
+            <summary>エディター コントロールのテキストとして使用される値を決定します。</summary>
+            <param propertyName="dataValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.ResolveEditorBinding">
+            <summary>エディターに適用できる <see cref="T:System.Windows.Data.Binding" /> を作成します。</summary>
+            <remarks>ContentProvider ResolveBinding のときに呼び出され、それ以外直接に呼び出しません。</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.EvaluateEditingBindings">
+            <summary>エディターに関連付けられているすべての <see cref="T:System.Windows.Data.Binding" /> オブジェクトをループし、バインディング エラーがあるかどうかを判定します。</summary>
+            <returns>バインディング エラーがある場合は False。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.RemoveEditorFromControl">
+            <summary>インライン編集のときに使用されます。セルのデータの表示を元に戻して、セル コントロールをクリーンアップします。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.OnEditorLoaded(System.Windows.FrameworkElement)">
+            <summary>エディターがその Loaded イベントを発生したときに、このメソッドが発生されます。フォーカスを設定してエディターを初期化するために使用されます。</summary>
+            <param propertyName="editor"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.ResolveBindingsFromChildren(System.Windows.FrameworkElement,System.Boolean)">
+            <summary><see cref="T:System.Windows.FrameworkElement" /> の子をループし、関連付けられているすべての <see cref="T:System.Windows.Data.Binding" /> を探します。</summary>
+            <param propertyName="element">再帰する要素。</param>
+            <param propertyName="forEditing">特定の要素をトラバースすべきでないかどうか。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.ArrangeOverride(System.Windows.Size)">
+            <summary>コントロールのビジュアル表現を配置します。</summary>
+            <param propertyName="finalSize">このオブジェクトがオブジェクト自体とその子を配列するために使用する親の中の最終領域。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.MeasureOverride(System.Windows.Size)">
+            <summary>コントロールのビジュアル表現を測定します。</summary>
+            <param name="constraint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseEnter" /> イベントを発生する前に呼び出します。</summary>
+            <param propertyName="e">イベントについてのデータ</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseLeave" /> イベントを発生する前に呼び出します。</summary>
+            <param propertyName="e">イベントについてのデータ</param>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.OnApplyTemplate">
+            <summary>新しいテンプレートが適用されたときに <see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" /> のビジュアル ツリーを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.OnCreateAutomationPeer">
+          <summary>
+            クラス固有の <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 実装を返します。
+          </summary>
+          <returns>
+            型固有の <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 実装を取得または設定します。
+          </returns>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodeControl.OnPropertyChanged(System.String)">
+            <summary>PropertyChanged イベントを発生させます。</summary>
+            <param name="propName"></param>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNodeControl.Node">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を所有する <see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" />。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNodeControl.CheckBoxStyle">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" /> のチェックボックスに適用する <see cref="T:System.Windows.Style" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNodeControl.DelayRecycling">
+            <summary>オブジェクトをリサイクルするかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNodeControl.OwnerPanel">
+            <summary>この要素を所有する <see cref="T:System.Windows.Controls.Panel" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNodeControl.HasEditingBindings">
+            <summary>編集で使用する <see cref="T:System.Windows.FrameworkElement" /> に <see cref="T:System.Windows.Data.Binding" /> オブジェクトが関連付けられているかどうかを解決します。</summary>
+            <remarks>注: このプロパティは、<see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> が現在編集モードの間だけ有効です。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNodeControl.CheckBox">
+            <summary>テンプレートになければならない <see cref="P:Infragistics.Controls.Menus.XamDataTreeNodeControl.CheckBox" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNodeControl.EditorAlreadyLoaded">
+            <summary>この <see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" /> のエディター コントロールが読み込みされているかどうかを取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Menus.XamDataTreeNodeControl.PropertyChanged">
+            <summary>このオブジェクトのプロパティが変更される生成されるイベント。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.XamDataTreeNodeDataContext">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" /> で使用するカスタム データ コンテキスト オブジェクト。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNodeDataContext.Data">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> に関連付けられたデータ オブジェクトを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Menus.XamDataTreeNodeDataContext.Node">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> に関連する <see cref="T:Infragistics.Controls.Menus.XamDataTreeNodeControl" /> を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.XamDataTreeNodesCollection">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" />オブジェクトの変更可能コレクションを表します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodesCollection.#ctor(Infragistics.IProvideDataItems{Infragistics.Controls.Menus.XamDataTreeNode})">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNodesCollection" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param propertyName="owner">要求に基づいて <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> オブジェクトを作成するオブジェクト。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Menus.XamDataTreeNodesManager">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTree" /> レベルですべての <see cref="T:Infragistics.Controls.Menus.XamDataTreeNode" /> を制御するオブジェクトを表します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Menus.XamDataTreeNodesManager.#ctor(Infragistics.Controls.Menus.XamDataTree)">
+            <summary><see cref="T:Infragistics.Controls.Menus.XamDataTreeNodesManager" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param propertyName="grid">この <see cref="T:Infragistics.Controls.Menus.XamDataTreeNodesManager" /> を所有する <see cref="T:Infragistics.Controls.Menus.XamDataTree" />。</param>
+        </member>
+    </members>
+</doc>

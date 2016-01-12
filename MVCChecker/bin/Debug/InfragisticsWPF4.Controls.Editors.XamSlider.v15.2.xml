@@ -1,0 +1,1617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>InfragisticsWPF4.Controls.Editors.XamSlider.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderBase`1" /> のタイプを UI に公開します。</summary>
+            <typeparam name="T">ジェネリック型</typeparam>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.#ctor(Infragistics.Controls.Editors.XamSliderBase{`0})">
+            <summary><see cref="T:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="owner">オーナー。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.GetAutomationControlTypeCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられる <see cref="T:System.Windows.UIElement" /> のコントロール タイプを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" /> によって呼び出されます。</summary>
+            <returns>列挙体の値。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.GetChildrenCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連する <see cref="T:System.Windows.UIElement" /> の子要素のコレクションを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" /> によって呼び出されます。</summary>
+            <returns>子 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 要素のリスト。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.GetClassNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> の名前を返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" /> によって呼び出されます。</summary>
+            <returns>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられたオーナー型の名前を返します。特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.GetNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.FrameworkElement" /> のテキスト ラベルを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" /> によって呼び出されます。</summary>
+            <returns>このオートメーション ピアに関連付けられる要素のテキスト ラベル。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> のコントロール パターンを返します。</summary>
+            <param name="patternInterface">列挙値の １ つです。</param>
+            <returns>特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.OwningSliderBase_IsEnabledChanged(System.Object,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderBase`1" /> として OwningSliderBase プロパティの IsEnabledChanged イベントを処理します。</summary>
+            <param name="sender">イベントのソース。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.OwningSliderBase_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderBase`1" /> として OwningSliderBase プロパティの PropertyChanged イベントを処理します。</summary>
+            <param name="sender">イベントのソース。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.ComponentModel.PropertyChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.OwningSliderBase_ThumbValueChanged(System.Object,Infragistics.Controls.Editors.ThumbValueChangedEventArgs{`0})">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderBase`1" /> として OwningSliderBase プロパティの ThumbValueChanged イベントを処理します。</summary>
+            <param name="sender">イベントのソース。</param>
+            <param name="e">イベントのデータを含む <see cref="T:Infragistics.Controls.Editors.ThumbValueChangedEventArgs`1" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.GetSelection">
+            <summary>選択されている各子要素の UI 自動化プロバイダーを取得します。</summary>
+            <returns>UI 自動化プロバイダーの配列。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.SetValue(System.Double)">
+            <summary>コントロールの値を設定します。</summary>
+            <param name="value">設定する値。</param>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.CanSelectMultiple">
+            <summary>UI 自動化プロバイダーによって 2 つ以上の子要素を同時に選択できるかどうかを示す値を取得します。</summary>
+            <value></value>
+            <returns>複数選択が許可される場合は、True。それ以外は、False。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.IsSelectionRequired">
+            <summary>UI 自動化プロバイダーによって少なくとも 1 つの子要素を選択する必要があるかどうかを示す値を取得します。</summary>
+            <value></value>
+            <returns>選択が必要な場合は、True。それ以外は、False。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.IsReadOnly">
+            <summary>コントロールの値が読み取り専用かどうかを示す値を取得します。</summary>
+            <value></value>
+            <returns>値が読み取り専用の場合、true。変更可能な場合、false。 </returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.LargeChange">
+            <summary>Page Down キーなどで大きな変更が実行されたときに <see cref="P:System.Windows.Automation.Provider.IRangeValueProvider.Value" />  プロパティに追加/削除する値を取得します。</summary>
+            <value></value>
+            <returns>コントロールがサポートする変更の値。または、コントロールが <see cref="P:System.Windows.Automation.Provider.IRangeValueProvider.LargeChange" /> をサポートしない場合は null。 </returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.Maximum">
+            <summary>コントロールでサポートされる最大の範囲値を取得します。</summary>
+            <value></value>
+            <returns>コントロールがサポートする最大値。またはコントロールが <see cref="P:System.Windows.Automation.Provider.IRangeValueProvider.Maximum" /> をサポートしない場合は、null。 </returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.Minimum">
+            <summary>コントロールがサポートする最小の範囲値を取得します。</summary>
+            <value></value>
+            <returns>コントロールがサポートする最小値。またはコントロールが <see cref="P:System.Windows.Automation.Provider.IRangeValueProvider.Minimum" /> をサポートしない場合は、null。 </returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.SmallChange">
+            <summary>矢印キーなどで小さな変更を行ったときに  <see cref="P:System.Windows.Automation.Provider.IRangeValueProvider.Value" /> プロパティに追加/削除する値を取得します。</summary>
+            <value></value>
+            <returns>コントロールがサポートする小さな変更。またはコントロールが <see cref="P:System.Windows.Automation.Provider.IRangeValueProvider.SmallChange" /> をサポートしない場合は、null。 </returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamSliderBaseAutomationPeer`1.Value">
+            <summary>コントロールの値を取得します。</summary>
+            <value></value>
+            <returns>コントロールの値。コントロールが <see cref="P:System.Windows.Automation.Provider.IRangeValueProvider.Value" /> をサポートしない場合は、null。</returns>
+        </member>
+        <member name="T:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1">
+            <summary>UI に <see cref="T:Infragistics.Controls.Editors.XamSliderThumb`1" /> 型の新しいインスタンスを初期化します。</summary>
+            <typeparam name="T">ジェネリック型</typeparam>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.#ctor(Infragistics.Controls.Editors.XamSliderThumb{`0})">
+            <summary><see cref="T:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="owner">オーナー。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.GetAutomationControlTypeCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられる <see cref="T:System.Windows.UIElement" /> のコントロール タイプを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" /> によって呼び出されます。</summary>
+            <returns>列挙体の値。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.GetClassNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> の名前を返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" /> によって呼び出されます。</summary>
+            <returns>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられたオーナー型の名前を返します。特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.GetNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.FrameworkElement" /> のテキスト ラベルを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" /> によって呼び出されます。</summary>
+            <returns>このオートメーション ピアに関連付けられる要素のテキスト ラベル。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> のコントロール パターンを返します。</summary>
+            <param name="patternInterface">列挙値の １ つです。</param>
+            <returns>特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.RaiseIsSelectedPropertyChangedEvent(System.Boolean,System.Boolean)">
+            <summary>IsSelectedPropertyChangedEvent イベントを発生します。</summary>
+            <param name="oldValue"><c>true</c> に設定する場合、古い値。</param>
+            <param name="newValue"><c>true</c> に設定されている場合は、新しい値。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.OwningSliderThumb_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderBase`1" /> として OwningSliderThumb プロパティの PropertyChanged イベントを処理します。</summary>
+            <param name="sender">イベントのソース。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.ComponentModel.PropertyChangedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.OwningSliderThumb_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{`0})">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderThumb`1" /> として OwningSliderThumb プロパティの ValueChanged イベントを処理します。</summary>
+            <param name="sender">イベントのソース。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.RoutedPropertyChangedEventArgs`1" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.AddToSelection">
+            <summary>現在の要素を選択された項目のコレクションに追加します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.RemoveFromSelection">
+            <summary>現在の項目を選択された項目のコレクションから削除します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.Select">
+            <summary>既存の選択をクリアし、現在の要素を選択します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.SetValue(System.String)">
+            <summary>スライダーの値を設定します。</summary>
+            <param name="value">設定する値。</param>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.IsSelected">
+            <summary>項目が選択されているかどうかを示す値を取得します。</summary>
+            <value></value>
+            <returns>要素が選択されている場合は True。それ以外は False。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.SelectionContainer">
+            <summary><see cref="T:System.Windows.Automation.Provider.ISelectionProvider" /> を実装し、呼び出しオブジェクトのコンテナーとして動作する UI 自動化プロバイダーを取得します。</summary>
+            <value></value>
+            <returns>UI 自動化プロバイダー。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.IsReadOnly">
+            <summary>コントロールの値が読み取り専用かどうかを示す値を取得します。</summary>
+            <value></value>
+            <returns>値が読み取り専用の場合、true。変更可能な場合、false。 </returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamSliderThumbAutomationPeer`1.Value">
+            <summary>xamSlider の値を取得します。</summary>
+            <value></value>
+            <returns>コントロールの値。</returns>
+        </member>
+        <member name="T:Infragistics.DateTimeConverter">
+            <summary>DateTime オブジェクトの TypeConverter クラス。</summary>
+        </member>
+        <member name="M:Infragistics.DateTimeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>指定されたコンテキストを使用して、このコンバータがこのコンバータの型に特定の型のオブジェクトを変換できるかどうかを返します。</summary>
+            <param name="context">フォーマットコンテキストを提供するITypeDescriptorContext。</param>
+            <param name="sourceType">変換元の型を表す Type です。 </param>
+            <returns>コンバータが変換を実行できる場合はTrue、それ以外の場合はFalse。</returns>
+        </member>
+        <member name="M:Infragistics.DateTimeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>指定したコンテキストとカルチャ情報を使用して、指定したオブジェクトをコンバータの型に変換します。</summary>
+            <param name="context">フォーマットコンテキストを提供する ITypeDescriptorContext。</param>
+            <param name="culture">現在の文化として使用する CultureInfo。</param>
+            <param name="value">変換するオブジェクト</param>
+            <returns>変換された値を表すオブジェクト。</returns>
+        </member>
+        <member name="M:Infragistics.DateTimeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>指定されたコンテキストとカルチャ情報を使用して、特定の値オブジェクトを指定された型に変換します。</summary>
+            <param name="context">フォーマットコンテキストを提供する ITypeDescriptorContext。</param>
+            <param name="culture">CultureInfo オブジェクト。null の参照が渡される場合は、現在のカルチャーが前提となります。</param>
+            <param name="value">変換するオブジェクト</param>
+            <param name="destinationType">値パラメーター変換先の Type。</param>
+            <returns>変換された値を表すオブジェクト。</returns>
+        </member>
+        <member name="T:Infragistics.DateConverter">
+            <summary>DateTame と文字列を相互に変換します。</summary>
+        </member>
+        <member name="M:Infragistics.DateConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>UI で表示するために対象に渡す前にソース データを変更します。</summary>
+            <param name="value">対象に渡されたソース データ。</param>
+            <param name="targetType">対象の依存プロパティに期待されたデータの <see cref="T:System.Type" />。</param>
+            <param name="parameter">コンバーターの論理で使用されるオプションのパラメーター。</param>
+            <param name="culture">変換のカルチャー。</param>
+            <returns>対象の依存プロパティに渡す値。</returns>
+        </member>
+        <member name="M:Infragistics.DateConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>ソース オブジェクトに渡す前に対象のデータを変更します。このメソッドは <see cref="F:System.Windows.Data.BindingMode.TwoWay" /> バインディングのみに呼び出します。</summary>
+            <param name="value">ソースに渡す対象のデータ。</param>
+            <param name="targetType">ソース オブジェクトの期待されたデータの <see cref="T:System.Type" />。</param>
+            <param name="parameter">コンバーターの論理で使用されるオプションのパラメーター。</param>
+            <param name="culture">変換のカルチャー。</param>
+            <returns>ソース オブジェクトに渡す値。</returns>
+        </member>
+        <member name="T:Infragistics.StringToDateConverter">
+            <summary>DateTame と文字列を相互に変換します。</summary>
+        </member>
+        <member name="M:Infragistics.StringToDateConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>UI で表示するために対象に渡す前にソース データを変更します。</summary>
+            <param name="value">対象に渡されたソース データ。</param>
+            <param name="targetType">対象の依存プロパティに期待されたデータの <see cref="T:System.Type" />。</param>
+            <param name="parameter">コンバーターの論理で使用されるオプションのパラメーター。</param>
+            <param name="culture">変換のカルチャー。</param>
+            <returns>対象の依存プロパティに渡す値。</returns>
+        </member>
+        <member name="M:Infragistics.StringToDateConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>ソース オブジェクトに渡す前に対象のデータを変更します。このメソッドは <see cref="F:System.Windows.Data.BindingMode.TwoWay" /> バインディングのみに呼び出します。</summary>
+            <param name="value">ソースに渡す対象のデータ。</param>
+            <param name="targetType">ソース オブジェクトの期待されたデータの <see cref="T:System.Type" />。</param>
+            <param name="parameter">コンバーターの論理で使用されるオプションのパラメーター。</param>
+            <param name="culture">変換のカルチャー。</param>
+            <returns>ソース オブジェクトに渡す値。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.DateTimeSliderTickMarks">
+            <summary>DateType 型から SliderTickMarks を提供するクラス。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.SliderTickMarks`1">
+            <summary>目盛の保持を実装するジェネリック クラス 。</summary>
+            <typeparam name="T">ジェネリック型</typeparam>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.SliderTickMarksBase">
+            <summary>目盛の保持を実装する基本クラス。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.SliderTickMarksBase.HorizontalTickMarksTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.SliderTickMarksBase.HorizontalTickMarksTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.SliderTickMarksBase.IncludeSliderEndsProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.SliderTickMarksBase.IncludeSliderEnds" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.SliderTickMarksBase.NumberOfTickMarksProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.SliderTickMarksBase.NumberOfTickMarks" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.SliderTickMarksBase.UseFrequencyProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.SliderTickMarksBase.UseFrequency" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.SliderTickMarksBase.VerticalTickMarksTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.SliderTickMarksBase.VerticalTickMarksTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.SliderTickMarksBase.OnChangeSliderTickMarks">
+            <summary>SliderTickMarks が変更され、TickMarksPanel の内部でメモリを更新する必要があるときに呼び出されます。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SliderTickMarksBase.HorizontalTickMarksTemplate">
+            <summary>水平目盛の DataTemplate を取得または設定します。</summary>
+            <value>水平目盛テンプレート。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SliderTickMarksBase.IncludeSliderEnds">
+            <summary>スライダーに終了目盛があるかどうかを示す値を取得または設定します。</summary>
+            <value>スライダーの最後の目盛がある場合は <c>true</c> 。スライダーの最後の目盛がない場合は <c>false</c>  。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SliderTickMarksBase.NumberOfTickMarks">
+            <summary>指定した <see cref="T:Infragistics.Controls.Editors.SliderTickMarksBase" /> インスタンスの目盛の数を取得または設定します。</summary>
+            <value>目盛の数。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SliderTickMarksBase.UseFrequency">
+            <summary>目盛が間隔に基づいて設定されるかどうかを示す値を取得または設定します。</summary>
+            <value>頻度を使用してメモリが生成される場合は <c>true</c>、そうでない場合は <c>false</c>。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SliderTickMarksBase.VerticalTickMarksTemplate">
+            <summary>スライダーの方向が垂直な場合の目盛の DataTemplate を取得または設定します。</summary>
+            <value>垂直目盛テンプレート。</value>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.SliderTickMarks`1.TickMarksFrequencyProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.SliderTickMarks`1.TickMarksFrequency" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.SliderTickMarks`1.OnChangeSliderTickMarks">
+            <summary>SliderTickMarks が変更され、TickMarksPanel の内部でメモリを更新する必要があるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.SliderTickMarks`1.GetFrequencyValue">
+            <summary>頻度の値を double 値で取得します。</summary>
+            <returns>double 値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.SliderTickMarks`1.GenerateTickMarksValues">
+            <summary><see cref="T:Infragistics.Controls.Editors.SliderTickMarks`1" /> のオーナーであるスライダーの値と、Frequency プロパティ、NumberOfTickMarks プロパティ、および UseFrequency プロパティの値に基づいて、目盛の値を生成します。</summary>
+            <returns>目盛の値を含む ObservableCollection。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.SliderTickMarks`1.OnResolveTickMarks">
+            <summary>TickMarks、Frequency、NumberOfTickMarks、および UseFrequency の各プロパティに基づいて、解決された目盛からコレクションを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SliderTickMarks`1.Owner">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderBase`1" /> のオーナーを取得または設定します。</summary>
+            <value>オーナー。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SliderTickMarks`1.TickMarksFrequency">
+            <summary>目盛の間隔を取得または設定します。隣接する 2 つの目盛の差異の 2 倍に等しくなります。</summary>
+            <value>目盛の頻度。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SliderTickMarks`1.TickMarksValues">
+             <summary>スライダーの設定に使用される T 型の目盛値のコレクションを取得します。</summary>
+             <value>目盛。</value>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.DateTimeSliderTickMarks.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.DateTimeSliderTickMarks" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.DateTimeSliderTickMarks.FrequencyTypeProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.DateTimeSliderTickMarks.FrequencyType" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.DateTimeSliderTickMarks.GetFrequencyValue">
+            <summary>頻度の値を double 値で取得します。</summary>
+            <returns>double 値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.DateTimeSliderTickMarks.GenerateTickMarksValues">
+            <summary><see cref="T:Infragistics.Controls.Editors.SliderTickMarks`1" /> のオーナーであるスライダーの値と、Frequency プロパティ、NumberOfTickMarks プロパティ、および UseFrequency プロパティの値に基づいて、目盛の値を生成します。</summary>
+            <returns>目盛の値を含む ObservableCollection。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.DateTimeSliderTickMarks.GetStepSize(System.Int64)">
+            <summary>使用可能な表示スペースに基づいて、表示する目盛数の最大数を決定します。表示目盛間でスキップする目盛数を返します。</summary>
+            <param name="countTickMarks">計算された目盛の数。</param>
+            <returns>表示目盛の間の目盛の数。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.DateTimeSliderTickMarks.FrequencyType">
+            <summary>列挙型 <see cref="T:Infragistics.Controls.Editors.FrequencyType" /> から <see cref="P:Infragistics.Controls.Editors.DateTimeSliderTickMarks.FrequencyType" /> の型を取得または設定します。</summary>
+            <value>頻度の型。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.DateTimeSliderTickMarks.TickMarksValues">
+            <summary>スライダーの設定に使用される型 DateTime の目盛値のコレクションを取得します。</summary>
+            <value>目盛。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.FrequencyType">
+            <summary>DateTimeSliderTickMarks の頻度の型を説明する Enum。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.FrequencyType.Seconds">
+            <summary>頻度の値は秒単位です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.FrequencyType.Minutes">
+            <summary>頻度の値は分単位です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.FrequencyType.Hours">
+            <summary>頻度の値は時単位です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.FrequencyType.Days">
+            <summary>頻度の値は日単位です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.FrequencyType.Months">
+            <summary>頻度の値は月単位です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.FrequencyType.Years">
+            <summary>頻度の値は年単位です。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.SliderTrackClickAction">
+            <summary>スライダー トラックをクリックした後の動作を説明する Enum。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.SliderTrackClickAction.None">
+            <summary>スライダー トラックをクリックした後のアクションはありません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.SliderTrackClickAction.LargeChange">
+            <summary>ActiveThumb の値は、つまみの位置に相対するクリックの側に応じて、LargeChange の値とともに変わります</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.SliderTrackClickAction.MoveToPoint">
+            <summary>ActiveThumb は、クリックされた位置に移動します。その値は、クリックされた位置とスライダーのサイズに相対して変更されます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.SliderThumbInteractionMode">
+            <summary>スライダー間の作用を説明する Enum。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.SliderThumbInteractionMode.Lock">
+            <summary>ロックされたつまみがアクティブでなく、アクティブなつまみがロックされたつまみと作用する場合は、このつまみをパス スルーできません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.SliderThumbInteractionMode.Push">
+            <summary>プッシュ状態のつまみがアクティブでなく、アクティブなつまみがそれと作用する場合、プッシュ モードのつまみの位置がアクティブなつまみの位置に変更されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.SliderThumbInteractionMode.Free">
+            <summary>自由状態のつまみがアクティブでなく、アクティブなつまみがそれと作用する場合、両方のつまみの間に特別な作用はありません。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamSliderBaseCommand">
+            <summary>XamSliderBaseCommandBase コマンドの型を説明する Enum。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBaseCommand.SmallDecrease">
+            <summary>SmallDecreaseCommand の Enum 値。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBaseCommand.SmallIncrease">
+            <summary>SmallIncreaseCommand の Enum 値。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBaseCommand.LargeDecrease">
+            <summary>LargeDecreaseCommand の Enum 値。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBaseCommand.LargeIncrease">
+            <summary>LargeIncreaseCommand の Enum 値。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ThumbValueChangedEventArgs`1">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamSliderBase`1.ThumbValueChanged" /> イベントの必要な情報を含むクラス。</summary>
+            <typeparam name="T">ジェネリック型</typeparam>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ThumbValueChangedEventArgs`1.OldValue">
+            <summary>つまみの古い値を取得します。</summary>
+            <value>古い値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ThumbValueChangedEventArgs`1.NewValue">
+            <summary>つまみの新しい値を取得します。</summary>
+            <value>新しい値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ThumbValueChangedEventArgs`1.Thumb">
+            <summary>プロパティが変更されたつまみを取得します。</summary>
+            <value>つまみ項目。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.TrackClickEventArgs`1">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamSliderBase`1.TrackClick" /> イベントの必要な情報を含むクラス。</summary>
+            <typeparam name="T">ジェネリック型</typeparam>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.TrackClickEventArgs`1.Value">
+            <summary>トラックでクリックされた位置の値を取得します。</summary>
+            <value>値。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.TrackFillChangedEventArgs`1">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamRangeSlider`1.TrackFillDragCompleted" /> イベントの必要な情報を含むクラス。</summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.TrackFillChangedEventArgs`1.LesserThumb">
+            <summary>TrackFill Edge のつまみとより小さい値。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.TrackFillChangedEventArgs`1.GreaterThumb">
+            <summary>TrackFill Edge のつまみとより大きい値。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Properties.Resources">
+            <summary>ローカライズされた文字列の検索など、厳密に型指定されたリソース クラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Properties.Resources.ResourceManager">
+            <summary>このクラスによって使用されるキャッシュされた ResourceManager インスタンスを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Properties.Resources.Culture">
+            <summary>この厳密に型指定されたリソース クラスを使用してすべてのリソースの検索の現在のスレッドの CurrentUICulture プロパティをオーバーライドします。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.SliderTickMarks">
+            <summary>double 型から SliderTickMarks を提供するクラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SliderTickMarks.TickMarksValues">
+            <summary>スライダーの設定に使用される double 型の目盛値のコレクションを取得します。</summary>
+            <value>目盛。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ThumbComparer`1">
+            <summary>一般的なつまみを比較するために使用される、一般的なカスタム比較演算子クラス。</summary>
+            <typeparam name="T">ジェネリック型</typeparam>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ThumbComparer`1.Compare(Infragistics.Controls.Editors.XamSliderThumb{`0},Infragistics.Controls.Editors.XamSliderThumb{`0})">
+            <summary>２つのオブジェクトを比較し、一方が他方より小さいか、等しいか、または大きいかを示す値を返します。</summary>
+            <param name="x">比較する１つ目のオブジェクト。</param>
+            <param name="y">比較する２つ目のオブジェクト。</param>
+            <returns>値条件 zero<paramref name="x" /> よりも小さい場合は <paramref name="y" /> よりも小さいです。Zero<paramref name="x" /> は <paramref name="y" /> と等しいです。<paramref name="x" /> よりも大きい場合は <paramref name="y" /> よりも大きいです。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.TickMarksPanel`1">
+            <summary><see cref="T:Infragistics.Controls.Editors.SliderTickMarks`1" /> の配置に使用されるジェネリック パネル</summary>
+            <typeparam name="T">ジェネリック型</typeparam>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.TickMarksPanel`1.MeasureOverride(System.Windows.Size)">
+            <summary>レイアウトの Measure パスの動作を提供します。クラスは、計測パスの動作を定義するためにこのメソッドをオーバーライドできます。</summary>
+            <param name="availableSize">このオブジェクトが子オブジェクトに設定できる利用可能なサイズ。値として Infinity の指定をすることによって、使用可能なコンテンツにサイズを合わせることを示します。</param>
+            <returns>子オブジェクトの割り当てサイズの計算に基づいて、レイアウト時にこのオブジェクトが決定した必要サイズ。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.TickMarksPanel`1.ArrangeOverride(System.Windows.Size)">
+            <summary>レイアウトの Arrrange パスの動作を提供します。特別な配置パスの動作を定義するために、クラスはこのメソッドをオーバーライドできます。</summary>
+            <param name="finalSize">このオブジェクトがオブジェクト自体とその子を配列するために使用する親の中の最終領域。</param>
+            <returns>要素は外資された後の現在のサイズ。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.TickMarksPanel`1.GetStepSize(System.Int64)">
+            <summary>使用可能な表示スペースに基づいて、表示する目盛数の最大数を決定します。表示目盛間でスキップする目盛数を返します。</summary>
+            <param name="countTickMarks">計算された目盛の数。</param>
+            <returns>表示目盛の間の目盛の数。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.TickMarksPanel`1.Owner">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderBase`1" /> のオーナーを取得または設定します。</summary>
+            <value>オーナー。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.TrackFill">
+            <summary>トラックの塗りつぶし動作を提供するコントロール。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamSliderThumbBase">
+            <summary>スライダーのつまみの基本クラスを説明するオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.#cctor">
+          <summary>
+            <see cref="T:Infragistics.Controls.Editors.XamSliderThumbBase" /> クラスを初期化します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderThumbBase" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderThumbBase.InteractionModeProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderThumbBase.InteractionMode" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderThumbBase.IsActiveProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderThumbBase.IsActive" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.CancelDrag">
+            <summary>ドラッグをキャンセルします。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderThumbBase.IsDragEnabledProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderThumbBase.IsDragEnabled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderThumbBase.ToolTipTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderThumbBase.ToolTipTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderThumbBase.ToolTipVisibilityProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderThumbBase.ToolTipVisibility" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.EnsureCurrentState">
+            <summary>コントロールのオーナーが Horizontal または Vertical 状態の場合に、VisualStateManager の現在の状態を保証します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.RaiseDragCompleted(System.Boolean)">
+            <summary>DragCompleted イベントを発生させます。</summary>
+            <param name="canceled"><c>true</c>  に設定されている場合、[キャンセルされました]。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.OnDragCompleted(System.Double,System.Double,System.Boolean)">
+            <summary>DragCompleted イベントが発生する時に呼び出されます。</summary>
+            <param name="horizontalChange">水平方向の変更。</param>
+            <param name="verticalChange">垂直方向の変更。</param>
+            <param name="canceled"><c>true</c>  に設定されている場合、[キャンセルされました]。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.OnDragDelta(System.Double,System.Double)">
+            <summary>DragDelta イベントが発生する時に呼び出されます。</summary>
+            <param name="horizontalChange">水平方向の変更。</param>
+            <param name="verticalChange">垂直方向の変更。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.OnDragStarted(System.Double,System.Double)">
+            <summary>DragStarted イベントが発生する時に呼び出されます。</summary>
+            <param name="horizontalOffset">水平方向のオフセット。</param>
+            <param name="verticalOffset">垂直方向のオフセット。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.OnIsActiveChanged(System.Boolean,System.Boolean)">
+            <summary>IsActive プロパティの値が変更されたときに呼び出されます。</summary>
+            <param name="oldValue"><c>true</c> に設定する場合、古い値。</param>
+            <param name="newValue"><c>true</c> に設定されている場合は、新しい値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.OnApplyTemplate">
+            <summary>派生したクラスでオーバーライドされると、アプリケーション コードまたは内部プロセス（再構築レイアウト パスなど）が <see cref="M:System.Windows.Controls.Control.ApplyTemplate" /> を呼び出す時に常に起動されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.GotFocus" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.LostFocus" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseEnter" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseLeftButtonDown" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseLeftButtonUp" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.OnMouseMove(System.Windows.Input.MouseEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseMove" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseLeave" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.XamSliderThumbBase_IsEnabledChanged(System.Object,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>コントロールの IsEnabled 状態が変更する場合、VisualState を更新する必要があります。</summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumbBase.OnPropertyChanged(System.String)">
+            <summary>PropertyChanged イベントを発生させます。</summary>
+            <param name="propertyName">変更されたプロパティ名。</param>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamSliderThumbBase.DragStarted">
+            <summary>マウスが <see cref="T:Infragistics.Controls.Editors.XamSliderThumbBase" /> オブジェクトのドラッグを開始したときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamSliderThumbBase.DragDelta">
+            <summary>マウスが <see cref="T:Infragistics.Controls.Editors.XamSliderThumbBase" /> オブジェクトをドラッグしているときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamSliderThumbBase.DragCompleted">
+            <summary>マウスが <see cref="T:Infragistics.Controls.Editors.XamSliderThumbBase" /> オブジェクトのドラッグを完了したときに発生します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumbBase.InteractionMode">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderThumbBase" /> の操作モードを取得または設定します。</summary>
+            <value>操作モード。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumbBase.IsActive">
+            <summary>このインスタンスがアクティブ状態にあるかどうかを示す値を取得または設定します。</summary>
+            <value>このインスタンスがアクティブな場合は <c>true</c>。そうでない場合は <c>false</c>。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumbBase.IsDragging">
+            <summary>このインスタンスがドラッグしているかどうかを示す値を取得または設定します。</summary>
+            <value>このインスタンスがドラッグ中な場合は <c>true</c>。そうでない場合は <c>false</c>。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumbBase.IsRestricted">
+            <summary>このインスタンスのつまみが InteractionMode.Lock に設定されるかどうかを示す値を取得または設定します。</summary>
+            <value>このインスタンスが制限される場合は <c>true</c>。そうでない場合は <c>false</c>。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumbBase.Owner">
+            <summary>つまみのオーナーである <see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> を取得または設定します。</summary>
+            <value>オーナー。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumbBase.OverlapThumb">
+          PK TFS 180731
+          つまみが重視できるかどうかを示す値を取得または設定します。
+          ドラッグするつまみがロックされているときに重複がある場合、ドラッグされたつまみを掴むために使用します。
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumbBase.ThumbToolTip">
+            <summary>つまみのデフォルトの ToolTip を取得または設定します。</summary>
+            <value>つまみのツールチップ。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumbBase.IsOver">
+            <summary>マウスが現在つまみの上にあるかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumbBase.IsDragEnabled">
+            <summary>このインスタンスがドラッグ可能かどうかを示す値を取得または設定します。</summary>
+            <value>このインスタンスでドラッグが有効な場合は<c>true</c> 。そうでない場合は <c>false</c>。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumbBase.ToolTipTemplate">
+            <summary>ToolTip の ContentTemplate を取得または設定します。</summary>
+            <value>ツールチップ テンプレート。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumbBase.ToolTipVisibility">
+            <summary>ToolTip の Visibility を取得または設定します。</summary>
+            <value>ツールチップの Visibility。</value>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamSliderThumbBase.PropertyChanged">
+            <summary>プロパティ値を変更するときに発生します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.TrackFill.#cctor">
+          <summary>
+            <see cref="T:Infragistics.Controls.Editors.Primitives.TrackFill" /> クラスを初期化します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.TrackFill.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.TrackFill" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamDateTimeRangeSlider">
+            <summary>DateTime 型から XamRangeSlider を提供するコントロール。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamRangeSlider`1">
+            <summary>複数のつまみ (ハンドル) がある一般的なスライダー動作を提供するコントロール。</summary>
+            <typeparam name="T">ジェネリック型。</typeparam>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamSliderBase`1">
+            <summary>一般的なスライダー動作を提供するコントロール。</summary>
+            <typeparam name="T">ジェネリック型</typeparam>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamSliderBase">
+            <summary>さまざまな型のスライダーの基本クラスを説明するオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase.IncreaseButtonVisibilityProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase.IncreaseButtonVisibility" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase.DecreaseButtonVisibilityProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase.DecreaseButtonVisibility" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase.EnableKeyboardNavigationProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase.EnableKeyboardNavigation" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase.HorizontalTickMarksTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase.HorizontalTickMarksTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase.IsDirectionReversedProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase.IsDirectionReversed" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase.IsMouseWheelEnabledProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase.IsMouseWheelEnabled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase.OrientationProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase.Orientation" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase.ThumbStyleProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase.ThumbStyle" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase.TrackFillBrushProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase.TrackFillBrush" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase.TrackFillStyleProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase.TrackFillStyle" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase.TrackClickActionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase.TrackClickAction" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase.VerticalTickMarksTemplateProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase.VerticalTickMarksTemplate" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.OnApplyTemplate">
+            <summary>派生したクラスでオーバーライドされると、アプリケーション コードまたは内部プロセス（再構築レイアウト パスなど）が <see cref="M:System.Windows.Controls.Control.ApplyTemplate" /> を呼び出す時に常に起動されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.OverlapThumb(Infragistics.Controls.Editors.XamSliderThumbBase,Infragistics.Controls.Editors.XamSliderThumbBase)">
+          <summary>「topThumb」を受け取り、ZIndex が「bottomThumb」になるように変更します。</summary>
+          <param name="topThumb">一番上にするつまみ。</param>
+          <param name="bottomThumb">一番下にするつまみ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.ArrangeThumbs">
+            <summary>スライダー レイアウトの内部につまみを配置します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.EnsureCurrentState">
+            <summary>現在の <see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> インスタンスの状態を保証します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.EnsureDecreaseButtonVisibility">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase.DecreaseButtonVisibility" /> プロパティに基づいて、減少小変更ボタンの表示状態を保証します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.EnsureIncreaseButtonVisibility">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase.IncreaseButtonVisibility" /> プロパティに基づいて、増加小変更ボタンの表示状態を保証します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.EnsureOrientation">
+            <summary>スライダーの向きを保証します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.EnsureSliderElements">
+            <summary>スライダー要素を保証します (Thumbs と TickMarks の位置)。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.EnsureTickMarks">
+            <summary>目盛の生成を保証します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.OnHorizontalTickMarksTemplateChanged(System.Windows.DataTemplate)">
+            <summary>HorizontalTickMarksTemplate の値が変更されたときに呼び出されます。</summary>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.OnThumbStyleChanged(System.Windows.Style)">
+            <summary>ThumbStyle プロパティの値が変更されたときに呼び出されます。</summary>
+            <param name="style">スタイル。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.OnTrackFillBrushChanged(System.Windows.Media.Brush)">
+            <summary>TrackFillBrush プロパティの値が変更されたときに呼び出されます。</summary>
+            <param name="brush">ブラシ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.OnTrackFillStyleChanged(System.Windows.Style)">
+            <summary>TrackFillStyle プロパティの値が変更されたときに呼び出されます。</summary>
+            <param name="style">スタイル。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.OnTrackClick(System.Windows.Input.MouseButtonEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamSliderBase`1.TrackClick" /> イベントを発生します。スライダー トラック上をクリックした場合。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.Input.MouseButtonEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.OnVerticalTickMarksTemplateChanged(System.Windows.DataTemplate)">
+            <summary>VerticalTickMarksTemplate の値が変更されたときに呼び出されます。</summary>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.ProcessChanges(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>アクティブなつまみの値を指定された Change の値で変更します。</summary>
+            <param name="isIncrease"><c>true</c> に設定すると、値が増加します。</param>
+            <param name="isLargeChange"><c>true</c> を設定すると、[大きな変更です]。</param>
+            <param name="forceMoveOneTick">この値が <c>true</c> に設定されて、Snap to tich (目盛にスナップ) が true になっている場合、つまみはタッチ ポイントの移動距離に関係なく次の目盛に移動することになります。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.XamSliderBase_IsEnabledChanged(System.Object,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>コントロールの IsEnabled 状態が変更する場合、VisualState を更新する必要があります。</summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.GetParameter(Infragistics.Controls.CommandSource)">
+            <summary>コマンドを実行するために必要なパラメーターを定義するオブジェクトを返します。</summary>
+            <param name="source">実行するコマンドを定義する CommandSource オブジェクト。</param>
+            <returns>コマンドを完了するために必要なオブジェクト。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.SupportsCommand(System.Windows.Input.ICommand)">
+            <summary>オブジェクトが指定されたコマンド タイプをサポートするかどうかを返します。</summary>
+            <param name="command">検証されるコマンド。</param>
+            <returns>コマンドがオブジェクトで実行可能な場合 True です。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase.OnPropertyChanged(System.String)">
+            <summary>PropertyChanged イベントを発生させます。</summary>
+            <param name="propertyName">変更されたプロパティ名。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.IncreaseButtonVisibility">
+            <summary>増やすボタンの表示状態を取得または設定します。デフォルト テンプレートでボタンの Visibility を指定します。ボタンをクリックすると、ActiveThumb の値を SmallChange で増やします。</summary>
+            <value>増加ボタンの表示状態。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.DecreaseButtonVisibility">
+            <summary>減らすボタンの表示状態を取得または設定します。デフォルト テンプレートでボタンの Visibility を指定します。ボタンをクリックすると、ActiveThumb の値を SmallChange で減らします。</summary>
+            <value>減少ボタンの表示状態。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.EnableKeyboardNavigation">
+            <summary>キーボード ナビゲーションを有効にするかどうかを示す値を取得または設定します。</summary>
+            <value>キーボード ナビゲーションが有効になっている場合は <c>true</c>、そうでない場合は <c>false</c>。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.HorizontalTickMarksTemplate">
+            <summary>水平 <see cref="T:Infragistics.Controls.Editors.SliderTickMarks`1" /> の DataTemplate を取得または設定します。</summary>
+            <value>水平目盛テンプレート。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.IsDirectionReversed">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> インスタンスの MinValue から MaxValue までの方向を逆にするかどうかを示す値を取得または設定します。</summary>
+            <value>このインスタンスの方向が逆になっている場合は <c>true</c>。そうでない場合は <c>false</c>。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.IsMouseWheelEnabled">
+            <summary>このインスタンスをマウス ホイールで有効にするかどうかを示す値を取得または設定します。</summary>
+            <value>このインスタンスでマウス ホイールが有効になっている場合は <c>true</c>。そうでない場合は  <c>false</c>。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.Orientation">
+            <summary><see cref="T:System.Windows.Controls.Orientation" /> の方向を取得または設定します。</summary>
+            <value>方向。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.ThumbStyle">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> の Style プロパティを取得または設定します。</summary>
+            <value>つまみのスタイル。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.TrackFillBrush">
+            <summary>他のスタイルがつまみの trackfill に明示的に設定されていない場合、すべてのつまみの trackfill の Brush を取得または設定します。</summary>
+            <value>トラックの塗りつぶしスタイル。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.TrackFillStyle">
+            <summary>他のスタイルがつまみに明示的に設定されていない場合、すべてのつまみの Style を取得または設定します。</summary>
+            <value>トラックの塗りつぶしスタイル。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.TrackClickAction">
+            <summary>スライダー トラックの上にクリックすると起動するアクションを取得または設定します。アクションを起動しないか、ActiveThumb 値を LargeChange プロパティで変更するか、または ActiveThumb をマウスの位置に移動する可能性があります。</summary>
+            <value><see cref="T:Infragistics.Controls.Editors.SliderTrackClickAction" /> トラック クリック アクション。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.VerticalTickMarksTemplate">
+            <summary>垂直 <see cref="T:Infragistics.Controls.Editors.SliderTickMarks`1" /> の DataTemplate を取得または設定します。</summary>
+            <value>垂直目盛テンプレート。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.HorizontalThumbsPanel">
+            <summary>スライダーのつまみの水平パネルを取得または設定します。</summary>
+            <value>つまみの水平パネル。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.HorizontalTrackFillsPanel">
+            <summary>スライダーの trackfill の水平パネルを取得または設定します。</summary>
+            <value>trackfill の水平パネル。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.HorizontalTickMarksContainer">
+            <summary><see cref="T:Infragistics.Controls.Editors.TickMarksPanel`1" /> の水平コンテナーを取得または設定します。</summary>
+            <value>水平目盛コンテナー。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.VerticalThumbsPanel">
+            <summary>スライダー つまみの垂直パネルを取得または設定します。</summary>
+            <value>つまみの垂直パネル。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.VerticalTrackFillsPanel">
+            <summary>スライダーの trackfill の垂直パネルを取得または設定します。</summary>
+            <value>trackfill の垂直パネル。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase.VerticalTickMarksContainer">
+            <summary><see cref="T:Infragistics.Controls.Editors.TickMarksPanel`1" /> の垂直コンテナーを取得または設定します。</summary>
+            <value>垂直目盛コンテナー。</value>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamSliderBase.PropertyChanged">
+            <summary>プロパティ値を変更するときに発生します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderBase`1" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.ArrangeThumbs">
+            <summary>スライダー レイアウトの内部につまみを配置します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.ArrangeThumbs2">
+            <summary>スライダー レイアウトの内部につまみを配置します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.ArrangeThumb(Infragistics.Controls.Editors.XamSliderThumb{`0})">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderThumb`1" /> インスタンスを配置します。</summary>
+            <param name="thumb">つまみ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.ArrangeThumb(Infragistics.Controls.Editors.XamSliderThumb{`0},System.Boolean)">
+            <summary>つまみを配置します。</summary>
+            <param name="thumb">つまみ。</param>
+            <param name="isFirstTime">最初に配置します。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.EnsureOrientation">
+            <summary>スライダーの向きに応じて、<see cref="T:Infragistics.Controls.Editors.XamSliderBase`1" /> 要素の状態と位置を保証します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.EnsureSliderElements">
+            <summary>スライダー要素を保証します (Thumbs と TickMarks の位置)。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.EnsureTickMarks">
+            <summary>目盛の生成を保証します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.OnApplyTemplate">
+            <summary>コントロール テンプレートが適用されるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.OnCreateAutomationPeer">
+            <summary>派生したクラスで実装する場合、オートメーションのインフラストラクチャーのクラス固有 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 実装を返します。</summary>
+            <returns>返すクラス固有 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> サブクラス。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.KeyDown" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseLeftButtonDown" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.OnMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+            <summary>デリゲートを関連付けなくても、派生クラスでイベントを処理するために、<see cref="E:System.Windows.UIElement.MouseWheel" /> イベントが発生する前に呼び出されます。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.Input.MouseWheelEventArgs" />。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.OnHorizontalTickMarksTemplateChanged(System.Windows.DataTemplate)">
+            <summary>HorizontalTickMarksTemplate プロパティの値が変更されたときに呼び出されます。</summary>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.OnThumbStyleChanged(System.Windows.Style)">
+            <summary>ThumbStyle プロパティの値が変更されたときに呼び出されます。</summary>
+            <param name="style">スタイル。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.OnTrackClick(System.Windows.Input.MouseButtonEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamSliderBase`1.TrackClick" /> イベントを発生します。スライダー トラック上をクリックした場合。スライダー トラック上をクリックされたときに、トラック上のマウスの位置と <see cref="P:Infragistics.Controls.Editors.XamSliderBase.TrackClickAction" /> プロパティの値に従って、アクティブなつまみの位置を計算します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.Input.MouseButtonEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.OnTrackFillBrushChanged(System.Windows.Media.Brush)">
+            <summary>TrackFillBrush プロパティの値が変更されたときに呼び出されます。</summary>
+            <param name="brush">ブラシ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.OnTrackFillStyleChanged(System.Windows.Style)">
+            <summary>ThumbStyle プロパティの値が変更されたときに呼び出されます。</summary>
+            <param name="style">スタイル。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.OnVerticalTickMarksTemplateChanged(System.Windows.DataTemplate)">
+            <summary>VerticalTickMarksTemplate プロパティの値が変更されたときに呼び出されます。</summary>
+            <param name="newValue">新しい値 - DataTemplate。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.ProcessChanges(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>アクティブなつまみの値を、指定された LargeChange または SmallChange の値で変更します。</summary>
+            <param name="isIncrease"><c>true</c> に設定すると、値が増加します。</param>
+            <param name="isLargeChange"><c>true</c> に設定すると、LargeChange が使用されます。</param>
+            <param name="forceMoveOneTick">この値が <c>true</c> に設定されて、Snap to tich (目盛にスナップ) が true になっている場合、つまみはタッチ ポイントの移動距離に関係なく次の目盛に移動することになります。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase`1.LargeChangeProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase`1.LargeChange" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase`1.MaxValueProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase`1.MaxValue" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase`1.MinValueProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase`1.MinValue" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderBase`1.SmallChangeProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderBase`1.SmallChange" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.NextLeftThumb(System.Int32)">
+            <summary>有効か無効かなどに関わらず、左側の最初のつまみか null を返します。</summary>
+            <param name="thumbIndex">左側の最初のつまみのインデックスではなく、左側のつまみのインデックスを返します。</param>
+            <returns>左側の最初のつまみまたは null。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.NextLeftInteractableThumb(System.Int32)">
+            <summary>相互作用可能な左側の最初のつまみまたは null を返します。</summary>
+            <param name="thumbIndex">左側の最初のつまみのインデックスではなく、左側のつまみのインデックスを返します。</param>
+            <returns>相互作用可能な左側の最初のつまみまたは null。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.NextLeftInteractableThumb(System.Int32,Infragistics.Controls.Editors.SliderThumbInteractionMode)">
+            <summary>探している相互作用を持つ、左側の最初のつまみか、null を返します。</summary>
+            <param name="thumbIndex">左側の最初のつまみのインデックスではなく、左側のつまみのインデックスを返します。</param>
+            <param name="interactionMode">探している相互作用モード。</param>
+            <returns>指定したモードの、相互作用可能な最初のつまみまたは null。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.NextRightThumb(System.Int32)">
+            <summary>有効か無効かなどに関わらず、右側の最初のつまみか null を返します。</summary>
+            <param name="thumbIndex">右側の最初のつまみのインデックスではなく、右側のつまみのインデックスを返します。</param>
+            <returns>右側の最初のつまみまたは null。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.NextRightInteractableThumb(System.Int32)">
+            <summary>相互作用可能な右側の最初のつまみまたは null を返します。</summary>
+            <param name="thumbIndex">右側の最初のつまみのインデックスではなく、右側のつまみのインデックスを返します。</param>
+            <returns>相互作用可能な右側の最初のつまみまたは null。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.NextRightInteractableThumb(System.Int32,Infragistics.Controls.Editors.SliderThumbInteractionMode)">
+            <summary>探している相互作用を持つ、左側の最初のつまみか、null を返します。</summary>
+            <param name="thumbIndex">左側の最初のつまみのインデックスではなく、左側のつまみのインデックスを返します。</param>
+            <param name="interactionMode">探している相互作用モード。</param>
+            <returns>指定したモードの、相互作用可能な最初のつまみまたは null。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.DriveThumbLeft(Infragistics.Controls.Editors.XamSliderThumb{`0},System.Double)">
+            <summary>指定されたつまみを受け取り、指定した値 (previewValue) に向けて左に移動します。この関数では、他のつまみとの相互作用が処理され、渡されたつまみの場所の値が変化する可能性があります。previewValue がつまみの実際の値ではなくプレビューなのはそのためです。注: ここでのロジックに対するあらゆる変更は、おそらく DriveThumbRight でも同様に行う必要があります。これら 2 つの関数は同期している必要があります。</summary>
+            <param name="thumb">移動するつまみ。</param>
+            <param name="previewValue">取得する値。</param>
+            <returns>つまみを移動した結果。ロックにヒットした場合、渡された値と異なることがあります。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.DriveThumbRight(Infragistics.Controls.Editors.XamSliderThumb{`0},System.Double)">
+            <summary>指定されたつまみを受け取り、指定した値 (previewValue) に向けて右に移動します。この関数では、他のつまみとの相互作用が処理され、渡されたつまみの場所の値が変化する可能性があります。previewValue がつまみの実際の値ではなくプレビューなのはそのためです。注: ここでのロジックに対するあらゆる変更は、おそらく DriveThumbLeft でも同様に行う必要があります。これら 2 つの関数は同期している必要があります。</summary>
+            <param name="thumb">移動するつまみ。</param>
+            <param name="previewValue">取得する値。</param>
+            <returns>つまみを移動した結果。ロックにヒットした場合、渡された値と異なることがあります。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.QuietlyMoveThumbTo(Infragistics.Controls.Editors.XamSliderThumb{`0},`0)">
+            <summary>このプライベート関数は、つまみを指定された位置に移動し、そのパス中のつまみと相互作用します。</summary>
+            <param name="thumb">移動するつまみ。</param>
+            <param name="previewValue">目標とする値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.QuietlyMoveThumbTo(Infragistics.Controls.Editors.XamSliderThumb{`0},`0,System.Boolean)">
+            <summary>このプライベート関数は、つまみを指定された位置に移動し、そのパス中のつまみと相互作用します。</summary>
+            <param name="thumb">移動するつまみ。</param>
+            <param name="previewValue">目標とする値。</param>
+            <param name="provideInteractions">他のつまみとの操作を保持してつまみを移動します。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.MoveThumbTo(Infragistics.Controls.Editors.XamSliderThumb{`0},`0)">
+            <summary>これは、新しい値に移動するために Thumb によって呼び出されるメソッドです。このメソッドは、つまみを移動するための唯一のメソッドです。これは、このメソッドが、つまみの間の適切な相互作用を保証する方法を知っているためです。</summary>
+            <param name="thumb">移動するつまみのインスタンス。</param>
+            <param name="previewValue">つまみを移動するときの目標値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.MoveThumbTo(Infragistics.Controls.Editors.XamSliderThumb{`0},`0,System.Boolean)">
+            <summary>これは、新しい値に移動するために Thumb によって呼び出されるメソッドです。このメソッドは、つまみを移動するための唯一のメソッドです。これは、このメソッドが、つまみの間の適切な相互作用を保証する方法を知っているためです。</summary>
+            <param name="thumb">移動するつまみのインスタンス。</param>
+            <param name="previewValue">つまみを移動するときの目標値。</param>
+            <param name="provideInteractions">他のつまみとの操作を保持してつまみを移動します。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.SortThumbs">
+            <summary>つまみを値で並べ替えます。値が同じ場合、元々どのつまみが左でどのつまみがが右だったかが維持されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.CoerceMinMaxValue(System.Boolean)">
+            <summary>いずれかを変更するときに、最小値と最大値を強制します。</summary>
+            <param name="isMinValueChanged"><c>true</c> に設定すると、[最小値が変更されます]。</param>
+            <returns>値が正しい場合 true、そうでない場合は false。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.DoubleToValue(System.Double)">
+            <summary>double 値を特定のジェネリック型に変換します。</summary>
+            <param name="value">値。</param>
+            <returns>一般的なタイプの値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.GetDelta">
+            <summary>最小値と最低値を強制するときに使用するデルタを取得します。</summary>
+            <returns>デルタを double で返します。 </returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.GetLargeChangeValue">
+            <summary>LargeChange の値を double 値で取得します。</summary>
+            <returns>double 値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.GetLargeChangeValue(System.Double,System.Boolean)">
+            <summary>開始点を含まず DateTime に使用される、ある開始点に基づき、double の LargeChange 値を取得します。</summary>
+            <param name="baseValue">大きな値を追加する開始点。</param>
+            <param name="isIncreasing">変更が正か負かを示します。</param>
+            <returns>開始点を含まず DateTime に使用される、開始点に基づく double の値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.GetSmallChangeValue">
+            <summary>SmallChange の値を double 値で取得します。</summary>
+            <returns>double 値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.OnThumbValueChanged(`0,`0,Infragistics.Controls.Editors.XamSliderThumb{`0})">
+            <summary>スライダーのいずれかのつまみの値が変更されたときに呼び出されます。</summary>
+            <param name="oldValue">古い値。</param>
+            <param name="newValue">新しい値。</param>
+            <param name="thumb">つまみ。</param>
+            <returns>イベントがキャンセルされた場合は True。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.ValueToDouble(`0)">
+            <summary>値を特定のジェネリック型から double に変換します。</summary>
+            <param name="value">値。</param>
+            <returns>double 値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.ResolveThumbLocation(`0,System.Double)">
+            <summary>スライダー トラック上のつまみの位置を解決します。</summary>
+            <param name="value">値。</param>
+            <param name="size">トラックのサイズ。</param>
+            <returns>トラックに相対するつまみの位置。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.NextTickMarkValue(System.Double,System.Boolean)">
+            <summary>startingValue を走査開始点として目盛を繰り返し走査し、searchRight の設定に応じて左または右側にある次の目盛を探します。</summary>
+            <param name="startingValue">走査を開始する値。</param>
+            <param name="searchRight">この値を true に設定すると、右側 (増加方向) にある目盛が走査されます。この値を false に設定すると、左側 (減少方向) にある目盛が走査されます。</param>
+            <returns>次の目盛の値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBase`1.OverlapThumb(Infragistics.Controls.Editors.XamSliderThumb{`0},Infragistics.Controls.Editors.XamSliderThumb{`0},System.Double)">
+            <summary>「topThumb」を受け取り、ZIndex が「bottomThumb」になるように変更します。</summary>
+            <param name="topThumb">一番上にするつまみ。</param>
+            <param name="bottomThumb">一番下にするつまみ。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase`1.LargeChange">
+            <summary>LargeChange プロパティの値を取得または設定します。</summary>
+            <value>大きな変更。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase`1.MaxValue">
+            <summary>このスライダーの最大値を取得または設定します。</summary>
+            <value>最大値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase`1.MinValue">
+            <summary>このスライダーの最小値を取得または設定します。</summary>
+            <value>最小値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase`1.SmallChange">
+            <summary>SmallChange プロパティの値を取得または設定します。</summary>
+            <value>小さい変更。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase`1.TickMarks">
+            <summary>目盛 (<see cref="T:Infragistics.Controls.Editors.SliderTickMarks`1" /> インスタンス) のコレクションを取得します。</summary>
+            <value>目盛。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase`1.Thumbs">
+            <summary>つまみ (<see cref="T:Infragistics.Controls.Editors.XamSliderThumb`1" /> インスタンス) のコレクションを取得します。</summary>
+            <value>つまみ。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBase`1.TickMarksPanel">
+            <summary>目盛を配置する目盛パネルを取得します。</summary>
+            <value>目盛パネル。</value>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamSliderBase`1.ThumbValueChanged">
+            <summary>Thumbs コレクションの項目が変更されたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamSliderBase`1.TrackClick">
+            <summary>XamSlider のトラック上でマウスがクリックされたときに発生します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamRangeSlider`1.IsSelectionRangeEnabledProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamRangeSlider`1.IsSelectionRangeEnabled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamRangeSlider`1.OnTrackFillDragCompleted(Infragistics.Controls.Editors.XamSliderThumb{`0},Infragistics.Controls.Editors.XamSliderThumb{`0})">
+            <summary>TrackFillDragCompleted イベントを呼び出すメソッド</summary>
+            <param name="thumb"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamRangeSlider`1.OnTrackClick(System.Windows.Input.MouseButtonEventArgs)">
+            <summary><see cref="M:Infragistics.Controls.Editors.XamSliderBase`1.OnTrackClick(System.Windows.Input.MouseButtonEventArgs)" /> をオーバーライドします。スライダー トラックをクリックし、IsSelectionRangeEnabled でないことを確認します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.Input.MouseButtonEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamRangeSlider`1.ActiveThumb">
+            <summary>アクティブつまみを取得または設定します。スライダーのつまみコレクションの現在アクティブなつまみを指定します。</summary>
+            <value>アクティブなつまみ。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamRangeSlider`1.IsSelectionRangeEnabled">
+            <summary>このインスタンスを選択範囲内で有効にするかどうかを示す値を取得または設定します。選択範囲が有効なときに、トラックの塗りつぶしをドラッグすると最も近いつまみも同じ距離ドラッグされます。</summary>
+            <value>このインスタンスで選択範囲が有効な場合は <c>true</c>。そうでない場合は <c>false</c>。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamRangeSlider`1.Thumbs">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderThumb`1" /> インスタンスのコレクションからつまみを取得します。</summary>
+            <value>つまみ。</value>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamRangeSlider`1.TrackFillDragCompleted">
+            <summary>TrackFill Drag が発生したときに発生します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeRangeSlider.#cctor">
+          <summary>
+            <see cref="T:Infragistics.Controls.Editors.XamDateTimeRangeSlider"/> クラスの静的コンストラクター。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeRangeSlider.#ctor">
+          <summary>
+            <see cref="T:Infragistics.Controls.Editors.XamDateTimeRangeSlider" /> クラスの新しいインスタンスを初期化します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeRangeSlider.DoubleToValue(System.Double)">
+            <summary>double から値へ。</summary>
+            <param name="value">値。</param>
+            <returns>ジェネリック型からの値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeRangeSlider.GetDelta">
+            <summary>最小値と最低値を強制するときに使用するデルタを取得します。</summary>
+            <returns>デルタを double で返します。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeRangeSlider.GetLargeChangeValue">
+            <summary>LargeChange の値を double 値で取得します。</summary>
+            <returns>double 値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeRangeSlider.GetLargeChangeValue(System.Double,System.Boolean)">
+            <summary>開始点を含まず DateTime に使用される、ある開始点に基づき、double の LargeChange 値を取得します。</summary>
+            <param name="baseValue">大きな値を追加する開始点。</param>
+            <param name="isIncreasing">変更が正か負かを示します。</param>
+            <returns>開始点を含まず DateTime に使用される、開始点に基づく double の値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeRangeSlider.GetParameter(Infragistics.Controls.CommandSource)">
+            <summary>パラメーターを取得します - コマンドを実行可能なコントロール。</summary>
+            <param name="source">コマンド ソース。</param>
+            <returns>コマンドを実行可能なオブジェクト。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeRangeSlider.GetSmallChangeValue">
+            <summary>SmallChange の値を double 値で取得します。</summary>
+            <returns>double 値。</returns>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamDateTimeRangeSlider.LargeChangeTypeProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamDateTimeRangeSlider.LargeChangeType" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamDateTimeRangeSlider.SmallChangeTypeProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamDateTimeRangeSlider.SmallChangeType" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeRangeSlider.SupportsCommand(System.Windows.Input.ICommand)">
+            <summary>コマンドをサポートします。</summary>
+            <param name="command">コマンド。</param>
+            <returns>基本コマンド クラスとしてのコマンド。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeRangeSlider.ValueToDouble(System.DateTime)">
+            <summary>値を特定のジェネリック型から double に変換します。</summary>
+            <param name="value">値。</param>
+            <returns>double 値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeRangeSlider.ProcessChanges(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>アクティブなつまみの値を、指定された LargeChange または SmallChange の値で変更します。</summary>
+            <param name="isIncrease"><c>true</c> に設定すると、値が増加します。</param>
+            <param name="isLargeChange"><c>true</c> に設定すると、LargeChange が使用されます。</param>
+            <param name="forceMoveOneTick">この値が <c>true</c> に設定されて、Snap to tich (目盛にスナップ) が true になっている場合、つまみはタッチ ポイントの移動距離に関係なく次の目盛に移動することになります。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeRangeSlider.LargeChangeType">
+            <summary>列挙型 <see cref="T:Infragistics.Controls.Editors.FrequencyType" /> から <see cref="P:Infragistics.Controls.Editors.XamDateTimeRangeSlider.LargeChangeType" /> の型を取得または設定します。</summary>
+            <value>LargeChange の型。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeRangeSlider.MaxValue">
+            <summary>このスライダーの最大値を取得または設定します。</summary>
+            <value>最大値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeRangeSlider.MinValue">
+            <summary>このスライダーの最小値を取得または設定します。</summary>
+            <value>最小値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeRangeSlider.SmallChangeType">
+            <summary>列挙型 <see cref="T:Infragistics.Controls.Editors.FrequencyType" /> から <see cref="P:Infragistics.Controls.Editors.XamDateTimeRangeSlider.SmallChangeType" /> の型を取得または設定します。</summary>
+            <value>LargeChange の型。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeRangeSlider.TickMarks">
+            <summary>目盛りのコレクションを取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamDateTimeSlider">
+            <summary>DateTime 型からシンプルなスライダーを提供するコントロール。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamSimpleSliderBase`1">
+            <summary>一般的でシンプルなスライダー動作を提供するコントロール。</summary>
+            <typeparam name="T">ジェネリック型</typeparam>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSimpleSliderBase`1.OnApplyTemplate">
+            <summary>コントロール テンプレートが適用されるときに呼び出されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSimpleSliderBase`1.ThumbProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSimpleSliderBase`1.Thumb" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSimpleSliderBase`1.ValueProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSimpleSliderBase`1.Value" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSimpleSliderBase`1.OnThumbChanged(Infragistics.Controls.Editors.XamSliderThumb{`0})">
+            <summary>Thumb プロパティの値が変更されたときに呼び出されます。</summary>
+            <param name="thumb">つまみ。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSimpleSliderBase`1.Thumb">
+            <summary>つまみを取得または設定します。</summary>
+            <value>つまみ。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSimpleSliderBase`1.Value">
+            <summary>値を取得または設定します。ActiveThumb (シンプルなスライダーの Thumb) の現在の値です。</summary>
+            <value>値。</value>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeSlider.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamDateTimeSlider" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeSlider.#cctor">
+          <summary>
+            <see cref="T:Infragistics.Controls.Editors.XamDateTimeSlider"/> クラスの静的コンストラクター。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeSlider.DoubleToValue(System.Double)">
+            <summary>double から値へ。</summary>
+            <param name="value">値。</param>
+            <returns>DateTime タイプの値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeSlider.GetDelta">
+            <summary>最小値と最低値を強制するときに使用するデルタを取得します。</summary>
+            <returns>デルタを double で返します。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeSlider.GetLargeChangeValue">
+            <summary>LargeChange の値を double 値で取得します。</summary>
+            <returns>double 値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeSlider.GetLargeChangeValue(System.Double,System.Boolean)">
+            <summary>開始点を含まず DateTime に使用される、ある開始点に基づき、double の LargeChange 値を取得します。</summary>
+            <param name="baseValue">大きな値を追加する開始点。</param>
+            <param name="isIncreasing">変更が正か負かを示します。</param>
+            <returns>開始点を含まず DateTime に使用される、開始点に基づく double の値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeSlider.GetParameter(Infragistics.Controls.CommandSource)">
+            <summary>パラメーターを取得します - コマンドを実行可能なコントロール。</summary>
+            <param name="source">コマンド ソース。</param>
+            <returns>コマンドを実行可能なオブジェクト。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeSlider.GetSmallChangeValue">
+            <summary>SmallChange の値を double 値で取得します。</summary>
+            <returns>double 値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeSlider.SupportsCommand(System.Windows.Input.ICommand)">
+            <summary>コマンドをサポートします。</summary>
+            <param name="command">コマンド。</param>
+            <returns>基本コマンド クラスとしてのコマンド。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeSlider.ValueToDouble(System.DateTime)">
+            <summary>値を特定の DateTime 型から double に変換します。</summary>
+            <param name="value">値。</param>
+            <returns>double 値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeSlider.ProcessChanges(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>アクティブなつまみの値を、指定された LargeChange または SmallChange の値で変更します。</summary>
+            <param name="isIncrease"><c>true</c> に設定すると、値が増加します。</param>
+            <param name="isLargeChange"><c>true</c> に設定すると、LargeChange が使用されます。</param>
+            <param name="forceMoveOneTick">この値が <c>true</c> に設定されて、Snap to tich (目盛にスナップ) が true になっている場合、つまみはタッチ ポイントの移動距離に関係なく次の目盛に移動することになります。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeSlider.OnThumbChanged(Infragistics.Controls.Editors.XamSliderThumb{System.DateTime})">
+            <summary>Thumb プロパティの値が変更されたときに呼び出されます。</summary>
+            <param name="thumb">つまみ。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamDateTimeSlider.LargeChangeTypeProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamDateTimeSlider.LargeChangeType" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamDateTimeSlider.SmallChangeTypeProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamDateTimeSlider.SmallChangeType" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamDateTimeSlider.CreateChangeValue(System.DateTime,System.Boolean,System.Double,Infragistics.Controls.Editors.FrequencyType)">
+            <summary>一連のパラメーターを受け取り、適切な日付と時刻にします。この関数は、DateTime の最小と最大の変更に敏感です。</summary>
+            <param name="dateTime">開始 DateTime。</param>
+            <param name="isIncreasing">値が増加しているかどうか。</param>
+            <param name="change">変更量</param>
+            <param name="frequencyType">変更タイプ。つまり、Days、Hours など。</param>
+            <returns>値に調整された新しい DateTime。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeSlider.MaxValue">
+            <summary>このスライダーの最大値を取得または設定します。</summary>
+            <value>最大値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeSlider.MinValue">
+            <summary>このスライダーの最小値を取得または設定します。</summary>
+            <value>最小値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeSlider.Value">
+            <summary>値を取得または設定します。ActiveThumb (シンプルなスライダーの Thumb) の現在の値です。</summary>
+            <value>値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeSlider.TickMarks">
+            <summary>目盛りのコレクションを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeSlider.LargeChangeType">
+            <summary>列挙型 <see cref="T:Infragistics.Controls.Editors.FrequencyType" /> から <see cref="P:Infragistics.Controls.Editors.XamDateTimeSlider.LargeChangeType" /> の型を取得または設定します。</summary>
+            <value>LargeChange の型。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamDateTimeSlider.SmallChangeType">
+            <summary>列挙型 <see cref="T:Infragistics.Controls.Editors.FrequencyType" /> から <see cref="P:Infragistics.Controls.Editors.XamDateTimeSlider.SmallChangeType" /> の型を取得または設定します。</summary>
+            <value>LargeChange の型。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamNumericRangeSlider">
+            <summary>double 型から XamRangeSlider を提供するコントロール。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamNumericRangeSlider.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamNumericRangeSlider" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamNumericRangeSlider.#cctor">
+          <summary>
+            <see cref="T:Infragistics.Controls.Editors.XamNumericRangeSlider"/> クラスの静的コンストラクター。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamNumericRangeSlider.DoubleToValue(System.Double)">
+            <summary>double から値へ。</summary>
+            <param name="value">値。</param>
+            <returns>ジェネリック型からの値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamNumericRangeSlider.ValueToDouble(System.Double)">
+            <summary>値を特定のジェネリック型から double に変換します。</summary>
+            <param name="value">値。</param>
+            <returns>double 値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamNumericRangeSlider.GetParameter(Infragistics.Controls.CommandSource)">
+            <summary>パラメーターを取得します - コマンドを実行可能なコントロール。</summary>
+            <param name="source">コマンド ソース。</param>
+            <returns>コマンドを実行可能なオブジェクト。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamNumericRangeSlider.SupportsCommand(System.Windows.Input.ICommand)">
+            <summary>コマンドをサポートします。</summary>
+            <param name="command">コマンド。</param>
+            <returns>基本コマンド クラスとしてのコマンド。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamNumericRangeSlider.MaxValue">
+            <summary>このスライダーの最大値を取得または設定します。</summary>
+            <value>最大値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamNumericRangeSlider.MinValue">
+            <summary>このスライダーの最小値を取得または設定します。</summary>
+            <value>最小値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamNumericRangeSlider.TickMarks">
+            <summary>目盛りのコレクションを取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamNumericSlider">
+            <summary>double 型から単純なスライダーを提供するコントロール。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamNumericSlider.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamNumericSlider" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamNumericSlider.#cctor">
+          <summary>
+            <see cref="T:Infragistics.Controls.Editors.XamNumericSlider"/> クラスの静的コンストラクター。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamNumericSlider.DoubleToValue(System.Double)">
+            <summary>double 値を特定のジェネリック型に変換します。</summary>
+            <param name="value">値。</param>
+            <returns>ジェネリック型からの値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamNumericSlider.ValueToDouble(System.Double)">
+            <summary>値を特定のジェネリック型から double に変換します。</summary>
+            <param name="value">値。</param>
+            <returns>double 値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamNumericSlider.GetParameter(Infragistics.Controls.CommandSource)">
+            <summary>コマンドを実行するために必要なパラメーターを定義するオブジェクトを返します。</summary>
+            <param name="source">実行するコマンドを定義する CommandSource オブジェクト。</param>
+            <returns>コマンドを完了するために必要なオブジェクト。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamNumericSlider.SupportsCommand(System.Windows.Input.ICommand)">
+            <summary>オブジェクトが指定されたコマンド タイプをサポートするかどうかを返します。</summary>
+            <param name="command">検証されるコマンド。</param>
+            <returns>コマンドがオブジェクトで実行可能な場合 True です。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamNumericSlider.OnThumbChanged(Infragistics.Controls.Editors.XamSliderThumb{System.Double})">
+            <summary>Thumb プロパティの値が変更されたときに呼び出されます。</summary>
+            <param name="thumb">つまみ。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamNumericSlider.Value">
+            <summary>値を取得または設定します。ActiveThumb (シンプルなスライダーの Thumb) の現在の値です。</summary>
+            <value>値。</value>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamNumericSlider.MaxValue">
+            <summary>このスライダーの最大値を取得または設定します。</summary>
+            <value>最大値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamNumericSlider.MinValue">
+            <summary>このスライダーの最小値を取得または設定します。</summary>
+            <value>最小値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamNumericSlider.TickMarks">
+            <summary>目盛りのコレクションを取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.LargeDecreaseCommand">
+            <summary>その ActiveThumb.Value プロパティを LargeChange の値で減らす <see cref="T:Infragistics.CommandBase" /> オブジェクト。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.XamSliderBaseCommandBase">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> と関連付けられるすべてのコマンドの基本クラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.XamSliderBaseCommandBase.CanExecute(System.Object)">
+            <summary>入力されたオブジェクトでコマンドを実行する可能性があるかどうかを示します。</summary>
+            <param name="parameter">コマンドを実行するオブジェクト。</param>
+            <returns>コマンドが実行できる場合は True。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.XamSliderBaseCommandBase.Execute(System.Object)">
+            <summary>提供されたパラメーターを使用してコマンドを実行します。</summary>
+            <param name="parameter">実行される <see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> オブジェクト。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.XamSliderBaseCommandBase.ExecuteCommand(Infragistics.Controls.Editors.XamSliderBase)">
+            <summary>指定されたコマンドを指定された <see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> で実行します。</summary>
+            <param name="slider">コマンドを実行するスライダー。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.LargeDecreaseCommand.ExecuteCommand(Infragistics.Controls.Editors.XamSliderBase)">
+            <summary>LargeChange の値を使用して <see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> の ActiveThumb.Value プロパティを縮小します。</summary>
+            <param name="slider"><see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> オブジェクト。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.LargeIncreaseCommand">
+            <summary>ActiveThumb.Value プロパティを LargeCjhange の値で増やす <see cref="T:Infragistics.CommandBase" /> オブジェクト。</summary> 
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.LargeIncreaseCommand.ExecuteCommand(Infragistics.Controls.Editors.XamSliderBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> の ActiveThumb.Value プロパティの LargeChange の値を使用した増加を適用します。</summary>
+            <param name="slider"><see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> オブジェクト。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.SmallDecreaseCommand">
+            <summary>その ActiveThumb.Value プロパティを SmallChange の値で減らす <see cref="T:Infragistics.CommandBase" /> オブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.SmallDecreaseCommand.ExecuteCommand(Infragistics.Controls.Editors.XamSliderBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> の ActiveThumb.Value プロパティの SmallChange の値を使用した減少を適用します。</summary>
+            <param name="slider"><see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> オブジェクト。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.SmallIncreaseCommand">
+            <summary>その ActiveThumb.Value プロパティを SmallChange の値で増やす <see cref="T:Infragistics.CommandBase" /> オブジェクト。</summary> 
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.SmallIncreaseCommand.ExecuteCommand(Infragistics.Controls.Editors.XamSliderBase)">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> の ActiveThumb.Value プロパティの SmallChange の値を使用した増加を適用します。</summary>
+            <param name="slider"><see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> オブジェクト。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamSliderBaseCommandSource">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderBase" /> オブジェクトのコマンド ソース オブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderBaseCommandSource.ResolveCommand">
+            <summary>この <see cref="T:System.Windows.Input.ICommand" /> が表す <see cref="T:Infragistics.Controls.CommandSource" /> を解決します。</summary>
+            <returns>解決したコマンドの新しいインスタンス。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderBaseCommandSource.CommandType">
+            <summary>コマンドで実行する XamSliderBaseCommand を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamSliderDateTimeThumb">
+            <summary>DateTime 型から XamSliderThumb を提供するコントロール。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamSliderThumb`1">
+            <summary>スライダーのつまみの一般的なクラスを説明するオブジェクト。</summary>
+            <typeparam name="T">ジェネリック型</typeparam>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderThumb`1.ValueProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Editors.XamSliderThumb`1.Value" /> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderThumb`1.IsSnapToTickEnabledProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderThumb`1.IsSnapToTickEnabled" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderThumb`1.IsTrackFillVisibleProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderThumb`1.IsTrackFillVisible" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderThumb`1.TrackFillBrushProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderThumb`1.TrackFillBrush" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamSliderThumb`1.TrackFillStyleProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamSliderThumb`1.TrackFillStyle" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.EnsureCurrentState">
+            <summary>コントロールのオーナーが Horizontal または Vertical 状態の場合に、VisualStateManager の現在の状態を保証します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.OnApplyTemplate">
+            <summary>派生したクラスでオーバーライドされると、アプリケーション コードまたは内部プロセス（再構築レイアウト パスなど）が <see cref="M:System.Windows.Controls.Control.ApplyTemplate" /> を呼び出す時に常に起動されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.OnCreateAutomationPeer">
+            <summary>派生したクラスで実装する場合、オートメーションのインフラストラクチャーのクラス固有 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 実装を返します。</summary>
+            <returns>返すクラス固有 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> サブクラス。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.OnDragDelta(System.Double,System.Double)">
+            <summary>DragDelta イベントが発生する時に呼び出されます。</summary>
+            <param name="horizontalChange">水平方向の変更。</param>
+            <param name="verticalChange">垂直方向の変更。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.OnDragStarted(System.Double,System.Double)">
+            <summary>DragStarted イベントが発生する時に呼び出されます。</summary>
+            <param name="horizontalOffset">水平方向のオフセット。</param>
+            <param name="verticalOffset">垂直方向のオフセット。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary><see cref="M:Infragistics.Controls.Editors.XamSliderThumb`1.OnGotFocus(System.Windows.RoutedEventArgs)" /> イベントを発生します。</summary>
+            <param name="e">イベントのデータを含む <see cref="T:System.Windows.RoutedEventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.MouseLeftButtonUp" /> イベントを発生する前に呼び出します。</summary>
+            <param name="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.QuietlySetValue(`0)">
+            <summary>Value の値を変更しますが、ONE TIME 使用フラグを設定し、コールバック ハンドラーが起動されるのを防ぎます。これは危険で美しくいため、スライダーのみで使用する必要があります。</summary>
+            <param name="value">設定する値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.GetDelta">
+            <summary>つまみの操作を強制するときに使用するデルタを取得します。</summary>
+            <returns>デルタを double で返します。 </returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.InitDrag">
+            <summary>つまみのドラッグを開始するときにパラメーターを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.UpdateThumbPosition">
+            <summary>スライダーの MinValue または MaxValue が変更されたときにつまみの位置を更新します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.IsThumbValid">
+            <summary>つまみが、有効と見なされる特定の条件を満たしているかを確認します。現在のところ、有効かどうかだけが確認されます。</summary>
+            <param name="thumb">確認するつまみ。</param>
+            <returns>True または False。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.IsThumbValidForInteraction">
+            <summary>つまみが有効な相互作用可能なつまみかどうか (つまり、有効で (上記参照)、フリーでない) を確認します。</summary>
+            <param name="thumb">確認するつまみ。</param>
+            <returns>True または False。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.OnValueChanged(`0,`0)">
+            <summary>ValueChanged イベントが発生したときに呼び出されます。</summary>
+            <param name="oldValue">古い値。</param>
+            <param name="newValue">新しい値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.CoerceSnapToTickMarks(System.Double)">
+            <summary>すべての目盛りコレクション内のすべての目盛りを反復し、新しい値の位置にもっとも近い目盛りを探します。</summary>
+            <param name="newValue">もっとも近い目盛りを探す値。</param>
+            <returns>もっとも近い目盛りの値 (IsSnapToTickEnabled = True の場合。そうでない場合は単に値を返します)。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderThumb`1.GetThumbRect(Infragistics.Controls.Editors.XamSliderThumb{`0})">
+          <summary>
+            含まれる Canvas 内のつまみの位置を取得します。
+          </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamSliderThumb`1.ValueChanged">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderThumb`1" /> の Value プロパティの値が変更されるときに発生します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumb`1.Value">
+          <summary>Value プロパティの一般的な値を取得または設定します。</summary>
+          <value>値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumb`1.IsSnapToTickEnabled">
+            <summary>このつまみのインスタンスの目盛にスナップする機能を有効にするかどうかを示す値を取得または設定します。</summary>
+            <value>このインスタンスで目盛へのスナップが有効になっている場合は <c>true</c> 。そうでない場合は <c>false</c>。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumb`1.IsTrackFillVisible">
+            <summary>つまみの TrackFill が表示されるかどうかを示す値を取得または設定します。</summary>
+            <value>このインスタンスで TrackFill が表示されている場合は <c>true</c>。そうでない場合は <c>false</c>。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumb`1.TrackFillBrush">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderThumb`1" /> に割り当てられた、<see cref="P:Infragistics.Controls.Editors.XamSliderThumb`1.TrackFill" /> インスタンスの背景で使用する Brush を取得または設定します。</summary>
+            <value>トラックの塗りつぶしブラシ。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderThumb`1.TrackFillStyle">
+            <summary>Style を取得または設定します。<see cref="P:Infragistics.Controls.Editors.XamSliderThumb`1.TrackFill" /> インスタンスの背景に使用され、<see cref="T:Infragistics.Controls.Editors.XamSliderThumb`1" /> に設定されます。</summary>
+            <value>トラックの塗りつぶしブラシ。</value>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderDateTimeThumb.#cctor">
+          <summary>
+            <see cref="T:Infragistics.Controls.Editors.XamSliderDateTimeThumb" /> クラスを初期化します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderDateTimeThumb.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderDateTimeThumb" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderDateTimeThumb.GetDelta">
+            <summary>つまみの操作を強制するときに使用するデルタを取得します。</summary>
+            <returns>デルタを double で返します。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderDateTimeThumb.Value">
+            <summary>Value プロパティの DateTime 値を取得または設定します。</summary>
+            <value>値。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamSliderNumericThumb">
+            <summary>double 型から XamSliderThumb を提供するコントロール。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderNumericThumb.#cctor">
+          <summary>
+            <see cref="T:Infragistics.Controls.Editors.XamSliderNumericThumb" /> クラスを初期化します。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamSliderNumericThumb.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamSliderNumericThumb" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamSliderNumericThumb.Value">
+            <summary>Value プロパティの Double 値を取得または設定します。</summary>
+            <value>値。</value>
+        </member>
+    </members>
+</doc>

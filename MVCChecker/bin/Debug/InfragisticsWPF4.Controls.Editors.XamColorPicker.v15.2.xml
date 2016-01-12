@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>InfragisticsWPF4.Controls.Editors.XamColorPicker.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:Infragistics.AutomationPeers.ColorItemBoxAutomationPeer">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorItemBox" /> のタイプを UI に公開します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ColorItemBoxAutomationPeer.#ctor(Infragistics.Controls.Editors.Primitives.ColorItemBox)">
+            <summary><see cref="T:Infragistics.AutomationPeers.XamColorPickerAutomationPeer" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="owner">この自動ピアを制御する <see cref="T:Infragistics.Controls.Editors.XamColorPicker" />。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ColorItemBoxAutomationPeer.GetAutomationControlTypeCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられる <see cref="T:System.Windows.UIElement" /> のコントロール タイプを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" /> によって呼び出されます。</summary>
+            <returns>列挙体の値。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ColorItemBoxAutomationPeer.GetClassNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> の名前を返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" /> によって呼び出されます。</summary>
+            <returns>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられたオーナー型の名前を返します。特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ColorItemBoxAutomationPeer.GetNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.FrameworkElement" /> のテキスト ラベルを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" /> によって呼び出されます。</summary>
+            <returns>このオートメーション ピアに関連付けられる要素のテキスト ラベル。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.ColorItemBoxAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> のコントロール パターンを返します。</summary>
+            <param name="patternInterface">列挙値の １ つです。</param>
+            <returns>特記事項を参照してください。</returns>
+        </member>
+        <member name="T:Infragistics.AutomationPeers.XamColorPickerAutomationPeer">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> のタイプを UI に公開します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.#ctor(Infragistics.Controls.Editors.XamColorPicker)">
+            <summary><see cref="T:Infragistics.AutomationPeers.XamColorPickerAutomationPeer" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="owner">この自動ピアを制御する <see cref="T:Infragistics.Controls.Editors.XamColorPicker" />。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.GetAutomationControlTypeCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられる <see cref="T:System.Windows.UIElement" /> のコントロール タイプを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" /> によって呼び出されます。</summary>
+            <returns>列挙体の値。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.GetClassNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> の名前を返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" /> によって呼び出されます。</summary>
+            <returns>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられたオーナー型の名前を返します。特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.GetNameCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.FrameworkElement" /> のテキスト ラベルを返します。このメソッドは、<see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" /> によって呼び出されます。</summary>
+            <returns>このオートメーション ピアに関連付けられる要素のテキスト ラベル。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> のコントロール パターンを返します。</summary>
+            <param name="patternInterface">列挙値の １ つです。</param>
+            <returns>特記事項を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.RaiseExpandCollapseStatePropertyChangedEvent(System.Windows.Automation.ExpandCollapseState,System.Windows.Automation.ExpandCollapseState)">
+            <summary>ExpandCollapseStatePropertyChangedEvent を発生させます。</summary>
+            <param name="oldValue"><c>true</c> に設定する場合、古い値。</param>
+            <param name="newValue"><c>true</c> に設定されている場合は、新しい値。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.Collapse">
+            <summary>コントロールの子孫であるすべてのノード、コントロールまたはコンテンツを非表示にします。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.Expand">
+            <summary>コントロールの子であるノード、コントロールまたはコンテンツを表示します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.SetSelectedColor(System.String)">
+            <summary>文字列形式の色の ARGB 表現からコントロールの値を設定しようとします。</summary>        
+            <param name="colorInARGB">引数の各部分が HEX 値である &apos;#AARRGGBB&apos;, です。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.GetSelection">
+            <summary>選択されている各子要素の UI 自動化プロバイダーを取得します。</summary>
+            <returns>UI 自動化プロバイダーの配列。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.OwningColorPicker_DropDownOpened(System.Object,System.EventArgs)">
+            <summary>所有する <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> の <see cref="E:Infragistics.Controls.Editors.XamColorPicker.DropDownOpened" /> イベントを処理します。</summary>
+            <param name="sender">イベントのソース。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.EventArgs" /> インスタンス。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.OwningColorPicker_DropDownClosed(System.Object,System.EventArgs)">
+            <summary>所有する <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> の <see cref="E:Infragistics.Controls.Editors.XamColorPicker.DropDownClosed" /> イベントを処理します。</summary>
+            <param name="sender">イベントのソース。</param>
+            <param name="e">イベントのデータを含む <see cref="T:System.EventArgs" /> インスタンス。</param>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.ExpandCollapseState">
+            <summary>コントロールの状態 (展開または縮小) を取得します。</summary>
+            <value></value>
+            <returns>コントロールの状態 (展開または縮小) 。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.IsReadOnly">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> が読み取り専用かどうかを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.CanSelectMultiple">
+            <summary>UI 自動化プロバイダーによって 2 つ以上の子要素を同時に選択できるかどうかを示す値を取得します。</summary>
+            <value></value>
+            <returns>複数選択が許可される場合は、True。それ以外は、False。</returns>
+        </member>
+        <member name="P:Infragistics.AutomationPeers.XamColorPickerAutomationPeer.IsSelectionRequired">
+            <summary>UI 自動化プロバイダーによって少なくとも 1 つの子要素を選択する必要があるかどうかを示す値を取得します。</summary>
+            <value></value>
+            <returns>選択が必要な場合は、True。それ以外は、False。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ByteSlider">
+            <summary><see cref="T:System.Byte" /> データで使用する派生 <see cref="T:Infragistics.Controls.Editors.XamSliderBase" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ByteSlider.#cctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ByteSlider" /> クラスの静的コンストラクター。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ByteSlider.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ByteSlider" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ByteSlider.DoubleToValue(System.Double)">
+            <summary>double 値を特定のジェネリック型に変換します。</summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ByteSlider.ValueToDouble(System.Byte)">
+            <summary>値を特定のジェネリック型から double に変換します。</summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ByteSlider.GetLargeChangeValue">
+            <summary>LargeChange の値を double 値で取得します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ByteSlider.GetSmallChangeValue">
+            <summary>SmallChange の値を double 値で取得します。</summary>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ByteSlider.MaxValue">
+            <summary>MaxValue プロパティの値を取得または設定します。</summary>
+            <value>最大値。</value>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ByteSlider.MinValue">
+            <summary>最小値を取得または設定します。</summary>
+            <value>最小値。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ByteSliderThumb">
+            <summary>double 型から XamSliderThumb を提供するコントロール。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.SpecializedEditorsBase">
+            <summary>エディターは特定のデータの入力を制限します。</summary>
+            <remarks>このエディターは <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> 用で、コントロールの外部で使用することを意図としていません。</remarks>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.SpecializedEditorsBase.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ByteTextBox" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.SpecializedEditorsBase.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary>System.Windows.UIElement.LostFocus イベントを発生する前に呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.SpecializedEditorsBase.OnTextChanged(System.Windows.Controls.TextChangedEventArgs)">
+            <summary>この編集コントロールでコンテンツが変更されたときに呼び出されます。</summary>
+            <param name="e">System.Windows.Controls.Primitives.TextBoxBase.TextChanged イベントに関連付けられたイベント引数オブジェクト。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.SpecializedEditorsBase.OnTextInput(System.Windows.Input.TextCompositionEventArgs)">
+            <summary>System.Windows.UIElement.LostFocus イベントを発生する前に呼び出されます。</summary>
+             <param name="e">イベントについての情報を提供します。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.SpecializedEditorsBase.ValidateInputText(System.String)">
+            <summary>エディターの条件に一致する入力テキストを検証します。</summary>
+            <param name="compositionText"></param>
+            <returns>検証が失敗した場合 False を返します</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ByteTextBox">
+            <summary>エディターは入力をバイト データに制限します。</summary>
+            <remarks>このエディターは <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> 用で、コントロールの外部で使用することを意図としていません。</remarks>    
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.DegreeTextBox">
+            <summary>エディターは入力を角度のデータに制限します。</summary>
+            <remarks>このエディターは <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> 用で、コントロールの外部で使用することを意図としていません。</remarks>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PercentTextBox">
+            <summary>エディターは入力を パーセント データに制限します。</summary>
+            <remarks>このエディターは <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> 用で、コントロールの外部で使用することを意図としていません。</remarks>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ColorItem">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorStrip" /> の単色を表すクラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorItem.SetSelectedInternal(System.Boolean)">
+            <summary>情報を渡さずにオブジェクトの内部メンバーを設定するコントロールによって使用されます。</summary>        
+            <param name="selected"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorItem.SetWasSelected(System.Boolean)">
+            <summary>情報を渡さずにオブジェクトの内部メンバーを設定するコントロールによって使用されます。</summary>        
+            <param name="wasSelected"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorItem.SetHoverInternal(System.Boolean)">
+            <summary>情報を渡さずにオブジェクトの内部メンバーを設定するコントロールによって使用されます。</summary>        
+            <param name="hover"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorItem.NotifyPropertyChanged(System.String)">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> オブジェクトで変更されるときに発生されます。</summary>
+            <param propertyName="propName">変更されたプロパティの propertyName。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorItem.Parent">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> が一部である <see cref="T:Infragistics.Controls.Editors.Primitives.ColorStrip" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorItem.Color">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> によって表される <see cref="P:Infragistics.Controls.Editors.Primitives.ColorItem.Color" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorItem.IsSelected">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> が選択されているかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorItem.WasSelected">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> が選択されたかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorItem.IsHover">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> がホバーされているとマークされているかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorItem.ColorItemBox">
+            <summary>現在この <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> を表示している <see cref="P:Infragistics.Controls.Editors.Primitives.ColorItem.ColorItemBox" /> を取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.Primitives.ColorItem.PropertyChanged">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> で変更されるときに発生します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ColorPatch">
+            <summary><see cref="T:Infragistics.Controls.Editors.ColorPalette" /> で使用するための <see cref="P:Infragistics.Controls.Editors.ColorPatch.Color" /> のラッパー クラス。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorPatch.ColorProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ColorPatch.Color" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ColorPatch.#ctor(System.Windows.Media.Color)">
+            <summary><see cref="T:Infragistics.Controls.Editors.ColorPatch" /> クラスの新しいインスタンスを初期化します。</summary>
+            <param name="color"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ColorPatch.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.ColorPatch" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ColorPatch.Color">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.ColorPatch" /> 表される <see cref="P:Infragistics.Controls.Editors.ColorPatch.Color" /> を取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ColorPatchCollection">
+            <summary><see cref="T:Infragistics.Controls.Editors.ColorPatch" /> オブジェクトのコレクション。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ColorPatchCollection.Contains(System.Windows.Media.Color)">
+            <summary>入力された色がこのコレクションの <see cref="T:Infragistics.Controls.Editors.ColorPatch" /> で表される場合 True を返します。</summary>
+            <param name="c"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ColorPatchCollection.Add(System.Windows.Media.Color)">
+            <summary>入力された色を基にしてコレクションへ <see cref="T:Infragistics.Controls.Editors.ColorPatch" /> を追加します。</summary>
+            <param name="c"></param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ColorPatchCollection.MaximumEntries">
+            <summary>このコレクションが必要とする要素の最大数を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ColorPickerDialog">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> のダイアログ コントロール。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.#cctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorPickerDialog" /> クラスの静的コンストラクター。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorPickerDialog" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.IsOpenProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.IsOpen" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.ColorPickerProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.ColorPicker" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.DialogCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.DialogCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.SupportsCommand(System.Windows.Input.ICommand)">
+            <summary>オブジェクトが指定されたコマンド タイプをサポートするかどうかを返します。</summary>
+            <param propertyName="command">検証されるコマンド。</param>
+            <returns>コマンドがオブジェクトで実行可能な場合 True です。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.GetParameter(Infragistics.Controls.CommandSource)">
+            <summary>コマンドを実行するために必要なパラメーターを定義するオブジェクトを返します。</summary>
+            <param propertyName="source">実行するコマンドを定義する CommandSource オブジェクト。</param>
+            <returns>コマンドを完了するために必要なオブジェクト。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.OnApplyTemplate">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorPickerDialog" /> のテンプレートを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.KeyDownHandler(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.KeyDown" /> イベントを発生する前に呼び出します。</summary>
+            <param propertyName="e">イベントについてのデータ。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.OnPropertyChanged(System.String)">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> オブジェクトで変更されるときに発生されます。</summary>
+            <param name="propertyName">変更されたプロパティ名。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.IsOpen">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorPickerDialog" /> が開くかどうかを取得または設定します。</summary>
+            <remarks>ダイアログが開いたときに、<see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> の中央に配置します。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.ColorPicker">
+            <summary>このコントロールに関連する <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.DialogCaption">
+            <summary>ダイアログのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.Primitives.ColorPickerDialog.PropertyChanged">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> で変更されるときに発生します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ColorPickerDialogCommand">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorPickerDialog" /> の利用可能なコマンドの列挙体。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorPickerDialogCommand.Close">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorPickerDialog" /> を閉じます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorPickerDialogCommand.Open">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorPickerDialog" /> を開きます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ColorPickerDialogCommandBase">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorPickerDialog" /> に関連するすべてのコマンドの基本クラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ColorPickerDialogCommandBase.CanExecute(System.Object)">
+            <summary>入力されたオブジェクトでコマンドを実行する可能性があるかどうかを示します。</summary>
+            <param propertyName="parameter">コマンドを実行するオブジェクト。</param>
+            <returns>オブジェクトがこのコマンドをサポートする場合は True です。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ColorPickerDialogCommandBase.Execute(System.Object)">
+            <summary>コマンドを実行します。</summary>
+            <param propertyName="parameter">実行される <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> オブジェクト。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ColorPickerDialogCommandBase.ExecuteCommand(Infragistics.Controls.Editors.XamColorPicker)">
+            <summary>指定されたコマンドを指定された <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> で実行します。</summary>
+            <param propertyName="col"></param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ColorPickerDialogCloseCommand">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> の <see cref="T:Infragistics.Controls.Editors.Primitives.ColorPickerDialog" /> を閉じるコマンド。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ColorPickerDialogCloseCommand.ExecuteCommand(Infragistics.Controls.Editors.XamColorPicker)">
+            <summary>開いている場合は <see cref="T:Infragistics.Controls.Editors.Primitives.ColorPickerDialog" /> を非表示にします。</summary>
+            <param name="cp"></param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ColorPickerDialogOpenCommand">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> の <see cref="T:Infragistics.Controls.Editors.Primitives.ColorPickerDialog" /> を開くコマンド。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ColorPickerDialogOpenCommand.ExecuteCommand(Infragistics.Controls.Editors.XamColorPicker)">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorPickerDialog" /> を開きます。</summary>
+            <param name="cp"></param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ColorPickerDialogCommandSource">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorPickerDialog" /> にアタッチされるコマンドのタイプ、およびコマンドをトリガーする方法を記述するオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ColorPickerDialogCommandSource.ResolveCommand">
+            <summary>コマンドを実行する <see cref="T:System.Windows.Input.ICommand" /> オブジェクトを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ColorPickerDialogCommandSource.CommandType">
+            <summary>実行されるコマンドのタイプ。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker">
+            <summary>スライダーとその色を選択する領域含むコントロール</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ISupportColorPickerAdvancedEditing">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> の詳細エディターとして使用されるコントロールに定義されたインターフェイス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ISupportColorPickerAdvancedEditing.ColorPicker">
+            <summary>このコントロールに関連付けられた <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> を取得または設定します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.#cctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker" /> クラスの静的コンストラクター。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CurrentColorProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CurrentColor" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.SelectedColorProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.SelectedColor" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.AlphaProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.Alpha" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.RedProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.Red" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.BlueProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.Blue" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.GreenProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.Green" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.HProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.H" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.SProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.S" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.LProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.L" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.C" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.MProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.M" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.YProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.Y" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.KProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.K" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.AlphaCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.AlphaCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.RedCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.RedCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.BlueCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.BlueCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.GreenCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.GreenCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.HueCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.HueCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.SaturationCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.SaturationCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.LightnessCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.LightnessCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CyanCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CyanCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.YellowCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.YellowCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.MagentaCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.MagentaCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.BlackCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.BlackCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.OKCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.OKCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CancelCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CancelCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.OnApplyTemplate">
+            <summary>新しいテンプレートが適用されたときに <see cref="T:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker" /> のビジュアル ツリーを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.OnPropertyChanged(System.String)">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> オブジェクトで変更されるときに発生されます。</summary>
+            <param name="propertyName">変更されたプロパティ名。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CurrentColor">
+            <summary>エディターで現在ビルドされている <see cref="T:System.Windows.Media.Color" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.SelectedColor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker" /> の値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.Alpha">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CurrentColor" /> の Alpha チャネル値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.Red">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CurrentColor" /> の Red チャネル値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.Blue">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CurrentColor" /> の Blue チャネル値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.Green">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CurrentColor" /> の Green チャネル値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.H">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CurrentColor" /> の H チャネル値を取得または設定します。これは HSL 色スペースからの色値です。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.S">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CurrentColor" /> の S チャネル値を取得または設定します。これは HSL 色スペースからの色値です。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.L">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CurrentColor" /> の L チャネル値を取得または設定します。これは HSL 色スペースからの色値です。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.C">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CurrentColor" /> の C チャネル値を取得または設定します。これは CMYK 色スペースからです。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.M">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CurrentColor" /> の M チャネル値を取得または設定します。これは CMYK 色スペースからです。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.Y">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CurrentColor" /> の Y チャネル値を取得または設定します。これは CMYK 色スペースからです。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.K">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CurrentColor" /> の K チャネル値を取得または設定します。これは CMYK 色スペースからです。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.ColorSliderView">
+            <summary>どのスライダーが表示されるかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.ColorPicker">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker" /> と関連付けられている <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.AlphaCaption">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.Alpha" /> スライダーのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.RedCaption">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.Red" /> スライダーのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.BlueCaption">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.Blue" /> スライダーのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.GreenCaption">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.Green" /> スライダーのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.HueCaption">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.H" /> スライダーのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.SaturationCaption">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.S" /> スライダーのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.LightnessCaption">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.L" /> スライダーのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CyanCaption">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.C" /> スライダーのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.YellowCaption">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.Y" /> スライダーのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.MagentaCaption">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.M" /> スライダーのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.BlackCaption">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.K" /> スライダーのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.OKCaption">
+            <summary>「OK」のテキストのために使用される文字列を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.CancelCaption">
+            <summary>「キャンセル」のテキストのために使用される文字列を取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker.PropertyChanged">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> で変更されるときに発生します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ColorStripsCommand">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker" /> で使用可能なコマンドをリストする列挙型。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorStripsCommand.ShowRGBSliders">
+            <summary>RGB スライダーを表示します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorStripsCommand.ShowHSLSliders">
+            <summary>HSL スライダーを表示します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorStripsCommand.ShowCMYKSliders">
+            <summary>CMYK スライダーを表示します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorStripsCommand.Accept">
+            <summary>CurrentColor を反映して CurrentColor に SelectedColor を設定します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorStripsCommand.Cancel">
+            <summary>CurrentColor をキャンセルして SelectedColor にリセットします。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ColorStripsCommandSource">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker" /> オブジェクトにアタッチされるコマンドのタイプ、およびコマンドをトリガーする方法を記述するオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ColorStripsCommandSource.ResolveCommand">
+            <summary>コマンドを実行する <see cref="T:System.Windows.Input.ICommand" /> オブジェクトを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ColorStripsCommandSource.CommandType">
+            <summary>実行されるコマンドのタイプ。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ColorSlidersCommandBase">
+            <summary>他の <see cref="T:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker" /> コマンドの抽象基本クラス</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorSlidersCommandBase.CanExecute(System.Object)">
+            <summary>コマンドが実行できる場合、True を返します。</summary>
+            <param name="parameter">コマンドが発生されたオブジェクト。</param>
+            <returns>コマンドが実行できる場合は True。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.RGBCommand">
+            <summary>RBG を表示する <see cref="T:Infragistics.Controls.Editors.Primitives.ColorSlidersCommandBase" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.RGBCommand.Execute(System.Object)">
+            <summary>提供されたパラメーターを使用してコマンドを実行します。</summary>
+            <param name="parameter">コマンドのパラメーターを含むオブジェクト。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.HSLCommand">
+            <summary>HSL スライダーを表示する <see cref="T:Infragistics.Controls.Editors.Primitives.ColorSlidersCommandBase" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.HSLCommand.Execute(System.Object)">
+            <summary>提供されたパラメーターを使用してコマンドを実行します。</summary>
+            <param name="parameter">コマンドのパラメーターを含むオブジェクト。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.CMYKCommand">
+            <summary>CMYK スライダーを表示する <see cref="T:Infragistics.Controls.Editors.Primitives.ColorSlidersCommandBase" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.CMYKCommand.Execute(System.Object)">
+            <summary>提供されたパラメーターを使用してコマンドを実行します。</summary>
+            <param name="parameter">コマンドのパラメーターを含むオブジェクト。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.AcceptColorCommand">
+            <summary>CurrentColor から SelectedColor を設定する <see cref="T:Infragistics.Controls.Editors.Primitives.ColorSlidersCommandBase" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.AcceptColorCommand.Execute(System.Object)">
+            <summary>提供されたパラメーターを使用してコマンドを実行します。</summary>
+            <param name="parameter">コマンドのパラメーターを含むオブジェクト。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.CancelColorCommand">
+            <summary>SelectedColor を更新する <see cref="T:Infragistics.Controls.Editors.Primitives.ColorSlidersCommandBase" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.CancelColorCommand.Execute(System.Object)">
+            <summary>提供されたパラメーターを使用してコマンドを実行します。</summary>
+            <param name="parameter">コマンドのパラメーターを含むオブジェクト。</param>
+        </member>
+        <member name="T:Infragistics.CMY">
+            <summary>CMY colorspace を使用する色を表す内部構造体。</summary>
+        </member>
+        <member name="M:Infragistics.CMY.#ctor(System.Byte,System.Byte,System.Byte,System.Byte)">
+            <summary><see cref="T:Infragistics.CMY" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="alpha"></param>
+            <param name="red"></param>
+            <param name="green"></param>
+            <param name="blue"></param>
+        </member>
+        <member name="M:Infragistics.CMY.#ctor(System.Double,System.Double,System.Double,System.Byte)">
+            <summary><see cref="T:Infragistics.CMY" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="c"></param>
+            <param name="m"></param>
+            <param name="y"></param>
+            <param name="alpha"></param>
+        </member>
+        <member name="M:Infragistics.CMY.ToColor">
+            <summary><see cref="T:Infragistics.CMY" /> 色の値に基づいて <see cref="T:System.Windows.Media.Color" /> 構造体を返します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.CMY.ToCMYK">
+            <summary><see cref="T:Infragistics.CMY" /> 色の値に基づいて <see cref="T:Infragistics.CMYK" /> 構造体を返します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.CMY.FromColor(System.Windows.Media.Color)">
+            <summary><see cref="T:Infragistics.CMY" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="c"></param>
+        </member>
+        <member name="M:Infragistics.CMY.FromARGB(System.Byte,System.Byte,System.Byte,System.Byte)">
+            <summary><see cref="T:Infragistics.CMY" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="alpha"></param>
+            <param name="red"></param>
+            <param name="green"></param>
+            <param name="blue"></param>
+        </member>
+        <member name="M:Infragistics.CMY.FromCMY(System.Double,System.Double,System.Double,System.Byte)">
+            <summary><see cref="T:Infragistics.CMY" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="alpha"></param>
+            <param name="c"></param>
+            <param name="m"></param>
+            <param name="y"></param>
+        </member>
+        <member name="P:Infragistics.CMY.C">
+            <summary>CMY 色の C 値を取得または設定します。予測値の範囲は、0～100 です。</summary>        
+        </member>
+        <member name="P:Infragistics.CMY.M">
+            <summary>CMY 色の M 値を取得または設定します。予測値の範囲は、0～100 です。</summary>
+        </member>
+        <member name="P:Infragistics.CMY.Y">
+            <summary>CMY 色の Y 値を取得または設定します。予測値の範囲は、0～100 です。</summary>
+        </member>
+        <member name="P:Infragistics.CMY.Alpha">
+            <summary>Color 構造体に変換されるときに使用される Alpha 値を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.CMYK">
+            <summary>CMYK colorspace を使用する色を表す構造体。</summary>
+        </member>
+        <member name="M:Infragistics.CMYK.#ctor(System.Double,System.Double,System.Double,System.Double,System.Byte)">
+            <summary><see cref="T:Infragistics.CMYK" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="c"></param>
+            <param name="m"></param>
+            <param name="y"></param>
+            <param name="k"></param>
+            <param name="alpha"></param>
+        </member>
+        <member name="M:Infragistics.CMYK.#ctor(System.Windows.Media.Color)">
+            <summary><see cref="T:Infragistics.CMYK" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="c"></param>
+        </member>
+        <member name="M:Infragistics.CMYK.ToCMY">
+            <summary><see cref="T:Infragistics.CMY" /> 色の値に基づいて <see cref="T:Infragistics.CMY" /> 構造体を返します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.CMYK.ToColor">
+            <summary><see cref="T:Infragistics.CMYK" /> 色の値に基づいて <see cref="T:System.Windows.Media.Color" /> 構造体を返します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.CMYK.FromColor(System.Windows.Media.Color)">
+            <summary><see cref="T:Infragistics.CMYK" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="c"></param>
+        </member>
+        <member name="M:Infragistics.CMYK.FromCMYK(System.Double,System.Double,System.Double,System.Double,System.Byte)">
+            <summary><see cref="T:Infragistics.CMYK" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="alpha"></param>
+            <param name="c"></param>
+            <param name="m"></param>
+            <param name="y"></param>
+            <param name="k"></param>
+        </member>
+        <member name="P:Infragistics.CMYK.C">
+            <summary>CMYK 色の C 値を取得または設定します。予測値の範囲は、0～100 です。</summary>        
+        </member>
+        <member name="P:Infragistics.CMYK.M">
+            <summary>CMYK 色の M 値を取得または設定します。予測値の範囲は、0～100 です。</summary>
+        </member>
+        <member name="P:Infragistics.CMYK.Y">
+            <summary>CMYK 色の Y 値を取得または設定します。予測値の範囲は、0～100 です。</summary>
+        </member>
+        <member name="P:Infragistics.CMYK.K">
+            <summary>CMYK 色の K 値を取得または設定します。予測値の範囲は、0～100 です。</summary>        
+        </member>
+        <member name="P:Infragistics.CMYK.Alpha">
+            <summary>Color 構造体に変換されるときに使用される Alpha 値を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.HSB">
+            <summary>HSB colorspace を使用する色を表す構造体。</summary>
+        </member>
+        <member name="M:Infragistics.HSB.#ctor(System.Windows.Media.Color)">
+            <summary><see cref="T:Infragistics.HSB" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="c"></param>
+        </member>
+        <member name="M:Infragistics.HSB.#ctor(System.Double,System.Double,System.Double,System.Byte)">
+            <summary><see cref="T:Infragistics.HSL" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="alpha"></param>
+            <param name="hue"></param>
+            <param name="lightness"></param>
+            <param name="saturation"></param>
+        </member>
+        <member name="M:Infragistics.HSB.ToColor">
+            <summary>HSB を RGB カラーに変換します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.HSB.FromColor(System.Windows.Media.Color)">
+            <summary><see cref="T:Infragistics.HSL" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="c"></param>
+        </member>
+        <member name="P:Infragistics.HSB.Alpha">
+            <summary>Color 構造体に変換されるときに使用される Alpha 値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.HSB.H">
+            <summary>HSL 色の H 値を取得または設定します。予測値の範囲は、0～360 です。</summary>
+        </member>
+        <member name="P:Infragistics.HSB.S">
+            <summary>HSL 色の S 値を取得または設定します。予測値の範囲は、0～100 です。</summary>
+        </member>
+        <member name="P:Infragistics.HSB.B">
+            <summary>HSB カラーの B 値を取得または設定します。予測値の範囲は、0～100 です。</summary>
+        </member>
+        <member name="T:Infragistics.HSL">
+            <summary>HSL colorspace を使用する色を表す構造体。</summary>
+        </member>
+        <member name="M:Infragistics.HSL.#ctor(System.Windows.Media.Color)">
+            <summary><see cref="T:Infragistics.HSL" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="c"></param>
+        </member>
+        <member name="M:Infragistics.HSL.#ctor(System.Double,System.Double,System.Double,System.Byte)">
+            <summary><see cref="T:Infragistics.HSL" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="alpha"></param>
+            <param name="hue"></param>
+            <param name="lightness"></param>
+            <param name="saturation"></param>
+        </member>
+        <member name="M:Infragistics.HSL.ToColor">
+            <summary><see cref="T:Infragistics.HSL" /> 色の値に基づいて <see cref="T:System.Windows.Media.Color" /> 構造体を返します。</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.HSL.ConvertHue(System.Double,System.Double,System.Double)">
+            <summary>色合いを変更します。</summary>
+            <param name="temp1"></param>
+            <param name="temp2"></param>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.HSL.Darker(System.Double)">
+            <summary>入力された値を基にして色の明るさをシフトします。</summary>
+            <param name="percent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.HSL.Lighter(System.Double)">
+            <summary>入力された値を基にして色の明るさをシフトします。</summary>
+            <param name="percent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.HSL.FromColor(System.Windows.Media.Color)">
+            <summary><see cref="T:Infragistics.HSL" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="c"></param>
+        </member>
+        <member name="M:Infragistics.HSL.FromHSL(System.Double,System.Double,System.Double,System.Byte)">
+            <summary><see cref="T:Infragistics.HSL" /> 構造体の新しいインスタンスを初期化します。</summary>
+            <param name="alpha"></param>
+            <param name="hue"></param>
+            <param name="lightness"></param>
+            <param name="saturation"></param>
+        </member>
+        <member name="P:Infragistics.HSL.Alpha">
+            <summary>Color 構造体に変換されるときに使用される Alpha 値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.HSL.H">
+            <summary>HSL 色の H 値を取得または設定します。予測値の範囲は、0～360 です。</summary>
+        </member>
+        <member name="P:Infragistics.HSL.S">
+            <summary>HSL 色の S 値を取得または設定します。予測値の範囲は、0～100 です。</summary>
+        </member>
+        <member name="P:Infragistics.HSL.L">
+            <summary>HSL 色の L 値を取得または設定します。予測値の範囲は、0～100 です。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ColorItemBox">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorItemBox" /> は、<see cref="P:Infragistics.Controls.Editors.Primitives.ColorItemBox.ColorItem" /> のビジュアル表現です。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorItemBox.#cctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorItemBox" /> クラスの静的コンストラクター。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.ColorItemBox.ColorItemBrushProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.ColorItemBox.ColorItemBrush" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorItemBox.EnsureState">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorItemBox" /> が適切な状態であることを確認します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorItemBox.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary>System.Windows.UIElement.MouseEnter イベントが発生する前に呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorItemBox.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>System.Windows.UIElement.MouseLeftButtonUp イベントが発生する前に呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorItemBox.OnApplyTemplate">
+            <summary>新しいテンプレートが適用されたときに <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItemBox" /> のビジュアル ツリーを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorItemBox.NotifyPropertyChanged(System.String)">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItemBox" /> オブジェクトで変更されるときに発生されます。</summary>
+            <param propertyName="propName">変更されたプロパティの propertyName。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorItemBox.ColorItemBrush">
+            <summary>設定された <see cref="P:Infragistics.Controls.Editors.Primitives.ColorItemBox.ColorItem" /> からこのコントロールのために生成した <see cref="T:System.Windows.Media.Brush" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorItemBox.ColorItem">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorItemBox" /> に関連付けられた <see cref="P:Infragistics.Controls.Editors.Primitives.ColorItemBox.ColorItem" /> を取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.Primitives.ColorItemBox.PropertyChanged">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItemBox" /> で変更されるときに発生します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.SelectedColorItemChangedEventArgs">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> 値が変更されるときにトラックするイベント引数。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SelectedColorItemChangedEventArgs.OriginalColorItem">
+            <summary>元の <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> オブジェクトを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SelectedColorItemChangedEventArgs.NewColorItem">
+            <summary>新しい <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> オブジェクトを取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.SelectedColorChangedEventArgs">
+            <summary><see cref="T:System.Windows.Media.Color" /> 値が変更されるときにトラックするイベント引数。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SelectedColorChangedEventArgs.OriginalColor">
+            <summary>元の <see cref="T:System.Windows.Media.Color" /> オブジェクトを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SelectedColorChangedEventArgs.NewColor">
+            <summary>新しい <see cref="T:System.Windows.Media.Color" /> オブジェクトを取得します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ColorPalette">
+            <summary>色のグループを統合するオブジェクト。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorPalette.MaximumColorCountProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ColorPalette.MaximumColorCount" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorPalette.DefaultColorProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.ColorPalette.DefaultColor" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ColorPalette.Colors">
+            <summary>このパレットで表示される色を含む <see cref="T:Infragistics.Controls.Editors.ColorPatchCollection" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ColorPalette.MaximumColorCount">
+            <summary>パレットの色の最大数を取得または設定します。null に設定した場合、制限はありません。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.ColorPalette.DefaultColor">
+            <summary>明示的に設定されていない項目を塗りつぶすために使用される <see cref="T:System.Windows.Media.Color" /> を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ColorPaletteCollection">
+            <summary><see cref="T:Infragistics.Controls.Editors.ColorPalette" /> オブジェクトのコレクション。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ColorStrip">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorItemBox" /> オブジェクトのグループを表すクラス。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.ColorStrip.VisibleItemCountProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.ColorStrip.VisibleItemCount" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.ColorStrip.ColorPaletteProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.ColorStrip.ColorPalette" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.ColorStrip.DarknessShiftProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.ColorStrip.DarknessShift" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.ColorStrip.ColorItemBoxStyleProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.ColorStrip.ColorItemBoxStyle" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStrip.#cctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorStrip" /> クラスの静的コンストラクター。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStrip.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorStrip" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStrip.OnApplyTemplate">
+            <summary>新しいテンプレートが適用されたときに <see cref="T:Infragistics.Controls.Editors.Primitives.ColorStrip" /> のビジュアル ツリーを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStrip.EnsureVisualState">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorStrip" /> が適切な状態であることを確認します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStrip.SetSelectedColorItem(Infragistics.Controls.Editors.Primitives.ColorItem,System.Boolean)">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> を選択状態に設定します。</summary>
+            <param name="ci"></param>
+            <param name="fromClick"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStrip.ClearIsHoverSilent">
+            <summary>すべてのボックスのホバー状態を解除するために colorpicker が閉じるときに使用されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStrip.ClearIsSelectedSilent">
+            <summary>正しくリセットするために <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> オブジェクトの選択されたフラグをクリアにします。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStrip.OnSelectedColorItemChanged(Infragistics.Controls.Editors.Primitives.ColorItem,Infragistics.Controls.Editors.Primitives.ColorItem)">
+            <summary><see cref="E:Infragistics.Controls.Editors.Primitives.ColorStrip.SelectedColorItemChanged" /> イベントを発生します。</summary>
+            <param name="oldColorItem"></param>
+            <param name="newColorItem"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStrip.OnHoverColorItemChanged(Infragistics.Controls.Editors.Primitives.ColorItem,Infragistics.Controls.Editors.Primitives.ColorItem)">
+            <summary><see cref="E:Infragistics.Controls.Editors.Primitives.ColorStrip.HoverColorItemChanged" /> イベントを発生します。</summary>
+            <param name="oldColorItem"></param>
+            <param name="newColorItem"></param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorStrip.VisibleItemCount">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorStrip" /> で表示される <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItemBox" /> オブジェクトの数を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorStrip.ColorPalette">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.Primitives.ColorStrip" /> で表示される <see cref="P:Infragistics.Controls.Editors.Primitives.ColorStrip.ColorPalette" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorStrip.SelectedColorItem">
+            <summary>選択として表示される <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" />を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorStrip.HoverColorItem">
+            <summary>現在ホバーしている <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorStrip.DarknessShift">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.ColorStrip.ColorPalette" /> が計算される方法を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorStrip.ColorItemBoxStyle">
+            <summary>このコントロールの <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItemBox" /> オブジェクトに適用するスタイルを取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.Primitives.ColorStrip.SelectedColorItemChanged">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> が選択されたときにイベントを発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.Primitives.ColorStrip.HoverColorItemChanged">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> がホバーされたときにイベントを発生します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ColorStripManager">
+            <summary>選択を目的として複数の <see cref="T:Infragistics.Controls.Editors.Primitives.ColorStrip" /> オブジェクトを統合する内部コントロール メカニズム。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStripManager.SetPreviouslySelectedColorInternal(System.Nullable{System.Windows.Media.Color})">
+            <summary>元の色に戻します。</summary>
+            <param name="color"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStripManager.ClearIsHoverSilent">
+            <summary>すべてのボックスのホバー状態を解除するために colorpicker が閉じるときに使用されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStripManager.ClearIsSelectedSilent">
+            <summary>正しくリセットするために <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> オブジェクトの選択されたフラグをクリアにします。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStripManager.OnHoverColorItemChanged(Infragistics.Controls.Editors.Primitives.ColorItem,Infragistics.Controls.Editors.Primitives.ColorItem)">
+            <summary><see cref="E:Infragistics.Controls.Editors.Primitives.ColorStripManager.HoverColorItemChanged" /> イベントを発生します。</summary>
+            <param name="oldColorItem"></param>
+            <param name="newColorItem"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStripManager.OnSelectedColorItemChanged(Infragistics.Controls.Editors.Primitives.ColorItem,Infragistics.Controls.Editors.Primitives.ColorItem)">
+            <summary><see cref="E:Infragistics.Controls.Editors.Primitives.ColorStripManager.SelectedColorItemChanged" /> イベントを発生します。</summary>
+            <param name="oldColorItem"></param>
+            <param name="newColorItem"></param>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.ColorStripManager.ManagerProperty">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorStripManager" /> と関連付けられる<see cref="T:Infragistics.Controls.Editors.Primitives.ColorStrip" /> オブジェクトの添付プロパティ。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStripManager.SetManager(System.Windows.DependencyObject,Infragistics.Controls.Editors.Primitives.ColorStripManager)">
+            <summary>Manager 添付プロパティを設定します。</summary>
+            <param name="obj"></param>
+            <param name="propertyValue"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ColorStripManager.GetManager(System.Windows.DependencyObject)">
+            <summary>Manager 添付プロパティの値を取得します。</summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorStripManager.SelectedColorItem">
+            <summary>現在選択されている <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorStripManager.HoverColorItem">
+            <summary>現在ホバーされている <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> を取得または設定します。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorStripManager.Parent">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.Primitives.ColorStripManager" /> を所有する <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.ColorStripManager.ColorStrips">
+            <summary>このマネージャーによって処理される <see cref="T:Infragistics.Controls.Editors.Primitives.ColorStrip" /> オブジェクトのコレクションを取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.Primitives.ColorStripManager.HoverColorItemChanged">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> がホバーされたときにイベントを発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.Primitives.ColorStripManager.SelectedColorItemChanged">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.ColorItem" /> が選択されたときにイベントを発生します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ColorSliderView">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.AdvancedColorShadePicker" /> で使用できるスライダー コントロールのグループを記述する列挙体。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorSliderView.RGB">
+            <summary>RGB スライダーを表示します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorSliderView.HSL">
+            <summary>HSL スライダーを表示します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorSliderView.CMYK">
+            <summary>CMYK スライダーを表示します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.SelectedColorUpdateMode">
+          <summary>
+            <see cref="!:SelectedColor"/> が更新される方法を示す列挙型。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.SelectedColorUpdateMode.OnMouseOver">
+          <summary>
+            ホバー時に <see cref="!:SelectedColor"/> を更新します。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.SelectedColorUpdateMode.OnSelection">
+          <summary>
+            選択時に <see cref="!:SelectedColor"/> を更新します。
+          </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.NullableColorConverter">
+            <summary>null である可能性のある SelectedColor プロパティのバインドを解除する <see cref="T:System.Windows.Data.IValueConverter" />。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Properties.Resources">
+            <summary>ローカライズされた文字列の検索など、厳密に型指定されたリソース クラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Properties.Resources.ResourceManager">
+            <summary>このクラスによって使用されるキャッシュされた ResourceManager インスタンスを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Properties.Resources.Culture">
+            <summary>この厳密に型指定されたリソース クラスを使用してすべてのリソースの検索の現在のスレッドの CurrentUICulture プロパティをオーバーライドします。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.SpecializedTextBoxValueConverter">
+            <summary>テキストの 2 桁のフロート値に書式設定する <see cref="T:System.Windows.Data.IValueConverter" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.SpecializedTextBoxValueConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>UI で表示するために対象に渡す前にソース データを変更します。</summary>
+            <param name="value">対象に渡されたソース データ。</param>
+            <param name="targetType">対象の依存プロパティに期待されたデータの <see cref="T:System.Type" />。</param>
+            <param name="parameter">コンバーターの論理で使用されるオプションのパラメーター。</param>
+            <param name="culture">変換のカルチャー。</param>
+            <returns>対象の依存プロパティに渡す値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.SpecializedTextBoxValueConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>ソース オブジェクトに渡す前に対象のデータを変更します。このメソッドは <see cref="F:System.Windows.Data.BindingMode.TwoWay" /> バインディングのみに呼び出します。</summary>
+            <param name="value">ソースに渡す対象のデータ。</param>
+            <param name="targetType">ソース オブジェクトの期待されたデータの <see cref="T:System.Type" />。</param>
+            <param name="parameter">コンバーターの論理で使用されるオプションのパラメーター。</param>
+            <param name="culture">変換のカルチャー。</param>
+            <returns>ソース オブジェクトに渡す値。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.TransparencyBackgroundControl">
+            <summary>内部使用のみ。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.TransparencyBackgroundControl.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.TransparencyBackgroundControl" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.TransparencyBackgroundControl.OnApplyTemplate">
+            <summary>アプリケーション コードまたは内部プロセス (再構築レイアウト パスなど) が ApplyTemplate を呼び出す時に常に起動されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.TransparencyBackgroundControl.MeasureOverride(System.Windows.Size)">
+            <summary>レイアウトの Measure パスの動作を提供します。クラスは、計測パスの動作を定義するためにこのメソッドをオーバーライドできます。</summary>
+            <param name="availableSize">このオブジェクトが子オブジェクトに設定できる利用可能なサイズ。値として Infinity (<see cref="F:System.Double.PositiveInfinity" />) を指定することによって、使用可能なコンテンツにサイズを合わせることを示します。</param>
+            <returns>子オブジェクトの割り当てサイズ (または、固定コンテナーのサイズなどの他の項目) の計算に基づいて、レイアウト時にこのオブジェクトが決定した必要サイズ。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.TransparencyBackgroundControl.Color1">
+            <summary>原色</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.TransparencyBackgroundControl.Color2">
+            <summary>二次色</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.TransparencyBackgroundControl.SquareSize">
+            <summary>四角のサイズを取得または設定します。</summary>
+            <value>四角のサイズ。</value>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamColorPicker">
+            <summary>色の選択を許可するエディター コントロール。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.#cctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> クラスの静的コンストラクター。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.#ctor">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> クラスの新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.HardSelectNewColor(System.Nullable{System.Windows.Media.Color})">
+            <summary>新しい色を選択して、最近使用した色パレットに追加します。</summary>
+            <param name="color"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.SoftSelectNewColor(System.Nullable{System.Windows.Media.Color})">
+            <summary>新しい色を選択して、最近使用した色コレクションに追加します。</summary>
+            <param name="color"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.EnsureVisualState">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> が適切な状態であることを確認します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.UnhoverAll">
+            <summary>ホバーを解除する <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItemBox" /> オブジェクトに通知するために、ドロップダウンが閉まるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.RegisterResources(System.String,System.Reflection.Assembly)">
+            <summary>コントロールがリソースをプルする追加の Resx を追加します。</summary>
+            <param name="name">使用されるリソースを含む組み込み resx ファイルの名前。</param>
+            <param name="assembly">resx ファイルが埋め込まれるアセンブリ。</param>
+            <remarks>ファイルの拡張子を含まないでください。ただし、アセンブリのデフォルト名前空間でプレフィックスしてください。</remarks>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.UnregisterResources(System.String)">
+            <summary>以前登録した resx ファイルを削除します。</summary>
+            <param name="name">登録に使用された埋め込み resx ファイルの名前。</param>
+            <remarks>注：これは、すでにビューに存在し、文字列を表示しているコントロールには影響ありません。作成された新規コントロールにのみ影響を与えます。</remarks>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.PreviouslySelectedColorProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.PreviouslySelectedColor" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.SelectedColorUpdateModeProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Editors.XamColorPicker.SelectedColorUpdateMode"/> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.SelectedColorProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.SelectedColor" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.SelectedColorPreviewProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Editors.XamColorPicker.SelectedColorPreview"/> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.DerivedPalettesCountProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.DerivedPalettesCount" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.AdvancedEditorProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.AdvancedEditor" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.CurrentPaletteProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.CurrentPalette" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.ShowAdvancedEditorButtonProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.ShowAdvancedEditorButton" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.ShowRecentColorsPaletteProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.ShowRecentColorsPalette" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.ShowDerivedColorPalettesProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.ShowDerivedColorPalettes" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.CurrentPaletteCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.CurrentPaletteCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.RecentColorPaletteCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.RecentColorPaletteCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.DerivedColorPalettesCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.DerivedColorPalettesCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.AdvancedButtonCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.AdvancedButtonCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.CurrentColorCaptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.CurrentColorCaption" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.DerivedPaletteColorItemBoxStyleProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.DerivedPaletteColorItemBoxStyle" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.OnApplyTemplate">
+            <summary>新しいテンプレートが適用されたときに <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> のビジュアル ツリーを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.OnCreateAutomationPeer">
+            <summary>派生クラスで実装する場合、Silverlight オートメーションのインフラストラクチャーのクラス固有の System.Windows.Automation.Peers.AutomationPeer 実装を返します。</summary>
+            <returns>返す System.Windows.Automation.Peers.AutomationPeer クラス固有  サブクラス。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>このクラスから派生したルートで未処理の System.Windows.Input.Keyboard.KeyDown 添付イベントが要素に達した時に呼び出されます。このメソッドを実装してこのイベントのクラス処理を追加します。</summary>
+            <param name="e">イベント データを含む System.Windows.Input.KeyEventArgs。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.OnSelectedColorChanged(Infragistics.Controls.Editors.SelectedColorChangedEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamColorPicker.SelectedColorChanged" /> イベントを発生します。</summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.KeyDownHandler(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary><see cref="E:System.Windows.UIElement.KeyDown" /> イベントを発生する前に呼び出します。</summary>
+            <param propertyName="e">イベントについてのデータ。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamColorPicker.IsDropDownOpenProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.IsDropDownOpen" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.OnDropDownOpening">
+            <summary>DropDownOpening イベントを発生する前に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.OnDropDownOpened">
+            <summary>DropDownOpened イベントを発生する前に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.OnDropDownClosing">
+            <summary>DropDownClosing イベントを発生する前に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.OnDropDownClosed">
+            <summary>DropDownClosed イベントを発生する前に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamColorPicker.OnPropertyChanged(System.String)">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> オブジェクトで変更されるときに発生されます。</summary>
+            <param name="propertyName">変更されたプロパティ名。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.ColorForAdvancedEditor">
+            <summary>正しいアドバンス エディターのためにコントロールで確認される <see cref="T:System.Windows.Media.Color" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.ColorPickerDialog">
+            <summary>色を選択する領域を表示する <see cref="P:Infragistics.Controls.Editors.XamColorPicker.ColorPickerDialog" /> コントロールを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.PreviouslySelectedColor">
+            <summary>ドロップダウンが開いたときに選択された色を取得または設定します。編集がキャンセルされた場合はリセットされます。</summary>
+            <remarks>このプロパティは新しい色が選択された後にクリアされます。</remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.SelectedColorUpdateMode">
+          <summary>
+            <see cref="P:Infragistics.Controls.Editors.XamColorPicker.SelectedColor"/> プロパティの更新方法を取得または設定します。デフォルト値は OnSelection です。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.RecentColorPalette">
+            <summary>最近選択された色を保持するための <see cref="T:Infragistics.Controls.Editors.ColorPalette" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.AdvancedEditorPopup">
+            <summary>詳細エディターを表示する <see cref="T:System.Windows.Controls.Primitives.Popup" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.ColorStripManager">
+            <summary>コントロール上の <see cref="T:Infragistics.Controls.Editors.Primitives.ColorStrip" /> 間のインタラクションを制御する <see cref="P:Infragistics.Controls.Editors.XamColorPicker.ColorStripManager" /> オブジェクを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.DropDownPopup">
+            <summary>コントロールを開いたときに表示される <see cref="T:System.Windows.Controls.Primitives.Popup" /> を取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.SelectedColor">
+            <summary>コントロールで現在選択されている <see cref="T:System.Windows.Media.Color" /> を取得または設定します。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.SelectedColorPreview">
+          <summary>
+            ドロップダウンで現在ホバーされている、または詳細エディターで設定される <see cref="T:System.Windows.Media.Color"/> を取得または設定します。
+          </summary>
+          <remarks>
+            選択がキャンセルされた場合、プロパティの値は <see cref="P:Infragistics.Controls.Editors.XamColorPicker.SelectedColor"/> と同期化されます。
+          </remarks>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.DerivedPalettesCount">
+            <summary>作成される派生パレットの数を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.AdvancedEditor">
+            <summary>詳細な色の編集に使用される <see cref="T:Infragistics.Controls.Editors.ISupportColorPickerAdvancedEditing" /> オブジェクトを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.CurrentPalette">
+            <summary>現在アクティブな <see cref="T:Infragistics.Controls.Editors.ColorPalette" /> オブジェクトを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.ColorPalettes">
+            <summary>現在に選択可能な <see cref="T:Infragistics.Controls.Editors.ColorPaletteCollection" /> を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.ShowAdvancedEditorButton">
+            <summary>AdvancedEditorButton が表示されているかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.ShowRecentColorsPalette">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.RecentColorPalette" /> が表示されているかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.ShowDerivedColorPalettes">
+            <summary>派生パレットが表示されているかどうかを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.CurrentPaletteCaption">
+            <summary>現在のパレットのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.RecentColorPaletteCaption">
+            <summary>最近の使用した色パレットのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.DerivedColorPalettesCaption">
+            <summary>現在のパレットのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.AdvancedButtonCaption">
+            <summary>「詳細」ボタンのキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.CurrentColorCaption">
+            <summary>現在の色領域のキャプションを取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.DerivedPaletteColorItemBoxStyle">
+            <summary>派生パレットの <see cref="T:Infragistics.Controls.Editors.Primitives.ColorItemBox" /> オブジェクトに適用するスタイルを取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamColorPicker.SelectedColorChanged">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamColorPicker.SelectedColor" /> が変更されるときに発生するイベント。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.IsDropDownOpen">
+            <summary>ドロップダウンが開いているかどうかを取得または設定します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamColorPicker.DropDownOpening">
+            <summary>IsDropDownOpen プロパティの値が False から True に変更されるときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamColorPicker.DropDownOpened">
+            <summary>IsDropDownOpen プロパティの値が False から True に変更されて、ドロップダウンが開いたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamColorPicker.DropDownClosing">
+            <summary>IsDropDownOpen プロパティが True から False に変更されるときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamColorPicker.DropDownClosed">
+            <summary>IsDropDownOpen プロパティが True から False に変更されて、ドロップダウンが閉じたときに発生します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamColorPicker.PropertyChanged">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> で変更されるときに発生します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamColorPicker.StandardPalette">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamPickerCommand">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> で使用可能なコマンドをリストする列挙型。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPickerCommand.Toggle">
+            <summary>ドロップ ダウン リストが閉まると <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> を開きます。ドロップダウンが開くと閉まります。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPickerCommand.Close">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> ドロップダウンを閉じます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPickerCommand.OpenAdvanceEditor">
+            <summary>詳細色エディターを開きます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPickerCommand.NextPalette">
+            <summary>使用可能な場合、次の色パレットへ移動します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPickerCommand.PreviousPalette">
+            <summary>使用可能な前の色エディターに移動します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamPickerCommandSource">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> オブジェクトにアタッチされるコマンドのタイプ、およびコマンドをトリガーする方法を記述するオブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPickerCommandSource.ResolveCommand">
+            <summary>コマンドを実行する <see cref="T:System.Windows.Input.ICommand" /> オブジェクトを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPickerCommandSource.CommandType">
+            <summary>実行されるコマンドのタイプ。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PickerCommandBase">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> によって使用される他のコマンドの抽象基本クラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PickerCommandBase.CanExecute(System.Object)">
+            <summary>コマンドが実行できる場合、True を返します。</summary>
+            <param name="parameter">コマンドが発生されたオブジェクト。</param>
+            <returns>コマンドが実行できる場合は True。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PickerToggleCommand">
+            <summary>閉じている場合、<see cref="T:Infragistics.Controls.Editors.XamColorPicker" />ドロップダウンを開く <see cref="T:Infragistics.Controls.Editors.Primitives.PickerCommandBase" />。開いている場合は閉じます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PickerToggleCommand.Execute(System.Object)">
+            <summary>提供されたパラメーターを使用してコマンドを実行します。</summary>
+            <param name="parameter">コマンドのパラメーターを含むオブジェクト。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PickerCloseCommand">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> ドロップダウンを閉じる <see cref="T:Infragistics.Controls.Editors.Primitives.PickerCommandBase" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PickerCloseCommand.Execute(System.Object)">
+            <summary>提供されたパラメーターを使用してコマンドを実行します。</summary>
+            <param name="parameter">コマンドのパラメーターを含むオブジェクト。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PreviousPaletteCommand">
+            <summary>前の <see cref="T:Infragistics.Controls.Editors.ColorPalette" /> へ移動する <see cref="T:Infragistics.Controls.Editors.Primitives.PickerCommandBase" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PreviousPaletteCommand.Execute(System.Object)">
+            <summary>提供されたパラメーターを使用してコマンドを実行します。</summary>
+            <param name="parameter">コマンドのパラメーターを含むオブジェクト。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.NextPaletteCommand">
+            <summary>次の <see cref="T:Infragistics.Controls.Editors.ColorPalette" /> へ移動する <see cref="T:Infragistics.Controls.Editors.Primitives.PickerCommandBase" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.NextPaletteCommand.Execute(System.Object)">
+            <summary>提供されたパラメーターを使用してコマンドを実行します。</summary>
+            <param name="parameter">コマンドのパラメーターを含むオブジェクト。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.OpenAdvanceEditorCommand">
+            <summary>詳細エディターを開く <see cref="T:Infragistics.Controls.Editors.Primitives.PickerCommandBase" />。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.OpenAdvanceEditorCommand.Execute(System.Object)">
+            <summary>提供されたパラメーターを使用してコマンドを実行します。</summary>
+            <param name="parameter">コマンドのパラメーターを含むオブジェクト。</param>
+        </member>
+    </members>
+</doc>

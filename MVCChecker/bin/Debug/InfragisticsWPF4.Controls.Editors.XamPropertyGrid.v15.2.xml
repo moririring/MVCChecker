@@ -1,0 +1,2093 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>InfragisticsWPF4.Controls.Editors.XamPropertyGrid.v15.2</name>
+    </assembly>
+    <members>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.#ctor">
+            <summary>コンストラクター。<b>TreeList</b> の新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.BalanceHelper(`0,`0)">
+            <summary>バランスをとるために必要に応じて &apos;n&apos; ノードを回転します。</summary>
+            <param name="parent"></param>
+            <param name="n"></param>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.CalcRotateDirection(`0)">
+            <summary>負荷分散ために回転方向を計算します。</summary>
+            <param name="n"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.IndexOfHelper_UsingParent(`0)">
+            <summary>コレクションの特定のノードで関連付けされる項目のインデックスを計算します。このメソッドは親参照が必要です。</summary>
+            <param name="n">項目ノード。</param>
+            <returns>コレクションの特定のノードで関連付けされる項目のインデックスを計算します。</returns>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.RemoveHelper(`0,`0,System.Int32)">
+            <summary>&apos;i&apos; にある項目を削除します。削除ノードを返します。</summary>
+            <param name="parent"></param>
+            <param name="n"></param>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.RemoveMax(`0,`0)">
+            <summary>&apos;n&apos; によって構成されるツリーの最大ノードを削除します。注: &apos;n&apos; が最大ノードで親が null の場合、削除されません。</summary>
+            <returns>削除済みノードを返します。削除されるノードがない場合 null。</returns>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.RemoveMin(`0,`0)">
+            <summary>&apos;n&apos; によって構成されるツリーの最小ノードを削除します。注: &apos;n&apos; が最小ノードで親が null の場合、削除されません。</summary>
+            <returns>削除済みノードを返します。削除されるノードがない場合 null。</returns>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.GetItemNode(`1)">
+            <summary>派生クラスが TrackNodesOnItemsOverride から true を返す場合、このメソッドはノードを取得するために呼び出されます。以前は <see cref="M:Infragistics.Documents.RichText.TreeList`2.SetItemNode(`1,`0)" /> メソッドを介して設定しました。</summary>
+            <param name="item">ノードを取得する項目。</param>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.OnItemAdded(`1)">
+            <summary>&apos;notifyChanges&apos; パラメーターが true としてコンストラクターに渡された場合、このメソッドは項目が追加されたときに呼び出されます。</summary>
+            <param name="item">追加された項目。</param>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.OnItemRemoved(`1)">
+            <summary>&apos;notifyChanges&apos; パラメーターが true としてコンストラクターに渡された場合、このメソッドは項目が削除されたときに呼び出されます。</summary>
+            <param name="item">削除された項目。</param>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.RaiseNodesRequireParentsHelper">
+            <summary>NodeHasParentOverride が false の場合、無効な操作の例外が発生します。</summary>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.RefreshNotifyChanges">
+            <summary>NotifyChangesOverride プロパティの値が変更されたことを通知するために呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.SetItemNode(`1,`0)">
+            <summary>派生クラスが TrackNodesOnItemsOverride から true を返した場合、このメソッドは、後で <see cref="M:Infragistics.Documents.RichText.TreeList`2.GetItemNode(`1)" /> を介して取得できるよう、項目のノードを保存するために呼び出されます。</summary>
+            <param name="item">ノードを設定する項目。</param>
+            <param name="node">項目と関連付けられたノード。</param>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.GetEnumeratorStartingAt(System.Int32)">
+            <summary>指定したインデックスの項目で開始するすべての項目をトラバースする列挙体を取得します。列挙体は、MoveNext を初めて呼び出すときに、指定したインデックスの項目へトラバースする状態になります。</summary>
+            <param name="index">項目インデックスを開始します。</param>
+            <returns>IEnumerator インスタンス。</returns>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.GetEnumeratorStartingAt(`1)">
+            <summary>指定した項目で開始するすべての項目をトラバースする列挙子を取得します。列挙体は、MoveNext を初めて呼び出すときに、指定した項目へトラバースする状態になります。</summary>
+            <param name="item">項目を開始します。</param>
+            <returns>IEnumerator インスタンス。</returns>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.GetItems(`0)">
+            <summary>ツリー内の指定した TNode インスタンスと関連付けられた項目で開始する項目を取得します。</summary>
+            <param name="startAtNode">項目を開始します。</param>
+            <returns>指定した項目で開始する項目をトラバースする IEnumerable (項目自自身を含む)。</returns>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.GetItems(System.Int32)">
+            <summary>指定したインデックスで開始する項目を取得します。</summary>
+            <param name="startAtIndex">開始インデックス。</param>
+            <returns>指定したインデックスで開始する項目をトラバースする IEnumerable (インデックス自身を含む)。</returns>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.GetItems(`1)">
+            <summary>ツリー内の指定した項目と関連付けられた項目で開始する項目を取得します。</summary>
+            <param name="startAtItem">項目を開始します。</param>
+            <returns>指定した項目で開始する項目をトラバースする IEnumerable (項目自自身を含む)。</returns>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.InvalidateAggregateInfo(`0)">
+            <summary>ノードの集計情報を無効にします。このメソッドは、このノードとそのすべての先祖の集計情報を同期して計算します。ノードとその先祖で InitializeAggregateInfo を呼び出します。</summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.InvalidateAggregateInfoOnAllNodes">
+            <summary>すべてノードの集計情報を再計算します。</summary>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.Clear">
+            <summary>リストをクリアします。</summary>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.Contains(`1)">
+            <summary>指定した項目がリストにあるかどうかを示します。</summary>
+            <param name="item">リストに存在するかをチェックするための項目。</param>
+            <returns>項目がリストに存在する場合 True。それ以外の場合は False。</returns>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.CopyTo(`1[],System.Int32)">
+            <summary>このリストの項目を指定した配列へコピーします。</summary>
+            <param name="array">項目をコピーする先の配列。</param>
+            <param name="arrayIndex">項目のコピーを開始する配列のインデックス。</param>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.GetEnumerator">
+            <summary>リストの項目のトラバースに使用できる列挙子を返します。</summary>
+            <returns>リストの項目のトラバースに使用できる列挙子。</returns>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.IndexOf(`1)">
+            <summary>指定した項目のインデックスを取得します。</summary>
+            <param name="item">そのインデックスを見つける項目。</param>
+            <returns>項目のインデックス。項目がリストに存在しない場合、-1 を返します。</returns>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.Remove(`1)">
+            <summary>リストから指定した項目を削除します。項目がリストに存在しない場合、このメソッドは何もしません。</summary>
+            <param name="item">削除する項目。</param>
+            <returns>指定した項目が見つからなかった場合 True。項目がリストに存在しない場合 False。</returns>
+        </member>
+        <member name="P:Infragistics.Documents.RichText.TreeList`2.Count">
+            <summary>項目のカウントを取得します。</summary>
+        </member>
+        <member name="P:Infragistics.Documents.RichText.TreeList`2.Item(System.Int32)">
+            <summary>指定したインデックスの項目を取得または設定します。</summary>
+            <param name="index">取得または設定する項目のインデックス。</param>
+            <returns>指定されたインデックスにある項目。</returns>
+        </member>
+        <member name="P:Infragistics.Documents.RichText.TreeList`2.IsReadOnly">
+            <summary>リストが読み取り専用かどうかを示します。</summary>
+        </member>
+        <member name="P:Infragistics.Documents.RichText.TreeList`2.NodeHasParentOverride">
+            <summary>TNode が親でその SetParent が呼び出されるかどうかを示します。デフォルトの実装はFalseを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Documents.RichText.TreeList`2.NotifyChangesOverride">
+            <summary>NotifyCollectionChanged、OnItemAdded、および OnItemRemoved を呼び出すかどうかを示します。デフォルトの実装はFalseを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Documents.RichText.TreeList`2.TrackNodesOnItemsOverride">
+            <summary>派生クラスが GetItemNode および SetItemNode メソッドをサポートするかどうかを示します。</summary>
+        </member>
+        <member name="P:Infragistics.Documents.RichText.TreeList`2.Version">
+            <summary>リストが変更されるたびにインクリメントされる、整数値であるこのリストのバージョン番号を取得します。</summary>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.Enumerator.#ctor(Infragistics.Documents.RichText.TreeList{`0,`1},`0)">
+            <summary>コンストラクター。</summary>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.Enumerator.PushAncestorsHelper(`0,System.Boolean)">
+            <summary>n の ancestors を _ancestors にプッシュします。&apos;IncludeN&apos; パラメーターは n ノード自身を含むかどうかを示します。</summary>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.Node.InitializeAggregateInfo">
+            <summary>左右の子ノードおよび現在のノードの情報集計を再初期化するために呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.Node.Aggregate_Insert(`0)">
+            <summary>指定したノードがこのノードの子孫として挿入されるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.Node.Aggregate_Remove(`0)">
+            <summary>指定した子孫ノードが削除されたときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`2.Node.SetItem(`1)">
+            <summary>このメソッドは、ノードの項目を設定または変更するために使用されます。</summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.TreeList`1.#ctor">
+            <summary>コンストラクター。<see cref="T:Infragistics.Documents.RichText.TreeList`1" /> の新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.SortedTreeList`2.#ctor(System.Collections.Generic.IComparer{`0},System.Func{`1,`0})">
+            <summary>コンストラクター。<see cref="T:Infragistics.Documents.RichText.SortedTreeList`2" /> の新しいインスタンスを初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.SortedTreeList`2.ContainsKey(`0)">
+            <summary>指定したキーがリストにあるかどうかを示します。</summary>
+            <param name="key">リストに存在するかをチェックするためのキー。</param>
+            <returns>指定したキーがリストに存在する場合 True。それ以外の場合は False。</returns>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.SortedTreeList`2.OnKeyChanged(`1,`0)">
+            <summary>コレクション存在する場合指定した項目を新しいキーに基づいて正しい並べ替え場所に並べ替えます。</summary>
+            <param name="item">キーが変更された項目。</param>
+            <param name="oldKey">項目の古いキー。これは、コレクションの項目の検索に使用されます。</param>
+            <remarks>
+            <para class="body"><b>注</b> このメソッドは前の場所から項目を削除し、新しいキーに基づいて適切な並べ替え場所に再度挿入します。この処理で Remove および Add 通知を送信します。</para>
+            </remarks>
+        </member>
+        <member name="M:Infragistics.Documents.RichText.SortedTreeList`2.Find(`0,Infragistics.Documents.RichText.TreeList{Infragistics.Documents.RichText.TreeList{`1}.NodeEx,`1}.Node@)">
+            <summary>指定した項目のインデックスを見つけます。項目が見つかった場合インデックスを返します。項目が見つからない場合、リストの現在の状態で挿入された場合の項目のインデックスを返します。</summary>
+            <param name="itemKey">検索する項目のキー。</param>
+            <param name="match">これを見つかった項目を含むノードに設定します。</param>
+            <returns>項目が見つかった場合インデックスを返します。項目が見つからない場合、リストの現在の状態で挿入された場合の項目のインデックスを返します。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Primitives.CommandsHelper`1">
+            <summary>XamMaskedInput によってサポートされる RoutedCommands のリストを提供します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Primitives.CommandsHelper`1.#ctor(Infragistics.Controls.Primitives.CommandsHelper{`0}.CommandWrapper[],Infragistics.Controls.Primitives.CommandsHelper{`0}.CommandDefinition[])">
+            <summary>新しい <see cref="T:Infragistics.Controls.Primitives.CommandsHelper`1" /> を初期化します。</summary>
+            <param name="commands"><see cref="T:Infragistics.Controls.Primitives.CommandsHelper`1.CommandWrapper" /> インスタンスの配列。</param>
+            <param name="minimumRequiredStates">当該のコマンドに関する最低限の要件を規定した定義の配列。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Primitives.CommandsHelper`1.DoesMinimumStateMatch(`0,System.Int64)">
+            <summary>指定したコマンドが最低限の要件を満たしているかどうかを示す null 表現可能なブール値を返します。</summary>
+            <param name="commandId">評価対象となるコマンドの ID。</param>
+            <param name="controlState">コントロールの現在の状態</param>
+            <returns>オブジェクトの構成時に指定したコマンドに最低限の要件が規定されていなかった場合、null が返されます。指定したコマンドに最低限の要件が存在し、かつ、所定の <paramref name="controlState" /> に基づいて当該の要件が満たされていると判断される場合は True が返され、そうでない場合は False が返されます。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Primitives.CommandsHelper`1.DoesMinimumStateMatch(`0,System.Func{System.Int64,System.Int64})">
+            <summary>指定したコマンドが最低限の要件を満たしているかどうかを示す null 表現可能なブール値を返します。</summary>
+            <param name="commandId">評価対象となるコマンドの ID。</param>
+            <param name="getCurrentStates">コマンドの状態を指定すると、指定したコマンドに関して (ヘルパーの構成時に) 規定された最小限の要件に基づいてコントロールの現在の状態を返すメソッド。</param>
+            <returns>オブジェクトの構成時に指定したコマンドに最低限の要件が規定されていなかった場合、null が返されます。指定したコマンドに最低限の要件が存在し、かつ、<paramref name="getCurrentStates" /> から返された現在のコントロール状態に基づいて当該の要件が満たされていると判断される場合は True が返され、そうでない場合は False が返されます。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Primitives.CommandsHelper`1.GetMatchingCommands(System.Windows.Input.Key,System.Windows.Input.ModifierKeys,System.Int64)">
+            <summary>キーおよび修飾キーを指定すると、現在のコントロール状態に応じたコマンドの列挙値を返します。</summary>
+            <param name="key">評価対象となるキー</param>
+            <param name="modifierKeys">修飾キーの現在の状態</param>
+            <param name="controlState">コントロールの現在の状態</param>
+            <returns>指定した修飾キーおよびコントロール状態について、指定したキーにマップされている各コマンドのコマンド ID を示す列挙値。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Primitives.CommandsHelper`1.GetMatchingCommands(System.Windows.Input.Key,System.Windows.Input.ModifierKeys,System.Func{System.Int64,System.Int64})">
+            <summary>キーおよび修飾キーを指定すると、現在のコントロール状態に応じたコマンドの列挙値を返します。</summary>
+            <param name="key">評価対象となるキー</param>
+            <param name="modifierKeys">修飾キーの現在の状態</param>
+            <param name="getCurrentStates">指定したキーおよび修飾キーに一致する各コマンドについて、それぞれの要件に規定されている現在のコントロール状態を返すメソッド。</param>
+            <returns>指定した修飾キーおよびコントロール状態について、指定したキーにマップされている各コマンドのコマンド ID を示す列挙値。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Primitives.ScrollInfo">
+            <summary>スクロールバーに関連した設定を公開します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Primitives.ScrollInfo.#ctor">
+            <summary>新しい <see cref="T:Infragistics.Controls.Primitives.ScrollInfo" /> を初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Primitives.ScrollInfo.Initialize(System.Double,System.Double,System.Double)">
+            <summary>スクロール情報の状態を決定します。</summary>
+            <param name="viewport">ビューポート範囲（つまり、表示領域）。</param>
+            <param name="extent">全体的な範囲（つまり、コンテンツのサイズ）。</param>
+            <param name="offset">スクロール可能な領域での位置。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Primitives.ScrollInfo.OnPropertyChanged(System.String)">
+            <summary>プロパティ通知の送信時に呼び出されます。</summary>
+            <param name="propertyName">変更するプロパティを識別する文字列。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Primitives.ScrollInfo.ComputedScrollBarIsEnabled">
+            <summary>スクロールバーで優先される IsEnabled 状態を示す値を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Primitives.ScrollInfo.ComputedScrollBarVisibility">
+            <summary>スクロールバーで優先される表示状態を示す値を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Primitives.ScrollInfo.Extent">
+            <summary>Extent 値を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Primitives.ScrollInfo.IsInUse">
+            <summary>スクロール情報が使用中かどうかを示します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Primitives.ScrollInfo.LargeChange">
+            <summary>オプションの大きい変更を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Primitives.ScrollInfo.LargeChangeResolved">
+            <summary>解決した大きい変更の量を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Primitives.ScrollInfo.Maximum">
+            <summary>最大値を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Primitives.ScrollInfo.Minimum">
+            <summary>最小値を返すか、設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Primitives.ScrollInfo.Offset">
+            <summary>Offset 値を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Primitives.ScrollInfo.ScrollBarVisibility">
+            <summary>スクロールバーを表示するかどうかを決定するために使用される値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Primitives.ScrollInfo.ScrollableExtent">
+            <summary>ビューポートおよび範囲の差を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Primitives.ScrollInfo.SmallChange">
+            <summary>SmallChange 値を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Primitives.ScrollInfo.Viewport">
+            <summary>Viewport 値を返します。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Primitives.ScrollInfo.PropertyChanged">
+            <summary>このオブジェクトのプロパティ値が変更されたときに呼び出されます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Primitives.MergedScrollInfo">
+          <summary>複数のスクロール情報の値 (オフセット以外の値) を集計するために使用されるカスタム スクロール情報です。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Primitives.ExtendedRangeScrollInfo.VerifyRange(System.Double)">
+          <summary>範囲は指定したスクロール オフセットの適切な値を示すことを確認するために発生します。</summary>
+          <returns>調整されたオフセットを返します。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Primitives.ScrollBarInfoMediator">
+            <summary>ScrollBar および ScrollInfo のプロパティを管理するためのヘルパー クラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Primitives.ScrollBarInfoMediator.IsInitializingScrollBar">
+            <summary>スクロール情報に基づいてスクロールバーが初期化されているかどうかを示すブール値を返します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Primitives.ScrollBarVisibilityCoordinator">
+          <summary>複数の ScrollBarInfoMediator インスタンスの表示/非表示状態を同期/調整するためのヘルパー クラス。このメソッドは、UI に表示されるスクロールバーが複数あり、それぞれの Visibility 値の同期を取る必要がある場合に使用されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Primitives.ExtendedScrollArrowHelperBase.OnScrollBarChanged(Infragistics.Controls.Primitives.IPlatformScrollBarAdapter,Infragistics.Controls.Primitives.IPlatformScrollBarAdapter)">
+          <summary>ScrollBar プロパティが変更されたときに呼び出されます。</summary>
+          <param name="oldValue">以前のスクロールバー</param>
+          <param name="newValue">新しいスクロールバー</param>
+        </member>
+        <member name="F:Infragistics.Controls.Primitives.ScrollBarToScrollInfoManager.LargeChangeProperty">
+            <summary><see cref="P:Infragistics.Controls.Primitives.ScrollBarToScrollInfoManager.LargeChange" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Primitives.ScrollBarToScrollInfoManager.MaximumProperty">
+            <summary><see cref="P:Infragistics.Controls.Primitives.ScrollBarToScrollInfoManager.Maximum" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Primitives.ScrollBarToScrollInfoManager.MinimumProperty">
+            <summary><see cref="P:Infragistics.Controls.Primitives.ScrollBarToScrollInfoManager.Minimum" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Primitives.ScrollBarToScrollInfoManager.SmallChangeProperty">
+            <summary><see cref="P:Infragistics.Controls.Primitives.ScrollBarToScrollInfoManager.SmallChange" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Primitives.ScrollBarToScrollInfoManager.ValueProperty">
+            <summary><see cref="P:Infragistics.Controls.Primitives.ScrollBarToScrollInfoManager.Value" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Primitives.ScrollBarToScrollInfoManager.ViewportSizeProperty">
+            <summary><see cref="P:Infragistics.Controls.Primitives.ScrollBarToScrollInfoManager.ViewportSize" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Primitives.ElementScrollInfo">
+            <summary>特定の要素に関連付けられ、スクロール位置の変更時にはメジャーを無効化するカスタム ScrollInfo クラス。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Primitives.ElementScrollInfo.IsInUse">
+            <summary>スクロール情報が使用中かどうかを示します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Primitives.ScrollInfoAutomationProvider">
+            <summary>水平または垂直方向の <see cref="T:Infragistics.Controls.Primitives.ScrollInfo" /> を処理する Automation IScrollProvider。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Primitives.ScrollInfoTouchHelper">
+            <summary>タッチ操作の結果スクロール操作を実行するためのヘルパー クラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Primitives.ScrollInfoTouchHelper.#ctor(System.Tuple{Infragistics.Controls.Primitives.ScrollInfo,Infragistics.Controls.ScrollType,System.Func{System.Double}},System.Tuple{Infragistics.Controls.Primitives.ScrollInfo,Infragistics.Controls.ScrollType,System.Func{System.Double}},System.Func{System.Windows.FrameworkElement,System.Windows.Point,System.Windows.UIElement,Infragistics.Controls.TouchScrollMode})">
+            <summary>新しい <see cref="T:Infragistics.Controls.Primitives.ScrollInfoTouchHelper" /> を初期化します。</summary>
+            <param name="horizontalScrollInfo">水平のスクロール情報。これにはスクロールを実行する ScrollInfo、実行されるスクロールのタイプ、最初の項目の幅を返す関数が含まれます。</param>
+            <param name="verticalScrollInfo">垂直のスクロール情報。これにはスクロールを実行する ScrollInfo、実行されるスクロールのタイプ、最初の項目の高さを返す関数が含まれます。</param>
+            <param name="getScrollModeFromPointCallback">指定されたポイントがスクロールに有効かどうかを決定するために使用されるオプションのメソッド。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Primitives.ScrollInfoTouchAction.Drag">
+            <summary>タッチが起動されてドラッグされました。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Primitives.ScrollInfoTouchAction.Click">
+            <summary>タッチが起動されてリリースされました。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.AutomationPeers.PropertyGridItemViewAutomationPeer">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView" /> および <see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView" /> の型を UI オートメーションに公開します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.AutomationPeers.PropertyGridItemViewAutomationPeer.#ctor(System.Windows.FrameworkElement)">
+            <summary>コンストラクター</summary>
+            <param name="owner">このピアが作成されている <see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView" /> または <see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView" />。</param>
+        </member>
+        <member name="T:Infragistics.AutomationPeers.PropertyGridItemViewAutomationPeerProxy">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView" /> および <see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView" /> の型を UI オートメーションに公開します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.PropertyGridItemViewAutomationPeerProxy.GetAutomationControlTypeCore">
+            <summary>オートメーション ピアによって表されるコントロールのタイプを示す列挙体を返します。</summary>
+            <returns><b>Custom</b> 列挙値</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.PropertyGridItemViewAutomationPeerProxy.GetChildrenCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連する <see cref="T:System.Windows.UIElement" /> の子要素のコレクションを返します。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" /> によって呼び出されます。</summary>
+            <returns>子 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 要素のリスト。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.PropertyGridItemViewAutomationPeerProxy.GetClassNameCore">
+            <summary><see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> の名前を返します。</summary>
+            <returns>&apos;PropertyGridItem&apos; を含む文字列。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.PropertyGridItemViewAutomationPeerProxy.GetNameCore">
+            <summary>このピアに関連付けられた要素のテキスト ラベルを返します。</summary>
+            <returns>要素のオートメーション名または関連付けられたカレンダーの名前。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.PropertyGridItemViewAutomationPeerProxy.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <summary>このピアに関連付けられる要素のコントロール パターンを返します。</summary>
+            <param name="patternInterface">要求されるパターン</param>
+            <returns>パターン プロバイダーまたは null。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.PropertyGridItemViewAutomationPeerProxy.GetUnderlyingPeer">
+            <summary>このプロキシの基本 AutomationPeer を返します。</summary>
+            <returns>このプロキシの基本 AutomationPeer。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.PropertyGridItemViewAutomationPeerProxy.IsContentElementCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連する要素がユーザーに表示されるデータを含むかどうかを示す値を返します。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsContentElement" /> によって呼び出されます。</summary>
+            <returns>要素にユーザーが読めるデータを含む場合は true。そうでない場合は false。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.PropertyGridItemViewAutomationPeerProxy.IsControlElementCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連するオブジェクトがエンド ユーザーによってインタラクティブとして理解されるかどうかを示す値を返します。GUI でコントロールの論理的な構造に関連するオブジェクトのオプションがあります。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsControlElement" /> によって呼び出されます。</summary>
+            <returns>オブジェクトがインタラクティブであれば True、そうでなければ False。</returns>
+        </member>
+        <member name="T:Infragistics.AutomationPeers.XamPropertyGridAutomationPeer">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> のタイプを UI 自動化に公開します。</summary>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamPropertyGridAutomationPeer.#ctor(Infragistics.Controls.Editors.XamPropertyGrid)">
+            <summary>新しい <see cref="T:Infragistics.AutomationPeers.XamPropertyGridAutomationPeer" /> を初期化します。</summary>
+            <param name="owner">ピアが表す <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" />。</param>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamPropertyGridAutomationPeer.GetAutomationControlTypeCore">
+            <summary>オートメーション ピアによって表されるコントロールのタイプを示す列挙体を返します。</summary>
+            <returns><b>Custom</b> 列挙値</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamPropertyGridAutomationPeer.GetChildrenCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連する <see cref="T:System.Windows.UIElement" /> の子要素のコレクションを返します。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" /> によって呼び出されます。</summary>
+            <returns>子 <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> 要素のリスト。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamPropertyGridAutomationPeer.GetClassNameCore">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> の名前を返します。</summary>
+            <returns>&apos;XamPropertyGrid&apos; を含む文字列。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamPropertyGridAutomationPeer.GetNameCore">
+            <summary>このピアに関連付けられた要素のテキスト ラベルを返します。</summary>
+            <returns>要素のオートメーション名または関連付けられたカレンダーの名前。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamPropertyGridAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連付けられた <see cref="T:System.Windows.UIElement" /> のコントロール パターンを返します。</summary>
+            <param name="patternInterface">列挙値の １ つです。</param>
+            <returns>注釈を参照してください。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamPropertyGridAutomationPeer.IsContentElementCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連する要素がユーザーに表示されるデータを含むかどうかを示す値を返します。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsContentElement" /> によって呼び出されます。</summary>
+            <returns>要素にユーザーが読めるデータを含む場合は true。そうでない場合は false。</returns>
+        </member>
+        <member name="M:Infragistics.AutomationPeers.XamPropertyGridAutomationPeer.IsControlElementCore">
+            <summary>この <see cref="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" /> に関連するオブジェクトがエンド ユーザーによってインタラクティブとして理解されるかどうかを示す値を返します。GUI でコントロールの論理的な構造に関連するオブジェクトのオプションがあります。このメソッドは <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsControlElement" /> によって呼び出されます。</summary>
+            <returns>オブジェクトがインタラクティブであれば True、そうでなければ False。</returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGridEditorDefinitionCollection">
+            <summary>特定のタイプまたは名前の <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> または特定のカテゴリに属す <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> のデフォルト エディターをオーバーライドするために使用される <see cref="T:Infragistics.Controls.Editors.PropertyGridEditorDefinition" /> のコレクション。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridEditorDefinition" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridEditorDefinitionCollection.GetByCategory(System.String)">
+            <summary>指定したカテゴリで定義される <see cref="T:Infragistics.Controls.Editors.PropertyGridEditorDefinition" /> (ある場合) を返します。</summary>
+            <param name="categoryName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridEditorDefinitionCollection.GetByPropertyName(System.String)">
+            <summary>指定したプロパティ名で定義される <see cref="T:Infragistics.Controls.Editors.PropertyGridEditorDefinition" /> (ある場合) を返します。</summary>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridEditorDefinitionCollection.GetByTargetType(System.Type)">
+            <summary>指定したタイプで定義される <see cref="T:Infragistics.Controls.Editors.PropertyGridEditorDefinition" /> (ある場合) を返します。</summary>
+            <param name="targetType"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridEditorDefinitionCollection.PropertyGrid">
+            <summary>関連付けられた <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> を返します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGridItemCollection">
+            <summary><see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> の読み取り専用コレクション</summary>
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.Items" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridItem" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridItemCollection.PropertyGrid">
+            <summary>関連付けられた <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> を返します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyGridCommandBase">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> と関連付けられるすべてのコマンドの基本クラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCommandBase.CanExecute(System.Object)">
+            <summary>入力されたオブジェクトでコマンドを実行する可能性があるかどうかを示します。</summary>
+            <param name="parameter">コマンドを実行するオブジェクト。</param>
+            <returns>オブジェクトがこのコマンドをサポートできる場合は True です。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCommandBase.Execute(System.Object)">
+            <summary>コマンドを実行します。</summary>
+            <param name="parameter">実行される <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> オブジェクト。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCommandBase.ExecuteCommand(Infragistics.Controls.Editors.XamPropertyGrid,System.Object)">
+            <summary>指定されたコマンドを指定された <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> で実行します。</summary>
+            <param name="ctrl">コマンドを実行するコントロール。</param>
+            <param name="parameter">コマンドのパラメーター</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyGridCommandSource">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> オブジェクトのコマンド ソース オブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCommandSource.#ctor">
+            <summary>新しい <see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridCommandSource" /> を初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCommandSource.ResolveCommand">
+            <summary>コマンドを実行する <see cref="T:System.Windows.Input.ICommand" /> オブジェクトを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridCommandSource.CommandType">
+            <summary>コマンドで実行される <see cref="T:Infragistics.Controls.Editors.PropertyGridCommandType" /> を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemCommandSource">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> オブジェクトのコマンド ソース オブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemCommandSource.#ctor">
+            <summary>新しい <see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemCommandSource" /> を初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemCommandSource.ResolveCommand">
+            <summary>コマンドを実行する <see cref="T:System.Windows.Input.ICommand" /> オブジェクトを作成します。</summary>
+            <returns></returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemCommandSource.CommandType">
+            <summary>コマンドで実行される <see cref="T:Infragistics.Controls.Editors.PropertyGridCommandType" /> を取得または設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyGridCommand">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> のコマンドを実行するために使用するコマンド オブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCommand.#ctor(Infragistics.Controls.Editors.PropertyGridCommandType)">
+            <summary>新しい <see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridCommand" /> を初期化します。</summary>
+            <param name="commandType"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCommand.CanExecute(System.Object)">
+            <summary>入力されたオブジェクトでコマンドを実行する可能性があるかどうかを示します。</summary>
+            <param name="parameter">コマンドを実行するオブジェクト。</param>
+            <returns>オブジェクトがこのコマンドをサポートできる場合は True です。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCommand.ExecuteCommand(Infragistics.Controls.Editors.XamPropertyGrid,System.Object)">
+            <summary>コマンドを実行します。</summary>
+            <param name="propertyGrid">コマンドを実行する <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> オブジェクト。</param>
+            <param name="parameter">コマンドのパラメーター</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemCommand">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> のコマンドを実行するために使用するコマンド オブジェクト。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemCommand.#ctor(Infragistics.Controls.Editors.PropertyGridCommandType)">
+            <summary>新しい <see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemCommand" /> を初期化します。</summary>
+            <param name="commandType"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemCommand.CanExecute(System.Object)">
+            <summary>入力されたオブジェクトでコマンドを実行する可能性があるかどうかを示します。</summary>
+            <param name="parameter">コマンドを実行するオブジェクト。</param>
+            <returns>オブジェクトがこのコマンドをサポートできる場合は True です。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemCommand.ExecuteCommand(Infragistics.Controls.Editors.XamPropertyGrid,System.Object)">
+            <summary>コマンドを実行します。</summary>
+            <param name="propertyGrid">コマンドを実行する <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> オブジェクト。</param>
+            <param name="parameter">コマンドのパラメーター</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ExpandableObjectMarginConverter">
+            <summary>整数として表されるネスト レベルを &apos;left&apos; メンバーが適切なピクセル値に設定される Thickness に変換します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ExpandableObjectMarginConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>値を変換します。</summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ExpandableObjectMarginConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>値を変換します。</summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.GridLengthConverter">
+            <summary>double 値を GridLength に変換します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.GridLengthConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>値を変換します。</summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.GridLengthConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>値を変換します。</summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.NullableColorConverter">
+            <summary>null である可能性のある SelectedColor プロパティのバインドを解除する <see cref="T:System.Windows.Data.IValueConverter" />。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyItemMarginConverter">
+            <summary>整数として表されるネスト レベルを &apos;left&apos; メンバーが適切なピクセル値に設定される Thickness に変換します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyItemMarginConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>値を変換します。</summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyItemMarginConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>値を変換します。</summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.CategorySortOrderAttribute">
+          <summary>
+            属性を持つクラスまたは構造のプロパティに割り当てられる <see cref="T:Infragistics.Controls.Editors.PropertyGridCategoryItem"/> の並べ替え順序を指定します。
+          </summary>
+          <remarks>
+            この 'CategorySortOrderAttribute' の複数のインスタンスが同じクラス/構造に適用できます。クラス/構造プロパティに割り当てられる各一意のカテゴリのインスタンスは有効です。カテゴリの並べ替え順序を指定するためのカスタム属性を作成できます。<see cref="T:Infragistics.Controls.Editors.XamPropertyGrid"/> がカスタム属性を使用するには、以下の 2 つのルールがあります。1. 属性クラス名を 'CategorySortOrderAttribute' (または 'CategorySortOrder') に設定します。2.属性コンストラクターが 2 つのパラメーターを受けます: a. string 型のカテゴリ名パラメーター b. int 型の並べ替え順序パラメーター。
+          </remarks>
+          <seealso cref="T:Infragistics.Controls.Editors.PropertyGridCategoryItem"/>
+          <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem"/>
+          <seealso cref="T:Infragistics.Controls.Editors.PropertySortOrderAttribute"/>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.CategorySortOrderAttribute.#ctor(System.String,System.Int32)">
+          <summary>コンストラクター。</summary>
+          <param name="categoryName">並べ替え順序に適用されるカテゴリの名前。</param>
+          <param name="sortOrder">カテゴリに適用されるべき並べ替え順序。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.CategorySortOrderAttribute.SortOrder">
+          <summary>カテゴリに適用されるべき並べ替え順序。(読み取り専用)</summary>
+          <seealso cref="P:Infragistics.Controls.Editors.CategorySortOrderAttribute.CategoryName"/>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.CategorySortOrderAttribute.CategoryName">
+          <summary>並べ替え順序に適用されるカテゴリの名前。(読み取り専用)</summary>
+          <seealso cref="P:Infragistics.Controls.Editors.CategorySortOrderAttribute.SortOrder"/>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertySortOrderAttribute">
+          <summary>
+            <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem"/> の並べ替え順序を指定します。
+          </summary>
+          <remarks>
+            この 'PropertySortOrderAttribute' の 1 インスタンスのみを <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem"/> に適用できます。プロパティの並べ替え順序を指定するためのカスタム属性を作成できます。<see cref="T:Infragistics.Controls.Editors.XamPropertyGrid"/> がカスタム属性を使用するには、以下の 2 つのルールがあります。1.属性クラス名を 'PropertySortOrderAttribute' (または 'PropertySortOrder') に設定します。2.属性コンストラクターが単一のパラメーターを受けます: int 型の並べ替え順序パラメーター。
+          </remarks>
+          <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem"/>
+          <seealso cref="T:Infragistics.Controls.Editors.PropertyGridCategoryItem"/>
+          <seealso cref="T:Infragistics.Controls.Editors.CategorySortOrderAttribute"/>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertySortOrderAttribute.#ctor(System.Int32)">
+          <summary>コンストラクター。</summary>
+          <param name="sortOrder">カテゴリに適用されるべき並べ替え順序。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertySortOrderAttribute.SortOrder">
+          <summary>カテゴリに適用されるべき並べ替え順序。(読み取り専用)</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridTypeEditorBase.Dispose">
+            <summary>インスタンスが破棄されるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridBooleanEditor.Dispose">
+            <summary>インスタンスが破棄されるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditor.Dispose">
+            <summary>インスタンスが破棄されるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCustomEditor.Dispose">
+            <summary>インスタンスが破棄されるときに呼び出されます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl">
+            <summary>ブラシ タイプ プロパティの編集の UI を表示するコントロール。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.OnApplyTemplate">
+            <summary>テンプレートが要素に適用される時に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>キーを押したときに呼び出されます。</summary>
+            <param name="e">渡されたキーについての情報。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.BrushTypeProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.BrushType" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.ColorFormatProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.ColorFormat" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.AlphaProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.Alpha" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.RedProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.Red" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.BlueProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.Blue" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.GreenProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.Green" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.HProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.H" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.SProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.S" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.LProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.L" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.C" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.MProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.M" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.YProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.Y" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.KProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.K" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CurrentColorProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CurrentColor" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.InitialColorProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.InitialColor" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsExpandedProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsExpanded" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsGradientBrushProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsGradientBrush" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsHorizontalLinearGradientBrushProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsHorizontalLinearGradientBrush" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsLinearGradientBrushProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsLinearGradientBrush" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsNullBrushProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsNullBrush" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsRadialGradientBrushProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsRadialGradientBrush" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsSolidColorBrushProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsSolidColorBrush" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsVerticalLinearGradientBrushProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsVerticalLinearGradientBrush" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.SelectedBrushProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.SelectedBrush" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.OnPropertyChanged(System.String)">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> オブジェクトのプロパティが変更されると呼び出されます。</summary>
+            <param name="propertyName">変更されたプロパティ名。</param>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.BrushType">
+            <summary>編集しているブラシのタイプ (None、LinearGradient、RadialGradient など) を返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.BrushTypeProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.ColorFormat">
+            <summary>現在の色形式 (RGB、HSL、または CMYK など) を返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.ColorFormatProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.Alpha">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CurrentColor" /> の Alpha チャネル値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.Red">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CurrentColor" /> の Red チャネル値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.Blue">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CurrentColor" /> の Blue チャネル値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.Green">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CurrentColor" /> の Green チャネル値を取得または設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.H">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CurrentColor" /> の H チャネル値を取得または設定します。これは HSL 色スペースからの色値です。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.S">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CurrentColor" /> の S チャネル値を取得または設定します。これは HSL 色スペースからの色値です。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.L">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CurrentColor" /> の L チャネル値を取得または設定します。これは HSL 色スペースからの色値です。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.C">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CurrentColor" /> の C チャネル値を取得または設定します。これは CMYK 色スペースからです。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.M">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CurrentColor" /> の M チャネル値を取得または設定します。これは CMYK 色スペースからです。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.Y">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CurrentColor" /> の Y チャネル値を取得または設定します。これは CMYK 色スペースからです。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.K">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CurrentColor" /> の K チャネル値を取得または設定します。これは CMYK 色スペースからです。</summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CurrentColor">
+            <summary>現在の色を返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.CurrentColorProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.InitialColor">
+            <summary>現在の色を返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.InitialColorProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsExpanded">
+            <summary>コントロールが展開されるかどうかを返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsExpandedProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsGradientBrush">
+            <summary>編集しているブラシは Gradient ブラシかどうかを返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsGradientBrushProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsHorizontalLinearGradientBrush">
+            <summary>編集しているブラシは HorizontalLinearGradient ブラシかどうかを返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsHorizontalLinearGradientBrushProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsLinearGradientBrush">
+            <summary>編集しているブラシは LinearGradient ブラシかどうかを返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsLinearGradientBrushProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsNullBrush">
+            <summary>編集しているブラシは null ブラシかどうかを返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsNullBrushProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsRadialGradientBrush">
+            <summary>編集しているブラシは RadialGradient ブラシかどうかを返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsRadialGradientBrushProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsSolidColorBrush">
+            <summary>編集しているブラシは SolidColor ブラシかどうかを返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsSolidColorBrushProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsVerticalLinearGradientBrush">
+            <summary>編集しているブラシは VerticalLinearGradient ブラシかどうかを返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.IsVerticalLinearGradientBrushProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.SelectedBrush">
+            <summary>現在のブラシを返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.SelectedBrushProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.TransparentPreviewBrush">
+            <summary>透明色のプレビューを表示するために使用されるタイル ブラシを返します。(読み取り専用)</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.Primitives.PropertyGridBrushEditorControl.PropertyChanged">
+            <summary>プロパティが <see cref="T:Infragistics.Controls.Editors.XamColorPicker" /> で変更されるときに発生します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ByteDoubleConverter">
+            <summary>値を double および byte の間に変換します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ByteDoubleConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>変換します。</summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ByteDoubleConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>元に変換します。</summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.ByteIntConverter">
+            <summary>値を int および byte の間に変換します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ByteIntConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>変換します。</summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.ByteIntConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>元に変換します。</summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.DoubleToPercentStringConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>変換します。</summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.DoubleToPercentStringConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>元に変換します。</summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridColorEditor.Dispose">
+            <summary>インスタンスが破棄されるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridComboEditorBase.Dispose">
+            <summary>インスタンスが破棄されるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridDateTimeEditor.Dispose">
+            <summary>インスタンスが破棄されるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyMultiValueConverter.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>ソース値をバインディング ターゲットの値に変換します。</summary>
+            <param name="values"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyMultiValueConverter.ConvertBack(System.Object,System.Type[],System.Object,System.Globalization.CultureInfo)">
+            <summary>バインディング ターゲット値をソース バインディング値に変換します。</summary>
+            <param name="value"></param>
+            <param name="targetTypes"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridExpandableObjectEditor.Dispose">
+            <summary>インスタンスが破棄されるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridListEditor.Dispose">
+            <summary>インスタンスが破棄されるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridTextEditor.Dispose">
+            <summary>インスタンスが破棄されるときに呼び出されます。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGridCategoryItem">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> のプロパティ カテゴリ項目を表すクラス。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGridItem">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> で表示されるすべての項目の抽象基本クラス。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridCategoryItem" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridItem.#ctor">
+            <summary>コンストラクター</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridItem.ToString">
+            <summary>オブジェクトの文字列表現を返します</summary>
+            <returns>オブジェクトの文字列表現。</returns>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridItem.DescriptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGridItem.Description" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridItem.DisplayNameProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGridItem.DisplayName" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridItem.IsExpandedProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGridItem.IsExpanded" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridItem.IsExpandableProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGridItem.IsExpandable" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridItem.IsExpandableResolvedProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGridItem.IsExpandableResolved" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridItem.IsSelectedProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGridItem.IsSelected" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridItem.NestingLevelProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGridItem.NestingLevel" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridItem.Deselect">
+            <summary>選択されている場合、項目の選択を解除します。</summary>
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridItem.IsSelected" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedItem" />
+            <seealso cref="M:Infragistics.Controls.Editors.PropertyGridItem.Select" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridItem.Select">
+            <summary>選択されていない場合、この項目は <see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedItem" /> になります。</summary>
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridItem.IsSelected" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedItem" />
+            <seealso cref="M:Infragistics.Controls.Editors.PropertyGridItem.Deselect" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridItem.OnIsExpandedChanged(System.Boolean)">
+            <summary>項目の展開状態が変更されているときに呼び出されます。</summary>
+            <param name="newValue">展開状態の新しい値。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridItem.Dispose">
+            <summary>インスタンスが破棄されるときに呼び出されます。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridItem.Children">
+            <summary>この項目内に含まれる子 <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> の列挙子を返します。(読み取り専用)</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridItem.Description">
+            <summary>説明領域でこの項目に表示される説明を返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGridItem.DescriptionProperty" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.DescriptionAreaVisibility" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridItem.DisplayName">
+            <summary>この項目をコントロールに表示するときに名前を返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGridItem.DisplayNameProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridItem.HasChildren">
+            <summary>この項目が子 <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> を含む場合、True。そうでない場合は False。</summary>
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridItem.Children" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridItem.IsExpanded">
+            <summary>項目が展開されるかどうかを返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGridItem.IsExpandedProperty" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridItem.IsExpandable" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridItem.IsExpandableResolved" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridItem.IsExpandable">
+            <summary>現在の項目が展開/縮小できる場合 True を返します。そうでない場合は False。(読み取り専用)</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGridItem.IsExpandablePropertyKey" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridItem.IsExpanded" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridItem.IsExpandableResolved" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridItem.IsExpandableResolved">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> は <see cref="T:Infragistics.Controls.Editors.PropertyGridCategoryItem" /> の場合、このプロパティは <see cref="P:Infragistics.Controls.Editors.PropertyGridItem.IsExpandable" /> プロパティと同じ値を返します。(読み取り専用) この <see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> は <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> で <see cref="P:Infragistics.Controls.Editors.PropertyGridItem.IsExpandable" /> は True の場合に、現在のプロパティ値が null 以外の場合は、このプロパティは True を返します。それ以外の場合は False を返します。(読み取り専用)</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGridItem.IsExpandableResolvedPropertyKey" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridItem.IsExpandable" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridItem.IsExpanded" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridItem.IsFilteredOut">
+            <summary>項目が現在の表示でフィルターされている場合 True を返します。そうでない場合は False。(読み取り専用)</summary>
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.ItemFilters" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.FilterText" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridItem.IsSelected">
+            <summary>項目が選択されるかどうかを返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGridItem.IsSelectedProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridItem.NestingLevel">
+            <summary>項目のネスト レベルを返します。<see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.IsCategorized" /> が true で、<see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> のネスト レベルが 1 以上の場合、<see cref="T:Infragistics.Controls.Editors.PropertyGridCategoryItem" /> は常にレベル 0 です。 そうでない場合 0 以上。(読み取り専用)</summary>
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridItem.Children" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridItem.PropertyGrid">
+            <summary>この項目に関連する <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> を返します。(読み取り専用)</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridItem.SortOrder">
+          <summary>このプロパティの並べ替え順序を返します。(読み取り専用)</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridCategoryItem.Dispose">
+            <summary>インスタンスが破棄されるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridCategoryItem.OnIsExpandedChanged(System.Boolean)">
+            <summary>項目の展開状態が変更されているときに呼び出されます。</summary>
+            <param name="newValue">展開状態の新しい値。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGridEditorDefinition">
+            <summary>特定のカテゴリに所有するプロパティ、または特定のタイプのプロパティを編集するときに使用する編集テンプレートおよび表示テンプレートを定義します。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridEditorDefinitionCollection" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridEditorDefinition.ReadOnlyTemplate">
+            <summary>プロパティが読み取り専用の場合に使用する DataTemplate を返すか、設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridEditorDefinition.EditTemplate">
+            <summary>エディターが編集モードのときに使用する DataTemplate を返すか、設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridEditorDefinition.Category">
+            <summary>このエディター定義を使用するプロパティのカテゴリを返すか、設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridEditorDefinition.TargetType">
+            <summary>このエディター定義を使用するプロパティのタイプを返すか、設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridEditorDefinition.TargetProperties">
+            <summary>このエディター定義を使用するプロパティ名のリストを返すか、設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGridComparisonCondition">
+            <summary>オペランドを選択する機能を提供する <see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> をフィルターするときに使用するカスタム <see cref="T:Infragistics.Windows.Controls.ComparisonCondition" /> 実装。規格の <see cref="T:Infragistics.Windows.Controls.ComparisonCondition" /> がフィルターで使用される場合、オペランドは <see cref="F:Infragistics.Controls.Editors.PropertyGridFilterOperandSource.PropertyName" /> です。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridFilterOperandSource" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.ItemFilters" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridComplementCondition" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridConditionGroup" />
+            <seealso cref="T:Infragistics.Windows.Controls.ComparisonCondition" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridComparisonCondition.#ctor">
+            <summary>コンストラクター</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridComparisonCondition.#ctor(Infragistics.Windows.Controls.ComparisonOperator,System.Object)">
+            <summary>コンストラクター</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridComparisonCondition.#ctor(Infragistics.Windows.Controls.ComparisonOperator,System.Object,System.String)">
+            <summary>コンストラクター</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridComparisonCondition.OperandSource">
+            <summary>条件の評価時にオペランドとして使用される <see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> 値を返すか、設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGridComplementCondition">
+            <summary>オペランドを選択する機能を提供する <see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> をフィルターするときに使用するカスタム <see cref="T:Infragistics.Windows.Controls.ComplementCondition" /> 実装。規格の <see cref="T:Infragistics.Windows.Controls.ComplementCondition" /> がフィルターで使用される場合、オペランドは <see cref="F:Infragistics.Controls.Editors.PropertyGridFilterOperandSource.PropertyName" /> です。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridFilterOperandSource" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.ItemFilters" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridComparisonCondition" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridConditionGroup" />
+            <seealso cref="T:Infragistics.Windows.Controls.ComplementCondition" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridComplementCondition.#ctor">
+            <summary>コンストラクター</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridComplementCondition.#ctor(Infragistics.Windows.Controls.ICondition)">
+            <summary>コンストラクター</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridComplementCondition.OperandSource">
+            <summary>条件の評価時にオペランドとして使用される <see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> 値を返すか、設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGridConditionGroup">
+            <summary>オペランドを選択する機能を提供する <see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> をフィルターするときに使用するカスタム <see cref="T:Infragistics.Windows.Controls.ConditionGroup" /> 実装。規格の <see cref="T:Infragistics.Windows.Controls.ConditionGroup" /> がフィルターで使用される場合、オペランドは <see cref="F:Infragistics.Controls.Editors.PropertyGridFilterOperandSource.PropertyName" /> です。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridFilterOperandSource" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.ItemFilters" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridComparisonCondition" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridComplementCondition" />
+            <seealso cref="T:Infragistics.Windows.Controls.ConditionGroup" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridConditionGroup.#ctor">
+            <summary>コンストラクター</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridConditionGroup.OperandSource">
+            <summary>条件の評価時にオペランドとして使用される <see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> 値を返すか、設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGeneratorBase">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> の <see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> を生成するジェネレーター クラスの抽象基本クラス。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.ReflectionPropertyGenerator" />
+            <seealso cref="T:Infragistics.Controls.Editors.TypeDescriptorPropertyGenerator" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGenerationOptions" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGeneratorBase.#ctor">
+            <summary>コンストラクター</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGeneratorBase.GeneratedPropertyFilterProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGeneratorBase.GeneratedPropertyFilter" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGeneratorBase.GenerateProperties(System.Object,Infragistics.Controls.Editors.PropertyGenerationOptions,Infragistics.Controls.Editors.PropertyGridPropertyItem)">
+            <summary>指定した <see cref="T:Infragistics.Controls.Editors.PropertyGenerationOptions" /> および <see cref="P:Infragistics.Controls.Editors.PropertyGeneratorBase.GeneratedPropertyFilter" /> プロパティに定義されるフィルターを変更せずに指定したオブジェクトの <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> を生成します。このメソッドは、派生したジェネレーター クラスによってオーバーライドする必要があります。</summary>
+            <param name="forObject">プロパテイを検証するオブジェクト。</param>
+            <param name="generationOptions">プロパティを生成するときに保持するオプション。</param>
+            <param name="forPropertyItem">
+              'forObject' パラメーターで渡される値のプロパティを表す <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem"/>、または 'forObject' パラメーターがルート オブジェクト インスタンスを表す場合 null。このパラメーターは、サブ オブジェクトのプロパティ生成を要求するときに使用します。
+            </param>
+            <returns><see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> のリスト。</returns>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGenerationOptions" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGeneratorBase.GeneratedPropertyFilter" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGeneratorBase.GetShouldItemBeFilteredOut(Infragistics.Controls.Editors.PropertyGridItem)">
+            <summary>派生したジェネレーター クラスが <see cref="M:Infragistics.Controls.Editors.PropertyGeneratorBase.GenerateProperties(System.Object,Infragistics.Controls.Editors.PropertyGenerationOptions,Infragistics.Controls.Editors.PropertyGridPropertyItem)" /> メソッドの実装によって返されたリストから指定した <see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> をフィルターする場合、True を返します。</summary>
+            <remarks><b>注: </b> <see cref="P:Infragistics.Controls.Editors.PropertyGeneratorBase.GeneratedPropertyFilter" /> プロパティが設定されない (null) 場合、このメソッドは False を返します。</remarks>
+            <param name="item"><see cref="P:Infragistics.Controls.Editors.PropertyGeneratorBase.GeneratedPropertyFilter" /> によって評価する項目。</param>
+            <returns>項目をフィルターする (<see cref="M:Infragistics.Controls.Editors.PropertyGeneratorBase.GenerateProperties(System.Object,Infragistics.Controls.Editors.PropertyGenerationOptions,Infragistics.Controls.Editors.PropertyGridPropertyItem)"/> から返されたプロパティのリストに含まない) 場合、True。</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGeneratorBase.GeneratedPropertyFilter">
+            <summary>生成する <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> を決定する場合に、ジェネレーターが優先するフィルター条件を返すか、設定します。<see cref="M:Infragistics.Controls.Editors.PropertyGeneratorBase.GenerateProperties(System.Object,Infragistics.Controls.Editors.PropertyGenerationOptions,Infragistics.Controls.Editors.PropertyGridPropertyItem)" /> メソッドを介して派生ジェネレーター クラスによって返される <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> のリストに含めるためにはすべての条件に一致する必要があります。</summary>
+            <remarks>
+            <para><b>注: </b>フィルター条件を指定するために利用可能な <see cref="T:Infragistics.Windows.Controls.ICondition" /> 派生クラスの概要については、<see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.ItemFilters" /> プロパティのヘルプの要件を参照してください。</para>
+            <para><b>注: </b>特定のプロパティが含まれるかどうかを決定するには、派生したジェネレーター クラスが <see cref="M:Infragistics.Controls.Editors.PropertyGeneratorBase.GetShouldItemBeFilteredOut(Infragistics.Controls.Editors.PropertyGridItem)" /> メソッドを呼び出す必要があります。</para>
+            </remarks>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGeneratorBase.GeneratedPropertyFilterProperty" />
+            <seealso cref="M:Infragistics.Controls.Editors.PropertyGeneratorBase.GenerateProperties(System.Object,Infragistics.Controls.Editors.PropertyGenerationOptions,Infragistics.Controls.Editors.PropertyGridPropertyItem)" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" />
+        </member>
+        <member name="T:Infragistics.Controls.Editors.TypeDescriptorPropertyGenerator">
+            <summary>TypeDescriptor を使用してオブジェクトによって公開されるカスタム プロパティまたは添付プロパティを検出する <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> の項目を生成するために <see cref="T:Infragistics.Controls.Editors.PropertyGeneratorBase" /> から派生するクラス。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.ReflectionPropertyGenerator" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGeneratorBase" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGenerationOptions" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.TypeDescriptorPropertyGenerator.GenerateProperties(System.Object,Infragistics.Controls.Editors.PropertyGenerationOptions,Infragistics.Controls.Editors.PropertyGridPropertyItem)">
+            <summary>指定した <see cref="T:Infragistics.Controls.Editors.PropertyGenerationOptions" /> および <see cref="P:Infragistics.Controls.Editors.PropertyGeneratorBase.GeneratedPropertyFilter" /> プロパティに定義されるフィルターを変更せずに指定したオブジェクトの <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> を生成します。このメソッドは、派生したジェネレーター クラスによってオーバーライドする必要があります。</summary>
+            <param name="forObject">プロパテイを検証するオブジェクト。</param>
+            <param name="generationOptions">プロパティを生成するときに保持するオプション。</param>
+            <param name="forPropertyItem">
+              'forObject' パラメーターで渡される値のプロパティを表す <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem"/>、または 'forObject' パラメーターがルート オブジェクト インスタンスを表す場合 null。このパラメーターは、サブ オブジェクトのプロパティ生成を要求するときに使用します。
+            </param>
+            <returns><see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> のリスト。</returns>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGenerationOptions" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGeneratorBase.GeneratedPropertyFilter" />
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ReflectionPropertyGenerator">
+            <summary>リフレクションを使用してオブジェクトによって公開されるプロパティを検出する <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> の項目を生成するために <see cref="T:Infragistics.Controls.Editors.PropertyGeneratorBase" /> から派生するクラス。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.TypeDescriptorPropertyGenerator" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGeneratorBase" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGenerationOptions" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.ReflectionPropertyGenerator.GenerateProperties(System.Object,Infragistics.Controls.Editors.PropertyGenerationOptions,Infragistics.Controls.Editors.PropertyGridPropertyItem)">
+            <summary>指定した <see cref="T:Infragistics.Controls.Editors.PropertyGenerationOptions" /> および <see cref="P:Infragistics.Controls.Editors.PropertyGeneratorBase.GeneratedPropertyFilter" /> プロパティに定義されるフィルターを変更せずに指定したオブジェクトの <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> を生成します。このメソッドは、派生したジェネレーター クラスによってオーバーライドする必要があります。</summary>
+            <param name="forObject">プロパテイを検証するオブジェクト。</param>
+            <param name="generationOptions">プロパティを生成するときに保持するオプション。</param>
+            <param name="forPropertyItem">
+              'forObject' パラメーターで渡される値のプロパティを表す <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem"/>、または 'forObject' パラメーターがルート オブジェクト インスタンスを表す場合 null。このパラメーターは、サブ オブジェクトのプロパティ生成を要求するときに使用します。
+            </param>
+            <returns><see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> のリスト。</returns>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGenerationOptions" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGeneratorBase.GeneratedPropertyFilter" />
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGenerationOptions">
+            <summary><see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> のプロパティ ジェネレーター (<see cref="T:Infragistics.Controls.Editors.PropertyGeneratorBase" /> から派生するクラス) による生成のオプションを定義するクラス。プロパティ生成のために必要があるとき、このクラスのインスタンスがデフォルト設定で自動的に生成されます。その代わり、カスタム生成オプションを指定するには、このクラスのインスタンスを手動的に作成し、<see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerationOptions" /> プロパティに割り当てることができます。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGeneratorBase" />
+            <seealso cref="T:Infragistics.Controls.Editors.ReflectionPropertyGenerator" />
+            <seealso cref="T:Infragistics.Controls.Editors.TypeDescriptorPropertyGenerator" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerator" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerationOptions" />
+            <seealso cref="M:Infragistics.Controls.Editors.XamPropertyGrid.RegenerateProperties" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGenerationOptions.#ctor">
+            <summary>PropertyGenerationOptions のインスタンスを作成します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGenerationOptions.IncludeAttachedProperties">
+            <summary>添付プロパティが generation に含まれるかどうかを返すか、設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGenerationOptions.IncludeReadOnlyProperties">
+            <summary>読み取り専用プロパティが generation に含まれるかどうかを返すか、設定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGridPropertyItem">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> のプロパティ項目を表すクラス。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridPropertyItem.#ctor(System.Object,System.String,System.String,System.Type,System.Boolean,System.Boolean)">
+          <summary>コンストラクター</summary>
+          <param name="sourceObject">プロパティ項目によって表されるプロパティを含むソース オブジェクト。</param>
+          <param name="propertyName">プロパティの名前。</param>
+          <param name="categoryName">プロパティが属するカテゴリの名前。</param>
+          <param name="propertyType">プロパティのタイプ。</param>
+          <param name="isReadOnly">プロパティの読み取り専用状態。</param>
+          <param name="isTypeConverterCustomProperty">プロパティが TypeConverter.GetProperties からの取得に成功した場合は True。それ以外の場合は False。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridPropertyItem.Dispose">
+            <summary>インスタンスが破棄されるときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridPropertyItem.OnIsExpandedChanged(System.Boolean)">
+            <summary>項目の展開状態が変更されているときに呼び出されます。</summary>
+            <param name="newValue">展開状態の新しい値。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanAddEntryToListProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanAddEntryToList" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanCreateExpandableObjectInstanceProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanCreateExpandableObjectInstance" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanRemoveEntriesFromListProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanRemoveEntriesFromList" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanResetValueProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanResetValue" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.ExpandableObjectValueDescriptionProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.ExpandableObjectValueDescription"/> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.IsExpandableWithCustomEditorProperty">
+          <summary>
+            <see cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.IsExpandableWithCustomEditor"/> 依存プロパティを識別します。
+          </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.IsRemoveableFromListProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.IsRemoveableFromList" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.IsValueResetSupportedProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.IsValueResetSupported" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.ListValueDescriptionProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.ListValueDescription" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.PropertyNameProperty">
+            <summary>読み取り専用 <see cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.PropertyName" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.ValueProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.Value" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridPropertyItem.GetCanResetValue">
+            <summary>このプロパティで値リセットがサポートされ、プロパティがデフォルト値に設定されていない場合、True を返します。</summary>
+            <returns>このプロパティで値リセットがサポートされ、プロパティがデフォルト値に設定されていない場合、True。それ以外の場合、False。</returns>
+            <remarks>派生したクラスでこのメソッドのオーバーライドが戻り値を提供する場合、基本実装を呼び出す必要がありません。</remarks>
+            <seealso cref="M:Infragistics.Controls.Editors.PropertyGridPropertyItem.GetIsValueResetSupported" />
+            <seealso cref="M:Infragistics.Controls.Editors.PropertyGridPropertyItem.ResetValue" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridPropertyItem.GetIsValueResetSupported">
+            <summary>このプロパティで値のリセットがサポートされている場合、True を返します。</summary>
+            <returns>このプロパティで値のリセットがサポートされている場合、True。それ以外の場合、False。</returns>
+            <remarks>派生したクラスでこのメソッドのオーバーライドが戻り値を提供する場合、基本実装を呼び出す必要がありません。</remarks>
+            <seealso cref="M:Infragistics.Controls.Editors.PropertyGridPropertyItem.GetCanResetValue" />
+            <seealso cref="M:Infragistics.Controls.Editors.PropertyGridPropertyItem.ResetValue" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridPropertyItem.OnChildPropertyValueChanged">
+          <summary>
+            子 <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem"/> によって表されるプロパティの値が変更された時に呼び出されます。
+          </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyGridPropertyItem.ResetValue">
+            <summary>プロパティを既定値にリセットします。</summary>
+            <seealso cref="M:Infragistics.Controls.Editors.PropertyGridPropertyItem.GetCanResetValue" />
+            <seealso cref="M:Infragistics.Controls.Editors.PropertyGridPropertyItem.ResetValue" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanAddEntryToList">
+            <summary>エントリが作成し、関連付けられたリストに追加可能な場合、リスト タイプ プロパティのために True を返します。(読み取り専用)</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanAddEntryToListPropertyKey" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanRemoveEntriesFromList" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanCreateExpandableObjectInstance">
+            <summary>プロパティ値が null で、プロパティ タイプがパラメーターなしのコンストラクターを持つ場合、展開可能なプロパティのために True を返します。(読み取り専用)</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanCreateExpandableObjectInstancePropertyKey" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanRemoveEntriesFromList" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanRemoveEntriesFromList">
+            <summary>エントリが関連付けられたリストから削除可能な場合、リスト タイプ プロパティのために True を返します。(読み取り専用)</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanRemoveEntriesFromListPropertyKey" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanAddEntryToList" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanResetValue">
+            <summary>プロパティ値がリセット可能な (現在値はデフォルト値ではない) 場合、True を返します。(読み取り専用)</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanResetValuePropertyKey" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.IsValueResetSupported" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.CategoryName">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> に関連付けられたカテゴリ名を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.ExpandableObjectValueDescription">
+          <summary>値が展開可能なオブジェクトのインスタンスの場合、展開可能なプロパティの値に表示される説明を返します。(読み取り専用)</summary>
+          <seealso cref="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.ExpandableObjectValueDescriptionPropertyKey"/>
+          <seealso cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.ExpandableObjectValueDescription"/>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.IsExpandableWithCustomEditor">
+          <summary>
+            基本型が <see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.EditorDefinitions"/> に定義される関連の <see cref="T:Infragistics.Controls.Editors.PropertyGridEditorDefinition"/> がある展開可能なプロパティのために true を返します。(読み取り専用)
+          </summary>
+          <seealso cref="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.IsExpandableWithCustomEditorPropertyKey"/>
+          <seealso cref="T:Infragistics.Controls.Editors.PropertyGridEditorDefinition"/>
+          <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.EditorDefinitions"/>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.IsMergable">
+          <summary>
+            複数のオブジェクトが <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid"/> で選択された場合、このプロパティが同様なプロパティと結合可能かどうかを返すか、設定します。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.IsReadOnly">
+            <summary>このプロパティの読み取り専用状態を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.IsRemoveableFromList">
+            <summary>親リストが変更可能な場合、親リストのエントリを表す擬似プロパティのために True を返します。(読み取り専用)</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.IsRemoveableFromListPropertyKey" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanAddEntryToList" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.IsValueResetSupported">
+            <summary>このプロパティの値がリセット可能な場合に True を返します。(読み取り専用)</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.IsValueResetSupportedPropertyKey" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.CanResetValue" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.ListValueDescription">
+            <summary>プロパティがリスト タイプ プロパティの場合、リスト値の説明を返します。(読み取り専用)</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.ListValueDescriptionPropertyKey" />
+            <seealso cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.ListValueDescription" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.PropertyName">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> に関連付けられたプロパティ名を返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.PropertyNameProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.PropertyType">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem"/> の Type を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.SortOrder">
+          <summary>このプロパティの並べ替え順序を返します。(読み取り専用)</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.Value">
+            <summary>この <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> に関連付けられたプロパティの値を返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.PropertyGridPropertyItem.ValueProperty" />
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyGridResourceString">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> アセンブリから読み込みされた文字列リソースを表すクラス。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView">
+            <summary><see cref="T:Infragistics.Controls.Editors.PropertyGridCategoryItem" /> を表示するために <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> によって使用される要素。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.XamPropertyGrid" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridCategoryItem" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView.#ctor">
+            <summary>コンストラクター</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView.OnApplyTemplate">
+            <summary>テンプレートが要素に適用される時に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView.OnCreateAutomationPeer">
+            <summary>UI オートメーションに <see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView" /> を公開するオートメーション ピアを返します。</summary>
+            <returns><see cref="T:Infragistics.AutomationPeers.PropertyGridItemViewAutomationPeerProxy" />。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView.OnPreviewMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>マウスの左ボタンが押されたときに発生します。</summary>
+            <param name="e">イベントについての情報。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>この System.Windows.FrameworkElement の依存プロパティの有効値が更新された時に常に起動されます。</summary>
+            <param name="e">変更されたプロパティに関する情報。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView.CategoryItemProperty">
+            <summary>読み取り専用 <see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView.CategoryItem" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView.OnDiscarded">
+            <summary>リサイクル可能な要素がリサイクル マネージャーによって破棄されたときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView.OnQuiesced">
+            <summary>リサイクル可能な要素がリサイクル マネージャーによって休止されたときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView.OnAwakened(Infragistics.Controls.Editors.PropertyGridItem)">
+            <summary>リサイクル可能な要素がリサイクル マネージャーによってアクティブ化されたときに呼び出されます。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView.PropertyGrid">
+            <summary>このカテゴリに関連する <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView.CategoryItem">
+            <summary>この要素に関連する <see cref="T:Infragistics.Controls.Editors.PropertyGridCategoryItem" /> を返します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView.CategoryItemProperty" />
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyGridDescriptionAreaControl">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> で選択されているプロパティの名前および説明を描画するための UI を表示するコントロール。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridDescriptionAreaControl.#ctor">
+            <summary>コンストラクター</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridDescriptionAreaControl.OnApplyTemplate">
+            <summary>テンプレートが要素に適用される時に呼び出されます。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridDescriptionAreaControl.SelectedPropertyDescription">
+            <summary>現在選択されているプロパティと関連付けられる説明を返します。(読み取り専用)</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridDescriptionAreaControl.SelectedPropertyName">
+            <summary>現在選択されているプロパティと関連付けられる名前を返します。(読み取り専用)</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridDescriptionAreaControl.SelectedPropertyTypeName">
+            <summary>現在選択されているプロパティのタイプの FullName を返します。(読み取り専用)</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.Primitives.PropertyGridDescriptionAreaControl.PropertyChanged">
+            <summary>プロパティの値が変更されたときに発生されるイベント。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyGridExpandableObjectEditorControl">
+            <summary>リスト タイプ プロパティの値列の UI を表示するコントロール。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridExpandableObjectEditorControl.OnApplyTemplate">
+            <summary>テンプレートが要素に適用される時に呼び出されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridExpandableObjectEditorControl.PropertyItemProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridExpandableObjectEditorControl.PropertyItem" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridExpandableObjectEditorControl.CreateExpandableObjectButtonStyleKey">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridExpandableObjectEditorControl" /> 内の「展開可能なオブジェクト」ボタンで <see cref="T:System.Windows.Style" /> を識別するために使用されるキー。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridExpandableObjectEditorControl.PropertyItem">
+            <summary>関連付けられた <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> を返します。(読み取り専用)</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridExpandableObjectEditorControl.PropertyItemPropertyKey" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" />
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyGridFilterAreaControl">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> の項目をフィルターし、並べ替えるための UI を表示するコントロール。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridFilterAreaControl.#ctor">
+            <summary>コンストラクター</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridFilterAreaControl.OnApplyTemplate">
+            <summary>テンプレートが要素に適用される時に呼び出されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridFilterAreaControl.PropertyGridProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridFilterAreaControl.PropertyGrid" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridFilterAreaControl.CategorizeButtonStyleKey">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridFilterAreaControl" /> 内の [分類する] ボタンで <see cref="T:System.Windows.Style" /> を識別するために使用されるキー。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridFilterAreaControl.ClearFilterButtonStyleKey">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridFilterAreaControl" /> 内の [フィルターをクリア] ボタンで <see cref="T:System.Windows.Style" /> を識別するために使用されるキー。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridFilterAreaControl.SortButtonStyleKey">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridFilterAreaControl" /> 内の [並べ替える] ボタンで <see cref="T:System.Windows.Style" /> を識別するために使用されるキー。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridFilterAreaControl.PropertyGrid">
+            <summary>関連付けられた <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> を返します。(読み取り専用)</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridFilterAreaControl.PropertyGridPropertyKey" />
+            <seealso cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridFilterAreaControl.PropertyGrid" />
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyGridItemLayoutPanel">
+            <summary>最適な仮想化/リサイクル方式を使用して <see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridCategoryItemView" /> および <see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView" /> 要素を測定し配置する Panel から派生した要素。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridItemLayoutPanel.#ctor">
+            <summary>コンストラクター</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridItemLayoutPanel.ArrangeOverride(System.Windows.Size)">
+            <summary>子要素を配置し、この要素のサイズを決定します。</summary>
+            <param name="finalSize">この要素の子を配置する際に指定できるサイズ。</param>
+            <returns>この要素が子を配置するときに使用する <see cref="T:System.Windows.Size" />。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridItemLayoutPanel.MeasureOverride(System.Windows.Size)">
+            <summary>要素およびその子を計測するために呼び出されます。</summary>
+            <param name="availableSize">この要素が子要素に提供できる空き領域を反映したサイズ。</param>
+            <returns>望ましい要素サイズを表す <see cref="T:System.Windows.Size" />。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridItemLayoutPanel.OnRenderSizeChanged(System.Windows.SizeChangedInfo)">
+            <summary>描画サイズが変更されたときに呼び出されます。</summary>
+            <param name="sizeInfo">サイズ変更操作についての情報。</param>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyGridListEditorControl">
+            <summary>リスト タイプ プロパティの値列の UI を表示するコントロール。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridListEditorControl.OnApplyTemplate">
+            <summary>テンプレートが要素に適用される時に呼び出されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridListEditorControl.PropertyItemProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridListEditorControl.PropertyItem" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridListEditorControl.AddListEntryButtonStyleKey">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridListEditorControl" /> 内の [リスト エントリを追加] ボタンで <see cref="T:System.Windows.Style" /> を識別するために使用されるキー。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridListEditorControl.PropertyItem">
+            <summary>関連付けられた <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> を返します。(読み取り専用)</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridListEditorControl.PropertyItemPropertyKey" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" />
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView">
+            <summary><see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> を表示するために <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> によって使用される要素。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.XamPropertyGrid" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.#ctor">
+            <summary>コンストラクター</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.OnApplyTemplate">
+            <summary>テンプレートが要素に適用される時に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.OnCreateAutomationPeer">
+            <summary>UI オートメーションに <see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView" /> を公開するオートメーション ピアを返します。</summary>
+            <returns><see cref="T:Infragistics.AutomationPeers.PropertyGridItemViewAutomationPeerProxy" />。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>要素がフォーカスを受け取る時に呼び出されます。</summary>
+            <param name="e">イベントについての追加情報。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>キーボード フォーカスが子孫要素に変更するときに発生されます。</summary>
+            <param name="e">イベントについての追加情報。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary>マウスが要素に入ったときに発生します。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary>マウスが要素から出たときに呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.OnPreviewMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>マウスの左ボタンが押されたときに発生します。</summary>
+            <param name="e">イベントについての情報。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>この System.Windows.FrameworkElement の依存プロパティの有効値が更新された時に常に起動されます。</summary>
+            <param name="e">変更されたプロパティに関する情報。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.EditorElementProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.EditorElement" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.PropertyItemProperty">
+            <summary>読み取り専用 <see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.PropertyItem" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.OnDiscarded">
+            <summary>リサイクル可能な要素がリサイクル マネージャーによって破棄されたときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.OnQuiesced">
+            <summary>リサイクル可能な要素がリサイクル マネージャーによって休止されたときに呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.OnAwakened(Infragistics.Controls.Editors.PropertyGridItem)">
+            <summary>リサイクル可能な要素がリサイクル マネージャーによってアクティブ化されたときに呼び出されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.RemoveListEntryButtonStyleKey">
+            <summary><see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView" /> 内の [リスト エントリを削除] ボタンで <see cref="T:System.Windows.Style" /> を識別するために使用されるキー。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.EditorElement">
+            <summary>この項目に関連付けられた編集要素を返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.EditorElementProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.IsCategorizedItem">
+            <summary>この項目が分類されるリスト内にある場合 true を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.PropertyGrid">
+            <summary>この要素に関連する <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> を返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridPropertyItemView.PropertyItem">
+            <summary>この要素に関連する <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> を返します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.Primitives.PropertyGridRgbValueEditor">
+            <summary>RGB 色値のエディター。（内部使用のみ）</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridRgbValueEditor.#ctor">
+            <summary>SimpleNumericTextbox のインスタンスを作成します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridRgbValueEditor.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>要素がフォーカスを受け取ったときに呼び出します。</summary>
+            <param name="e">イベントについての情報。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridRgbValueEditor.OnGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>要素がキーボード フォーカスを受けるときに呼び出されます。</summary>
+            <param name="e">イベントについての情報。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridRgbValueEditor.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>System.Windows.UIElement.KeyDown イベントが発生するときに呼び出されます。</summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridRgbValueEditor.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary>要素がフォーカスを失ったときに呼び出されます。</summary>
+            <param name="e">イベントについての情報。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.Primitives.PropertyGridRgbValueEditor.OnLostKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>要素がキーボード フォーカスを失うときに呼び出されます。</summary>
+            <param name="e">イベントについての情報。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.Primitives.PropertyGridRgbValueEditor.ValueProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.Primitives.PropertyGridRgbValueEditor.Value" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.Primitives.PropertyGridRgbValueEditor.Value">
+            <summary>コントロールの整数値を返すまたは設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.Primitives.PropertyGridRgbValueEditor.ValueProperty" />
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertiesGeneratedEventArgs">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamPropertyGrid.PropertiesGenerated" /> イベントで渡す引数を定義するクラス。</summary>
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.Items" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerator" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertiesGeneratedEventArgs.#ctor">
+            <summary>コンストラクター。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGridCommandExecutedEventArgs">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamPropertyGrid.CommandExecuted" /> イベントのイベント引数。</summary>
+            <seealso cref="E:Infragistics.Controls.Editors.XamPropertyGrid.CommandExecuted" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridCommandExecutedEventArgs.Command">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> に実行されたコマンドを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridCommandExecutedEventArgs.CommandParameter">
+            <summary>コマンドを実行する時に使用されるパラメーターを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridCommandExecutedEventArgs.SourceElement">
+            <summary>コマンドが実行された要素を返します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGridCommandExecutingEventArgs">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamPropertyGrid.CommandExecuting" /> イベントのイベント引数。</summary>
+            <seealso cref="E:Infragistics.Controls.Editors.XamPropertyGrid.CommandExecuting" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridCommandExecutingEventArgs.Command">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> に実行されるコマンドを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridCommandExecutingEventArgs.CommandParameter">
+            <summary>コマンドを実行する時に使用されるパラメーターを返します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyGridCommandExecutingEventArgs.SourceElement">
+            <summary>コマンドが実行される要素を返します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyItemEventArgs">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamPropertyGrid.PropertyItemValueChanged" /> イベントで渡す引数を定義するクラス。</summary>
+            <seealso cref="E:Infragistics.Controls.Editors.XamPropertyGrid.PropertyItemValueChanged" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.PropertyItemEventArgs.#ctor(Infragistics.Controls.Editors.PropertyGridPropertyItem)">
+            <summary>コンストラクター。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.PropertyItemEventArgs.PropertyItem">
+            <summary>イベントに関連付けられた <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> を返します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.SelectedItemChangedEventArgs">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamPropertyGrid.SelectedItemChanged" /> イベントで渡す引数を定義するクラス。</summary>
+            <seealso cref="E:Infragistics.Controls.Editors.XamPropertyGrid.SelectedItemChanged" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.SelectedItemChangedEventArgs.#ctor(Infragistics.Controls.Editors.PropertyGridItem,Infragistics.Controls.Editors.PropertyGridItem)">
+            <summary>コンストラクター。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SelectedItemChangedEventArgs.NewSelectedItem">
+            <summary>現在選択されている <see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> を返すか、設定します。選択されている項目がない場合は null。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.SelectedItemChangedEventArgs.OldSelectedItem">
+            <summary>以前選択された <see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> を返します。以前選択された項目がない場合は null。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.SelectedObjectsChangedEventArgs">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjectsChanged" /> イベントで渡す引数を定義するクラス。</summary>
+            <seealso cref="E:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjectsChanged" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.SelectedObjectsChangedEventArgs.#ctor">
+            <summary>コンストラクター。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.BrushType">
+            <summary>ブラシ エディターによって編集されているブラシのタイプを指定します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.BrushType.None">
+            <summary>ブラシは null です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.BrushType.Solid">
+            <summary>ブラシは SolidColorBrush です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.BrushType.LinearGradient">
+            <summary>ブラシは LinearGradientBrush です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.BrushType.RadialGradient">
+            <summary>ブラシは RadialGradientBrush です。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.ColorFormat">
+            <summary>ブラシ エディターによって使用される色形式を指定します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorFormat.RGB">
+            <summary>ブラシ エディターの色形式は RGB です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorFormat.HSL">
+            <summary>ブラシ エディターの色形式は HSL です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.ColorFormat.CMYK">
+            <summary>ブラシ エディターの色形式は CMYK です。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGridFilterOperandSource">
+            <summary><see cref="T:Infragistics.Controls.Editors.PropertyGridComparisonCondition" />、<see cref="T:Infragistics.Controls.Editors.PropertyGridComplementCondition" />、または <see cref="T:Infragistics.Controls.Editors.PropertyGridConditionGroup" /> の評価時にオペランドとして使用される <see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> 値を指定します。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridComparisonCondition" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridComplementCondition" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridConditionGroup" />
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridFilterOperandSource.CategoryName">
+            <summary>フィルター オペランドのソースは <see cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.CategoryName" /> であることを指定します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridFilterOperandSource.Description">
+            <summary>フィルター オペランドのソースは <see cref="P:Infragistics.Controls.Editors.PropertyGridItem.Description" /> であることを指定します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridFilterOperandSource.PropertyName">
+            <summary>フィルター オペランドのソースは <see cref="P:Infragistics.Controls.Editors.PropertyGridPropertyItem.PropertyName" /> であることを指定します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridFilterOperandSource.DisplayName">
+            <summary>フィルター オペランドのソースは <see cref="P:Infragistics.Controls.Editors.PropertyGridItem.DisplayName" /> であることを指定します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGridCommandType">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> コントロールの使用可能なコマンドの列挙体。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.AddListEntry">
+            <summary>コマンド パラメーターとして渡された <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> によって表されるエントリをリストに追加します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.RemoveListEntry">
+            <summary>コマンド パラメーターとして渡された <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> によって表されるリスト エントリを削除します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.ResetPropertyValue">
+            <summary>コマンド パラメーターとして渡された <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> によって表されるプロパティの値をリセットします。プロパティがプロパティの現在値と異なる値を指定する DefaultValueAttribute を持つか、プロパティを含むソース オブジェクトが true を返す ShouldSerialize[propname] メソッドおよび Reset[propname] メソッドを公開する場合、このコマンドは有効になります。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.SelectNextItem">
+            <summary>次の表示可能な項目 (ある場合) を選択します。項目が選択されていない場合、操作がありません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.SelectPreviousItem">
+            <summary>以前の表示可能な項目 (ある場合) を選択します。項目が選択されていない場合、操作がありません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.ExpandSelectedItem">
+            <summary>選択されている項目を展開します。項目が選択されていない場合、操作がありません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.CollapseSelectedItem">
+            <summary>選択されている項目を縮小します。項目が選択されていない場合、操作がありません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.ToggleSelectedItemExpandedState">
+            <summary>選択されている項目の展開状態を切り替えます。項目が選択されていない場合、操作がありません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.EnterEditMode">
+            <summary>選択されている項目に編集モードを入ります。選択されている項目がないか、選択されている項目がまだ編集モードにある場合、操作がありません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.ExitEditMode">
+            <summary>選択されている項目に編集モードを終了します。選択されている項目がないか、選択されている項目が編集モードにない場合、操作がありません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.SortByCategory">
+            <summary>プロパティのリストをアルファベット順に並べ替えます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.SortAlphabetically">
+            <summary>プロパティのリストをカテゴリ順に並べ替えます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.ToggleSortType">
+            <summary>並べ替え方をアルファベット順およびカテゴリ順の間に切り替えます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.ClearFilterText">
+            <summary>ユーザーによって入力されたフィルター テキスト (ある場合) をクリアします。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.ToggleFilterAreaFocus">
+            <summary>フィルター領域のフォーカス状態を切り替えます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.MoveToHome">
+            <summary>選択および表示を最初の項目に移動します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.MoveToEnd">
+            <summary>選択および表示を最後の項目に移動します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.ScrollLineUp">
+            <summary>選択を 1 項目上に移動します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.ScrollLineDown">
+            <summary>選択を 1 項目下に移動します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.ScrollPageUp">
+            <summary>選択を 1 ページ上に移動します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.ScrollPageDown">
+            <summary>選択を 1 ページ下に移動します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.CreateExpandableObject">
+            <summary>適切な型のオブジェクト インスタンスを作成し、コマンド パラメーターとして渡された <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> によって表される展開可能なプロパティに割り当てます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridCommandType.ShowOptionsMenu">
+            <summary>コマンド パラメーターとして渡された <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> によって表されるプロパティのオプション メニューを表示します。</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.PropertyGridStates">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> コントロールのさまざまな状態を表します。特定のコマンドを実行できるかどうかを評価するために使用されます。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridStates.HasSelectedItem">
+            <summary>プロパティ グリッドで選択されている項目があります。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridStates.SelectedItemIsExpandable">
+            <summary>選択されている項目は展開可能です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridStates.SelectedItemIsNotExpandable">
+            <summary>選択されている項目は展開可能ではありません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridStates.SelectedItemIsExpanded">
+            <summary>選択されている項目は展開されています。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridStates.SelectedItemIsCollapsed">
+            <summary>選択されている項目は展開可能です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridStates.SelectedItemIsProperty">
+            <summary>選択されている項目はプロパティ項目です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridStates.SelectedItemIsCategory">
+            <summary>選択されている項目はカテゴリ項目です。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridStates.SelectedPropertyIsDirectlyEditable">
+            <summary>選択されているプロパティは直接編集可能なプロパティです。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridStates.SelectedPropertyIsInEditMode">
+            <summary>選択されているプロパティは編集モードにあります。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridStates.SelectedPropertyIsNotInEditMode">
+            <summary>選択されているプロパティは編集モードにありません。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridStates.HasDisplayableItems">
+            <summary>表示する項目があります。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.PropertyGridStates.All">
+            <summary>利用できるすべての状態</summary>
+        </member>
+        <member name="T:Infragistics.Controls.Editors.XamPropertyGrid">
+            <summary>プロパティ、その値、および値を編集するための UI を表示するカスタム コントロール。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPropertyGrid.#ctor">
+            <summary>新しい <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> を初期化します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPropertyGrid.OnApplyTemplate">
+            <summary>テンプレートが要素に適用される時に呼び出されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPropertyGrid.OnCreateAutomationPeer">
+            <summary>UI オートメーションに <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> を公開するオートメーション ピアを返します。</summary>
+            <returns><see cref="T:Infragistics.AutomationPeers.XamPropertyGridAutomationPeer" />。</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPropertyGrid.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>キーを押したときに呼び出されます。</summary>
+            <param name="e">渡されたキーについての情報。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPropertyGrid.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>マウスの左ボタンが押されたときに発生します。</summary>
+            <param name="e">イベントについての情報。</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPropertyGrid.OnMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+            <summary>コントロールの上にあるときにマウス ホイールを回転されるときに発生されます。</summary>
+            <param name="e">イベントについての情報を提供します</param>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPropertyGrid.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>キーを押したときに呼び出されます。</summary>
+            <param name="args">イベントについての追加情報。</param>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.ColumnResizeThumbOffsetProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.ColumnResizeThumbOffset" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.ColumnResizeThumbVisibilityProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.ColumnResizeThumbVisibility" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.DescriptionAreaVisibilityProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.DescriptionAreaVisibility" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.EditorDefinitionsProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.EditorDefinitions" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.FilterAreaVisibilityProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.FilterAreaVisibility" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.FilterTextProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.FilterText" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.IsCategorizedProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.IsCategorized" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.ItemFiltersProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.ItemFilters" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.ItemsProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.Items" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.NameColumnWidthProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.NameColumnWidth" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.OptionsMenuProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.OptionsMenu" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.OptionsMenuVisibilityProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.OptionsMenuVisibility" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGeneratorProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerator" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.ScrollBarVisibilityProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.ScrollBarVisibility" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.SelectedItemProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedItem" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjectProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObject" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="F:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjectsProperty">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjects" /> 依存プロパティを識別します。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPropertyGrid.RegenerateProperties">
+            <summary>選択されているオブジェクト (つまり <see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObject" /> および <see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjects" />) に基づいてプロパティの再生成を現在の <see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerator" /> および <see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerationOptions" /> を使用して実行します。</summary>
+            <remarks><b>注: </b> 通常このメソッドを呼び出す必要がありません。<see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObject" /> または <see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjects" /> プロパティを設定すると、プロパティ項目の生成は自動的に実行されます。ただし、新しい PropertyGenerationOptions を設定すると再生成は自動的に実行されないため、新しい <see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerationOptions" /> を指定する場合にこのメソッドは便利です。</remarks>
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObject" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjects" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerator" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerationOptions" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPropertyGrid.OnCommandExecuted(Infragistics.Controls.Editors.PropertyGridCommandExecutedEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamPropertyGrid.CommandExecuted" /> イベントを発生するために使用されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPropertyGrid.OnCommandExecuting(Infragistics.Controls.Editors.PropertyGridCommandExecutingEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamPropertyGrid.CommandExecuting" /> イベントを発生するために使用されます。</summary>
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPropertyGrid.OnPropertiesGenerated(Infragistics.Controls.Editors.PropertiesGeneratedEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamPropertyGrid.PropertiesGenerated" /> イベントを呼び出します。</summary>
+            <param name="args">イベントを発生させるためのイベント引数。</param>
+            <seealso cref="E:Infragistics.Controls.Editors.XamPropertyGrid.PropertiesGenerated" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertiesGeneratedEventArgs" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPropertyGrid.OnPropertyItemValueChanged(Infragistics.Controls.Editors.PropertyItemEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamPropertyGrid.PropertyItemValueChanged" /> イベントを呼び出します。</summary>
+            <param name="args">イベントを発生させるためのイベント引数。</param>
+            <seealso cref="E:Infragistics.Controls.Editors.XamPropertyGrid.PropertyItemValueChanged" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyItemEventArgs" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPropertyGrid.OnPropertyItemValueChanging(Infragistics.Controls.Editors.PropertyItemEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamPropertyGrid.PropertyItemValueChanging" /> イベントを呼び出します。</summary>
+            <param name="args">イベントを発生させるためのイベント引数。</param>
+            <seealso cref="E:Infragistics.Controls.Editors.XamPropertyGrid.PropertyItemValueChanging" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyItemEventArgs" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPropertyGrid.OnSelectedItemChanged(Infragistics.Controls.Editors.SelectedItemChangedEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamPropertyGrid.SelectedItemChanged" /> イベントを呼び出します。</summary>
+            <param name="args">イベントを発生させるためのイベント引数。</param>
+            <seealso cref="E:Infragistics.Controls.Editors.XamPropertyGrid.SelectedItemChanged" />
+            <seealso cref="T:Infragistics.Controls.Editors.SelectedItemChangedEventArgs" />
+        </member>
+        <member name="M:Infragistics.Controls.Editors.XamPropertyGrid.OnSelectedObjectsChanged(Infragistics.Controls.Editors.SelectedObjectsChangedEventArgs)">
+            <summary><see cref="E:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjectsChanged" /> イベントを呼び出します。</summary>
+            <param name="args">イベントを発生させるためのイベント引数。</param>
+            <seealso cref="E:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjectsChanged" />
+            <seealso cref="T:Infragistics.Controls.Editors.SelectedObjectsChangedEventArgs" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.CategorySortComparer">
+          <summary>
+            <see cref="T:Infragistics.Controls.Editors.PropertyGridCategoryItem"/> を並べ替えるために使用される IComparer を返すか、設定します。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.ColumnResizeThumbOffset">
+            <summary>名前列と値列のサイズ変更に使用される Thumb 要素のオフセットを返します。(読み取り専用)</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.ColumnResizeThumbOffsetPropertyKey" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.ColumnResizeThumbVisibility">
+            <summary>名前列と値列のサイズ変更に使用される Thumb 要素の可視性を返します。(読み取り専用)</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.ColumnResizeThumbVisibilityPropertyKey" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.DescriptionAreaVisibility">
+            <summary>現在選択されたプロパティの情報を表示するプロパティ領域の下に表示される説明領域の表示を返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.DescriptionAreaVisibilityProperty" />
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.FilterAreaVisibilityProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.EditorDefinitions">
+            <summary>特定のタイプまたは名前の <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> または特定のカテゴリに属す <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> の定義済みエディターをオーバーライドするために使用される <see cref="T:Infragistics.Controls.Editors.PropertyGridEditorDefinition" /> のコレクションを返します。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridEditorDefinition" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridEditorDefinitionCollection" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.FilterAreaVisibility">
+            <summary>プロパティの分類および並べ替えのオプション、並びにフィルター条件を入力するためのテキスト ボックスを表示するプロパティ領域の上に表示されるフィルター領域の可視性を返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.FilterAreaVisibilityProperty" />
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.DescriptionAreaVisibilityProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.FilterText">
+            <summary>プロパティ名に基づいてコントロールに表示される項目をフィルタリングするための &apos;contains&apos; フィルターを定義する文字列を返すか、設定します。この文字列から作成される &apos;contains&apos; フィルターが <see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.ItemFilters" /> プロパティで指定されたフィルター (ある場合) と結合されます (&apos;Add&apos; 演算子を使用)。デフォルトでこのプロパティはコントロールの上に表示されるフィルター領域のテキスト ボックスにバインドされます。</summary>
+            <remarks><b>注: </b>複数の条件を持つ複雑なフィルタリング、またはプロパティ名以外の <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> 値 (<see cref="F:Infragistics.Controls.Editors.PropertyGridFilterOperandSource.Description" />、<see cref="F:Infragistics.Controls.Editors.PropertyGridFilterOperandSource.CategoryName" />、<see cref="F:Infragistics.Controls.Editors.PropertyGridFilterOperandSource.PropertyName" />、または <see cref="F:Infragistics.Controls.Editors.PropertyGridFilterOperandSource.DisplayName" /> など) と評価されるフィルタリングを実行するには、<see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.ItemFilters" /> プロパティを使用します。</remarks>
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.FilterTextProperty" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.ItemFilters" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridFilterOperandSource" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.FilterAreaVisibility" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.IsCategorized">
+            <summary><see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> の項目が属しているカテゴリでグループ化されるかどうかを返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.IsCategorizedProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.ItemFilters">
+            <summary><see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> の表示を決定する場合に、<see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> が使用するフィルター処理を返すか、設定します。このプロパティで定義されるフィルターが <see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.FilterText" /> プロパティ (ある場合) から作成される &apos;Contains&apos; フィルターと結合されるFilterText プロパティは XamPropertyGrid の上に表示される <see cref="T:Infragistics.Controls.Editors.Primitives.PropertyGridFilterAreaControl" /> のテキスト ボックスに (デフォルトで) バインドされます。</summary>
+            <remarks><b>注: </b>このプロパティを設定するために <see cref="T:Infragistics.Windows.Controls.ICondition" /> から派生するクラス (Infragistics 異本クラス ライブラリで提供される条件 - <see cref="T:Infragistics.Windows.Controls.ComparisonCondition" />、<see cref="T:Infragistics.Windows.Controls.ComplementCondition" />、および <see cref="T:Infragistics.Windows.Controls.ConditionGroup" /> など) が使用可能ですが、XamPropertyGrid で提供される相対するカスタム <see cref="T:Infragistics.Windows.Controls.ICondition" /> を使用してください。特に、<see cref="T:Infragistics.Controls.Editors.PropertyGridComparisonCondition" />、<see cref="T:Infragistics.Controls.Editors.PropertyGridComplementCondition" />、および <see cref="T:Infragistics.Controls.Editors.PropertyGridConditionGroup" /> 条件は <see cref="T:Infragistics.Controls.Editors.PropertyGridFilterOperandSource" /> 型の <b>OperandSource</b> プロパティを公開します。このプロパティを使用すると、特定の項目がフィルター条件に合わせるかどうかを評価するときに使用される <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> 値を指定できます。標準の <see cref="T:Infragistics.Windows.Controls.ComparisonCondition" />、<see cref="T:Infragistics.Windows.Controls.ComplementCondition" />、および <see cref="T:Infragistics.Windows.Controls.ConditionGroup" /> 条件、または <see cref="T:Infragistics.Windows.Controls.ICondition" /> を実装するカスタム条件を使用する場合、<see cref="F:Infragistics.Controls.Editors.PropertyGridFilterOperandSource.PropertyName" /> はフィルター評価ロジックによって特定の項目が指定した条件と一致するかどうかを決定するために使用されます。</remarks>
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.ItemFiltersProperty" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridFilterOperandSource" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridComplementCondition" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridConditionGroup" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridComparisonCondition" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.FilterText" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.FilterAreaVisibility" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.Items">
+            <summary>現在の <see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerator" /> によって生成された <see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> の読み取り専用の監視可能コレクションを返します。</summary>
+            <remarks><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.IsCategorized" /> が True の場合、このコレクションは、<see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> のルート レベルに表示されるカテゴリを表す <see cref="T:Infragistics.Controls.Editors.PropertyGridCategoryItem" /> を含みます。<see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.IsCategorized" /> が False の場合、このコレクションは、<see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> のルート レベルに表示されるプロパティを表す <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> を含みます。</remarks>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridItemCollection" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridItem" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGeneratorBase" />
+            <seealso cref="T:Infragistics.Controls.Editors.ReflectionPropertyGenerator" />
+            <seealso cref="T:Infragistics.Controls.Editors.TypeDescriptorPropertyGenerator" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.IsCategorized" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.NameColumnWidth">
+            <summary>プロパティ名を表示する各項目エントリの列の幅を返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.NameColumnWidthProperty" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.OptionsMenu">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.OptionsMenuVisibility" /> プロパティが Visibility.Visibile に設定されているときに、ユーザーが各プロパティ項目に表示されるメニュー ボタンをクリックしたときに表示される ContextMenu を返すか、設定します。</summary>
+            <remarks>注: このプロパティを設定せずに、<see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.OptionsMenuVisibility" /> プロパティを Visible に設定した場合、デフォルトの定義済みオプション メニューが表示され、プロパティの値をリセットするための「リセット」オプションも表示されます。プロパティの値をリセットできない場合、このオプションを無効に設定できます。</remarks>
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.OptionsMenuProperty" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.OptionsMenuVisibility" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.OptionsMenuVisibility">
+            <summary>クリックされたときに <see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.OptionsMenu" /> を表示するボタンの可視性を返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.OptionsMenuVisibilityProperty" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.OptionsMenu" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerator">
+            <summary>プロパティ項目を生成するために使用される <see cref="T:Infragistics.Controls.Editors.PropertyGeneratorBase" /> から派生するオブジェクトのインスタンスを返すか、設定します。</summary>
+            <remarks>このプロパティが設定されていない場合、<see cref="T:Infragistics.Controls.Editors.TypeDescriptorPropertyGenerator" /> のインスタンスが <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> によって自動的に提供されます。</remarks>
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGeneratorProperty" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGeneratorBase" />
+            <seealso cref="T:Infragistics.Controls.Editors.ReflectionPropertyGenerator" />
+            <seealso cref="T:Infragistics.Controls.Editors.TypeDescriptorPropertyGenerator" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerationOptions" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerationOptions">
+            <summary>プロパティ項目を生成するときに使用する <see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerationOptions" /> を返すか、設定します。</summary>
+            <remarks><b>注:</b> このプロパティを設定すると、<see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObject" /> プロパティまたは <see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjects" /> プロパティを設定するか、<see cref="M:Infragistics.Controls.Editors.XamPropertyGrid.RegenerateProperties" /> メソッドを呼び出すと実行されるプロパティ生成でオプションは利用可能になります。</remarks>
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerator" />
+            <seealso cref="T:Infragistics.Controls.Editors.ReflectionPropertyGenerator" />
+            <seealso cref="T:Infragistics.Controls.Editors.TypeDescriptorPropertyGenerator" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObject" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjects" />
+            <seealso cref="M:Infragistics.Controls.Editors.XamPropertyGrid.RegenerateProperties" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertySortComparer">
+          <summary>
+            <see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem"/> を並べ替えるために使用される IComparer を返すか、設定します。
+          </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.ScrollBarVisibility">
+            <summary>垂直スクロールバーの ScrollBarVisibility を返すか、設定します。</summary>
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedItem">
+            <summary>現在選択されている <see cref="T:Infragistics.Controls.Editors.PropertyGridItem" /> を返すか、設定します。または項目が現在選択されていない場合、null を返すか、設定します。</summary>
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.SelectedItemProperty" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridItem" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridCategoryItem" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObject">
+            <summary>プロパティが編集されているオブジェクトを返すか、設定します。</summary>
+            <remarks>このプロパティに返されたか、設定されるオブジェクトは、<see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjects" /> リストの最初のオブジェクトに対応します。</remarks>
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjectProperty" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjects" />
+        </member>
+        <member name="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjects">
+            <summary>プロパティが編集されている配列オブジェクトを返すか、設定します。</summary>
+            <remarks>このプロパティが設定される場合、<see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObject" /> プロパティはリストの最初のオブジェクトを返します。</remarks>
+            <seealso cref="F:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjectsProperty" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObject" />
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamPropertyGrid.CommandExecuted">
+            <summary>コマンドが <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> で実行されるときに呼び出されます。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamPropertyGrid.CommandExecuting">
+            <summary>コマンドが <see cref="T:Infragistics.Controls.Editors.XamPropertyGrid" /> で実行されるときに呼び出されます。</summary>
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamPropertyGrid.PropertiesGenerated">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerator" /> が項目の生成を完了し、<see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.Items" /> コレクションが完全に生成されているときに発生されます。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertiesGeneratedEventArgs" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.Items" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridItemCollection" />
+            <seealso cref="P:Infragistics.Controls.Editors.XamPropertyGrid.PropertyGenerator" />
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamPropertyGrid.PropertyItemValueChanged">
+            <summary><see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> の値が変更されたときに発生します。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyItemEventArgs" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" />
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamPropertyGrid.PropertyItemValueChanging">
+            <summary><see cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" /> の値が変更されようとするときに発生します。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyItemEventArgs" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridPropertyItem" />
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamPropertyGrid.SelectedItemChanged">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedItem" /> が変更されたときに発生します。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.SelectedItemChangedEventArgs" />
+            <seealso cref="T:Infragistics.Controls.Editors.PropertyGridItem" />
+        </member>
+        <member name="E:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjectsChanged">
+            <summary><see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObject" /> または <see cref="P:Infragistics.Controls.Editors.XamPropertyGrid.SelectedObjects" /> プロパティが変更されたときに発生します。</summary>
+            <seealso cref="T:Infragistics.Controls.Editors.SelectedObjectsChangedEventArgs" />
+            <seealso cref="T:Infragistics.Controls.Editors.XamPropertyGrid" />
+        </member>
+    </members>
+</doc>
